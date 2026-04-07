@@ -1,0 +1,10 @@
+[
+  { "id": "shimano-dura-ace-r9200", "name": "Dura-Ace FC-R9200", "brand": "Shimano", "category": "crankset", "price": 499, "specs": { "speeds": 12, "chainrings": "52/36T", "material": "carbon", "bcd": "direct-mount" }, "tags": ["Road", "Carbon", "12-Speed"] },
+  { "id": "sram-red-axs-crankset", "name": "RED AXS Power Meter Crankset", "brand": "SRAM", "category": "crankset", "price": 849, "specs": { "speeds": 12, "chainrings": "48/35T", "material": "carbon", "spindle": "DUB" }, "tags": ["Road", "Carbon", "12-Speed", "Power Meter"] },
+  { "id": "shimano-105-r7100", "name": "105 FC-R7100", "brand": "Shimano", "category": "crankset", "price": 219, "specs": { "speeds": 12, "chainrings": "50/34T", "material": "aluminum" }, "tags": ["Road", "Aluminum", "12-Speed"] },
+  { "id": "sram-gx-eagle", "name": "GX Eagle Crankset", "brand": "SRAM", "category": "crankset", "price": 129, "specs": { "speeds": 12, "chainrings": "32T", "spindle": "DUB" }, "tags": ["MTB", "12-Speed", "1x"] },
+  { "id": "shimano-xt-m8100", "name": "Deore XT FC-M8100", "brand": "Shimano", "category": "crankset", "price": 169, "specs": { "speeds": 12, "chainrings": "30/32T", "material": "aluminum" }, "tags": ["MTB", "12-Speed"] },
+  { "id": "rotor-aldhu-road", "name": "ALDHU Road Crankset", "brand": "Rotor", "category": "crankset", "price": 549, "specs": { "speeds": 12, "chainrings": "50/34T", "material": "carbon", "spindle": "30mm" }, "tags": ["Road", "Carbon", "12-Speed"] },
+  { "id": "campagnolo-super-record-12", "name": "Super Record 12s Crankset", "brand": "Campagnolo", "category": "crankset", "price": 629, "specs": { "speeds": 12, "chainrings": "50/34T", "material": "carbon" }, "tags": ["Road", "Carbon", "12-Speed", "Italian"] },
+  { "id": "sram-rival-axs", "name": "Rival AXS Wide Crankset", "brand": "SRAM", "category": "crankset", "price": 179, "specs": { "speeds": 12, "chainrings": "43/30T", "spindle": "DUB" }, "tags": ["Gravel", "12-Speed", "Wide Range"] }
+]

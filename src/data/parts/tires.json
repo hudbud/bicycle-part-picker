@@ -1,0 +1,10 @@
+[
+  { "id": "continental-gp5000-s-tr", "name": "Grand Prix 5000 S TR", "brand": "Continental", "category": "tires", "price": 85, "specs": { "size": "700x32c", "type": "tubeless", "compound": "BlackChili" }, "tags": ["Road", "Tubeless", "All-Around"] },
+  { "id": "pirelli-pzero-race", "name": "P Zero Race TLR", "brand": "Pirelli", "category": "tires", "price": 79, "specs": { "size": "700x28c", "type": "tubeless" }, "tags": ["Road", "Tubeless", "Race"] },
+  { "id": "schwalbe-pro-one", "name": "Pro One Evo", "brand": "Schwalbe", "category": "tires", "price": 72, "specs": { "size": "700x30c", "type": "tubeless", "compound": "V-Guard" }, "tags": ["Road", "Gravel", "Tubeless"] },
+  { "id": "maxxis-minion-dhf", "name": "Minion DHF", "brand": "Maxxis", "category": "tires", "price": 69, "specs": { "size": "29x2.5", "type": "tubeless", "compound": "3C MaxxGrip" }, "tags": ["MTB", "Enduro", "Front Tire"] },
+  { "id": "maxxis-aggressor", "name": "Aggressor", "brand": "Maxxis", "category": "tires", "price": 62, "specs": { "size": "29x2.3", "type": "tubeless", "compound": "3C MaxxTerra" }, "tags": ["MTB", "Enduro", "Rear Tire"] },
+  { "id": "panaracer-gravelking-sk", "name": "GravelKing SK+", "brand": "Panaracer", "category": "tires", "price": 58, "specs": { "size": "700x43c", "type": "tubeless" }, "tags": ["Gravel", "Tubeless", "All-Terrain"] },
+  { "id": "vittoria-corsa-pro", "name": "Corsa Pro TLR", "brand": "Vittoria", "category": "tires", "price": 89, "specs": { "size": "700x26c", "type": "tubeless", "compound": "Graphene 2.0" }, "tags": ["Road", "Tubeless", "Race"] },
+  { "id": "maxxis-rekon-race", "name": "Rekon Race", "brand": "Maxxis", "category": "tires", "price": 55, "specs": { "size": "29x2.25", "type": "tubeless", "compound": "MaxxSpeed" }, "tags": ["MTB", "XC", "Race"] }
+]

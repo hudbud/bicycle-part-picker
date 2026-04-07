@@ -1,0 +1,7 @@
+[
+  { "id": "enve-stem", "name": "ENVE Road Stem", "brand": "ENVE", "category": "stem", "price": 195, "specs": { "material": "carbon", "clampDiameter": "31.8mm", "length": "90mm" }, "tags": ["Road", "Carbon"] },
+  { "id": "ritchey-wcs-c220", "name": "WCS C220 4-Axis", "brand": "Ritchey", "category": "stem", "price": 89, "specs": { "material": "aluminum", "clampDiameter": "31.8mm", "length": "100mm" }, "tags": ["Road", "Gravel", "Aluminum"] },
+  { "id": "deity-copperhead", "name": "Copperhead", "brand": "Deity", "category": "stem", "price": 65, "specs": { "material": "aluminum", "clampDiameter": "35mm", "length": "50mm" }, "tags": ["MTB", "Aluminum"] },
+  { "id": "renthal-apex-stem", "name": "Apex Stem", "brand": "Renthal", "category": "stem", "price": 55, "specs": { "material": "aluminum", "clampDiameter": "35mm", "length": "50mm" }, "tags": ["MTB", "Aluminum", "Enduro"] },
+  { "id": "thomson-x4", "name": "X4 Mountain Stem", "brand": "Thomson", "category": "stem", "price": 125, "specs": { "material": "aluminum", "clampDiameter": "31.8mm", "length": "70mm" }, "tags": ["MTB", "Aluminum", "USA Made"] }
+]

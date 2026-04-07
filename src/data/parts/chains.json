@@ -1,0 +1,7 @@
+[
+  { "id": "shimano-dura-ace-cn-m9100", "name": "Dura-Ace CN-M9100", "brand": "Shimano", "category": "chain", "price": 69, "specs": { "speeds": 12, "weight": "240g" }, "tags": ["Road", "12-Speed"] },
+  { "id": "sram-red-chain-120", "name": "RED AXS Flattop Chain", "brand": "SRAM", "category": "chain", "price": 79, "specs": { "speeds": 12, "weight": "230g" }, "tags": ["Road", "12-Speed", "Flattop"] },
+  { "id": "sram-gx-eagle-chain", "name": "GX Eagle Chain", "brand": "SRAM", "category": "chain", "price": 39, "specs": { "speeds": 12 }, "tags": ["MTB", "12-Speed", "Eagle"] },
+  { "id": "kmc-x12-chain", "name": "X12 Chain", "brand": "KMC", "category": "chain", "price": 35, "specs": { "speeds": 12, "weight": "255g" }, "tags": ["Road", "MTB", "12-Speed"] },
+  { "id": "shimano-deore-cn-m6100", "name": "Deore CN-M6100", "brand": "Shimano", "category": "chain", "price": 25, "specs": { "speeds": 12, "weight": "270g" }, "tags": ["MTB", "12-Speed", "Value"] }
+]

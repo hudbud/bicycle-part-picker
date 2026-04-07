@@ -1,0 +1,7 @@
+[
+  { "id": "shimano-bb-r9100", "name": "Dura-Ace SM-BBR60", "brand": "Shimano", "category": "bottomBracket", "price": 65, "specs": { "type": "threaded BSA", "shell": "68mm", "spindle": "24mm" }, "tags": ["Road", "BSA", "Threaded"] },
+  { "id": "sram-dub-bb", "name": "DUB BSA Bottom Bracket", "brand": "SRAM", "category": "bottomBracket", "price": 49, "specs": { "type": "threaded BSA", "shell": "68mm", "spindle": "DUB" }, "tags": ["Road", "BSA", "Threaded"] },
+  { "id": "token-bb386evo", "name": "BB386EVO Bottom Bracket", "brand": "Token", "category": "bottomBracket", "price": 55, "specs": { "type": "press-fit", "shell": "86.5mm", "spindle": "30mm" }, "tags": ["Road", "BB386", "Press-Fit"] },
+  { "id": "wheels-manufacturing-bb30", "name": "BB30 Bottom Bracket", "brand": "Wheels Manufacturing", "category": "bottomBracket", "price": 45, "specs": { "type": "press-fit", "shell": "68mm", "spindle": "30mm" }, "tags": ["Road", "MTB", "BB30"] },
+  { "id": "praxis-m30-t47", "name": "M30 T47 Bottom Bracket", "brand": "Praxis Works", "category": "bottomBracket", "price": 79, "specs": { "type": "threaded T47", "shell": "T47", "spindle": "30mm" }, "tags": ["Road", "T47", "Threaded"] }
+]

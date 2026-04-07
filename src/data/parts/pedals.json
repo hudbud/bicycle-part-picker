@@ -1,0 +1,8 @@
+[
+  { "id": "shimano-dura-ace-pd-r9100", "name": "Dura-Ace PD-R9100", "brand": "Shimano", "category": "pedals", "price": 249, "specs": { "type": "clipless", "weight": "228g", "platform": "road" }, "tags": ["Road", "Clipless", "Carbon"] },
+  { "id": "look-keo-blade-carbon", "name": "Kéo Blade Carbon", "brand": "Look", "category": "pedals", "price": 199, "specs": { "type": "clipless", "weight": "240g", "platform": "road" }, "tags": ["Road", "Clipless"] },
+  { "id": "shimano-xt-pd-m8120", "name": "Deore XT PD-M8120", "brand": "Shimano", "category": "pedals", "price": 109, "specs": { "type": "clipless", "weight": "368g", "platform": "mtb" }, "tags": ["MTB", "Clipless"] },
+  { "id": "crankbrothers-stamp-7", "name": "Stamp 7", "brand": "Crankbrothers", "category": "pedals", "price": 149, "specs": { "type": "flat", "weight": "340g", "platform": "96x100mm" }, "tags": ["MTB", "Flat", "Enduro"] },
+  { "id": "oneup-composite-pedal", "name": "Composite Pedal", "brand": "OneUp Components", "category": "pedals", "price": 49, "specs": { "type": "flat", "weight": "355g" }, "tags": ["MTB", "Flat", "Value"] },
+  { "id": "crankbrothers-eggbeater-3", "name": "Eggbeater 3", "brand": "Crankbrothers", "category": "pedals", "price": 79, "specs": { "type": "clipless", "weight": "288g", "platform": "mtb" }, "tags": ["MTB", "Clipless", "Gravel"] }
+]

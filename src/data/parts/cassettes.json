@@ -1,0 +1,7 @@
+[
+  { "id": "shimano-dura-ace-r9200", "name": "Dura-Ace CS-R9200", "brand": "Shimano", "category": "cassette", "price": 319, "specs": { "speeds": 12, "range": "11-30T", "material": "titanium" }, "tags": ["Road", "12-Speed", "Titanium"] },
+  { "id": "sram-red-xg-1290", "name": "RED XG-1290", "brand": "SRAM", "category": "cassette", "price": 459, "specs": { "speeds": 12, "range": "10-33T", "material": "steel" }, "tags": ["Road", "12-Speed", "XDR"] },
+  { "id": "shimano-xt-m8100", "name": "Deore XT CS-M8100", "brand": "Shimano", "category": "cassette", "price": 89, "specs": { "speeds": 12, "range": "10-51T", "material": "steel" }, "tags": ["MTB", "12-Speed", "Wide Range"] },
+  { "id": "sram-gx-eagle-xg-1275", "name": "GX Eagle XG-1275", "brand": "SRAM", "category": "cassette", "price": 95, "specs": { "speeds": 12, "range": "10-52T", "material": "steel" }, "tags": ["MTB", "12-Speed", "Eagle"] },
+  { "id": "shimano-105-r7100", "name": "105 CS-R7100", "brand": "Shimano", "category": "cassette", "price": 69, "specs": { "speeds": 12, "range": "11-34T", "material": "steel" }, "tags": ["Road", "12-Speed"] }
+]

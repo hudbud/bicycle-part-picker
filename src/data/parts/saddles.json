@@ -1,0 +1,10 @@
+[
+  { "id": "selle-italia-flite-boost", "name": "Flite Boost", "brand": "Selle Italia", "category": "saddle", "price": 199, "specs": { "material": "carbon", "width": "narrow", "weight": "145g" }, "tags": ["Road", "Carbon Rails", "Race"] },
+  { "id": "fizik-arione-r3", "name": "Arione R3", "brand": "Fizik", "category": "saddle", "price": 149, "specs": { "material": "carbon", "width": "130mm", "weight": "215g" }, "tags": ["Road", "Flat", "Endurance"] },
+  { "id": "specialized-power-pro", "name": "Power Pro", "brand": "Specialized", "category": "saddle", "price": 295, "specs": { "material": "carbon", "width": "143mm", "weight": "150g" }, "tags": ["Road", "Short Nose", "Carbon Rails"] },
+  { "id": "wtb-silverado-team", "name": "Silverado Team", "brand": "WTB", "category": "saddle", "price": 109, "specs": { "material": "steel rails", "width": "142mm", "weight": "290g" }, "tags": ["MTB", "Trail", "All-Mountain"] },
+  { "id": "ergon-smr3", "name": "SM R3", "brand": "Ergon", "category": "saddle", "price": 139, "specs": { "material": "carbon rails", "width": "145mm", "weight": "205g" }, "tags": ["MTB", "XC", "Ergonomic"] },
+  { "id": "selle-smp-t4", "name": "TRK T4", "brand": "Selle SMP", "category": "saddle", "price": 99, "specs": { "material": "steel rails", "width": "150mm", "weight": "340g" }, "tags": ["Gravel", "Endurance", "Comfort"] },
+  { "id": "brooks-cambium-c17", "name": "Cambium C17", "brand": "Brooks", "category": "saddle", "price": 120, "specs": { "material": "aluminum rails", "width": "162mm", "weight": "380g" }, "tags": ["Gravel", "All-Road", "All-Weather"] },
+  { "id": "fizik-tempo-argo-r3", "name": "Tempo Argo R3", "brand": "Fizik", "category": "saddle", "price": 110, "specs": { "material": "steel rails", "width": "150mm", "weight": "245g" }, "tags": ["Road", "Short Nose", "Value"] }
+]

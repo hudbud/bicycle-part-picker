@@ -1,0 +1,10 @@
+[
+  { "id": "enve-ses-ar-road-bar", "name": "SES AR Road Handlebar", "brand": "ENVE", "category": "handlebars", "price": 375, "specs": { "material": "carbon", "clampDiameter": "31.8mm", "width": "42cm", "drop": "128mm", "reach": "80mm" }, "tags": ["Road", "Carbon", "Aero"] },
+  { "id": "ritchey-comp-curve", "name": "Comp Curve", "brand": "Ritchey", "category": "handlebars", "price": 49, "specs": { "material": "aluminum", "clampDiameter": "31.8mm", "width": "44cm" }, "tags": ["Road", "Aluminum", "Compact"] },
+  { "id": "renthal-fatbar-lite", "name": "Fatbar Lite", "brand": "Renthal", "category": "handlebars", "price": 119, "specs": { "material": "aluminum", "clampDiameter": "35mm", "width": "760mm", "rise": "20mm" }, "tags": ["MTB", "Aluminum", "Enduro"] },
+  { "id": "oneup-carbon-bar", "name": "Carbon Handlebar", "brand": "OneUp Components", "category": "handlebars", "price": 165, "specs": { "material": "carbon", "clampDiameter": "35mm", "width": "800mm", "rise": "20mm" }, "tags": ["MTB", "Carbon"] },
+  { "id": "shimano-pro-vibe-7s", "name": "Vibe 7S Aerobar", "brand": "Shimano PRO", "category": "handlebars", "price": 299, "specs": { "material": "carbon", "clampDiameter": "31.8mm", "width": "42cm" }, "tags": ["Road", "Carbon", "Aero", "Integration"] },
+  { "id": "zipp-sl-70-aero", "name": "SL-70 Aero", "brand": "Zipp", "category": "handlebars", "price": 249, "specs": { "material": "carbon", "clampDiameter": "31.8mm", "width": "42cm", "drop": "125mm" }, "tags": ["Road", "Carbon", "Aero"] },
+  { "id": "salsa-cowbell-3", "name": "Cowbell 3", "brand": "Salsa", "category": "handlebars", "price": 65, "specs": { "material": "aluminum", "clampDiameter": "31.8mm", "width": "46cm" }, "tags": ["Gravel", "Aluminum", "Flare"] },
+  { "id": "syncros-fraser-ic-sl", "name": "Fraser iC SL Integrated", "brand": "Syncros", "category": "handlebars", "price": 289, "specs": { "material": "carbon", "clampDiameter": "integrated" }, "tags": ["MTB", "Carbon", "Integrated"] }
+]

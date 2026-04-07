@@ -1,0 +1,10 @@
+[
+  { "id": "enve-ses-road-fork", "name": "SES Road Fork", "brand": "ENVE", "category": "fork", "price": 695, "specs": { "material": "carbon", "axle": "12x100mm", "brakeMount": "flat-mount", "reach": "47mm" }, "tags": ["Road", "Carbon", "Disc Brake"] },
+  { "id": "trek-oclv-fork", "name": "OCLV Carbon Fork", "brand": "Trek", "category": "fork", "price": 349, "specs": { "material": "carbon", "axle": "12x100mm", "brakeMount": "flat-mount" }, "tags": ["Road", "Carbon"] },
+  { "id": "whisky-no9-fork", "name": "No.9 Carbon Fork", "brand": "Whisky Parts Co.", "category": "fork", "price": 279, "specs": { "material": "carbon", "axle": "12x100mm", "brakeType": "disc" }, "tags": ["Gravel", "Carbon", "Disc Brake"] },
+  { "id": "rockshox-pike-ultimate", "name": "Pike Ultimate", "brand": "RockShox", "category": "fork", "price": 849, "specs": { "material": "aluminum", "travel": "130mm", "axle": "15x110mm Boost", "damper": "Charger 3 RC2" }, "tags": ["MTB", "Suspension", "29er"] },
+  { "id": "fox-36-factory", "name": "36 Factory", "brand": "Fox Racing Shox", "category": "fork", "price": 999, "specs": { "material": "aluminum", "travel": "150mm", "axle": "15x110mm Boost", "damper": "GRIP2" }, "tags": ["MTB", "Enduro", "Suspension"] },
+  { "id": "cannondale-lefty-ocho", "name": "Lefty Ocho Carbon", "brand": "Cannondale", "category": "fork", "price": 1199, "specs": { "material": "carbon", "travel": "100mm", "axle": "lefty 25mm" }, "tags": ["MTB", "XC", "Suspension"] },
+  { "id": "rockshox-lyrik-ultimate", "name": "Lyrik Ultimate", "brand": "RockShox", "category": "fork", "price": 929, "specs": { "material": "aluminum", "travel": "160mm", "axle": "15x110mm Boost", "damper": "Charger 3 RC2" }, "tags": ["MTB", "Enduro", "Suspension"] },
+  { "id": "salsa-firestarter-carbon", "name": "Firestarter Carbon Fork", "brand": "Salsa", "category": "fork", "price": 335, "specs": { "material": "carbon", "axle": "12x100mm", "brakeType": "disc" }, "tags": ["Gravel", "Carbon", "Adventure"] }
+]

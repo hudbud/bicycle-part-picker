@@ -1,0 +1,7 @@
+[
+  { "id": "enve-carbon-seatpost", "name": "Carbon Seatpost", "brand": "ENVE", "category": "seatpost", "price": 295, "specs": { "material": "carbon", "diameter": "27.2mm", "length": "350mm" }, "tags": ["Road", "Carbon"] },
+  { "id": "thomson-elite-setback", "name": "Elite Setback", "brand": "Thomson", "category": "seatpost", "price": 119, "specs": { "material": "aluminum", "diameter": "27.2mm", "length": "350mm" }, "tags": ["Road", "MTB", "Aluminum"] },
+  { "id": "rockshox-reverb-axs", "name": "Reverb AXS", "brand": "RockShox", "category": "seatpost", "price": 499, "specs": { "material": "aluminum", "diameter": "31.6mm", "travel": "125mm", "actuation": "wireless" }, "tags": ["MTB", "Dropper", "Wireless"] },
+  { "id": "fox-transfer-factory", "name": "Transfer Factory", "brand": "Fox", "category": "seatpost", "price": 399, "specs": { "material": "aluminum", "diameter": "31.6mm", "travel": "150mm" }, "tags": ["MTB", "Dropper", "Trail"] },
+  { "id": "bikeyoke-revive", "name": "REVIVE 2.0", "brand": "BikeYoke", "category": "seatpost", "price": 299, "specs": { "material": "aluminum", "diameter": "30.9mm", "travel": "160mm" }, "tags": ["MTB", "Dropper", "Self-Bleeding"] }
+]

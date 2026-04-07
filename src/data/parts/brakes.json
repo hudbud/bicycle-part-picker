@@ -1,0 +1,10 @@
+[
+  { "id": "shimano-dura-ace-r9270", "name": "Dura-Ace Di2 BR-R9270 Hydraulic", "brand": "Shimano", "category": "brakes", "price": 599, "specs": { "type": "hydraulic disc", "mount": "flat-mount", "rotor": "140/160mm" }, "tags": ["Road", "Hydraulic", "Disc", "Di2"] },
+  { "id": "sram-red-etap-hrd", "name": "RED eTap AXS HRD", "brand": "SRAM", "category": "brakes", "price": 549, "specs": { "type": "hydraulic disc", "mount": "flat-mount", "actuation": "wireless" }, "tags": ["Road", "Hydraulic", "Wireless"] },
+  { "id": "shimano-105-r7170", "name": "105 Di2 BR-R7170", "brand": "Shimano", "category": "brakes", "price": 189, "specs": { "type": "hydraulic disc", "mount": "flat-mount" }, "tags": ["Road", "Hydraulic", "Di2"] },
+  { "id": "tektro-hd-m290", "name": "HD-M290", "brand": "Tektro", "category": "brakes", "price": 55, "specs": { "type": "hydraulic disc", "mount": "post-mount", "rotor": "160/180mm" }, "tags": ["MTB", "Hydraulic", "Budget"] },
+  { "id": "magura-mt5e", "name": "MT5e", "brand": "Magura", "category": "brakes", "price": 169, "specs": { "type": "hydraulic disc", "mount": "post-mount", "pistons": "4-piston" }, "tags": ["MTB", "E-Bike", "Hydraulic"] },
+  { "id": "sram-code-rsc", "name": "Code RSC", "brand": "SRAM", "category": "brakes", "price": 219, "specs": { "type": "hydraulic disc", "mount": "post-mount", "pistons": "4-piston" }, "tags": ["MTB", "Enduro", "DH"] },
+  { "id": "shimano-xt-m8120", "name": "Deore XT BL/BR-M8120", "brand": "Shimano", "category": "brakes", "price": 149, "specs": { "type": "hydraulic disc", "mount": "post-mount", "pistons": "4-piston" }, "tags": ["MTB", "Trail", "Hydraulic"] },
+  { "id": "tektro-hd-r720", "name": "HD-R720", "brand": "Tektro", "category": "brakes", "price": 89, "specs": { "type": "hydraulic disc", "mount": "flat-mount" }, "tags": ["Road", "Gravel", "Hydraulic", "Budget"] }
+]

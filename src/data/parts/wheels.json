@@ -1,0 +1,10 @@
+[
+  { "id": "dt-swiss-arc-1100", "name": "ARC 1100 Dicut 50mm", "brand": "DT Swiss", "category": "wheels", "price": 2200, "specs": { "rimDepth": "50mm", "material": "carbon", "axle": "12mm thru-axle", "brakeType": "disc" }, "tags": ["Road", "Carbon", "Disc Brake", "Aero"] },
+  { "id": "zipp-303-firecrest", "name": "303 Firecrest", "brand": "Zipp", "category": "wheels", "price": 1999, "specs": { "rimDepth": "40mm", "material": "carbon", "brakeType": "disc" }, "tags": ["Road", "Gravel", "Carbon", "Tubeless"] },
+  { "id": "hunt-4season-gravel", "name": "4 Season Gravel X-Wide", "brand": "Hunt", "category": "wheels", "price": 619, "specs": { "rimWidth": "25mm internal", "material": "aluminum", "brakeType": "disc" }, "tags": ["Gravel", "Aluminum", "Tubeless"] },
+  { "id": "mavic-crossmax-sl", "name": "Crossmax SL", "brand": "Mavic", "category": "wheels", "price": 799, "specs": { "axle": "15x110 / 12x148mm Boost", "material": "aluminum", "brakeType": "disc" }, "tags": ["MTB", "XC", "Aluminum"] },
+  { "id": "industry-nine-hydra", "name": "1/1 Hydra Enduro S", "brand": "Industry Nine", "category": "wheels", "price": 1349, "specs": { "material": "aluminum", "axle": "15x110 / 12x148mm Boost", "engagement": "690 points" }, "tags": ["MTB", "Enduro", "Aluminum"] },
+  { "id": "campagnolo-bora-ultra", "name": "Bora Ultra WTO 45", "brand": "Campagnolo", "category": "wheels", "price": 2799, "specs": { "rimDepth": "45mm", "material": "carbon", "brakeType": "disc", "freehub": "N3W" }, "tags": ["Road", "Carbon", "Disc Brake"] },
+  { "id": "roval-rapide-clx", "name": "Rapide CLX II", "brand": "Roval", "category": "wheels", "price": 2600, "specs": { "rimDepth": "51mm", "material": "carbon", "brakeType": "disc" }, "tags": ["Road", "Carbon", "Aero"] },
+  { "id": "reserve-37-44", "name": "37|44 HD Carbon Wheelset", "brand": "Reserve", "category": "wheels", "price": 1849, "specs": { "rimDepth": "44mm rear / 37mm front", "material": "carbon", "brakeType": "disc" }, "tags": ["Gravel", "Carbon", "Tubeless"] }
+]
