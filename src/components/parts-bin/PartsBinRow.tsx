@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import type { BinItem } from '@/store/partsBinStore'
-import type { PartStatus } from '@/types/build'
 import { usePartsBinStore } from '@/store/partsBinStore'
 import { StatusBadge } from '@/components/ui/StatusBadge'
 import { Input } from '@/components/ui/Input'
@@ -19,12 +18,10 @@ export function PartsBinRow({ item }: PartsBinRowProps) {
   const [brand, setBrand] = useState(item.part.brand)
   const [price, setPrice] = useState(item.part.price?.toString() ?? '')
   const [notes, setNotes] = useState(item.notes ?? '')
-  const [status, setStatus] = useState<PartStatus>(item.status)
-
   const handleSave = () => {
     updateItem(item.id, {
       part: { ...item.part, name, brand, price: price ? parseFloat(price) : undefined },
-      status,
+      status: item.status,
       notes: notes || undefined,
     })
     setEditing(false)
