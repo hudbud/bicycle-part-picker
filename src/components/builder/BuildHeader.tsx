@@ -1,26 +1,67 @@
-import { useState, useRef } from 'react'
+import { useRef, useState } from 'react'
 import type { BikeType } from '@/types/build'
 import { useBuildStore } from '@/store/buildStore'
-import { BuildProgress } from '@/components/ui/BuildProgress'
 import { getCategoriesForBikeType } from '@/data/categoryConfig'
+import { Button, GroupBox, TextInput } from 'react95'
+import styled from 'styled-components'
 
 const BIKE_TYPES: { value: BikeType; label: string }[] = [
-  { value: 'road', label: 'Road' },
-  { value: 'mtb', label: 'Mountain' },
+  { value: 'road',   label: 'Road' },
+  { value: 'mtb',    label: 'Mountain' },
   { value: 'gravel', label: 'Gravel' },
-  { value: 'track', label: 'Track' },
-  { value: 'bmx', label: 'BMX' },
-  { value: 'other', label: 'Other' },
+  { value: 'track',  label: 'Track' },
+  { value: 'bmx',    label: 'BMX' },
+  { value: 'other',  label: 'Other' },
 ]
+
+const NameRow = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+`
+
+const BikeTypeRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 4px;
+`
+
+const BuildName = styled.button`
+  font-size: 18px;
+  font-weight: 700;
+  font-family: ms_sans_serif, sans-serif;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px 4px;
+  &:hover { text-decoration: underline; }
+`
+
+const BikeTypeChip = styled.button`
+  font-size: 11px;
+  font-family: ms_sans_serif, sans-serif;
+  background: none;
+  border: 1px solid #888;
+  cursor: pointer;
+  padding: 1px 6px;
+  opacity: 0.7;
+  &:hover { opacity: 1; text-decoration: underline; }
+`
 
 export function BuildHeader() {
   const { build, setBuildName, setBikeType, getFilledCount } = useBuildStore()
   const [editing, setEditing] = useState(false)
   const [nameValue, setNameValue] = useState(build.name)
+  const [typePickerOpen, setTypePickerOpen] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
   const totalCategories = getCategoriesForBikeType(build.bikeType).length
   const filled = getFilledCount()
+  const hasParts = filled > 0
+
+  const currentLabel = BIKE_TYPES.find((b) => b.value === build.bikeType)?.label ?? build.bikeType
 
   const commitName = () => {
     const trimmed = nameValue.trim()
@@ -29,55 +70,62 @@ export function BuildHeader() {
     setEditing(false)
   }
 
+  const handleTypeSelect = (type: BikeType) => {
+    setBikeType(type)
+    setTypePickerOpen(false)
+  }
+
   return (
-    <div className="space-y-3 pb-4 border-b border-border-default">
-      <div className="flex flex-col sm:flex-row sm:items-center gap-3">
+    <GroupBox label="Build" style={{ marginBottom: 8 }}>
+      <NameRow>
         {editing ? (
-          <input
+          <TextInput
             ref={inputRef}
             value={nameValue}
             onChange={(e) => setNameValue(e.target.value)}
             onBlur={commitName}
             onKeyDown={(e) => {
               if (e.key === 'Enter') commitName()
-              if (e.key === 'Escape') {
-                setNameValue(build.name)
-                setEditing(false)
-              }
+              if (e.key === 'Escape') { setNameValue(build.name); setEditing(false) }
             }}
-            className="text-2xl font-medium bg-transparent border-b-2 border-accent outline-none text-text-primary min-w-0 flex-1"
             autoFocus
           />
         ) : (
-          <button
-            onClick={() => { setEditing(true); setNameValue(build.name) }}
-            className="text-2xl font-medium text-text-primary hover:text-accent transition-colors text-left group flex items-center gap-2"
-          >
-            {build.name}
-            <svg className="w-4 h-4 text-text-muted opacity-0 group-hover:opacity-100 transition-opacity" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-            </svg>
-          </button>
+          <BuildName onClick={() => { setEditing(true); setNameValue(build.name) }}>
+            {build.name} ✏
+          </BuildName>
         )}
-      </div>
+        {hasParts && !typePickerOpen && (
+          <BikeTypeChip onClick={() => setTypePickerOpen(true)} title="Change bike type">
+            {currentLabel} ▾
+          </BikeTypeChip>
+        )}
+        {hasParts && !typePickerOpen && (
+          <span style={{ fontSize: 11, opacity: 0.5 }}>
+            {filled} of {totalCategories}
+          </span>
+        )}
+      </NameRow>
 
-      <div className="flex flex-wrap gap-1.5">
-        {BIKE_TYPES.map((bt) => (
-          <button
-            key={bt.value}
-            onClick={() => setBikeType(bt.value)}
-            className={`px-3 py-1 rounded-full text-sm font-medium transition-colors ${
-              build.bikeType === bt.value
-                ? 'bg-accent text-white'
-                : 'bg-bg-subtle text-text-secondary border border-border-default hover:border-accent hover:text-text-primary'
-            }`}
-          >
-            {bt.label}
-          </button>
-        ))}
-      </div>
-
-      <BuildProgress filled={filled} total={totalCategories} />
-    </div>
+      {(!hasParts || typePickerOpen) && (
+        <BikeTypeRow>
+          {BIKE_TYPES.map((bt) => (
+            <Button
+              key={bt.value}
+              variant={build.bikeType === bt.value ? 'raised' : 'flat'}
+              onClick={() => handleTypeSelect(bt.value)}
+              style={{ fontSize: 11 }}
+            >
+              {bt.label}
+            </Button>
+          ))}
+          {typePickerOpen && (
+            <Button variant="flat" style={{ fontSize: 11, opacity: 0.6 }} onClick={() => setTypePickerOpen(false)}>
+              Cancel
+            </Button>
+          )}
+        </BikeTypeRow>
+      )}
+    </GroupBox>
   )
 }

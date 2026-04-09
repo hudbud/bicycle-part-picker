@@ -14,6 +14,9 @@ import cassettesData from './parts/cassettes.json'
 import chainsData from './parts/chains.json'
 import pedalsData from './parts/pedals.json'
 import bottomBracketsData from './parts/bottomBrackets.json'
+import hubsData from './parts/hubs.json'
+import rimsData from './parts/rims.json'
+import spokesData from './parts/spokes.json'
 
 export const ALL_PARTS: Part[] = [
   ...framesData,
@@ -30,19 +33,29 @@ export const ALL_PARTS: Part[] = [
   ...chainsData,
   ...pedalsData,
   ...bottomBracketsData,
+  ...hubsData,
+  ...rimsData,
+  ...spokesData,
 ] as Part[]
 
-export const PARTS_BY_CATEGORY: Record<PartCategory, Part[]> = ALL_PARTS.reduce(
+export const PARTS_BY_CATEGORY: Record<string, Part[]> = ALL_PARTS.reduce(
   (acc, part) => {
     if (!acc[part.category]) acc[part.category] = []
     acc[part.category].push(part)
     return acc
   },
-  {} as Record<PartCategory, Part[]>,
+  {} as Record<string, Part[]>,
 )
 
+// frontWheel and rearWheel draw from the same pool as wheels
+const CATEGORY_ALIASES: Partial<Record<PartCategory, PartCategory>> = {
+  frontWheel: 'wheels',
+  rearWheel: 'wheels',
+}
+
 export function getPartsByCategory(category: PartCategory): Part[] {
-  return PARTS_BY_CATEGORY[category] ?? []
+  const resolved = CATEGORY_ALIASES[category] ?? category
+  return PARTS_BY_CATEGORY[resolved] ?? []
 }
 
 export function searchParts(query: string, category?: PartCategory): Part[] {

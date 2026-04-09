@@ -1,20 +1,47 @@
 import { Link } from 'react-router-dom'
+import { AppBar, Toolbar } from 'react95'
+import styled from 'styled-components'
+
+const FooterLink = styled(Link)`
+  font-size: 11px;
+  color: inherit;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+`
+
+const ExternalLink = styled.a`
+  font-size: 11px;
+  color: inherit;
+  text-decoration: none;
+  &:hover { text-decoration: underline; }
+`
 
 export function Footer() {
   return (
-    <footer className="border-t border-border-default bg-bg-surface mt-16">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10 flex flex-col sm:flex-row items-center justify-between gap-6">
-        <div>
-          <p className="font-medium text-text-primary">Pedal Parts Picker</p>
-          <p className="text-sm text-text-muted mt-0.5">Built for cyclists, by cyclists.</p>
+    <AppBar position="static" style={{ marginTop: 'auto' }}>
+      <Toolbar style={{ gap: 16, fontSize: 11, justifyContent: 'space-between', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+          <span style={{ fontWeight: 700 }}>Pedal Parts Picker</span>
+          <FooterLink to="/build">Builder</FooterLink>
+          <FooterLink to="/garage">Garage</FooterLink>
+          <FooterLink to="/about">About</FooterLink>
         </div>
-        <nav className="flex gap-6 text-sm text-text-secondary">
-          <Link to="/build" className="hover:text-text-primary transition-colors">Builder</Link>
-          <Link to="/garage" className="hover:text-text-primary transition-colors">Garage</Link>
-          <Link to="/about" className="hover:text-text-primary transition-colors">About</Link>
-          <a href="https://github.com" className="hover:text-text-primary transition-colors" target="_blank" rel="noopener noreferrer">GitHub</a>
-        </nav>
-      </div>
-    </footer>
+        <div style={{ display: 'flex', gap: 12, alignItems: 'center' }}>
+          <ExternalLink
+            href="mailto:hudson@hudbud.net?subject=Pedal Parts Picker Feedback"
+            style={{ opacity: 0.8 }}
+          >
+            Send feedback
+          </ExternalLink>
+          <span style={{ opacity: 0.5 }}>·</span>
+          <span style={{ opacity: 0.7 }}>
+            Made by{' '}
+            <ExternalLink href="https://hudbud.net" target="_blank" rel="noopener noreferrer" style={{ fontWeight: 700 }}>
+              Hudson Paine
+            </ExternalLink>
+          </span>
+        </div>
+      </Toolbar>
+    </AppBar>
   )
 }

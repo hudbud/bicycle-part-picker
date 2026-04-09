@@ -1,4 +1,38 @@
-import { useEffect, useRef, type ReactNode } from 'react'
+import { useEffect, type ReactNode } from 'react'
+import { createPortal } from 'react-dom'
+import { Window, WindowHeader, WindowContent, Button } from 'react95'
+import styled from 'styled-components'
+
+const Backdrop = styled.div`
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(0, 0, 0, 0.5);
+`
+
+const StyledWindow = styled(Window)`
+  width: 100%;
+  max-height: calc(100vh - 2rem);
+  display: flex;
+  flex-direction: column;
+`
+
+const StyledHeader = styled(WindowHeader)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 4px;
+`
+
+const ScrollBody = styled(WindowContent)`
+  overflow-y: auto;
+  flex: 1;
+  padding: 16px;
+`
 
 interface ModalProps {
   open: boolean
@@ -6,11 +40,10 @@ interface ModalProps {
   title?: string
   children: ReactNode
   className?: string
+  style?: React.CSSProperties
 }
 
-export function Modal({ open, onClose, title, children, className = '' }: ModalProps) {
-  const overlayRef = useRef<HTMLDivElement>(null)
-
+export function Modal({ open, onClose, title, children, style }: ModalProps) {
   useEffect(() => {
     if (!open) return
     const handler = (e: KeyboardEvent) => {
@@ -26,39 +59,27 @@ export function Modal({ open, onClose, title, children, className = '' }: ModalP
 
   if (!open) return null
 
-  return (
-    <div
-      ref={overlayRef}
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm"
-      onClick={(e) => {
-        if (e.target === overlayRef.current) onClose()
-      }}
+  return createPortal(
+    <Backdrop
       role="dialog"
       aria-modal="true"
       aria-label={title}
+      onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
     >
-      <div
-        className={`relative w-full bg-bg-surface border border-border-default rounded-xl shadow-2xl animate-modal ${className}`}
-        style={{ maxHeight: 'calc(100vh - 2rem)' }}
-      >
+      <StyledWindow style={style}>
         {title && (
-          <div className="flex items-center justify-between border-b border-border-default px-6 py-4">
-            <h2 className="text-base font-medium text-text-primary">{title}</h2>
-            <button
-              onClick={onClose}
-              className="text-text-muted hover:text-text-primary transition-colors p-1 rounded"
-              aria-label="Close"
-            >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
+          <StyledHeader active>
+            <span>{title}</span>
+            <Button onClick={onClose} style={{ marginLeft: 'auto' }}>
+              <span>✕</span>
+            </Button>
+          </StyledHeader>
         )}
-        <div className="overflow-y-auto" style={{ maxHeight: title ? 'calc(100vh - 8rem)' : 'calc(100vh - 4rem)' }}>
+        <ScrollBody>
           {children}
-        </div>
-      </div>
-    </div>
+        </ScrollBody>
+      </StyledWindow>
+    </Backdrop>,
+    document.body,
   )
 }

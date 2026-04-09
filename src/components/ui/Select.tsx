@@ -1,33 +1,49 @@
 import { forwardRef, type SelectHTMLAttributes } from 'react'
+import { SelectNative } from 'react95'
+import styled from 'styled-components'
 
-interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`
+
+const Label = styled.label`
+  font-size: 12px;
+  font-weight: 700;
+`
+
+interface SelectProps extends Omit<SelectHTMLAttributes<HTMLSelectElement>, 'onChange'> {
   label?: string
   options: { value: string; label: string }[]
+  onChange?: SelectHTMLAttributes<HTMLSelectElement>['onChange']
 }
 
 export const Select = forwardRef<HTMLSelectElement, SelectProps>(
-  ({ label, options, className = '', id, ...props }, ref) => {
+  ({ label, options, id, onChange, value, defaultValue, name, ...rest }, _ref) => {
     const selectId = id ?? label?.toLowerCase().replace(/\s+/g, '-')
     return (
-      <div className="flex flex-col gap-1">
-        {label && (
-          <label htmlFor={selectId} className="text-sm font-medium text-text-secondary">
-            {label}
-          </label>
-        )}
-        <select
-          ref={ref}
+      <Wrapper>
+        {label && <Label htmlFor={selectId}>{label}</Label>}
+        <SelectNative
           id={selectId}
-          className={`w-full rounded-md border border-border-default bg-bg-surface px-3 py-2 text-sm text-text-primary outline-none transition-colors focus:border-accent ${className}`}
-          {...props}
-        >
-          {options.map((o) => (
-            <option key={o.value} value={o.value}>
-              {o.label}
-            </option>
-          ))}
-        </select>
-      </div>
+          width="100%"
+          options={options}
+          value={value as string}
+          defaultValue={defaultValue as string}
+          name={name}
+          onChange={(opt) => {
+            if (onChange) {
+              const syntheticEvent = {
+                target: { value: opt.value, name: name ?? '' },
+                currentTarget: { value: opt.value, name: name ?? '' },
+              } as React.ChangeEvent<HTMLSelectElement>
+              onChange(syntheticEvent)
+            }
+          }}
+          {...(rest as any)}
+        />
+      </Wrapper>
     )
   },
 )

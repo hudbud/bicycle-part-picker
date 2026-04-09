@@ -1,0 +1,83 @@
+[
+  {
+    "id": "chris-king-r45-disc",
+    "name": "R45 Disc Hub Set",
+    "brand": "Chris King",
+    "category": "hub",
+    "price": 580,
+    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "45-point", "freehub": "XD / HG / Micro Spline" },
+    "tags": ["Road", "Gravel", "Disc", "Ceramic"]
+  },
+  {
+    "id": "chris-king-r45-clincher",
+    "name": "R45 Rim Brake Hub Set",
+    "brand": "Chris King",
+    "category": "hub",
+    "price": 520,
+    "specs": { "axle": "QR 100/130mm", "brakeType": "rim", "engagement": "45-point", "freehub": "HG" },
+    "tags": ["Road", "Rim Brake", "Ceramic"]
+  },
+  {
+    "id": "dt-swiss-350-disc",
+    "name": "350 Hub Set",
+    "brand": "DT Swiss",
+    "category": "hub",
+    "price": 180,
+    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "3-pawl", "freehub": "HG / XD" },
+    "tags": ["Road", "MTB", "Gravel", "Disc"]
+  },
+  {
+    "id": "hope-pro-5-disc",
+    "name": "Pro 5 Hub Set",
+    "brand": "Hope",
+    "category": "hub",
+    "price": 310,
+    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "48-tooth", "freehub": "HG / XD / Micro Spline" },
+    "tags": ["MTB", "Gravel", "Disc", "CNC"]
+  },
+  {
+    "id": "shimano-xt-m8110",
+    "name": "Deore XT M8110 Hub Set",
+    "brand": "Shimano",
+    "category": "hub",
+    "price": 95,
+    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "36-tooth", "freehub": "Micro Spline" },
+    "tags": ["MTB", "Disc"]
+  },
+  {
+    "id": "industry-nine-1-1",
+    "name": "1/1 Hub Set",
+    "brand": "Industry Nine",
+    "category": "hub",
+    "price": 380,
+    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "690-point", "freehub": "XD / HG / Micro Spline" },
+    "tags": ["MTB", "Gravel", "Disc", "Instant Engagement"]
+  },
+  {
+    "id": "white-industries-t11",
+    "name": "T11 Hub Set",
+    "brand": "White Industries",
+    "category": "hub",
+    "price": 340,
+    "specs": { "axle": "QR 100/130mm", "brakeType": "rim", "engagement": "72-tooth", "freehub": "HG" },
+    "tags": ["Road", "Track", "Rim Brake"]
+  },
+  {
+    "id": "onyx-classic-disc",
+    "name": "Classic Hub Set",
+    "brand": "Onyx Racing",
+    "category": "hub",
+    "price": 460,
+    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "sprag-clutch", "freehub": "XD / HG / Micro Spline" },
+    "tags": ["MTB", "Gravel", "Disc", "Silent", "Instant Engagement"]
+  },
+  {
+    "id": "novatec-d711-disc",
+    "name": "D711SB / D712SB Hub Set",
+    "brand": "Novatec",
+    "category": "hub",
+    "price": 75,
+    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "4-pawl", "freehub": "HG" },
+    "tags": ["Road", "Gravel", "Budget"]
+  }
+]

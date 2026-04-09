@@ -1,0 +1,65 @@
+[
+  {
+    "id": "dt-swiss-competition",
+    "name": "Competition Spoke (each)",
+    "brand": "DT Swiss",
+    "category": "spokes",
+    "price": 1,
+    "specs": { "material": "steel", "type": "Double-butted", "width": "2.0/1.8mm" },
+    "tags": ["Road", "MTB", "Gravel", "Double-Butted", "Stainless"]
+  },
+  {
+    "id": "dt-swiss-aerolite",
+    "name": "Aerolite Spoke (each)",
+    "brand": "DT Swiss",
+    "category": "spokes",
+    "price": 3,
+    "specs": { "material": "steel", "type": "Bladed", "width": "0.9×2.3mm" },
+    "tags": ["Road", "Aero", "Bladed", "Lightweight"]
+  },
+  {
+    "id": "sapim-cx-ray",
+    "name": "CX-Ray Spoke (each)",
+    "brand": "Sapim",
+    "category": "spokes",
+    "price": 4,
+    "specs": { "material": "steel", "type": "Bladed", "width": "0.9×2.2mm" },
+    "tags": ["Road", "Aero", "Bladed", "Lightweight", "Premium"]
+  },
+  {
+    "id": "sapim-laser",
+    "name": "Laser Spoke (each)",
+    "brand": "Sapim",
+    "category": "spokes",
+    "price": 2,
+    "specs": { "material": "steel", "type": "Double-butted", "width": "2.0/1.5mm" },
+    "tags": ["Road", "Lightweight", "Double-Butted"]
+  },
+  {
+    "id": "pillar-wing-20",
+    "name": "Wing 20 Spoke (each)",
+    "brand": "Pillar",
+    "category": "spokes",
+    "price": 2,
+    "specs": { "material": "steel", "type": "Bladed", "width": "2.0×0.9mm" },
+    "tags": ["Road", "Aero", "Bladed", "Budget"]
+  },
+  {
+    "id": "wheelsmith-db",
+    "name": "DB14/15 Spoke (each)",
+    "brand": "Wheelsmith",
+    "category": "spokes",
+    "price": 1,
+    "specs": { "material": "steel", "type": "Double-butted", "width": "2.0/1.7mm" },
+    "tags": ["Road", "MTB", "Double-Butted", "Stainless"]
+  },
+  {
+    "id": "dt-swiss-revolution",
+    "name": "Revolution Spoke (each)",
+    "brand": "DT Swiss",
+    "category": "spokes",
+    "price": 1,
+    "specs": { "material": "steel", "type": "Extra-light butted", "width": "2.0/1.5mm" },
+    "tags": ["Road", "XC", "Lightweight"]
+  }
+]

@@ -2,6 +2,13 @@ import { useState } from 'react'
 import { Input } from '@/components/ui/Input'
 import { Button } from '@/components/ui/Button'
 import { useAuthStore } from '@/store/authStore'
+import styled from 'styled-components'
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+`
 
 interface SignupFormProps {
   onSuccess: () => void
@@ -19,10 +26,7 @@ export function SignupForm({ onSuccess, onSwitchMode }: SignupFormProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setError('')
-    if (password.length < 6) {
-      setError('Password must be at least 6 characters')
-      return
-    }
+    if (password.length < 6) { setError('Password must be at least 6 characters'); return }
     setLoading(true)
     try {
       await signup(email, password, displayName)
@@ -35,42 +39,20 @@ export function SignupForm({ onSuccess, onSwitchMode }: SignupFormProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-      <Input
-        label="Display name"
-        value={displayName}
-        onChange={(e) => setDisplayName(e.target.value)}
-        placeholder="Your name"
-        required
-      />
-      <Input
-        label="Email"
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="you@example.com"
-        required
-        autoComplete="email"
-      />
-      <Input
-        label="Password"
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        placeholder="Min 6 characters"
-        required
-        autoComplete="new-password"
-      />
-      {error && <p className="text-sm text-red-500">{error}</p>}
-      <Button type="submit" disabled={loading} className="w-full">
+    <Form onSubmit={handleSubmit}>
+      <Input label="Display name" value={displayName} onChange={(e) => setDisplayName(e.target.value)} placeholder="Your name" required />
+      <Input label="Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" required autoComplete="email" />
+      <Input label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Min 6 characters" required autoComplete="new-password" />
+      {error && <p style={{ fontSize: 12, color: '#c0392b' }}>{error}</p>}
+      <Button type="submit" disabled={loading} fullWidth>
         {loading ? 'Creating account…' : 'Create account'}
       </Button>
-      <p className="text-sm text-center text-text-muted">
+      <p style={{ fontSize: 12, textAlign: 'center' }}>
         Already have an account?{' '}
-        <button type="button" onClick={onSwitchMode} className="text-accent hover:underline">
+        <button type="button" onClick={onSwitchMode} style={{ background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline', fontSize: 12 }}>
           Sign in
         </button>
       </p>
-    </form>
+    </Form>
   )
 }

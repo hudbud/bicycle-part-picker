@@ -1,110 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@font-face {
+  font-family: 'ms_sans_serif';
+  src: url('/fonts/ms_sans_serif.woff2') format('woff2'),
+       url('/fonts/ms_sans_serif.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ms_sans_serif';
+  src: url('/fonts/ms_sans_serif_bold.woff2') format('woff2'),
+       url('/fonts/ms_sans_serif_bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
 
-/* ── Design Tokens: Light Mode ─────────────────────────────────── */
+/* Status colors (preserved for StatusBadge usage) */
 :root {
-  --bg-page:     #f5f5f5;
-  --bg-surface:  #ffffff;
-  --bg-subtle:   #f0f0f0;
-
-  --text-primary:   #1a1a2e;
-  --text-secondary: #4a5568;
-  --text-muted:     #a0aec0;
-
-  --accent-primary:   #e85d04;
-  --accent-secondary: #f48c06;
-
-  --border-default: #e2e8f0;
-  --border-strong:  #cbd5e0;
-
   --status-owned:     #22c55e;
   --status-purchased: #3b82f6;
   --status-wanted:    #a855f7;
   --status-partsbin:  #f59e0b;
 }
 
-/* ── Design Tokens: Dark Mode (default) ────────────────────────── */
-.dark {
-  --bg-page:     #0d1117;
-  --bg-surface:  #161b22;
-  --bg-subtle:   #1c2128;
-
-  --text-primary:   #e6edf3;
-  --text-secondary: #8b949e;
-  --text-muted:     #484f58;
-
-  --accent-primary:   #f97316;
-  --accent-secondary: #fb923c;
-
-  --border-default: #30363d;
-  --border-strong:  #484f58;
-
-  --status-owned:     #4ade80;
-  --status-purchased: #60a5fa;
-  --status-wanted:    #c084fc;
-  --status-partsbin:  #fbbf24;
-}
-
-/* ── Base resets ───────────────────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; }
-
-body {
-  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-  background-color: var(--bg-page);
-  color: var(--text-primary);
-  -webkit-font-smoothing: antialiased;
-}
-
-/* ── Reduced motion ────────────────────────────────────────────── */
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    transition-duration: 0.01ms !important;
-  }
-}
-
-/* ── Table header helper class ──────────────────────────────────── */
-.table-header {
-  font-size: 12px;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--text-secondary);
-}
-
-/* ── Animations ────────────────────────────────────────────────── */
-@keyframes modal-in {
-  from { opacity: 0; transform: scale(0.96); }
-  to   { opacity: 1; transform: scale(1); }
-}
-@keyframes slide-down {
-  from { opacity: 0; transform: translateY(-8px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes slide-up {
-  from { opacity: 0; transform: translateY(20px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-@keyframes slide-right {
-  from { opacity: 0; transform: translateX(-20px); }
-  to   { opacity: 1; transform: translateX(0); }
-}
-
-.animate-modal       { animation: modal-in 200ms ease forwards; }
-.animate-slide-down  { animation: slide-down 200ms ease forwards; }
-.animate-slide-up    { animation: slide-up 250ms ease forwards; }
-.animate-slide-right { animation: slide-right 250ms ease forwards; }
-
-/* ── Scrollbar (webkit) ─────────────────────────────────────────── */
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--border-strong); border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }
-
-/* ── Focus ring ─────────────────────────────────────────────────── */
-:focus-visible {
-  outline: 2px solid var(--accent-primary);
-  outline-offset: 2px;
-}

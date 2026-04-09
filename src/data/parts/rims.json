@@ -1,0 +1,92 @@
+[
+  {
+    "id": "dt-swiss-rr411",
+    "name": "RR411 Rim",
+    "brand": "DT Swiss",
+    "category": "rim",
+    "price": 85,
+    "specs": { "material": "aluminum", "rimWidth": "21mm internal", "rimDepth": "24mm", "brakeType": "disc" },
+    "tags": ["Road", "Aluminum", "Disc", "Tubeless"]
+  },
+  {
+    "id": "dt-swiss-gr531",
+    "name": "GR531 Rim",
+    "brand": "DT Swiss",
+    "category": "rim",
+    "price": 90,
+    "specs": { "material": "aluminum", "rimWidth": "25mm internal", "rimDepth": "25mm", "brakeType": "disc" },
+    "tags": ["Gravel", "Aluminum", "Disc", "Tubeless"]
+  },
+  {
+    "id": "velocity-a23",
+    "name": "A23 Rim",
+    "brand": "Velocity",
+    "category": "rim",
+    "price": 60,
+    "specs": { "material": "aluminum", "rimWidth": "23mm internal", "rimDepth": "23mm", "brakeType": "disc" },
+    "tags": ["Road", "Gravel", "Aluminum", "Budget"]
+  },
+  {
+    "id": "boyd-prologue-33",
+    "name": "Prologue 33 Rim",
+    "brand": "Boyd Cycling",
+    "category": "rim",
+    "price": 95,
+    "specs": { "material": "carbon", "rimWidth": "22mm internal", "rimDepth": "33mm", "brakeType": "disc" },
+    "tags": ["Road", "Carbon", "Aero", "Disc", "Tubeless"]
+  },
+  {
+    "id": "stans-arch-mk3",
+    "name": "Arch MK3 Rim",
+    "brand": "Stan's NoTubes",
+    "category": "rim",
+    "price": 80,
+    "specs": { "material": "aluminum", "rimWidth": "25mm internal", "rimDepth": "25mm", "brakeType": "disc" },
+    "tags": ["MTB", "Gravel", "Aluminum", "Tubeless"]
+  },
+  {
+    "id": "stans-flow-s1",
+    "name": "Flow S1 Rim",
+    "brand": "Stan's NoTubes",
+    "category": "rim",
+    "price": 90,
+    "specs": { "material": "aluminum", "rimWidth": "30mm internal", "rimDepth": "25mm", "brakeType": "disc" },
+    "tags": ["MTB", "Trail", "Aluminum", "Tubeless"]
+  },
+  {
+    "id": "enve-foundation-45",
+    "name": "Foundation 45 Rim",
+    "brand": "ENVE",
+    "category": "rim",
+    "price": 375,
+    "specs": { "material": "carbon", "rimWidth": "22mm internal", "rimDepth": "45mm", "brakeType": "disc" },
+    "tags": ["Road", "Carbon", "Aero", "Disc", "Tubeless"]
+  },
+  {
+    "id": "hunt-4season-gravel",
+    "name": "4Season Gravel Rim",
+    "brand": "Hunt",
+    "category": "rim",
+    "price": 110,
+    "specs": { "material": "carbon", "rimWidth": "25mm internal", "rimDepth": "32mm", "brakeType": "disc" },
+    "tags": ["Gravel", "Carbon", "Disc", "Tubeless"]
+  },
+  {
+    "id": "wtb-kom-i23",
+    "name": "KOM i23 TCS Rim",
+    "brand": "WTB",
+    "category": "rim",
+    "price": 55,
+    "specs": { "material": "aluminum", "rimWidth": "23mm internal", "rimDepth": "22mm", "brakeType": "disc" },
+    "tags": ["Road", "Gravel", "Aluminum", "Tubeless", "Budget"]
+  },
+  {
+    "id": "roval-control-sl-carbon",
+    "name": "Control SL Carbon Rim",
+    "brand": "Roval",
+    "category": "rim",
+    "price": 320,
+    "specs": { "material": "carbon", "rimWidth": "30mm internal", "rimDepth": "28mm", "brakeType": "disc" },
+    "tags": ["MTB", "XC", "Carbon", "Disc", "Tubeless"]
+  }
+]

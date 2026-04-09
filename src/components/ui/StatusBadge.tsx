@@ -5,18 +5,29 @@ interface StatusBadgeProps {
   className?: string
 }
 
-const STATUS_CONFIG: Record<PartStatus, { label: string; className: string }> = {
-  owned: { label: 'Owned', className: 'bg-green-500/20 text-status-owned border border-green-500/30' },
-  purchased: { label: 'Purchased', className: 'bg-blue-500/20 text-status-purchased border border-blue-500/30' },
-  partsbin: { label: 'In Parts Bin', className: 'bg-amber-500/20 text-status-partsbin border border-amber-500/30' },
-  wanted: { label: 'Wanted', className: 'bg-purple-500/20 text-status-wanted border border-purple-500/30' },
+const STATUS_CONFIG: Record<PartStatus, { label: string; color: string }> = {
+  owned:     { label: 'Owned',       color: 'var(--status-owned)' },
+  purchased: { label: 'Purchased',   color: 'var(--status-purchased)' },
+  partsbin:  { label: 'In Parts Bin', color: 'var(--status-partsbin)' },
+  wanted:    { label: 'Wanted',      color: 'var(--status-wanted)' },
 }
 
-export function StatusBadge({ status, className = '' }: StatusBadgeProps) {
+export function StatusBadge({ status, className }: StatusBadgeProps) {
   const config = STATUS_CONFIG[status]
   return (
     <span
-      className={`inline-flex items-center rounded-full px-2 py-0.5 text-xs font-medium ${config.className} ${className}`}
+      className={className}
+      style={{
+        display: 'inline-flex',
+        alignItems: 'center',
+        padding: '1px 6px',
+        fontSize: 11,
+        fontWeight: 700,
+        border: `2px solid ${config.color}`,
+        color: config.color,
+        background: 'transparent',
+        fontFamily: 'ms_sans_serif, sans-serif',
+      }}
       aria-label={`Status: ${config.label}`}
     >
       {config.label}

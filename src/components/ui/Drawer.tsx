@@ -1,4 +1,43 @@
 import { useEffect, type ReactNode } from 'react'
+import { Window, WindowHeader, WindowContent, Button } from 'react95'
+import styled from 'styled-components'
+
+const Backdrop = styled.div`
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.5);
+`
+
+const LeftPanel = styled(Window)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 280px;
+  z-index: 51;
+  display: flex;
+  flex-direction: column;
+`
+
+const BottomPanel = styled(Window)`
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 85vh;
+  z-index: 51;
+  display: flex;
+  flex-direction: column;
+`
+
+const StyledHeader = styled(WindowHeader)`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 4px;
+  flex-shrink: 0;
+`
 
 interface DrawerProps {
   open: boolean
@@ -24,36 +63,24 @@ export function Drawer({ open, onClose, title, children, side = 'left' }: Drawer
 
   if (!open) return null
 
-  const panelClass =
-    side === 'bottom'
-      ? 'fixed bottom-0 left-0 right-0 max-h-[85vh] rounded-t-2xl animate-slide-up'
-      : 'fixed top-0 left-0 h-full w-72 animate-slide-right'
+  const Panel = side === 'bottom' ? BottomPanel : LeftPanel
 
   return (
-    <div
-      className="fixed inset-0 z-50"
-      role="dialog"
-      aria-modal="true"
-      aria-label={title}
-    >
-      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
-      <div className={`relative bg-bg-surface border-border-default shadow-2xl flex flex-col z-10 ${panelClass}`}>
+    <>
+      <Backdrop onClick={onClose} aria-hidden="true" />
+      <Panel role="dialog" aria-modal="true" aria-label={title}>
         {title && (
-          <div className="flex items-center justify-between border-b border-border-default px-4 py-4">
-            <h2 className="font-medium text-text-primary">{title}</h2>
-            <button
-              onClick={onClose}
-              className="text-text-muted hover:text-text-primary transition-colors p-1 rounded"
-              aria-label="Close"
-            >
-              <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
+          <StyledHeader active>
+            <span>{title}</span>
+            <Button onClick={onClose}>
+              <span>✕</span>
+            </Button>
+          </StyledHeader>
         )}
-        <div className="overflow-y-auto flex-1">{children}</div>
-      </div>
-    </div>
+        <WindowContent style={{ overflow: 'auto', flex: 1 }}>
+          {children}
+        </WindowContent>
+      </Panel>
+    </>
   )
 }

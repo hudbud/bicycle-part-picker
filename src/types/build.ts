@@ -10,6 +10,14 @@ export interface ComponentSlot {
   status?: PartStatus
 }
 
+export interface AdditionalItem {
+  id: string
+  name: string
+  price?: number
+  notes?: string
+  url?: string
+}
+
 export interface Build {
   id?: string
   name: string
@@ -17,6 +25,9 @@ export interface Build {
   description?: string
   isPublic: boolean
   components: ComponentSlot[]
+  wheelsExpanded?: boolean
+  additionalItems?: AdditionalItem[]
+  photo?: string
   createdAt?: string
   updatedAt?: string
   ownerName?: string

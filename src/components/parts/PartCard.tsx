@@ -1,4 +1,23 @@
 import type { Part } from '@/types/parts'
+import styled from 'styled-components'
+
+const CardItem = styled.button`
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 12px;
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-family: inherit;
+  &:hover {
+    background: navy;
+    color: white;
+  }
+`
 
 interface PartCardProps {
   part: Part
@@ -8,44 +27,27 @@ interface PartCardProps {
 
 export function PartCard({ part, selected, onSelect }: PartCardProps) {
   return (
-    <button
-      onClick={() => onSelect(part)}
-      className={`w-full text-left px-4 py-3 flex items-start justify-between gap-3 transition-colors border-b border-border-default last:border-b-0 hover:bg-bg-subtle ${
-        selected ? 'bg-accent/10' : ''
-      }`}
-    >
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2">
-          <span className="font-medium text-sm text-text-primary truncate">{part.name}</span>
-          {selected && (
-            <svg className="w-4 h-4 text-accent flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-            </svg>
-          )}
+    <CardItem onClick={() => onSelect(part)} style={{ fontWeight: selected ? 700 : 400 }}>
+      <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
+          <span style={{ fontSize: 13, fontWeight: selected ? 700 : 400 }}>{part.name}</span>
+          {selected && <span style={{ fontSize: 12 }}>✓</span>}
         </div>
-        <p className="text-xs text-text-muted mt-0.5">{part.brand}</p>
+        <p style={{ fontSize: 11, marginTop: 2 }}>{part.brand}</p>
         {part.tags.length > 0 && (
-          <div className="flex flex-wrap gap-1 mt-1.5">
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: 4, marginTop: 4 }}>
             {part.tags.map((tag) => (
-              <span
-                key={tag}
-                className="inline-flex items-center rounded-full bg-bg-subtle px-2 py-0.5 text-xs text-text-muted border border-border-default"
-              >
-                {tag}
-              </span>
+              <span key={tag} style={{ fontSize: 10, border: '1px solid #888', padding: '0 4px' }}>{tag}</span>
             ))}
           </div>
         )}
       </div>
-      <div className="flex-shrink-0 text-right">
-        {part.price ? (
-          <span className="text-sm font-medium text-text-primary">
-            ${part.price.toLocaleString()}
-          </span>
-        ) : (
-          <span className="text-sm text-text-muted">—</span>
-        )}
+      <div style={{ flexShrink: 0, textAlign: 'right' }}>
+        {part.price
+          ? <span style={{ fontSize: 13, fontWeight: 700 }}>${part.price.toLocaleString()}</span>
+          : <span style={{ fontSize: 13 }}>—</span>
+        }
       </div>
-    </button>
+    </CardItem>
   )
 }

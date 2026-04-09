@@ -1,4 +1,22 @@
 import { forwardRef, type InputHTMLAttributes } from 'react'
+import { TextInput } from 'react95'
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`
+
+const Label = styled.label`
+  font-size: 12px;
+  font-weight: 700;
+`
+
+const ErrorText = styled.p`
+  font-size: 11px;
+  color: #c0392b;
+`
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
   label?: string
@@ -6,23 +24,20 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
 }
 
 export const Input = forwardRef<HTMLInputElement, InputProps>(
-  ({ label, error, className = '', id, ...props }, ref) => {
+  ({ label, error, id, style, ...props }, ref) => {
     const inputId = id ?? label?.toLowerCase().replace(/\s+/g, '-')
     return (
-      <div className="flex flex-col gap-1">
-        {label && (
-          <label htmlFor={inputId} className="text-sm font-medium text-text-secondary">
-            {label}
-          </label>
-        )}
-        <input
+      <Wrapper>
+        {label && <Label htmlFor={inputId}>{label}</Label>}
+        <TextInput
           ref={ref}
           id={inputId}
-          className={`w-full rounded-md border bg-bg-surface px-3 py-2 text-sm text-text-primary placeholder-text-muted outline-none transition-colors focus:border-accent ${error ? 'border-red-500' : 'border-border-default'} ${className}`}
-          {...props}
+          fullWidth
+          style={style}
+          {...(props as any)}
         />
-        {error && <p className="text-xs text-red-500">{error}</p>}
-      </div>
+        {error && <ErrorText>{error}</ErrorText>}
+      </Wrapper>
     )
   },
 )

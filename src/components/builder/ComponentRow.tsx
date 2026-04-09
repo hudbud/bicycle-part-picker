@@ -6,17 +6,20 @@ import { StatusBadge } from '@/components/ui/StatusBadge'
 import { Popover } from '@/components/ui/Popover'
 import { useBuildStore } from '@/store/buildStore'
 import { useToast } from '@/hooks/useToast'
+import { TableRow, TableDataCell, Button, MenuListItem } from 'react95'
 
 interface ComponentRowProps {
   slot: ComponentSlot
   label: string
   onClickRow: (category: PartCategory) => void
-  isEven: boolean
+  isSubRow?: boolean
+  onToggleExpand?: () => void
+  expanded?: boolean
 }
 
 const STATUSES: PartStatus[] = ['owned', 'purchased', 'partsbin', 'wanted']
 
-export function ComponentRow({ slot, label, onClickRow, isEven }: ComponentRowProps) {
+export function ComponentRow({ slot, label, onClickRow, isSubRow, onToggleExpand, expanded }: ComponentRowProps) {
   const { removePart, setPartStatus, clearPartStatus } = useBuildStore()
   const { success } = useToast()
   const [statusOpen, setStatusOpen] = useState(false)
@@ -33,29 +36,28 @@ export function ComponentRow({ slot, label, onClickRow, isEven }: ComponentRowPr
   }
 
   return (
-    <tr
-      className={`cursor-pointer transition-colors duration-150 hover:bg-accent/5 ${isEven ? 'bg-bg-subtle/40' : ''}`}
-      onClick={() => onClickRow(slot.category)}
-    >
-      <td className="px-4 py-3 text-sm font-medium text-text-secondary whitespace-nowrap w-40">
+    <TableRow onClick={() => onClickRow(slot.category)} style={{ cursor: 'pointer' }}>
+      <TableDataCell style={{ width: 140, fontSize: 12, fontWeight: 500, paddingLeft: isSubRow ? 20 : undefined }}>
+        {isSubRow && <span style={{ marginRight: 4, opacity: 0.5 }}>└</span>}
         {label}
-      </td>
-      <td className="px-4 py-3 min-w-0">
+      </TableDataCell>
+
+      <TableDataCell>
         {slot.part ? (
-          <div>
-            <span className="text-sm font-medium text-text-primary">{slot.part.brand} {slot.part.name}</span>
-            {slot.part.isCustom && (
-              <span className="ml-2 text-xs text-text-muted">(custom)</span>
-            )}
-          </div>
+          <span style={{ fontSize: 13, fontWeight: 700 }}>
+            {slot.part.brand} {slot.part.name}
+            {slot.part.isCustom && <span style={{ fontSize: 11, fontWeight: 400, marginLeft: 6 }}>(custom)</span>}
+          </span>
         ) : (
-          <span className="text-sm text-text-muted italic">Choose a part…</span>
+          <span style={{ fontSize: 12, fontStyle: 'italic' }}>Choose a part…</span>
         )}
-      </td>
-      <td className="px-4 py-3 text-sm font-medium text-text-primary whitespace-nowrap w-24 text-right">
-        {slot.part?.price ? `$${slot.part.price.toLocaleString()}` : <span className="text-text-muted">—</span>}
-      </td>
-      <td className="px-4 py-3 w-32" onClick={(e) => e.stopPropagation()}>
+      </TableDataCell>
+
+      <TableDataCell style={{ width: 90, textAlign: 'right', fontSize: 13, fontWeight: 700 }}>
+        {slot.part?.price ? `$${slot.part.price.toLocaleString()}` : '—'}
+      </TableDataCell>
+
+      <TableDataCell style={{ width: 120 }} onClick={(e) => e.stopPropagation()}>
         {slot.part && (
           <Popover
             open={statusOpen}
@@ -63,61 +65,71 @@ export function ComponentRow({ slot, label, onClickRow, isEven }: ComponentRowPr
             trigger={
               <button
                 onClick={(e) => { e.stopPropagation(); setStatusOpen(!statusOpen) }}
-                className="focus-visible:outline-none"
+                style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
               >
-                {slot.status ? (
-                  <StatusBadge status={slot.status} />
-                ) : (
-                  <span className="text-xs text-text-muted hover:text-text-secondary transition-colors">Set status</span>
-                )}
+                {slot.status
+                  ? <StatusBadge status={slot.status} />
+                  : <span style={{ fontSize: 11 }}>Set status▾</span>
+                }
               </button>
             }
           >
-            <div className="py-1">
+            <>
               {STATUSES.map((s) => (
-                <button
-                  key={s}
-                  onClick={() => handleStatusChange(s)}
-                  className="w-full text-left px-3 py-1.5 text-xs hover:bg-bg-subtle transition-colors"
-                >
+                <MenuListItem key={s} onClick={() => handleStatusChange(s)} size="sm">
                   <StatusBadge status={s} />
-                </button>
+                </MenuListItem>
               ))}
               {slot.status && (
-                <button
+                <MenuListItem
                   onClick={(e) => { e.stopPropagation(); clearPartStatus(slot.category); setStatusOpen(false) }}
-                  className="w-full text-left px-3 py-1.5 text-xs text-text-muted hover:bg-bg-subtle transition-colors border-t border-border-default mt-1"
+                  size="sm"
+                  style={{ borderTop: '1px solid #888' }}
                 >
                   Clear status
-                </button>
+                </MenuListItem>
               )}
-            </div>
+            </>
           </Popover>
         )}
-      </td>
-      <td className="px-4 py-3 w-12 text-right" onClick={(e) => e.stopPropagation()}>
-        {slot.part ? (
-          <button
-            onClick={handleRemove}
-            className="text-text-muted hover:text-red-500 transition-colors p-1 rounded"
-            aria-label={`Remove ${slot.part.name}`}
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
-        ) : (
-          <button
-            onClick={(e) => { e.stopPropagation(); onClickRow(slot.category) }}
-            className="text-accent hover:text-accent-hover transition-colors p-1 rounded"
-            aria-label={`Add ${label}`}
-          >
-            <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
-            </svg>
-          </button>
-        )}
-      </td>
-    </tr>
+      </TableDataCell>
+
+      <TableDataCell style={{ width: 80, textAlign: 'right' }} onClick={(e) => e.stopPropagation()}>
+        <div style={{ display: 'flex', gap: 2, justifyContent: 'flex-end' }}>
+          {onToggleExpand && (
+            <Button
+              variant="flat"
+              onClick={(e) => { e.stopPropagation(); onToggleExpand() }}
+              square
+              style={{ fontSize: 10 }}
+              title={expanded ? 'Collapse into Wheelset' : 'Expand into components'}
+            >
+              {expanded ? '▲' : '▼'}
+            </Button>
+          )}
+          {slot.part ? (
+            <Button
+              variant="flat"
+              onClick={handleRemove}
+              aria-label={`Remove ${slot.part.name}`}
+              square
+              style={{ fontSize: 11 }}
+            >
+              ✕
+            </Button>
+          ) : (
+            <Button
+              variant="flat"
+              onClick={(e) => { e.stopPropagation(); onClickRow(slot.category) }}
+              aria-label={`Add ${label}`}
+              square
+              style={{ fontSize: 14 }}
+            >
+              +
+            </Button>
+          )}
+        </div>
+      </TableDataCell>
+    </TableRow>
   )
 }

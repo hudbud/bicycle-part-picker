@@ -1,26 +1,37 @@
 import { forwardRef, type TextareaHTMLAttributes } from 'react'
+import { TextInput } from 'react95'
+import styled from 'styled-components'
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+`
+
+const Label = styled.label`
+  font-size: 12px;
+  font-weight: 700;
+`
 
 interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElement> {
   label?: string
 }
 
 export const Textarea = forwardRef<HTMLTextAreaElement, TextareaProps>(
-  ({ label, className = '', id, ...props }, ref) => {
+  ({ label, id, style, ...props }, ref) => {
     const textareaId = id ?? label?.toLowerCase().replace(/\s+/g, '-')
     return (
-      <div className="flex flex-col gap-1">
-        {label && (
-          <label htmlFor={textareaId} className="text-sm font-medium text-text-secondary">
-            {label}
-          </label>
-        )}
-        <textarea
-          ref={ref}
+      <Wrapper>
+        {label && <Label htmlFor={textareaId}>{label}</Label>}
+        <TextInput
+          multiline
+          ref={ref as any}
           id={textareaId}
-          className={`w-full rounded-md border border-border-default bg-bg-surface px-3 py-2 text-sm text-text-primary placeholder-text-muted outline-none transition-colors focus:border-accent resize-y ${className}`}
-          {...props}
+          fullWidth
+          style={style}
+          {...(props as any)}
         />
-      </div>
+      </Wrapper>
     )
   },
 )

@@ -2,6 +2,13 @@ import { useState } from 'react'
 import { Input } from '@/components/ui/Input'
 import { Button } from '@/components/ui/Button'
 import { useAuthStore } from '@/store/authStore'
+import styled from 'styled-components'
+
+const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+`
 
 interface LoginFormProps {
   onSuccess: () => void
@@ -30,35 +37,19 @@ export function LoginForm({ onSuccess, onSwitchMode }: LoginFormProps) {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-      <Input
-        label="Email"
-        type="email"
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        placeholder="you@example.com"
-        required
-        autoComplete="email"
-      />
-      <Input
-        label="Password"
-        type="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-        placeholder="••••••••"
-        required
-        autoComplete="current-password"
-      />
-      {error && <p className="text-sm text-red-500">{error}</p>}
-      <Button type="submit" disabled={loading} className="w-full">
+    <Form onSubmit={handleSubmit}>
+      <Input label="Email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} placeholder="you@example.com" required autoComplete="email" />
+      <Input label="Password" type="password" value={password} onChange={(e) => setPassword(e.target.value)} placeholder="••••••••" required autoComplete="current-password" />
+      {error && <p style={{ fontSize: 12, color: '#c0392b' }}>{error}</p>}
+      <Button type="submit" disabled={loading} fullWidth>
         {loading ? 'Signing in…' : 'Sign in'}
       </Button>
-      <p className="text-sm text-center text-text-muted">
+      <p style={{ fontSize: 12, textAlign: 'center' }}>
         No account?{' '}
-        <button type="button" onClick={onSwitchMode} className="text-accent hover:underline">
+        <button type="button" onClick={onSwitchMode} style={{ background: 'none', border: 'none', cursor: 'pointer', textDecoration: 'underline', fontSize: 12 }}>
           Create one
         </button>
       </p>
-    </form>
+    </Form>
   )
 }
