@@ -19,9 +19,9 @@ function TotalRow() {
     <Table style={{ width: '100%' }}>
       <TableBody>
         <TableRow style={{ background: '#d4d0c8' }}>
-          <TableDataCell colSpan={2} style={{ fontSize: 12, fontWeight: 700, padding: '6px 8px' }}>
+          <td colSpan={2} style={{ fontSize: 12, fontWeight: 700, padding: '6px 8px' }}>
             Total
-          </TableDataCell>
+          </td>
           <TableDataCell style={{ width: 90, textAlign: 'right', fontSize: 15, fontWeight: 700, padding: '6px 8px' }}>
             {approx ? '~' : ''}${total.toLocaleString()}
           </TableDataCell>

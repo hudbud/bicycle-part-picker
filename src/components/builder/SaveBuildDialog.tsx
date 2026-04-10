@@ -115,14 +115,14 @@ export function SaveBuildDialog({ open, onClose, onNeedAuth }: SaveBuildDialogPr
             <div style={{ display: 'flex', gap: 6 }}>
               <Button
                 size="sm"
-                variant="flat"
+                variant="secondary"
                 onClick={() => fileInputRef.current?.click()}
                 disabled={compressing}
               >
                 {compressing ? 'Processing…' : photo ? 'Change photo' : 'Add photo'}
               </Button>
               {photo && (
-                <Button size="sm" variant="flat" onClick={() => setLocalPhoto(undefined)}>
+                <Button size="sm" variant="secondary" onClick={() => setLocalPhoto(undefined)}>
                   Remove
                 </Button>
               )}

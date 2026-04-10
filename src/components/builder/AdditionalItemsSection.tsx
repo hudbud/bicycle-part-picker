@@ -25,7 +25,7 @@ function AdditionalItemRow({ item }: { item: AdditionalItem }) {
   if (editing) {
     return (
       <TableRow>
-        <TableDataCell colSpan={5}>
+        <td colSpan={5} style={{ padding: '4px 8px' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center' }}>
             <input
               value={name}
@@ -57,9 +57,9 @@ function AdditionalItemRow({ item }: { item: AdditionalItem }) {
               style={{ flex: '2 1 120px', fontFamily: 'inherit', fontSize: 12, padding: '2px 4px' }}
             />
             <Button size="sm" onClick={handleSave}>Save</Button>
-            <Button variant="flat" size="sm" onClick={() => setEditing(false)}>Cancel</Button>
+            <Button variant="secondary" size="sm" onClick={() => setEditing(false)}>Cancel</Button>
           </div>
-        </TableDataCell>
+        </td>
       </TableRow>
     )
   }
@@ -88,7 +88,7 @@ function AdditionalItemRow({ item }: { item: AdditionalItem }) {
       <TableDataCell style={{ width: 120 }} />
       <TableDataCell style={{ width: 80, textAlign: 'right' }} onClick={(e) => e.stopPropagation()}>
         <Button
-          variant="flat"
+          variant="secondary"
           square
           style={{ fontSize: 11 }}
           onClick={() => removeAdditionalItem(item.id)}
@@ -137,11 +137,11 @@ export function AdditionalItemsSection() {
     <Table style={{ width: '100%' }}>
       <TableBody>
         <TableRow style={{ background: '#d4d0c8' }}>
-          <TableDataCell colSpan={4} style={{ fontSize: 11, fontWeight: 700, padding: '4px 8px' }}>
+          <td colSpan={4} style={{ fontSize: 11, fontWeight: 700, padding: '4px 8px' }}>
             Extras &amp; Accessories
-          </TableDataCell>
+          </td>
           <TableDataCell style={{ width: 80, textAlign: 'right', padding: '4px 8px' }}>
-            <Button size="sm" variant="flat" onClick={() => setAdding(true)} style={{ fontSize: 11 }}>
+            <Button size="sm" variant="secondary" onClick={() => setAdding(true)} style={{ fontSize: 11 }}>
               + Add
             </Button>
           </TableDataCell>
@@ -153,7 +153,7 @@ export function AdditionalItemsSection() {
 
         {adding && (
           <TableRow>
-            <TableDataCell colSpan={5}>
+            <td colSpan={5} style={{ padding: '4px 8px' }}>
               <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, alignItems: 'center' }} onKeyDown={handleKeyDown}>
                 <input
                   value={newName}
@@ -185,17 +185,17 @@ export function AdditionalItemsSection() {
                   style={{ flex: '2 1 100px', fontFamily: 'inherit', fontSize: 12, padding: '2px 4px' }}
                 />
                 <Button size="sm" onClick={handleAdd}>Add</Button>
-                <Button variant="flat" size="sm" onClick={resetAdd}>Cancel</Button>
+                <Button variant="secondary" size="sm" onClick={resetAdd}>Cancel</Button>
               </div>
-            </TableDataCell>
+            </td>
           </TableRow>
         )}
 
         {items.length === 0 && !adding && (
           <TableRow>
-            <TableDataCell colSpan={5} style={{ fontSize: 11, fontStyle: 'italic', opacity: 0.6, paddingLeft: 16 }}>
+            <td colSpan={5} style={{ fontSize: 11, fontStyle: 'italic', opacity: 0.6, padding: '4px 8px 4px 16px' }}>
               Add stickers, lights, hoses, cages, or anything else…
-            </TableDataCell>
+            </td>
           </TableRow>
         )}
       </TableBody>

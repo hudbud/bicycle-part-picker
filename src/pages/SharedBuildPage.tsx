@@ -100,9 +100,9 @@ function SharedBuildView({ build }: { build: Build }) {
             {(build.additionalItems ?? []).length > 0 && (
               <>
                 <TableRow style={{ background: '#d4d0c8' }}>
-                  <TableDataCell colSpan={4} style={{ fontSize: 11, fontWeight: 700, padding: '4px 8px' }}>
+                  <td colSpan={4} style={{ fontSize: 11, fontWeight: 700, padding: '4px 8px' }}>
                     Extras &amp; Accessories
-                  </TableDataCell>
+                  </td>
                 </TableRow>
                 {build.additionalItems!.map((item) => (
                   <TableRow key={item.id}>
