@@ -1,0 +1,6 @@
+[
+  { "id": "fox-float-x2-factory", "name": "Float X2 Factory", "brand": "Fox Racing Shox", "category": "rearShock", "price": 799, "specs": { "travel": "65mm", "damper": "4-way adjustable" }, "tags": ["MTB", "Enduro"] },
+  { "id": "rockshox-super-deluxe-ultimate", "name": "Super Deluxe Ultimate", "brand": "RockShox", "category": "rearShock", "price": 649, "specs": { "travel": "57.5mm", "damper": "DebonAir+" }, "tags": ["MTB", "Trail"] },
+  { "id": "fox-dpx2-factory", "name": "Float DPX2 Factory", "brand": "Fox Racing Shox", "category": "rearShock", "price": 599, "specs": { "travel": "50mm", "damper": "EVOL" }, "tags": ["MTB", "Trail"] },
+  { "id": "cane-creek-dbcoil", "name": "DB Coil IL", "brand": "Cane Creek", "category": "rearShock", "price": 549, "specs": { "travel": "62.5mm", "damper": "twin-tube coil" }, "tags": ["MTB", "Enduro", "Downhill"] }
+]

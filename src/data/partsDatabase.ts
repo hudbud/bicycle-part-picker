@@ -17,6 +17,8 @@ import bottomBracketsData from './parts/bottomBrackets.json'
 import hubsData from './parts/hubs.json'
 import rimsData from './parts/rims.json'
 import spokesData from './parts/spokes.json'
+import sprocketsData from './parts/sprockets.json'
+import rearShocksData from './parts/rearShocks.json'
 
 export const ALL_PARTS: Part[] = [
   ...framesData,
@@ -36,6 +38,8 @@ export const ALL_PARTS: Part[] = [
   ...hubsData,
   ...rimsData,
   ...spokesData,
+  ...sprocketsData,
+  ...rearShocksData,
 ] as Part[]
 
 export const PARTS_BY_CATEGORY: Record<string, Part[]> = ALL_PARTS.reduce(

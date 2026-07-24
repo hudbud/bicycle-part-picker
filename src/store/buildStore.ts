@@ -1,8 +1,9 @@
 import { create } from 'zustand'
-import { persist } from 'zustand/middleware'
+import { persist, createJSONStorage } from 'zustand/middleware'
 import type { Build, BikeType, ComponentSlot, PartStatus, AdditionalItem } from '@/types/build'
 import type { Part, PartCategory } from '@/types/parts'
 import { getCategoriesForBikeType } from '@/data/categoryConfig'
+import { quotaSafeStorage } from '@/utils/persistStorage'
 
 const WHEEL_SUB_CATEGORIES: PartCategory[] = ['frontWheel', 'rearWheel', 'hub', 'rim', 'spokes']
 
@@ -10,7 +11,6 @@ function makeDefaultBuild(bikeType: BikeType = 'road'): Build {
   return {
     name: 'My Build',
     bikeType,
-    isPublic: false,
     components: getCategoriesForBikeType(bikeType).map((cat) => ({
       category: cat.id,
     })),
@@ -35,6 +35,7 @@ interface BuildState {
   getTotalPrice: () => number
   getFilledCount: () => number
   hasMissingPrices: () => boolean
+  hasUnsavedWork: () => boolean
 }
 
 export const useBuildStore = create<BuildState>()(
@@ -179,9 +180,17 @@ export const useBuildStore = create<BuildState>()(
           (s) => s.part !== undefined && s.part.price === undefined,
         )
       },
+
+      // True when the current build has parts but has never been saved to the garage —
+      // i.e. discarding it (New Build, Load Build, Open…) would lose work with no way to recover it.
+      hasUnsavedWork: () => {
+        const { build } = get()
+        return !build.id && build.components.some((s) => s.part !== undefined)
+      },
     }),
     {
       name: 'ppp-current-build',
+      storage: createJSONStorage(() => quotaSafeStorage),
     },
   ),
 )

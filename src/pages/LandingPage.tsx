@@ -1,7 +1,12 @@
-import { Link } from 'react-router-dom'
+import { useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { Footer } from '@/components/layout/Footer'
 import { BikeTypePill } from '@/components/ui/BikeTypePill'
+import { ConfirmDialog } from '@/components/ui/ConfirmDialog'
 import { EXAMPLE_BUILDS } from '@/data/exampleBuilds'
+import { useBuildStore } from '@/store/buildStore'
+import { encodeBuildForShare } from '@/utils/buildCodec'
+import type { Build } from '@/types/build'
 import { Window, WindowHeader, WindowContent, GroupBox, Button } from 'react95'
 import styled from 'styled-components'
 
@@ -47,6 +52,16 @@ const ExamplesWindow = styled(Window)`
 `
 
 export function LandingPage() {
+  const navigate = useNavigate()
+  const { loadBuild, hasUnsavedWork } = useBuildStore()
+  const [pendingBuild, setPendingBuild] = useState<Build | null>(null)
+
+  const handleUseBuild = (build: Build) => {
+    if (hasUnsavedWork()) { setPendingBuild(build); return }
+    loadBuild({ ...build, id: undefined, createdAt: undefined, updatedAt: undefined })
+    navigate('/build')
+  }
+
   return (
     <div>
       {/* Hero */}
@@ -91,6 +106,7 @@ export function LandingPage() {
           <ExampleGrid>
             {EXAMPLE_BUILDS.map((build) => {
               const total = build.components.reduce((s, c) => s + (c.part?.price ?? 0), 0)
+              const shareUrl = `/build/shared?b=${encodeBuildForShare(build)}`
               return (
                 <ExampleWindow key={build.id}>
                   <WindowHeader active={false} style={{ fontSize: 12 }}>
@@ -104,7 +120,15 @@ export function LandingPage() {
                     {build.description && (
                       <p style={{ fontSize: 12, lineHeight: 1.5 }}>{build.description}</p>
                     )}
-                    <p style={{ fontSize: 11, marginTop: 6 }}>{build.components.length} components</p>
+                    <p style={{ fontSize: 11, marginTop: 6, marginBottom: 10 }}>{build.components.length} components</p>
+                    <div style={{ display: 'flex', gap: 6 }}>
+                      <Link to={shareUrl} style={{ textDecoration: 'none', flex: 1 }}>
+                        <Button fullWidth style={{ fontSize: 11 }}>View build</Button>
+                      </Link>
+                      <Button fullWidth style={{ fontSize: 11, flex: 1 }} onClick={() => handleUseBuild(build)}>
+                        Use this build
+                      </Button>
+                    </div>
                   </WindowContent>
                 </ExampleWindow>
               )
@@ -114,6 +138,19 @@ export function LandingPage() {
       </ExamplesWindow>
 
       <Footer />
+
+      <ConfirmDialog
+        open={pendingBuild !== null}
+        title="Replace current build?"
+        message="You have unsaved changes to the current build. Starting from this example will replace them."
+        confirmLabel="Replace"
+        onConfirm={() => {
+          if (pendingBuild) loadBuild({ ...pendingBuild, id: undefined, createdAt: undefined, updatedAt: undefined })
+          setPendingBuild(null)
+          navigate('/build')
+        }}
+        onCancel={() => setPendingBuild(null)}
+      />
     </div>
   )
 }

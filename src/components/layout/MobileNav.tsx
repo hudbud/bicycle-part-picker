@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import { NavLink } from 'react-router-dom'
-import { Button, MenuList, MenuListItem, Separator } from 'react95'
+import { MenuList, MenuListItem, Button } from 'react95'
 import styled from 'styled-components'
-import { useAuthStore } from '@/store/authStore'
 import { Drawer } from '@/components/ui/Drawer'
 
 const NavItem = styled(MenuListItem)`
@@ -11,7 +10,6 @@ const NavItem = styled(MenuListItem)`
 
 export function MobileNav() {
   const [open, setOpen] = useState(false)
-  const { user, isAuthenticated, logout } = useAuthStore()
 
   const navLinks = [
     { to: '/',       label: 'Home' },
@@ -44,19 +42,6 @@ export function MobileNav() {
               )}
             </NavLink>
           ))}
-          <Separator />
-          {isAuthenticated ? (
-            <>
-              <NavItem size="md" disabled>{user?.displayName}</NavItem>
-              <NavItem size="md" onClick={() => { logout(); setOpen(false) }}>
-                Sign out
-              </NavItem>
-            </>
-          ) : (
-            <NavItem size="md" onClick={() => setOpen(false)}>
-              Sign in
-            </NavItem>
-          )}
         </MenuList>
       </Drawer>
     </>

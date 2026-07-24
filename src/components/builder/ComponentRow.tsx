@@ -20,14 +20,21 @@ interface ComponentRowProps {
 const STATUSES: PartStatus[] = ['owned', 'purchased', 'partsbin', 'wanted']
 
 export function ComponentRow({ slot, label, onClickRow, isSubRow, onToggleExpand, expanded }: ComponentRowProps) {
-  const { removePart, setPartStatus, clearPartStatus } = useBuildStore()
+  const { removePart, setPart, setPartStatus, clearPartStatus } = useBuildStore()
   const { success } = useToast()
   const [statusOpen, setStatusOpen] = useState(false)
 
   const handleRemove = (e: React.MouseEvent) => {
     e.stopPropagation()
+    const { part, status } = slot
     removePart(slot.category)
-    success('Part removed')
+    success('Part removed', part ? {
+      label: 'Undo',
+      onClick: () => {
+        setPart(slot.category, part)
+        if (status) setPartStatus(slot.category, status)
+      },
+    } : undefined)
   }
 
   const handleStatusChange = (status: PartStatus) => {
@@ -36,7 +43,16 @@ export function ComponentRow({ slot, label, onClickRow, isSubRow, onToggleExpand
   }
 
   return (
-    <TableRow onClick={() => onClickRow(slot.category)} style={{ cursor: 'pointer' }}>
+    <TableRow
+      onClick={() => onClickRow(slot.category)}
+      onKeyDown={(e) => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClickRow(slot.category) }
+      }}
+      tabIndex={0}
+      role="button"
+      aria-label={slot.part ? `${label}: ${slot.part.brand} ${slot.part.name}, change part` : `${label}: choose a part`}
+      style={{ cursor: 'pointer' }}
+    >
       <TableDataCell style={{ width: 140, fontSize: 12, fontWeight: 500, paddingLeft: isSubRow ? 20 : undefined }}>
         {isSubRow && <span style={{ marginRight: 4, opacity: 0.5 }}>└</span>}
         {label}
@@ -102,7 +118,8 @@ export function ComponentRow({ slot, label, onClickRow, isSubRow, onToggleExpand
               onClick={(e) => { e.stopPropagation(); onToggleExpand() }}
               square
               style={{ fontSize: 10 }}
-              title={expanded ? 'Collapse into Wheelset' : 'Expand into components'}
+              title={expanded ? 'Collapse into Wheelset' : 'Split into hub, rim & spokes'}
+              aria-label={expanded ? 'Collapse into single Wheelset row' : 'Split Wheelset into hub, rim & spokes'}
             >
               {expanded ? '▲' : '▼'}
             </Button>

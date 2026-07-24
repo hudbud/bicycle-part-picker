@@ -18,6 +18,7 @@ interface PartsBinState {
   removeItem: (id: string) => void
   getTotalValue: () => number
   getByCategory: (category: PartCategory) => BinItem[]
+  importItems: (items: BinItem[]) => number
 }
 
 export const usePartsBinStore = create<PartsBinState>()(
@@ -51,6 +52,15 @@ export const usePartsBinStore = create<PartsBinState>()(
 
       getByCategory: (category) =>
         get().items.filter((item) => item.part.category === category),
+
+      // Adds bin items from a backup file that aren't already present (by id) — never overwrites existing items.
+      importItems: (items) => {
+        const existingIds = new Set(get().items.map((i) => i.id))
+        const toAdd = items.filter((i) => !existingIds.has(i.id))
+        if (toAdd.length === 0) return 0
+        set((s) => ({ items: [...toAdd, ...s.items] }))
+        return toAdd.length
+      },
     }),
     {
       name: 'ppp-parts-bin',

@@ -1,10 +1,8 @@
 import { useState, useMemo } from 'react'
 import { usePartsBinStore } from '@/store/partsBinStore'
-import { useAuthStore } from '@/store/authStore'
 import { PartsBinTable } from '@/components/parts-bin/PartsBinTable'
 import { AddPartForm } from '@/components/parts-bin/AddPartForm'
 import { EmptyState } from '@/components/ui/EmptyState'
-import { AuthModal } from '@/components/auth/AuthModal'
 import { Button } from '@/components/ui/Button'
 import type { PartStatus } from '@/types/build'
 import { Window, WindowHeader, WindowContent, Toolbar, Button as R95Button } from 'react95'
@@ -34,34 +32,13 @@ function BoxIcon() {
 
 export function PartsPage() {
   const { items, getTotalValue } = usePartsBinStore()
-  const { isAuthenticated } = useAuthStore()
   const [showAdd, setShowAdd] = useState(false)
-  const [showAuth, setShowAuth] = useState(false)
   const [statusFilter, setStatusFilter] = useState<PartStatus | 'all'>('all')
 
   const filtered = useMemo(() => {
     if (statusFilter === 'all') return items
     return items.filter((i) => i.status === statusFilter)
   }, [items, statusFilter])
-
-  if (!isAuthenticated) {
-    return (
-      <>
-        <PageWindow>
-          <WindowHeader active><span>Parts Bin</span></WindowHeader>
-          <WindowContent>
-            <EmptyState
-              icon={<BoxIcon />}
-              heading="Sign in to view your Parts Bin"
-              subtext="Track parts you own, purchased, or want to buy."
-              action={{ label: 'Sign in', onClick: () => setShowAuth(true) }}
-            />
-          </WindowContent>
-        </PageWindow>
-        <AuthModal open={showAuth} onClose={() => setShowAuth(false)} />
-      </>
-    )
-  }
 
   return (
     <PageWindow>
