@@ -6,7 +6,6 @@ export const EXAMPLE_BUILDS: Build[] = [
     name: 'Dream Road Racer',
     bikeType: 'road',
     description: 'A full carbon road race build around the Trek Émonda platform. Shimano Dura-Ace Di2 throughout.',
-    isPublic: true,
     ownerName: 'PedalPicker',
     createdAt: '2026-03-01T10:00:00Z',
     components: [
@@ -25,7 +24,6 @@ export const EXAMPLE_BUILDS: Build[] = [
     name: 'Weekend Trail Shredder',
     bikeType: 'mtb',
     description: 'A capable trail MTB built around the Yeti SB130, ready for anything. SRAM Eagle throughout.',
-    isPublic: true,
     ownerName: 'DirtJumper',
     createdAt: '2026-02-15T14:00:00Z',
     components: [
@@ -43,7 +41,6 @@ export const EXAMPLE_BUILDS: Build[] = [
     name: 'Steel Gravel Adventure',
     bikeType: 'gravel',
     description: 'A go-anywhere gravel rig on a Surly Straggler. Built for bikepacking and long days in the saddle.',
-    isPublic: true,
     ownerName: 'GravelGrinder',
     createdAt: '2026-01-20T09:00:00Z',
     components: [

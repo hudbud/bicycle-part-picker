@@ -1,0 +1,6 @@
+[
+  { "id": "surly-16t-sprocket", "name": "Steel Track Sprocket 16T", "brand": "Surly", "category": "sprocket", "price": 25, "specs": { "material": "steel", "size": "16T" }, "tags": ["Track", "Fixed"] },
+  { "id": "all-city-track-cog", "name": "Track Cog 17T", "brand": "All-City", "category": "sprocket", "price": 22, "specs": { "material": "steel", "size": "17T" }, "tags": ["Track", "Fixed"] },
+  { "id": "odyssey-bmx-sprocket", "name": "Half Link Sprocket 25T", "brand": "Odyssey", "category": "sprocket", "price": 35, "specs": { "material": "aluminum", "size": "25T" }, "tags": ["BMX"] },
+  { "id": "salt-bmx-sprocket", "name": "Pro Sprocket 28T", "brand": "Salt", "category": "sprocket", "price": 29, "specs": { "material": "aluminum", "size": "28T" }, "tags": ["BMX"] }
+]

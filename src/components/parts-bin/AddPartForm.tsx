@@ -9,6 +9,19 @@ import { Input } from '@/components/ui/Input'
 import { Select } from '@/components/ui/Select'
 import { Textarea } from '@/components/ui/Textarea'
 import { Button } from '@/components/ui/Button'
+import styled from 'styled-components'
+
+const FormBody = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+`
+
+const Grid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+`
 
 const CATEGORIES: { value: PartCategory; label: string }[] = [
   { value: 'frame', label: 'Frame' },
@@ -51,12 +64,13 @@ export function AddPartForm({ open, onClose }: AddPartFormProps) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
+    const parsedPrice = price ? parseFloat(price) : undefined
     const part: Part = {
       id: `custom-${crypto.randomUUID()}`,
       name,
       brand,
       category,
-      price: price ? parseFloat(price) : undefined,
+      price: parsedPrice !== undefined && parsedPrice >= 0 ? parsedPrice : undefined,
       specs: {},
       tags: [],
       isCustom: true,
@@ -68,39 +82,42 @@ export function AddPartForm({ open, onClose }: AddPartFormProps) {
   }
 
   return (
-    <Modal open={open} onClose={onClose} title="Add Part to Bin" className="max-w-md w-full">
-      <form onSubmit={handleSubmit} className="p-6 space-y-4">
-        <Input label="Part name" value={name} onChange={(e) => setName(e.target.value)} required />
-        <Input label="Brand" value={brand} onChange={(e) => setBrand(e.target.value)} required />
-        <div className="grid grid-cols-2 gap-3">
-          <Select
-            label="Category"
-            value={category}
-            onChange={(e) => setCategory(e.target.value as PartCategory)}
-            options={CATEGORIES}
+    <Modal open={open} onClose={onClose} title="Add Part to Bin" style={{ maxWidth: 440, width: '100%' }}>
+      <form onSubmit={handleSubmit}>
+        <FormBody>
+          <Input label="Part name" value={name} onChange={(e) => setName(e.target.value)} required />
+          <Input label="Brand" value={brand} onChange={(e) => setBrand(e.target.value)} required />
+          <Grid>
+            <Select
+              label="Category"
+              value={category}
+              onChange={(e) => setCategory(e.target.value as PartCategory)}
+              options={CATEGORIES}
+            />
+            <Select
+              label="Status"
+              value={status}
+              onChange={(e) => setStatus(e.target.value as PartStatus)}
+              options={STATUSES}
+            />
+          </Grid>
+          <Input
+            label="Price (optional)"
+            type="number"
+            min="0"
+            value={price}
+            onChange={(e) => setPrice(e.target.value)}
+            placeholder="0.00"
           />
-          <Select
-            label="Status"
-            value={status}
-            onChange={(e) => setStatus(e.target.value as PartStatus)}
-            options={STATUSES}
+          <Textarea
+            label="Notes (optional)"
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
+            placeholder="Any notes about this part…"
+            rows={2}
           />
-        </div>
-        <Input
-          label="Price (optional)"
-          type="number"
-          value={price}
-          onChange={(e) => setPrice(e.target.value)}
-          placeholder="0.00"
-        />
-        <Textarea
-          label="Notes (optional)"
-          value={notes}
-          onChange={(e) => setNotes(e.target.value)}
-          placeholder="Any notes about this part…"
-          rows={2}
-        />
-        <Button type="submit" className="w-full">Add to Parts Bin</Button>
+          <Button type="submit" fullWidth>Add to Parts Bin</Button>
+        </FormBody>
       </form>
     </Modal>
   )

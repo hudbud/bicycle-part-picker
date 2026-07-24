@@ -5,22 +5,15 @@ import { Textarea } from '@/components/ui/Textarea'
 import { Button } from '@/components/ui/Button'
 import { useBuildStore } from '@/store/buildStore'
 import { useGarageStore } from '@/store/garageStore'
-import { useAuthStore } from '@/store/authStore'
+import { useSettingsStore } from '@/store/settingsStore'
 import { useToast } from '@/hooks/useToast'
 import { compressImage } from '@/utils/imageUtils'
-import { Radio } from 'react95'
 import styled from 'styled-components'
 
 const FormBody = styled.div`
   display: flex;
   flex-direction: column;
   gap: 12px;
-`
-
-const VisibilityRow = styled.div`
-  display: flex;
-  gap: 16px;
-  align-items: center;
 `
 
 const PhotoPreview = styled.img`
@@ -42,19 +35,17 @@ const PhotoArea = styled.div`
 interface SaveBuildDialogProps {
   open: boolean
   onClose: () => void
-  onNeedAuth: () => void
 }
 
-export function SaveBuildDialog({ open, onClose, onNeedAuth }: SaveBuildDialogProps) {
+export function SaveBuildDialog({ open, onClose }: SaveBuildDialogProps) {
   const { build, setBuildName, loadBuild, setPhoto } = useBuildStore()
   const { saveBuild } = useGarageStore()
-  const { isAuthenticated, user } = useAuthStore()
+  const { builderName, setBuilderName } = useSettingsStore()
   const { success, error } = useToast()
   const fileInputRef = useRef<HTMLInputElement>(null)
 
   const [name, setName] = useState(build.name)
   const [description, setDescription] = useState(build.description ?? '')
-  const [isPublic, setIsPublic] = useState(build.isPublic)
   const [photo, setLocalPhoto] = useState<string | undefined>(build.photo)
   const [compressing, setCompressing] = useState(false)
 
@@ -62,7 +53,6 @@ export function SaveBuildDialog({ open, onClose, onNeedAuth }: SaveBuildDialogPr
     if (open) {
       setName(build.name)
       setDescription(build.description ?? '')
-      setIsPublic(build.isPublic)
       setLocalPhoto(build.photo)
     }
   }, [open, build])
@@ -83,10 +73,9 @@ export function SaveBuildDialog({ open, onClose, onNeedAuth }: SaveBuildDialogPr
   }
 
   const handleSave = () => {
-    if (!isAuthenticated) { onClose(); onNeedAuth(); return }
     setBuildName(name)
     setPhoto(photo)
-    const saved = saveBuild({ ...build, name, description, isPublic, ownerName: user?.displayName, photo })
+    const saved = saveBuild({ ...build, name, description, ownerName: builderName || undefined, photo })
     loadBuild(saved)
     success('Build saved!')
     onClose()
@@ -137,25 +126,12 @@ export function SaveBuildDialog({ open, onClose, onNeedAuth }: SaveBuildDialogPr
           </PhotoArea>
         </div>
 
-        <div>
-          <label style={{ fontSize: 12, fontWeight: 700, display: 'block', marginBottom: 6 }}>Visibility</label>
-          <VisibilityRow>
-            <Radio
-              checked={isPublic}
-              onChange={() => setIsPublic(true)}
-              label="Public"
-              value="public"
-              name="visibility"
-            />
-            <Radio
-              checked={!isPublic}
-              onChange={() => setIsPublic(false)}
-              label="Private"
-              value="private"
-              name="visibility"
-            />
-          </VisibilityRow>
-        </div>
+        <Input
+          label="Your name (optional, shown on shared builds)"
+          value={builderName}
+          onChange={(e) => setBuilderName(e.target.value)}
+          placeholder="e.g. Jane"
+        />
         <Button onClick={handleSave} fullWidth>Save build</Button>
       </FormBody>
     </Modal>

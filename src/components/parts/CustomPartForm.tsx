@@ -2,6 +2,7 @@ import { useState } from 'react'
 import type { Part, PartCategory } from '@/types/parts'
 import { Input } from '@/components/ui/Input'
 import { Button } from '@/components/ui/Button'
+import { useCustomPartsStore } from '@/store/customPartsStore'
 import { GroupBox } from 'react95'
 import styled from 'styled-components'
 
@@ -23,6 +24,7 @@ interface CustomPartFormProps {
 }
 
 export function CustomPartForm({ category, onAdd }: CustomPartFormProps) {
+  const addCustomPart = useCustomPartsStore((s) => s.addPart)
   const [open, setOpen] = useState(false)
   const [name, setName] = useState('')
   const [brand, setBrand] = useState('')
@@ -32,14 +34,16 @@ export function CustomPartForm({ category, onAdd }: CustomPartFormProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     if (!name || !brand) return
+    const parsedPrice = price ? parseFloat(price) : undefined
     const part: Part = {
       id: `custom-${crypto.randomUUID()}`,
       name, brand, category,
-      price: price ? parseFloat(price) : undefined,
+      price: parsedPrice !== undefined && parsedPrice >= 0 ? parsedPrice : undefined,
       specs: {}, tags: ['Custom'],
       url: url || undefined,
       isCustom: true,
     }
+    addCustomPart(part)
     onAdd(part)
   }
 

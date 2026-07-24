@@ -23,7 +23,6 @@ export interface Build {
   name: string
   bikeType: BikeType
   description?: string
-  isPublic: boolean
   components: ComponentSlot[]
   wheelsExpanded?: boolean
   additionalItems?: AdditionalItem[]

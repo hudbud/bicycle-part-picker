@@ -26,8 +26,11 @@ interface PartCardProps {
 }
 
 export function PartCard({ part, selected, onSelect }: PartCardProps) {
+  const priceLabel = part.price ? `, $${part.price.toLocaleString()}` : ''
+  const label = `${part.brand} ${part.name}${priceLabel}${selected ? ' (selected)' : ''}`
+
   return (
-    <CardItem onClick={() => onSelect(part)} style={{ fontWeight: selected ? 700 : 400 }}>
+    <CardItem onClick={() => onSelect(part)} aria-label={label} aria-pressed={selected} style={{ fontWeight: selected ? 700 : 400 }}>
       <div style={{ flex: 1, minWidth: 0 }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
           <span style={{ fontSize: 13, fontWeight: selected ? 700 : 400 }}>{part.name}</span>

@@ -44,6 +44,14 @@ function ToastItem({ toast }: { toast: ToastType }) {
         {icons[toast.type]}
       </span>
       <span style={{ flex: 1, fontSize: 12 }}>{toast.message}</span>
+      {toast.action && (
+        <Button
+          onClick={() => { toast.action!.onClick(); dismiss(toast.id) }}
+          style={{ padding: '0 6px', minWidth: 0, flexShrink: 0, fontSize: 12 }}
+        >
+          {toast.action.label}
+        </Button>
+      )}
       <Button
         onClick={() => dismiss(toast.id)}
         style={{ padding: '0 6px', minWidth: 0, flexShrink: 0 }}

@@ -1,12 +1,15 @@
+import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import type { Build } from '@/types/build'
 import { BikeTypePill } from '@/components/ui/BikeTypePill'
 import { Button } from '@/components/ui/Button'
+import { ConfirmDialog } from '@/components/ui/ConfirmDialog'
 import { DeleteConfirm } from './DeleteConfirm'
 import { useBuildStore } from '@/store/buildStore'
 import { useGarageStore } from '@/store/garageStore'
 import { useToast } from '@/hooks/useToast'
 import { getCategoriesForBikeType } from '@/data/categoryConfig'
+import { encodeBuildForShare } from '@/utils/buildCodec'
 import { Window, WindowHeader, WindowContent } from 'react95'
 import styled from 'styled-components'
 
@@ -35,9 +38,10 @@ interface BuildCardProps {
 
 export function BuildCard({ build }: BuildCardProps) {
   const navigate = useNavigate()
-  const { loadBuild } = useBuildStore()
+  const { loadBuild, hasUnsavedWork } = useBuildStore()
   const { deleteBuild, saveBuild } = useGarageStore()
   const { success } = useToast()
+  const [confirmLoad, setConfirmLoad] = useState(false)
 
   const totalCategories = getCategoriesForBikeType(build.bikeType).length
   const filled = build.components.filter((s) => s.part).length
@@ -45,9 +49,22 @@ export function BuildCard({ build }: BuildCardProps) {
   const total = build.components.reduce((s, slot) => s + (slot.part?.price ?? 0), 0)
     + (build.additionalItems ?? []).reduce((s, item) => s + (item.price ?? 0), 0)
 
-  const handleLoad = () => { loadBuild(build); navigate('/build') }
-  const handleDuplicate = () => { saveBuild({ ...build, id: undefined, name: `Copy of ${build.name}`, createdAt: undefined }); success('Build duplicated') }
-  const handleShare = async () => { await navigator.clipboard.writeText(`${window.location.origin}/build/${build.id}`).catch(() => {}); success('Link copied!') }
+  const handleLoad = () => {
+    if (hasUnsavedWork()) { setConfirmLoad(true); return }
+    loadBuild(build)
+    navigate('/build')
+  }
+  const handleDuplicate = () => {
+    const copy = saveBuild({ ...build, id: undefined, name: `Copy of ${build.name}`, createdAt: undefined })
+    loadBuild(copy)
+    navigate('/build')
+    success('Build duplicated')
+  }
+  const handleShare = async () => {
+    const url = `${window.location.origin}/build/shared?b=${encodeBuildForShare(build)}`
+    await navigator.clipboard.writeText(url).catch(() => {})
+    success(build.photo ? 'Link copied! (photo not included)' : 'Link copied!')
+  }
 
   const updatedAt = build.updatedAt
     ? new Intl.RelativeTimeFormat('en', { numeric: 'auto' }).format(Math.round((new Date(build.updatedAt).getTime() - Date.now()) / 86400000), 'day')
@@ -77,6 +94,15 @@ export function BuildCard({ build }: BuildCardProps) {
           <DeleteConfirm onConfirm={() => deleteBuild(build.id!)} />
         </Actions>
       </WindowContent>
+
+      <ConfirmDialog
+        open={confirmLoad}
+        title="Replace current build?"
+        message="You have unsaved changes to the current build. Loading this one will replace them."
+        confirmLabel="Replace"
+        onConfirm={() => { loadBuild(build); navigate('/build'); setConfirmLoad(false) }}
+        onCancel={() => setConfirmLoad(false)}
+      />
     </Card>
   )
 }

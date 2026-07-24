@@ -2,8 +2,11 @@ import { useRef, useState } from 'react'
 import type { BikeType } from '@/types/build'
 import { useBuildStore } from '@/store/buildStore'
 import { getCategoriesForBikeType } from '@/data/categoryConfig'
+import { BuildProgress } from '@/components/ui/BuildProgress'
 import { Button, GroupBox, TextInput } from 'react95'
 import styled from 'styled-components'
+
+const MAX_BUILD_NAME_LENGTH = 80
 
 const BIKE_TYPES: { value: BikeType; label: string }[] = [
   { value: 'road',   label: 'Road' },
@@ -26,6 +29,11 @@ const BikeTypeRow = styled.div`
   flex-wrap: wrap;
   gap: 4px;
   margin-bottom: 4px;
+`
+
+const ProgressRow = styled.div`
+  margin-bottom: 4px;
+  max-width: 320px;
 `
 
 const BuildName = styled.button`
@@ -64,7 +72,7 @@ export function BuildHeader() {
   const currentLabel = BIKE_TYPES.find((b) => b.value === build.bikeType)?.label ?? build.bikeType
 
   const commitName = () => {
-    const trimmed = nameValue.trim()
+    const trimmed = nameValue.trim().slice(0, MAX_BUILD_NAME_LENGTH)
     if (trimmed) setBuildName(trimmed)
     else setNameValue(build.name)
     setEditing(false)
@@ -88,6 +96,7 @@ export function BuildHeader() {
               if (e.key === 'Enter') commitName()
               if (e.key === 'Escape') { setNameValue(build.name); setEditing(false) }
             }}
+            maxLength={MAX_BUILD_NAME_LENGTH}
             autoFocus
           />
         ) : (
@@ -100,12 +109,13 @@ export function BuildHeader() {
             {currentLabel} ▾
           </BikeTypeChip>
         )}
-        {hasParts && !typePickerOpen && (
-          <span style={{ fontSize: 11, opacity: 0.5 }}>
-            {filled} of {totalCategories}
-          </span>
-        )}
       </NameRow>
+
+      {hasParts && !typePickerOpen && (
+        <ProgressRow>
+          <BuildProgress filled={filled} total={totalCategories} />
+        </ProgressRow>
+      )}
 
       {(!hasParts || typePickerOpen) && (
         <BikeTypeRow>

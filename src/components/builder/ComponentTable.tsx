@@ -71,6 +71,8 @@ export function ComponentTable() {
                 slot={slot}
                 label={label}
                 onClickRow={setActiveCategory}
+                onToggleExpand={slot.category === 'wheels' ? toggleWheelsExpanded : undefined}
+                expanded={slot.category === 'wheels' ? build.wheelsExpanded : undefined}
               />
             )
           })}

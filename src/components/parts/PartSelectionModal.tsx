@@ -1,6 +1,7 @@
 import { useState, useMemo } from 'react'
 import type { Part, PartCategory } from '@/types/parts'
 import { getPartsByCategory } from '@/data/partsDatabase'
+import { useCustomPartsStore } from '@/store/customPartsStore'
 import { Modal } from '@/components/ui/Modal'
 import { Drawer } from '@/components/ui/Drawer'
 import { PartSearch } from './PartSearch'
@@ -37,8 +38,12 @@ export function PartSelectionModal({ open, onClose, category, categoryLabel, sel
   const isMobile = useIsMobile()
   const [query, setQuery] = useState('')
   const [filters, setFilters] = useState<PartFiltersState>({ materials: [], brands: [] })
+  const customParts = useCustomPartsStore((s) => s.parts)
 
-  const allParts = useMemo(() => getPartsByCategory(category), [category])
+  const allParts = useMemo(
+    () => [...getPartsByCategory(category), ...customParts.filter((p) => p.category === category)],
+    [category, customParts],
+  )
   const availableBrands = useMemo(() => [...new Set(allParts.map((p) => p.brand))].sort(), [allParts])
 
   const filtered = useMemo(() => {

@@ -3,6 +3,7 @@ import { useMemo } from 'react'
 import type { Build } from '@/types/build'
 import type { PartCategory } from '@/types/parts'
 import { useGarageStore } from '@/store/garageStore'
+import { decodeSharedBuild } from '@/utils/buildCodec'
 import { BikeTypePill } from '@/components/ui/BikeTypePill'
 import { StatusBadge } from '@/components/ui/StatusBadge'
 import { getCategoriesForBikeType } from '@/data/categoryConfig'
@@ -149,10 +150,7 @@ export function SharedBuildPage() {
   const build = useMemo<Build | null>(() => {
     if (buildId && buildId !== 'shared') return getBuildById(buildId) ?? null
     const b = searchParams.get('b')
-    if (b) {
-      try { return JSON.parse(decodeURIComponent(atob(b))) as Build } catch { return null }
-    }
-    return null
+    return b ? decodeSharedBuild(b) : null
   }, [buildId, searchParams, getBuildById])
 
   if (!build) {
