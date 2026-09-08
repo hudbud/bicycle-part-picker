@@ -1,5 +1,5 @@
 import { useBuildStore } from '@/store/buildStore'
-import { getCategoriesForBikeType } from '@/data/categoryConfig'
+import { getCategoryLabel } from '@/data/categoryConfig'
 import { sanitizeFilename } from '@/utils/backup'
 import type { PartCategory } from '@/types/parts'
 
@@ -15,12 +15,10 @@ export function useBuildExport() {
   const { build, getTotalPrice } = useBuildStore()
 
   const getLabel = (category: PartCategory) =>
-    getCategoriesForBikeType(build.bikeType).find((c) => c.id === category)?.label
-      ?? WHEEL_SUB_LABELS[category]
-      ?? category
+    getCategoryLabel(category) ?? WHEEL_SUB_LABELS[category] ?? category
 
   const exportText = () => {
-    const lines = [`${build.name} — ${build.bikeType.toUpperCase()}`, '']
+    const lines = [build.name, '']
     for (const slot of build.components) {
       if (slot.part) {
         const price = slot.part.price ? `$${slot.part.price.toLocaleString()}` : '—'

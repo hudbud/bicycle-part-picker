@@ -67,7 +67,7 @@ export function ComponentRowMobile({ slot, label, onClickRow, onToggleExpand, ex
               <span style={{ fontSize: 13, fontWeight: 700 }}>{slot.part.brand} {slot.part.name}</span>
             </div>
           ) : (
-            <span style={{ fontSize: 12, fontStyle: 'italic' }}>Tap to choose a part…</span>
+            <span style={{ fontSize: 12, fontStyle: 'italic' }}>Tap to add a part…</span>
           )}
         </div>
       </TopArea>

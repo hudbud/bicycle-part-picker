@@ -52,19 +52,25 @@ export function AboutPage() {
     <PageWindow>
       <WindowHeader active><span>About Pedal Parts Picker</span></WindowHeader>
       <WindowContent>
-        <p style={{ fontSize: 11, marginBottom: 16 }}>The definitive tool for planning a custom bicycle build.</p>
+        <p style={{ fontSize: 11, marginBottom: 16 }}>A sandbox for planning a custom bicycle build.</p>
 
         <Section label="What is Pedal Parts Picker?">
-          <Body>Pedal Parts Picker is a structured, component-by-component bike build planner — like PCPartPicker.com, but for cyclists. We built it because planning a custom bike is hard. Parts live across a dozen browser tabs, forum threads, and spreadsheets.</Body>
-          <Body>The core loop is simple: pick a category → search and browse parts → add to your build → see your full spec with live pricing. No account required to build and share.</Body>
+          <Body>
+            Pedal Parts Picker is a component-by-component bike build planner — like PCPartPicker, but for cyclists.
+            Parts live across a dozen browser tabs, forum threads, and spreadsheets; this gives you one place to put them together.
+          </Body>
+          <Body>
+            The core loop is simple: open a category → add a part name, brand, price, and link → see your full spec with live pricing.
+            No account required to build and share.
+          </Body>
         </Section>
 
         <Section label="How it works">
           <Steps>
             {[
-              'Choose your bike type (Road, MTB, Gravel, Track, BMX)',
-              'Browse and select parts for each component category',
-              'Track part status — owned, purchased, wanted, or in your parts bin',
+              'Open the builder and name your build',
+              'Click any component row and enter a part name, brand, price, and URL',
+              'Optionally pick a match from the catalog as you type',
               'See your total cost update in real time',
               'Share your build with a single link — no login required to view',
             ].map((text, i) => (
@@ -93,8 +99,8 @@ export function AboutPage() {
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'underline' }}>GitHub</a>.
           </Body>
           <Body>
-            Questions? Reach us at{' '}
-            <a href="mailto:hello@pedalpartspicker.com" style={{ textDecoration: 'underline' }}>hello@pedalpartspicker.com</a>
+            Questions? Reach out at{' '}
+            <a href="mailto:hudbud@gmail.com" style={{ textDecoration: 'underline' }}>hudbud@gmail.com</a>
           </Body>
         </Section>
 

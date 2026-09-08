@@ -1,31 +1,18 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { Footer } from '@/components/layout/Footer'
 import { BikeTypePill } from '@/components/ui/BikeTypePill'
 import { ConfirmDialog } from '@/components/ui/ConfirmDialog'
 import { EXAMPLE_BUILDS } from '@/data/exampleBuilds'
 import { useBuildStore } from '@/store/buildStore'
 import { encodeBuildForShare } from '@/utils/buildCodec'
 import type { Build } from '@/types/build'
-import { Window, WindowHeader, WindowContent, GroupBox, Button } from 'react95'
+import { Window, WindowHeader, WindowContent, Button } from 'react95'
 import styled from 'styled-components'
 
 const HeroWindow = styled(Window)`
   width: 100%;
   max-width: 640px;
   margin: 0 auto 16px;
-`
-
-const HowItWorksWindow = styled(Window)`
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto 16px;
-`
-
-const StepsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 12px;
 `
 
 const ExampleGrid = styled.div`
@@ -64,7 +51,6 @@ export function LandingPage() {
 
   return (
     <div>
-      {/* Hero */}
       <HeroWindow>
         <WindowHeader active><span>Welcome to Pedal Parts Picker</span></WindowHeader>
         <WindowContent style={{ textAlign: 'center', padding: 32 }}>
@@ -72,8 +58,8 @@ export function LandingPage() {
             Build your perfect bike.
           </p>
           <p style={{ fontSize: 14, marginBottom: 24, lineHeight: 1.6 }}>
-            Plan your dream build component by component.<br />
-            Compare prices, check specs, and share with one link.
+            A sandbox for planning any bike build — add the parts you want,<br />
+            track prices, and share with one link.
           </p>
           <Link to="/build" style={{ textDecoration: 'none' }}>
             <Button size="lg" style={{ fontSize: 14 }}>Start Building →</Button>
@@ -81,25 +67,6 @@ export function LandingPage() {
         </WindowContent>
       </HeroWindow>
 
-      {/* How it works */}
-      <HowItWorksWindow>
-        <WindowHeader active><span>How it works</span></WindowHeader>
-        <WindowContent>
-          <StepsGrid>
-            {[
-              { n: 1, title: 'Pick your components', desc: 'Browse a curated database of real parts across every category — frames, wheels, drivetrain, and more.' },
-              { n: 2, title: 'Track price and status', desc: 'See your total cost update in real time. Mark parts as owned, purchased, or on your wishlist.' },
-              { n: 3, title: 'Share with one link', desc: 'Generate a shareable URL for your complete build spec — no account required to view.' },
-            ].map(({ n, title, desc }) => (
-              <GroupBox key={n} label={`${n}. ${title}`}>
-                <p style={{ fontSize: 12, lineHeight: 1.6 }}>{desc}</p>
-              </GroupBox>
-            ))}
-          </StepsGrid>
-        </WindowContent>
-      </HowItWorksWindow>
-
-      {/* Example builds */}
       <ExamplesWindow>
         <WindowHeader active><span>Example Builds</span></WindowHeader>
         <WindowContent>
@@ -136,8 +103,6 @@ export function LandingPage() {
           </ExampleGrid>
         </WindowContent>
       </ExamplesWindow>
-
-      <Footer />
 
       <ConfirmDialog
         open={pendingBuild !== null}

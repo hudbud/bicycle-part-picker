@@ -2,7 +2,7 @@ import { useState } from 'react'
 import type { PartCategory } from '@/types/parts'
 import type { Part } from '@/types/parts'
 import { useBuildStore } from '@/store/buildStore'
-import { getCategoriesForBikeType } from '@/data/categoryConfig'
+import { getCategoryLabel } from '@/data/categoryConfig'
 import { ComponentRow } from './ComponentRow'
 import { ComponentRowMobile } from './ComponentRowMobile'
 import { AdditionalItemsSection } from './AdditionalItemsSection'
@@ -46,17 +46,16 @@ export function ComponentTable() {
   const isMobile = useIsMobile()
   const [activeCategory, setActiveCategory] = useState<PartCategory | null>(null)
 
-  const categories = getCategoriesForBikeType(build.bikeType)
-
   const handleSelectPart = (part: Part) => {
     if (activeCategory) setPart(activeCategory, part)
     setActiveCategory(null)
   }
 
   const getLabel = (category: PartCategory) =>
-    categories.find((c) => c.id === category)?.label ?? WHEEL_SUB_LABELS[category] ?? null
+    getCategoryLabel(category) ?? WHEEL_SUB_LABELS[category] ?? null
 
   const activeLabel = getLabel(activeCategory ?? 'frame') ?? ''
+  const activeSlot = build.components.find((s) => s.category === activeCategory)
 
   if (isMobile) {
     return (
@@ -83,7 +82,7 @@ export function ComponentTable() {
             onClose={() => setActiveCategory(null)}
             category={activeCategory}
             categoryLabel={activeLabel}
-            selectedPartId={build.components.find((s) => s.category === activeCategory)?.part?.id}
+            selectedPart={activeSlot?.part}
             onSelect={handleSelectPart}
           />
         )}
@@ -133,7 +132,7 @@ export function ComponentTable() {
           onClose={() => setActiveCategory(null)}
           category={activeCategory}
           categoryLabel={activeLabel}
-          selectedPartId={build.components.find((s) => s.category === activeCategory)?.part?.id}
+          selectedPart={activeSlot?.part}
           onSelect={handleSelectPart}
         />
       )}

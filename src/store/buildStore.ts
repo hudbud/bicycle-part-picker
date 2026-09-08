@@ -2,18 +2,36 @@ import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import type { Build, BikeType, ComponentSlot, PartStatus, AdditionalItem } from '@/types/build'
 import type { Part, PartCategory } from '@/types/parts'
-import { getCategoriesForBikeType } from '@/data/categoryConfig'
+import { ALL_CATEGORIES } from '@/data/categoryConfig'
 import { quotaSafeStorage } from '@/utils/persistStorage'
 
 const WHEEL_SUB_CATEGORIES: PartCategory[] = ['frontWheel', 'rearWheel', 'hub', 'rim', 'spokes']
 
-function makeDefaultBuild(bikeType: BikeType = 'road'): Build {
+function slotsForAllCategories(existing: ComponentSlot[] = [], wheelsExpanded?: boolean): ComponentSlot[] {
+  const map = new Map(existing.map((s) => [s.category, s]))
+  const base = ALL_CATEGORIES.map((cat) => map.get(cat.id) ?? { category: cat.id })
+
+  if (!wheelsExpanded) return base
+
+  const wheelsIndex = base.findIndex((c) => c.category === 'wheels')
+  if (wheelsIndex === -1) return base
+
+  const subSlots = WHEEL_SUB_CATEGORIES.map((cat) => map.get(cat) ?? { category: cat })
+  return [...base.slice(0, wheelsIndex), ...subSlots, ...base.slice(wheelsIndex + 1)]
+}
+
+function makeDefaultBuild(bikeType: BikeType = 'other'): Build {
   return {
     name: 'My Build',
     bikeType,
-    components: getCategoriesForBikeType(bikeType).map((cat) => ({
-      category: cat.id,
-    })),
+    components: slotsForAllCategories(),
+  }
+}
+
+function normalizeBuild(build: Build): Build {
+  return {
+    ...build,
+    components: slotsForAllCategories(build.components, build.wheelsExpanded),
   }
 }
 
@@ -47,16 +65,13 @@ export const useBuildStore = create<BuildState>()(
         set((s) => ({ build: { ...s.build, name } })),
 
       setBikeType: (bikeType) =>
-        set((s) => {
-          const newCategories = getCategoriesForBikeType(bikeType)
-          const existingSlotMap = new Map<PartCategory, ComponentSlot>(
-            s.build.components.map((slot) => [slot.category, slot]),
-          )
-          const components = newCategories.map((cat) => {
-            return existingSlotMap.get(cat.id) ?? { category: cat.id }
-          })
-          return { build: { ...s.build, bikeType, components, wheelsExpanded: false } }
-        }),
+        set((s) => ({
+          build: {
+            ...s.build,
+            bikeType,
+            components: slotsForAllCategories(s.build.components, s.build.wheelsExpanded),
+          },
+        })),
 
       setPart: (category, part) =>
         set((s) => ({
@@ -162,7 +177,7 @@ export const useBuildStore = create<BuildState>()(
 
       resetBuild: () => set({ build: makeDefaultBuild() }),
 
-      loadBuild: (build) => set({ build }),
+      loadBuild: (build) => set({ build: normalizeBuild(build) }),
 
       getTotalPrice: () => {
         const { build } = get()
@@ -191,6 +206,15 @@ export const useBuildStore = create<BuildState>()(
     {
       name: 'ppp-current-build',
       storage: createJSONStorage(() => quotaSafeStorage),
+      merge: (persisted, current) => {
+        const p = persisted as Partial<BuildState> | undefined
+        if (!p?.build) return current
+        return {
+          ...current,
+          ...p,
+          build: normalizeBuild(p.build),
+        }
+      },
     },
   ),
 )

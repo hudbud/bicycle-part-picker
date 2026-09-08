@@ -7,95 +7,40 @@ export interface CategoryMeta {
   required: boolean
 }
 
-const ROAD_CATEGORIES: CategoryMeta[] = [
-  { id: 'frame', label: 'Frame', required: true },
-  { id: 'fork', label: 'Fork', required: true },
-  { id: 'wheels', label: 'Wheelset', required: true },
-  { id: 'tires', label: 'Tires', required: true },
-  { id: 'crankset', label: 'Crankset', required: true },
-  { id: 'bottomBracket', label: 'Bottom Bracket', required: false },
-  { id: 'chain', label: 'Chain', required: false },
-  { id: 'cassette', label: 'Cassette', required: true },
-  { id: 'handlebars', label: 'Handlebars', required: true },
-  { id: 'stem', label: 'Stem', required: true },
-  { id: 'saddle', label: 'Saddle', required: true },
-  { id: 'seatpost', label: 'Seatpost', required: true },
-  { id: 'pedals', label: 'Pedals', required: true },
-  { id: 'brakes', label: 'Brakes', required: true },
-]
-
-const MTB_CATEGORIES: CategoryMeta[] = [
-  { id: 'frame', label: 'Frame', required: true },
-  { id: 'fork', label: 'Suspension Fork', required: true },
+/** Superset of every category across all former bike-type templates. */
+export const ALL_CATEGORIES: CategoryMeta[] = [
+  { id: 'frame', label: 'Frame', required: false },
+  { id: 'fork', label: 'Fork', required: false },
   { id: 'rearShock', label: 'Rear Shock', required: false },
-  { id: 'wheels', label: 'Wheelset', required: true },
-  { id: 'tires', label: 'Tires', required: true },
-  { id: 'crankset', label: 'Crankset', required: true },
+  { id: 'wheels', label: 'Wheelset', required: false },
+  { id: 'tires', label: 'Tires', required: false },
+  { id: 'crankset', label: 'Crankset', required: false },
   { id: 'bottomBracket', label: 'Bottom Bracket', required: false },
   { id: 'chain', label: 'Chain', required: false },
-  { id: 'cassette', label: 'Cassette', required: true },
-  { id: 'handlebars', label: 'Handlebars', required: true },
-  { id: 'stem', label: 'Stem', required: true },
-  { id: 'saddle', label: 'Saddle', required: true },
-  { id: 'seatpost', label: 'Seatpost / Dropper', required: true },
-  { id: 'pedals', label: 'Pedals', required: true },
-  { id: 'brakes', label: 'Brakes', required: true },
+  { id: 'cassette', label: 'Cassette', required: false },
+  { id: 'sprocket', label: 'Sprocket', required: false },
+  { id: 'handlebars', label: 'Handlebars', required: false },
+  { id: 'stem', label: 'Stem', required: false },
+  { id: 'saddle', label: 'Saddle', required: false },
+  { id: 'seatpost', label: 'Seatpost', required: false },
+  { id: 'pedals', label: 'Pedals', required: false },
+  { id: 'brakes', label: 'Brakes', required: false },
 ]
 
-const GRAVEL_CATEGORIES: CategoryMeta[] = [
-  { id: 'frame', label: 'Frame', required: true },
-  { id: 'fork', label: 'Fork', required: true },
-  { id: 'wheels', label: 'Wheelset', required: true },
-  { id: 'tires', label: 'Tires', required: true },
-  { id: 'crankset', label: 'Crankset', required: true },
-  { id: 'bottomBracket', label: 'Bottom Bracket', required: false },
-  { id: 'chain', label: 'Chain', required: false },
-  { id: 'cassette', label: 'Cassette', required: true },
-  { id: 'handlebars', label: 'Handlebars', required: true },
-  { id: 'stem', label: 'Stem', required: true },
-  { id: 'saddle', label: 'Saddle', required: true },
-  { id: 'seatpost', label: 'Seatpost', required: true },
-  { id: 'pedals', label: 'Pedals', required: true },
-  { id: 'brakes', label: 'Brakes', required: true },
-]
-
-const TRACK_CATEGORIES: CategoryMeta[] = [
-  { id: 'frame', label: 'Frame', required: true },
-  { id: 'fork', label: 'Fork', required: true },
-  { id: 'wheels', label: 'Wheelset', required: true },
-  { id: 'tires', label: 'Tires', required: true },
-  { id: 'crankset', label: 'Crankset', required: true },
-  { id: 'bottomBracket', label: 'Bottom Bracket', required: false },
-  { id: 'chain', label: 'Chain', required: false },
-  { id: 'sprocket', label: 'Sprocket', required: true },
-  { id: 'handlebars', label: 'Handlebars', required: true },
-  { id: 'stem', label: 'Stem', required: true },
-  { id: 'saddle', label: 'Saddle', required: true },
-  { id: 'seatpost', label: 'Seatpost', required: true },
-  { id: 'pedals', label: 'Pedals', required: true },
-]
-
-const BMX_CATEGORIES: CategoryMeta[] = [
-  { id: 'frame', label: 'Frame', required: true },
-  { id: 'fork', label: 'Fork', required: true },
-  { id: 'handlebars', label: 'Bars', required: true },
-  { id: 'stem', label: 'Stem', required: true },
-  { id: 'crankset', label: 'Cranks', required: true },
-  { id: 'chain', label: 'Chain', required: true },
-  { id: 'sprocket', label: 'Sprocket', required: true },
-  { id: 'wheels', label: 'Wheels', required: true },
-  { id: 'pedals', label: 'Pedals', required: true },
-]
-
+/** @deprecated Bike-type templates removed — always returns the full category list. */
 export const CATEGORY_CONFIG: Record<BikeType, CategoryMeta[]> = {
-  road: ROAD_CATEGORIES,
-  mtb: MTB_CATEGORIES,
-  gravel: GRAVEL_CATEGORIES,
-  track: TRACK_CATEGORIES,
-  bmx: BMX_CATEGORIES,
-  other: ROAD_CATEGORIES,
+  road: ALL_CATEGORIES,
+  mtb: ALL_CATEGORIES,
+  gravel: ALL_CATEGORIES,
+  track: ALL_CATEGORIES,
+  bmx: ALL_CATEGORIES,
+  other: ALL_CATEGORIES,
 }
 
-export function getCategoriesForBikeType(bikeType: BikeType): CategoryMeta[] {
-  return CATEGORY_CONFIG[bikeType] ?? ROAD_CATEGORIES
+export function getCategoriesForBikeType(_bikeType?: BikeType): CategoryMeta[] {
+  return ALL_CATEGORIES
+}
+
+export function getCategoryLabel(category: PartCategory): string | null {
+  return ALL_CATEGORIES.find((c) => c.id === category)?.label ?? null
 }

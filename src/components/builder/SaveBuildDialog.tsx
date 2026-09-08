@@ -85,10 +85,6 @@ export function SaveBuildDialog({ open, onClose }: SaveBuildDialogProps) {
     <Modal open={open} onClose={onClose} title="Save Build" style={{ maxWidth: 440, width: '100%' }}>
       <FormBody>
         <Input label="Build name" value={name} onChange={(e) => setName(e.target.value)} required />
-        <div>
-          <label style={{ fontSize: 12, fontWeight: 700 }}>Bike type</label>
-          <p style={{ fontSize: 13, marginTop: 4, textTransform: 'capitalize' }}>{build.bikeType}</p>
-        </div>
         <Textarea
           label="Description (optional)"
           value={description}

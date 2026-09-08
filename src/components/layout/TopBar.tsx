@@ -7,7 +7,6 @@ import { useMediaQuery } from '@/hooks/useMediaQuery'
 const BrandLink = styled(Link)`
   display: flex;
   align-items: center;
-  gap: 6px;
   font-weight: 700;
   font-size: 13px;
   color: inherit;
@@ -38,14 +37,7 @@ export function TopBar() {
       <Toolbar style={{ justifyContent: 'space-between' }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
           <BrandLink to="/">
-            <svg width="20" height="20" viewBox="0 0 32 32" fill="none">
-              <circle cx="8"  cy="22" r="6" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-              <circle cx="24" cy="22" r="6" stroke="currentColor" strokeWidth="2.5" fill="none"/>
-              <path d="M8 22 L14 8 L20 14 L24 22" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-              <path d="M14 8 L24 8" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"/>
-              <circle cx="24" cy="8" r="1.5" fill="currentColor"/>
-            </svg>
-            {!isMobile && 'Pedal Parts Picker'}
+            Pedal Parts Picker
           </BrandLink>
 
           {!isMobile && (
