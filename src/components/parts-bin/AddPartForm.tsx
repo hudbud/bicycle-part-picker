@@ -9,6 +9,7 @@ import { Input } from '@/components/ui/Input'
 import { Select } from '@/components/ui/Select'
 import { Textarea } from '@/components/ui/Textarea'
 import { Button } from '@/components/ui/Button'
+import { ALL_CATEGORIES } from '@/data/categoryConfig'
 import styled from 'styled-components'
 
 const FormBody = styled.div`
@@ -23,22 +24,7 @@ const Grid = styled.div`
   gap: 12px;
 `
 
-const CATEGORIES: { value: PartCategory; label: string }[] = [
-  { value: 'frame', label: 'Frame' },
-  { value: 'fork', label: 'Fork' },
-  { value: 'wheels', label: 'Wheels' },
-  { value: 'tires', label: 'Tires' },
-  { value: 'crankset', label: 'Crankset' },
-  { value: 'bottomBracket', label: 'Bottom Bracket' },
-  { value: 'chain', label: 'Chain' },
-  { value: 'cassette', label: 'Cassette' },
-  { value: 'handlebars', label: 'Handlebars' },
-  { value: 'stem', label: 'Stem' },
-  { value: 'saddle', label: 'Saddle' },
-  { value: 'seatpost', label: 'Seatpost' },
-  { value: 'pedals', label: 'Pedals' },
-  { value: 'brakes', label: 'Brakes' },
-]
+const CATEGORIES = ALL_CATEGORIES.map((c) => ({ value: c.id, label: c.label }))
 
 const STATUSES: { value: PartStatus; label: string }[] = [
   { value: 'owned', label: 'Owned' },

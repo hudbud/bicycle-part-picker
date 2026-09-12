@@ -4,9 +4,8 @@ import type { Build } from '@/types/build'
 import type { PartCategory } from '@/types/parts'
 import { useGarageStore } from '@/store/garageStore'
 import { decodeSharedBuild } from '@/utils/buildCodec'
-import { BikeTypePill } from '@/components/ui/BikeTypePill'
 import { StatusBadge } from '@/components/ui/StatusBadge'
-import { getCategoriesForBikeType } from '@/data/categoryConfig'
+import { getCategoryLabel } from '@/data/categoryConfig'
 import { EmptyState } from '@/components/ui/EmptyState'
 import { Window, WindowHeader, WindowContent, Table, TableBody, TableHead, TableRow, TableHeadCell, TableDataCell, Button, Toolbar } from 'react95'
 import styled from 'styled-components'
@@ -34,7 +33,6 @@ const WHEEL_SUB_LABELS: Partial<Record<PartCategory, string>> = {
 }
 
 function SharedBuildView({ build }: { build: Build }) {
-  const categories = getCategoriesForBikeType(build.bikeType)
   const partsTotal = build.components.reduce((s, c) => s + (c.part?.price ?? 0), 0)
   const extrasTotal = (build.additionalItems ?? []).reduce((s, i) => s + (i.price ?? 0), 0)
   const total = partsTotal + extrasTotal
@@ -44,7 +42,7 @@ function SharedBuildView({ build }: { build: Build }) {
     : null
 
   const getLabel = (category: PartCategory) =>
-    categories.find((c) => c.id === category)?.label ?? WHEEL_SUB_LABELS[category] ?? null
+    getCategoryLabel(category) ?? WHEEL_SUB_LABELS[category] ?? null
 
   return (
     <PageWindow>
@@ -52,7 +50,6 @@ function SharedBuildView({ build }: { build: Build }) {
         <span>Shared Build — {build.name}</span>
       </WindowHeader>
       <Toolbar style={{ gap: 8, flexWrap: 'wrap' }}>
-        <BikeTypePill type={build.bikeType} />
         {build.ownerName && <span style={{ fontSize: 12 }}>by {build.ownerName}</span>}
         {createdAt && <span style={{ fontSize: 12 }}>{createdAt}</span>}
         <span style={{ fontSize: 11, border: '1px solid #888', padding: '1px 6px' }}>Shared Build</span>

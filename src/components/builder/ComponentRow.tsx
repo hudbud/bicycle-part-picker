@@ -65,7 +65,7 @@ export function ComponentRow({ slot, label, onClickRow, isSubRow, onToggleExpand
             {slot.part.isCustom && <span style={{ fontSize: 11, fontWeight: 400, marginLeft: 6 }}>(custom)</span>}
           </span>
         ) : (
-          <span style={{ fontSize: 12, fontStyle: 'italic' }}>Choose a part…</span>
+          <span style={{ fontSize: 12, fontStyle: 'italic' }}>Add a part…</span>
         )}
       </TableDataCell>
 

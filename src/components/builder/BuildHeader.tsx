@@ -1,33 +1,16 @@
 import { useRef, useState } from 'react'
-import type { BikeType } from '@/types/build'
 import { useBuildStore } from '@/store/buildStore'
-import { getCategoriesForBikeType } from '@/data/categoryConfig'
+import { ALL_CATEGORIES } from '@/data/categoryConfig'
 import { BuildProgress } from '@/components/ui/BuildProgress'
-import { Button, GroupBox, TextInput } from 'react95'
+import { GroupBox, TextInput } from 'react95'
 import styled from 'styled-components'
 
 const MAX_BUILD_NAME_LENGTH = 80
-
-const BIKE_TYPES: { value: BikeType; label: string }[] = [
-  { value: 'road',   label: 'Road' },
-  { value: 'mtb',    label: 'Mountain' },
-  { value: 'gravel', label: 'Gravel' },
-  { value: 'track',  label: 'Track' },
-  { value: 'bmx',    label: 'BMX' },
-  { value: 'other',  label: 'Other' },
-]
 
 const NameRow = styled.div`
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 4px;
-`
-
-const BikeTypeRow = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px;
   margin-bottom: 4px;
 `
 
@@ -47,40 +30,21 @@ const BuildName = styled.button`
   &:hover { text-decoration: underline; }
 `
 
-const BikeTypeChip = styled.button`
-  font-size: 11px;
-  font-family: ms_sans_serif, sans-serif;
-  background: none;
-  border: 1px solid #888;
-  cursor: pointer;
-  padding: 1px 6px;
-  opacity: 0.7;
-  &:hover { opacity: 1; text-decoration: underline; }
-`
-
 export function BuildHeader() {
-  const { build, setBuildName, setBikeType, getFilledCount } = useBuildStore()
+  const { build, setBuildName, getFilledCount } = useBuildStore()
   const [editing, setEditing] = useState(false)
   const [nameValue, setNameValue] = useState(build.name)
-  const [typePickerOpen, setTypePickerOpen] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
 
-  const totalCategories = getCategoriesForBikeType(build.bikeType).length
+  const totalCategories = ALL_CATEGORIES.length
   const filled = getFilledCount()
   const hasParts = filled > 0
-
-  const currentLabel = BIKE_TYPES.find((b) => b.value === build.bikeType)?.label ?? build.bikeType
 
   const commitName = () => {
     const trimmed = nameValue.trim().slice(0, MAX_BUILD_NAME_LENGTH)
     if (trimmed) setBuildName(trimmed)
     else setNameValue(build.name)
     setEditing(false)
-  }
-
-  const handleTypeSelect = (type: BikeType) => {
-    setBikeType(type)
-    setTypePickerOpen(false)
   }
 
   return (
@@ -104,37 +68,12 @@ export function BuildHeader() {
             {build.name} ✏
           </BuildName>
         )}
-        {hasParts && !typePickerOpen && (
-          <BikeTypeChip onClick={() => setTypePickerOpen(true)} title="Change bike type">
-            {currentLabel} ▾
-          </BikeTypeChip>
-        )}
       </NameRow>
 
-      {hasParts && !typePickerOpen && (
+      {hasParts && (
         <ProgressRow>
           <BuildProgress filled={filled} total={totalCategories} />
         </ProgressRow>
-      )}
-
-      {(!hasParts || typePickerOpen) && (
-        <BikeTypeRow>
-          {BIKE_TYPES.map((bt) => (
-            <Button
-              key={bt.value}
-              variant={build.bikeType === bt.value ? 'raised' : 'flat'}
-              onClick={() => handleTypeSelect(bt.value)}
-              style={{ fontSize: 11 }}
-            >
-              {bt.label}
-            </Button>
-          ))}
-          {typePickerOpen && (
-            <Button variant="flat" style={{ fontSize: 11, opacity: 0.6 }} onClick={() => setTypePickerOpen(false)}>
-              Cancel
-            </Button>
-          )}
-        </BikeTypeRow>
       )}
     </GroupBox>
   )

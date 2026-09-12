@@ -8,7 +8,7 @@ import { DeleteConfirm } from './DeleteConfirm'
 import { useBuildStore } from '@/store/buildStore'
 import { useGarageStore } from '@/store/garageStore'
 import { useToast } from '@/hooks/useToast'
-import { getCategoriesForBikeType } from '@/data/categoryConfig'
+import { ALL_CATEGORIES } from '@/data/categoryConfig'
 import { encodeBuildForShare } from '@/utils/buildCodec'
 import { Window, WindowHeader, WindowContent } from 'react95'
 import styled from 'styled-components'
@@ -43,7 +43,7 @@ export function BuildCard({ build }: BuildCardProps) {
   const { success } = useToast()
   const [confirmLoad, setConfirmLoad] = useState(false)
 
-  const totalCategories = getCategoriesForBikeType(build.bikeType).length
+  const totalCategories = ALL_CATEGORIES.length
   const filled = build.components.filter((s) => s.part).length
   const extrasCount = build.additionalItems?.length ?? 0
   const total = build.components.reduce((s, slot) => s + (slot.part?.price ?? 0), 0)
