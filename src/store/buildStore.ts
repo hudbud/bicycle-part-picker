@@ -2,7 +2,8 @@ import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
 import type { Build, BikeType, ComponentSlot, PartStatus, AdditionalItem } from '@/types/build'
 import type { Part, PartCategory } from '@/types/parts'
-import { ALL_CATEGORIES } from '@/data/categoryConfig'
+import { ALL_CATEGORIES, defaultQuantity } from '@/data/categoryConfig'
+import { getBuildTotals } from '@/data/pricing'
 import { quotaSafeStorage } from '@/utils/persistStorage'
 
 const WHEEL_SUB_CATEGORIES: PartCategory[] = ['frontWheel', 'rearWheel', 'hub', 'rim', 'spokes']
@@ -39,7 +40,9 @@ interface BuildState {
   build: Build
   setBuildName: (name: string) => void
   setBikeType: (type: BikeType) => void
-  setPart: (category: PartCategory, part: Part) => void
+  /** Puts a part in a slot. Quantity defaults to the category default (tires/rotors = 2). */
+  setPart: (category: PartCategory, part: Part, quantity?: number) => void
+  setQuantity: (category: PartCategory, quantity: number) => void
   removePart: (category: PartCategory) => void
   setPartStatus: (category: PartCategory, status: PartStatus) => void
   clearPartStatus: (category: PartCategory) => void
@@ -73,12 +76,25 @@ export const useBuildStore = create<BuildState>()(
           },
         })),
 
-      setPart: (category, part) =>
+      setPart: (category, part, quantity) =>
+        set((s) => ({
+          build: {
+            ...s.build,
+            components: s.build.components.map((slot) => {
+              if (slot.category !== category) return slot
+              const qty = quantity ?? slot.quantity ?? defaultQuantity(category)
+              const { quantity: _q, ...rest } = slot
+              return qty === 1 ? { ...rest, part } : { ...rest, part, quantity: qty }
+            }),
+          },
+        })),
+
+      setQuantity: (category, quantity) =>
         set((s) => ({
           build: {
             ...s.build,
             components: s.build.components.map((slot) =>
-              slot.category === category ? { ...slot, part } : slot,
+              slot.category === category ? { ...slot, quantity: Math.max(1, Math.min(99, Math.round(quantity))) } : slot,
             ),
           },
         })),
@@ -179,22 +195,13 @@ export const useBuildStore = create<BuildState>()(
 
       loadBuild: (build) => set({ build: normalizeBuild(build) }),
 
-      getTotalPrice: () => {
-        const { build } = get()
-        const partsTotal = build.components.reduce((sum, slot) => sum + (slot.part?.price ?? 0), 0)
-        const extrasTotal = (build.additionalItems ?? []).reduce((sum, item) => sum + (item.price ?? 0), 0)
-        return partsTotal + extrasTotal
-      },
+      getTotalPrice: () => getBuildTotals(get().build).total,
 
       getFilledCount: () => {
         return get().build.components.filter((s) => s.part !== undefined).length
       },
 
-      hasMissingPrices: () => {
-        return get().build.components.some(
-          (s) => s.part !== undefined && s.part.price === undefined,
-        )
-      },
+      hasMissingPrices: () => getBuildTotals(get().build).missingPrices > 0,
 
       // True when the current build has parts but has never been saved to the garage —
       // i.e. discarding it (New Build, Load Build, Open…) would lose work with no way to recover it.
