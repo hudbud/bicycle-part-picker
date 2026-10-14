@@ -1,0 +1,279 @@
+[
+  {
+    "id": "shimano-deore-xt-hp-m730-headset",
+    "name": "Deore XT HP-M730 (1\" Threaded)",
+    "brand": "Shimano",
+    "category": "headset",
+    "price": 45,
+    "weightG": 140,
+    "year": 1987,
+    "discontinued": true,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "material": "steel"
+    },
+    "specs": {
+      "Original MSRP": "≈$45 (1987)",
+      "Cups": "30.0mm JIS press-fit (check frame — ISO 30.2 frames need the ISO version)",
+      "Crown Race": "27.0mm JIS",
+      "Stack Height": "≈37mm",
+      "Bearings": "Loose/retained ball",
+      "Notes": "M730 \"Deer Head\" XT era."
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M730",
+      "Threaded"
+    ]
+  },
+  {
+    "id": "shimano-deore-dx-hp-m650-headset",
+    "name": "Deore DX HP-M650 (1\" Threaded)",
+    "brand": "Shimano",
+    "category": "headset",
+    "price": 25,
+    "weightG": 145,
+    "year": 1992,
+    "discontinued": true,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "material": "steel"
+    },
+    "specs": {
+      "Original MSRP": "≈$30 (1992)",
+      "Cups": "30.0mm JIS press-fit",
+      "Crown Race": "27.0mm JIS",
+      "Stack Height": "≈36mm",
+      "Notes": "Stock on the 1992–93 Bridgestone MB-1."
+    },
+    "tags": [
+      "Vintage",
+      "Deore DX",
+      "Threaded"
+    ]
+  },
+  {
+    "id": "shimano-xtr-hp-m900-headset-1in",
+    "name": "XTR HP-M900 (1\" Threaded)",
+    "brand": "Shimano",
+    "category": "headset",
+    "price": 80,
+    "weightG": 120,
+    "year": 1992,
+    "discontinued": true,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "material": "aluminum"
+    },
+    "specs": {
+      "Original MSRP": "≈$85 (1992)",
+      "Cups": "30.0mm JIS press-fit",
+      "Crown Race": "27.0mm JIS",
+      "Stack Height": "≈35mm",
+      "Notes": "First-generation XTR. NOS examples sell for more."
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "M900",
+      "Threaded"
+    ]
+  },
+  {
+    "id": "shimano-xtr-hp-m900-headset-1-1-8",
+    "name": "XTR HP-M900 (1-1/8\" Threaded)",
+    "brand": "Shimano",
+    "category": "headset",
+    "price": 80,
+    "weightG": 135,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "headsetStd": "EC34/EC34",
+      "steerer": "Threaded 1-1/8\"",
+      "material": "aluminum"
+    },
+    "specs": {
+      "Original MSRP": "≈$90 (1993)",
+      "Cups": "34.0mm press-fit",
+      "Crown Race": "30.0mm",
+      "Stack Height": "≈35mm"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "M900",
+      "Threaded",
+      "Oversize"
+    ]
+  },
+  {
+    "id": "ritchey-logic-comp-headset-1in-threaded",
+    "name": "Logic Comp (1\" Threaded)",
+    "brand": "Ritchey",
+    "category": "headset",
+    "price": 40,
+    "weightG": 125,
+    "year": 1991,
+    "discontinued": true,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "material": "steel"
+    },
+    "specs": {
+      "Original MSRP": "≈$50 (1991)",
+      "Cups": "30.2mm ISO (\"Italian size\") press-fit",
+      "Crown Race": "26.4mm ISO",
+      "Stack Height": "≈35mm",
+      "Notes": "Stock on 1991 Bridgestone MB-0/MB-1/MB-3. Won't fit JIS (27.0mm) fork crowns without re-cutting."
+    },
+    "tags": [
+      "Vintage",
+      "Ritchey Logic",
+      "Threaded",
+      "ISO"
+    ]
+  },
+  {
+    "id": "stronglight-a9-headset-1in",
+    "name": "A9 Needle Bearing (1\" Threaded)",
+    "brand": "Stronglight",
+    "category": "headset",
+    "price": 50,
+    "weightG": 115,
+    "year": 1990,
+    "discontinued": true,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "material": "aluminum"
+    },
+    "specs": {
+      "Original MSRP": "≈$60 (1990)",
+      "Cups": "30.2mm ISO press-fit (JIS version also made)",
+      "Bearings": "Needle-roller lower, resists brinelling",
+      "Stack Height": "≈37mm",
+      "Notes": "A favorite for rigid-fork bikes that pit ball headsets."
+    },
+    "tags": [
+      "Vintage",
+      "Threaded",
+      "Needle Bearing",
+      "French"
+    ]
+  },
+  {
+    "id": "tioga-avenger-headset-1-1-8",
+    "name": "Avenger Oversize (1-1/8\" Threaded)",
+    "brand": "Tioga",
+    "category": "headset",
+    "price": 60,
+    "weightG": 150,
+    "year": 1989,
+    "discontinued": true,
+    "attrs": {
+      "headsetStd": "EC34/EC34",
+      "steerer": "Threaded 1-1/8\"",
+      "material": "steel"
+    },
+    "specs": {
+      "Original MSRP": "≈$50 (1989)",
+      "Cups": "34.0mm press-fit",
+      "Crown Race": "30.0mm",
+      "Stack Height": "≈38mm",
+      "Notes": "The headset that introduced the 1-1/8\" oversize standard."
+    },
+    "tags": [
+      "Vintage",
+      "Threaded",
+      "Oversize",
+      "Historic"
+    ]
+  },
+  {
+    "id": "tange-falcon-headset-1in",
+    "name": "Falcon (1\" Threaded)",
+    "brand": "Tange",
+    "category": "headset",
+    "price": 25,
+    "weightG": 130,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "material": "steel"
+    },
+    "specs": {
+      "Original MSRP": "≈$25 (1993)",
+      "Cups": "30.0mm JIS press-fit",
+      "Crown Race": "27.0mm JIS",
+      "Stack Height": "≈37mm",
+      "Notes": "Stock on the 1993 Bridgestone XO-1."
+    },
+    "tags": [
+      "Vintage",
+      "Threaded",
+      "Budget"
+    ]
+  },
+  {
+    "id": "dia-compe-aheadset-1in-threadless",
+    "name": "Aheadset (1\" Threadless)",
+    "brand": "Dia-Compe",
+    "category": "headset",
+    "price": 25,
+    "weightG": 130,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Straight 1\"",
+      "material": "steel"
+    },
+    "specs": {
+      "Original MSRP": "≈$35 (1993)",
+      "Cups": "30.2mm ISO press-fit",
+      "Crown Race": "26.4mm ISO",
+      "Stack Height": "≈27mm + top cap",
+      "Notes": "The original threadless system (John Rader patent, licensed industry-wide). Needs a threadless steerer and stem."
+    },
+    "tags": [
+      "Vintage",
+      "Threadless",
+      "Aheadset",
+      "Historic"
+    ]
+  },
+  {
+    "id": "dia-compe-aheadset-1-1-8-threadless",
+    "name": "Aheadset (1-1/8\" Threadless)",
+    "brand": "Dia-Compe",
+    "category": "headset",
+    "price": 25,
+    "weightG": 140,
+    "year": 1995,
+    "discontinued": true,
+    "attrs": {
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "material": "steel"
+    },
+    "specs": {
+      "Original MSRP": "≈$35 (1995)",
+      "Cups": "34.0mm press-fit",
+      "Crown Race": "30.0mm",
+      "Stack Height": "≈27mm + top cap"
+    },
+    "tags": [
+      "Vintage",
+      "Threadless",
+      "Aheadset"
+    ]
+  }
+]

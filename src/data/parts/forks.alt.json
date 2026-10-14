@@ -1,0 +1,1163 @@
+[
+  {
+    "id": "crust-evasion-fork",
+    "name": "Evasion Fork",
+    "brand": "Crust",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1360,
+    "year": 2024,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559,
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 76
+    },
+    "specs": {
+      "Axle-to-Crown": "385mm",
+      "Steerer": "1-1/8\" threadless steel",
+      "Axle": "12x100 TA",
+      "Brakes": "IS (adapter to post), 203mm max",
+      "Mounts": "Triple-pack cage mounts, low-rider & fender eyelets",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Rigid",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "crust-bombora-fork",
+    "name": "Bombora Fork",
+    "brand": "Crust",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1360,
+    "year": 2024,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "Flat Mount",
+      "maxTireMm": 58
+    },
+    "specs": {
+      "Axle-to-Crown": "395mm",
+      "Steerer": "1-1/8\" threadless steel",
+      "Axle": "12x100 TA",
+      "Brakes": "Flat mount, 180mm max",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Low Trail",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "crust-lightning-bolt-canti-fork",
+    "name": "Lightning Bolt Canti Fork",
+    "brand": "Crust",
+    "category": "fork",
+    "price": 225,
+    "weightG": 913,
+    "year": 2024,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584
+      ],
+      "steerer": "Threaded 1\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 48
+    },
+    "specs": {
+      "Steerer": "1\" threaded, 26.4mm (JIS) crown race",
+      "Crown": "Gran Trajet-style flat crown",
+      "Brakes": "Cantilever posts",
+      "Geometry": "Low trail (rando)",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Threaded",
+      "Low Trail"
+    ]
+  },
+  {
+    "id": "crust-noreaster-disc-fork",
+    "name": "Nor'Easter Disc Fork",
+    "brand": "Crust",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1220,
+    "year": 2024,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559,
+        584,
+        622
+      ],
+      "steerer": "Threaded 1\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 71
+    },
+    "specs": {
+      "Steerer": "1\" threaded, 26.4mm (JIS) crown race",
+      "Construction": "Lugged crown",
+      "Axle": "12x100 TA",
+      "Brakes": "IS, 160mm",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Threaded",
+      "Lugged"
+    ]
+  },
+  {
+    "id": "crust-romanceur-canti-fork",
+    "name": "Romanceür Canti Fork",
+    "brand": "Crust",
+    "category": "fork",
+    "price": 275,
+    "weightG": 990,
+    "year": 2024,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584
+      ],
+      "steerer": "Threaded 1\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 56
+    },
+    "specs": {
+      "Steerer": "1\" threaded, 26.4mm (JIS) crown race",
+      "Construction": "Lugged crown",
+      "Brakes": "Cantilever posts",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Threaded",
+      "Lugged"
+    ]
+  },
+  {
+    "id": "crust-scapegoat-fork",
+    "name": "Scapegoat Fork",
+    "brand": "Crust",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1350,
+    "year": 2023,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559,
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "15x110mm Boost",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 96
+    },
+    "specs": {
+      "Axle-to-Crown": "432mm (suspension-corrected)",
+      "Axle": "15x110 Boost TA",
+      "Brakes": "IS, 203mm max",
+      "Tire Clearance": "27.5 x 3.8\" / 29 x 3.0\"",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Plus",
+      "Boost"
+    ]
+  },
+  {
+    "id": "rivendell-appaloosa-fork",
+    "name": "Appaloosa Fork",
+    "brand": "Rivendell",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1050,
+    "year": 2026,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Threaded 1\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 56
+    },
+    "specs": {
+      "Steerer": "1\" threaded CrMo (FSA Duron headset installed)",
+      "Crown": "Investment-cast crown",
+      "Brakes": "Canti / V-brake bosses",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Threaded",
+      "Lugged"
+    ]
+  },
+  {
+    "id": "rivendell-platypus-fork",
+    "name": "Platypus Fork",
+    "brand": "Rivendell",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1050,
+    "year": 2026,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Threaded 1\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 50
+    },
+    "specs": {
+      "Steerer": "1\" threaded CrMo (FSA Duron headset installed)",
+      "Crown": "Investment-cast crown",
+      "Brakes": "Canti / V-brake bosses",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Threaded",
+      "Lugged"
+    ]
+  },
+  {
+    "id": "rivendell-atlantis-fork",
+    "name": "Atlantis Fork",
+    "brand": "Rivendell",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1050,
+    "year": 2025,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Threaded 1\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 57
+    },
+    "specs": {
+      "Steerer": "1\" threaded CrMo (FSA Duron headset installed)",
+      "Crown": "Investment-cast crown",
+      "Brakes": "Canti / V-brake bosses",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Threaded",
+      "Lugged"
+    ]
+  },
+  {
+    "id": "rivendell-sam-hillborne-fork",
+    "name": "Sam Hillborne Fork",
+    "brand": "Rivendell",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1050,
+    "year": 2025,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Threaded 1\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 48
+    },
+    "specs": {
+      "Steerer": "1\" threaded CrMo (FSA Duron headset installed)",
+      "Crown": "Investment-cast crown",
+      "Brakes": "Canti / V-brake bosses",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Threaded",
+      "Lugged"
+    ]
+  },
+  {
+    "id": "rivendell-clem-smith-jr-fork",
+    "name": "Clem Smith Jr. Fork",
+    "brand": "Rivendell",
+    "category": "fork",
+    "price": 200,
+    "weightG": 1050,
+    "year": 2026,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559,
+        622
+      ],
+      "steerer": "Threaded 1\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 57
+    },
+    "specs": {
+      "Steerer": "1\" threaded CrMo (FSA Duron headset installed)",
+      "Crown": "Investment-cast crown",
+      "Brakes": "Canti / V-brake bosses",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Threaded",
+      "Lugged"
+    ]
+  },
+  {
+    "id": "rivendell-homer-hilsen-fork",
+    "name": "A. Homer Hilsen Fork",
+    "brand": "Rivendell",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1000,
+    "year": 2025,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Threaded 1\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 58,
+      "maxTireMm": 48
+    },
+    "specs": {
+      "Steerer": "1\" threaded CrMo",
+      "Brakes": "Long-reach caliper (Tektro R559 / Paul centerpull)",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Threaded",
+      "Long Reach"
+    ]
+  },
+  {
+    "id": "rivendell-roaduno-fork",
+    "name": "Roaduno Fork",
+    "brand": "Rivendell",
+    "category": "fork",
+    "price": 250,
+    "weightG": 950,
+    "year": 2024,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Threaded 1\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 58,
+      "maxTireMm": 46
+    },
+    "specs": {
+      "Steerer": "1\" threaded CrMo",
+      "Brakes": "Long-reach caliper (Tektro R559 / Paul Racer long)",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Threaded",
+      "Long Reach"
+    ]
+  },
+  {
+    "id": "velo-orange-piolet-fork",
+    "name": "Piolet Fork",
+    "brand": "Velo Orange",
+    "category": "fork",
+    "price": 200,
+    "weightG": 1300,
+    "year": 2022,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559,
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 61
+    },
+    "specs": {
+      "Tubing": "Triple-butted CrMo",
+      "Axle": "12x100 TA",
+      "Brakes": "IS, 160–180mm",
+      "Mounts": "Three-pack mounts, low-rider eyelets",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Rigid",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "velo-orange-polyvalent-fork",
+    "name": "Polyvalent Fork",
+    "brand": "Velo Orange",
+    "category": "fork",
+    "price": 200,
+    "weightG": 1150,
+    "year": 2023,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559,
+        584
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 54
+    },
+    "specs": {
+      "Geometry": "Low trail, front-load optimized",
+      "Axle": "12x100 TA",
+      "Brakes": "IS, 160/180mm",
+      "Mounts": "Front rack & decaleur mounts",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Low Trail",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "velo-orange-pass-hunter-fork",
+    "name": "Pass Hunter Fork",
+    "brand": "Velo Orange",
+    "category": "fork",
+    "price": 200,
+    "weightG": 1000,
+    "year": 2022,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "Flat Mount",
+      "maxTireMm": 48
+    },
+    "specs": {
+      "Axle-to-Crown": "393mm",
+      "Rake": "51mm",
+      "Steerer": "Tapered 1-1/8\" to 1.5\" CrMo",
+      "Brakes": "Flat mount, 140/160mm",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Tapered",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "velo-orange-neutrino-fork",
+    "name": "Neutrino Fork",
+    "brand": "Velo Orange",
+    "category": "fork",
+    "price": 175,
+    "weightG": 900,
+    "year": 2022,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        406
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 58
+    },
+    "specs": {
+      "Wheel": "20\" (406)",
+      "Axle": "100mm QR",
+      "Brakes": "IS, 160mm",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Mini Velo",
+      "20\""
+    ]
+  },
+  {
+    "id": "velo-orange-rando-fork",
+    "name": "Rando Fork",
+    "brand": "Velo Orange",
+    "category": "fork",
+    "price": 200,
+    "weightG": 1050,
+    "year": 2023,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 52,
+      "maxTireMm": 35
+    },
+    "specs": {
+      "Geometry": "Low trail rando",
+      "Brakes": "47–57mm reach caliper",
+      "Weight": "2 lb 5.1 oz uncut",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Rando",
+      "Rim Brake"
+    ]
+  },
+  {
+    "id": "surly-bridge-club-fork",
+    "name": "Bridge Club Fork",
+    "brand": "Surly",
+    "category": "fork",
+    "price": 150,
+    "weightG": 1150,
+    "year": 2023,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559,
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 71
+    },
+    "specs": {
+      "Axle": "10x100 QR",
+      "Brakes": "51mm IS, 203mm max",
+      "Mounts": "Three-pack, mid-blade & fender mounts",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Rigid",
+      "QR"
+    ]
+  },
+  {
+    "id": "surly-ogre-fork",
+    "name": "Ogre Fork",
+    "brand": "Surly",
+    "category": "fork",
+    "price": 150,
+    "weightG": 1200,
+    "year": 2022,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 64
+    },
+    "specs": {
+      "Axle-to-Crown": "445mm",
+      "Axle": "10x100 QR",
+      "Brakes": "51mm IS, 203mm max",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Rigid",
+      "QR"
+    ]
+  },
+  {
+    "id": "surly-karate-monkey-fork",
+    "name": "Karate Monkey Fork",
+    "brand": "Surly",
+    "category": "fork",
+    "price": 180,
+    "weightG": 1200,
+    "year": 2023,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "15x110mm Boost",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 76
+    },
+    "specs": {
+      "Axle-to-Crown": "483mm (suspension-corrected)",
+      "Axle": "15x110 Boost TA",
+      "Brakes": "IS, 203mm max",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Rigid",
+      "Boost"
+    ]
+  },
+  {
+    "id": "surly-krampus-fork",
+    "name": "Krampus Fork",
+    "brand": "Surly",
+    "category": "fork",
+    "price": 180,
+    "weightG": 1250,
+    "year": 2023,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "15x110mm Boost",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 76
+    },
+    "specs": {
+      "Axle": "15x110 Boost TA",
+      "Brakes": "IS, 203mm max",
+      "Tire Clearance": "29 x 3.0\"",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "29+",
+      "Boost"
+    ]
+  },
+  {
+    "id": "surly-grappler-fork",
+    "name": "Grappler Fork",
+    "brand": "Surly",
+    "category": "fork",
+    "price": 150,
+    "weightG": 1250,
+    "year": 2022,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "15x110mm Boost",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 76
+    },
+    "specs": {
+      "Axle-to-Crown": "420mm",
+      "Axle": "15x110 Boost TA",
+      "Brakes": "IS, 203mm max",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Rigid",
+      "Boost"
+    ]
+  },
+  {
+    "id": "surly-disc-trucker-fork",
+    "name": "Disc Trucker Fork",
+    "brand": "Surly",
+    "category": "fork",
+    "price": 170,
+    "weightG": 1100,
+    "year": 2024,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "Flat Mount",
+      "maxTireMm": 47
+    },
+    "specs": {
+      "Construction": "Lugged crown, 4130 CrMo",
+      "Axle": "12x100 TA",
+      "Brakes": "Flat mount 140/160",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Touring",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "surly-midnight-special-fork",
+    "name": "Midnight Special Fork",
+    "brand": "Surly",
+    "category": "fork",
+    "price": 170,
+    "weightG": 1000,
+    "year": 2022,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "Flat Mount",
+      "maxTireMm": 60
+    },
+    "specs": {
+      "Axle": "12x100 TA",
+      "Brakes": "Flat mount 140, 160 max",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "All-Road",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "surly-long-haul-trucker-fork",
+    "name": "Long Haul Trucker Fork",
+    "brand": "Surly",
+    "category": "fork",
+    "price": 80,
+    "weightG": 1050,
+    "year": 2005,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 45
+    },
+    "specs": {
+      "Construction": "Lugged crown, 4130 CrMo",
+      "Brakes": "Canti posts",
+      "Mounts": "Low-rider & fender eyelets",
+      "Used Value": "~$80"
+    },
+    "tags": [
+      "Alt",
+      "Touring",
+      "Steel",
+      "Canti"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "black-mountain-cycles-mcd-fork",
+    "name": "MCD Fork",
+    "brand": "Black Mountain Cycles",
+    "category": "fork",
+    "price": 120,
+    "weightG": 1150,
+    "year": 2017,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "IS Disc",
+      "maxTireMm": 50
+    },
+    "specs": {
+      "Axle": "12x100 TA",
+      "Brakes": "IS, 160mm",
+      "Used Value": "~$120"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Monstercross",
+      "Disc"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "black-mountain-cycles-monstercross-fork",
+    "name": "Monstercross Fork",
+    "brand": "Black Mountain Cycles",
+    "category": "fork",
+    "price": 150,
+    "weightG": 1190,
+    "year": 2023,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 50
+    },
+    "specs": {
+      "Brakes": "Canti posts",
+      "Mounts": "Low-rider & fender eyelets",
+      "Weight": "2 lb 10 oz uncut",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Monstercross",
+      "Canti"
+    ]
+  },
+  {
+    "id": "all-city-space-horse-fork",
+    "name": "Space Horse Fork",
+    "brand": "All-City",
+    "category": "fork",
+    "price": 150,
+    "weightG": 1050,
+    "year": 2022,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "Flat Mount",
+      "maxTireMm": 47
+    },
+    "specs": {
+      "Tubing": "4130 CrMo",
+      "Axle": "12x100 TA",
+      "Brakes": "Flat mount 140–160",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Touring",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "all-city-gorilla-monsoon-fork",
+    "name": "Gorilla Monsoon Fork",
+    "brand": "All-City",
+    "category": "fork",
+    "price": 170,
+    "weightG": 1150,
+    "year": 2022,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "Flat Mount",
+      "maxTireMm": 61
+    },
+    "specs": {
+      "Crown": "Bi-Wing segmented crown",
+      "Axle": "12x100 TA",
+      "Brakes": "Flat mount 140–160",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Monster Gravel",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "soma-wolverine-fork",
+    "name": "Wolverine Fork",
+    "brand": "Soma",
+    "category": "fork",
+    "price": 199,
+    "weightG": 1497,
+    "year": 2022,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "Flat Mount",
+      "maxTireMm": 50
+    },
+    "specs": {
+      "Tubing": "Tange CrMo",
+      "Axle": "12x100 TA",
+      "Brakes": "Flat mount, 160mm",
+      "Weight": "3.3 lb uncut",
+      "Note": "Sold separately; price approximate"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Gravel",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "soma-pescadero-fork",
+    "name": "Pescadero Fork",
+    "brand": "Soma",
+    "category": "fork",
+    "price": 150,
+    "weightG": 950,
+    "year": 2023,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "QR 100mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 64,
+      "maxTireMm": 38
+    },
+    "specs": {
+      "Axle-to-Crown": "383mm",
+      "Crown": "Lugged crown",
+      "Brakes": "62mm+ reach caliper, recessed bolt",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Lugged",
+      "Rim Brake"
+    ]
+  },
+  {
+    "id": "sklar-supersomething-fork",
+    "name": "SuperSomething Steel Fork",
+    "brand": "Sklar",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1100,
+    "year": 2025,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "Flat Mount",
+      "maxTireMm": 52
+    },
+    "specs": {
+      "Axle": "12x100 TA",
+      "Brakes": "Flat mount, 160mm",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Made in USA",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "sklar-pbj-fork",
+    "name": "PBJ Steel Fork",
+    "brand": "Sklar",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1300,
+    "year": 2025,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "15x110mm Boost",
+      "brakeMount": "Post Mount",
+      "maxTireMm": 66
+    },
+    "specs": {
+      "Axle-to-Crown": "485mm (100–120mm suspension-corrected)",
+      "Axle": "15x110 Boost TA",
+      "Brakes": "Post mount, 160mm",
+      "Note": "Price is the frameset MSRP share; sold with the matching frame"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Made in USA",
+      "Boost"
+    ]
+  },
+  {
+    "id": "breadwinner-igleheart-segmented-fork",
+    "name": "Igleheart Segmented Fork",
+    "brand": "Breadwinner",
+    "category": "fork",
+    "price": 400,
+    "weightG": 1000,
+    "year": 2024,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "steerer": "Straight 1-1/8\"",
+      "frontAxle": "12x100mm",
+      "brakeMount": "Flat Mount",
+      "maxTireMm": 54
+    },
+    "specs": {
+      "Builder": "Chris Igleheart, segmented crown",
+      "Axle": "12x100 TA",
+      "Note": "Custom — sold with G-Road; specs vary"
+    },
+    "tags": [
+      "Alt",
+      "Custom",
+      "Steel",
+      "Made in USA"
+    ]
+  }
+]

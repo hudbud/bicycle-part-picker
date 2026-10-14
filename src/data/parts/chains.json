@@ -1,7 +1,497 @@
 [
-  { "id": "shimano-dura-ace-cn-m9100", "name": "Dura-Ace CN-M9100", "brand": "Shimano", "category": "chain", "price": 69, "specs": { "speeds": 12, "weight": "240g" }, "tags": ["Road", "12-Speed"] },
-  { "id": "sram-red-chain-120", "name": "RED AXS Flattop Chain", "brand": "SRAM", "category": "chain", "price": 79, "specs": { "speeds": 12, "weight": "230g" }, "tags": ["Road", "12-Speed", "Flattop"] },
-  { "id": "sram-gx-eagle-chain", "name": "GX Eagle Chain", "brand": "SRAM", "category": "chain", "price": 39, "specs": { "speeds": 12 }, "tags": ["MTB", "12-Speed", "Eagle"] },
-  { "id": "kmc-x12-chain", "name": "X12 Chain", "brand": "KMC", "category": "chain", "price": 35, "specs": { "speeds": 12, "weight": "255g" }, "tags": ["Road", "MTB", "12-Speed"] },
-  { "id": "shimano-deore-cn-m6100", "name": "Deore CN-M6100", "brand": "Shimano", "category": "chain", "price": 25, "specs": { "speeds": 12, "weight": "270g" }, "tags": ["MTB", "12-Speed", "Value"] }
+  {
+    "id": "shimano-dura-ace-cn-m9100",
+    "name": "XTR / Dura-Ace CN-M9100",
+    "brand": "Shimano",
+    "category": "chain",
+    "price": 60,
+    "weightG": 252,
+    "year": 2019,
+    "attrs": {
+      "speeds": 12,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "126",
+      "Used By": "Dura-Ace R9200, XTR M9100"
+    },
+    "tags": [
+      "Road",
+      "MTB",
+      "12-Speed"
+    ]
+  },
+  {
+    "id": "shimano-cn-m8100",
+    "name": "XT / Ultegra CN-M8100",
+    "brand": "Shimano",
+    "category": "chain",
+    "price": 45,
+    "weightG": 257,
+    "year": 2019,
+    "attrs": {
+      "speeds": 12,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "126"
+    },
+    "tags": [
+      "Road",
+      "MTB",
+      "Gravel",
+      "12-Speed"
+    ]
+  },
+  {
+    "id": "shimano-cn-m7100",
+    "name": "SLX / 105 CN-M7100",
+    "brand": "Shimano",
+    "category": "chain",
+    "price": 35,
+    "weightG": 257,
+    "year": 2019,
+    "attrs": {
+      "speeds": 12,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "126"
+    },
+    "tags": [
+      "Road",
+      "MTB",
+      "12-Speed"
+    ]
+  },
+  {
+    "id": "shimano-deore-cn-m6100",
+    "name": "Deore CN-M6100",
+    "brand": "Shimano",
+    "category": "chain",
+    "price": 25,
+    "weightG": 270,
+    "year": 2020,
+    "attrs": {
+      "speeds": 12,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "126"
+    },
+    "tags": [
+      "MTB",
+      "12-Speed",
+      "Value"
+    ]
+  },
+  {
+    "id": "shimano-cn-hg601-11",
+    "name": "105 / SLX CN-HG601-11",
+    "brand": "Shimano",
+    "category": "chain",
+    "price": 30,
+    "weightG": 257,
+    "year": 2016,
+    "attrs": {
+      "speeds": 11,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "116"
+    },
+    "tags": [
+      "Road",
+      "Gravel",
+      "11-Speed"
+    ]
+  },
+  {
+    "id": "shimano-cn-lg500",
+    "name": "Cues CN-LG500 Linkglide",
+    "brand": "Shimano",
+    "category": "chain",
+    "price": 30,
+    "weightG": 300,
+    "year": 2021,
+    "attrs": {
+      "speeds": 11,
+      "flattop": false
+    },
+    "specs": {
+      "Compatibility": "Linkglide / HG 9-10-11 speed"
+    },
+    "tags": [
+      "MTB",
+      "Urban",
+      "11-Speed",
+      "Linkglide"
+    ]
+  },
+  {
+    "id": "sram-red-chain-120",
+    "name": "RED Flattop Chain",
+    "brand": "SRAM",
+    "category": "chain",
+    "price": 85,
+    "weightG": 230,
+    "year": 2019,
+    "attrs": {
+      "speeds": 12,
+      "flattop": true
+    },
+    "specs": {
+      "Links": "114",
+      "Finish": "Hollow pins, Hard Chrome"
+    },
+    "tags": [
+      "Road",
+      "12-Speed",
+      "Flattop"
+    ]
+  },
+  {
+    "id": "sram-force-flattop-chain",
+    "name": "Force Flattop Chain",
+    "brand": "SRAM",
+    "category": "chain",
+    "price": 50,
+    "weightG": 250,
+    "year": 2019,
+    "attrs": {
+      "speeds": 12,
+      "flattop": true
+    },
+    "specs": {
+      "Links": "114"
+    },
+    "tags": [
+      "Road",
+      "Gravel",
+      "12-Speed",
+      "Flattop"
+    ]
+  },
+  {
+    "id": "sram-rival-flattop-chain",
+    "name": "Rival Flattop Chain",
+    "brand": "SRAM",
+    "category": "chain",
+    "price": 35,
+    "weightG": 252,
+    "year": 2021,
+    "attrs": {
+      "speeds": 12,
+      "flattop": true
+    },
+    "specs": {
+      "Links": "114"
+    },
+    "tags": [
+      "Road",
+      "Gravel",
+      "12-Speed",
+      "Flattop"
+    ]
+  },
+  {
+    "id": "sram-apex-flattop-chain",
+    "name": "Apex Flattop Chain",
+    "brand": "SRAM",
+    "category": "chain",
+    "price": 30,
+    "weightG": 266,
+    "year": 2023,
+    "attrs": {
+      "speeds": 12,
+      "flattop": true
+    },
+    "specs": {
+      "Links": "120"
+    },
+    "tags": [
+      "Gravel",
+      "12-Speed",
+      "Flattop"
+    ]
+  },
+  {
+    "id": "sram-xx-t-type-chain",
+    "name": "XX Eagle T-Type Chain",
+    "brand": "SRAM",
+    "category": "chain",
+    "price": 90,
+    "weightG": 245,
+    "year": 2023,
+    "attrs": {
+      "speeds": 12,
+      "flattop": true
+    },
+    "specs": {
+      "Profile": "Flattop T-Type (for Eagle Transmission)",
+      "Links": "126"
+    },
+    "tags": [
+      "MTB",
+      "12-Speed",
+      "T-Type"
+    ]
+  },
+  {
+    "id": "sram-gx-t-type-chain",
+    "name": "GX Eagle T-Type Chain",
+    "brand": "SRAM",
+    "category": "chain",
+    "price": 45,
+    "weightG": 260,
+    "year": 2023,
+    "attrs": {
+      "speeds": 12,
+      "flattop": true
+    },
+    "specs": {
+      "Profile": "Flattop T-Type (for Eagle Transmission)",
+      "Links": "126"
+    },
+    "tags": [
+      "MTB",
+      "12-Speed",
+      "T-Type"
+    ]
+  },
+  {
+    "id": "sram-x01-eagle-chain",
+    "name": "X01 Eagle Chain",
+    "brand": "SRAM",
+    "category": "chain",
+    "price": 60,
+    "weightG": 245,
+    "year": 2018,
+    "attrs": {
+      "speeds": 12,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "126"
+    },
+    "tags": [
+      "MTB",
+      "12-Speed",
+      "Eagle"
+    ]
+  },
+  {
+    "id": "sram-gx-eagle-chain",
+    "name": "GX Eagle Chain",
+    "brand": "SRAM",
+    "category": "chain",
+    "price": 39,
+    "weightG": 260,
+    "year": 2017,
+    "attrs": {
+      "speeds": 12,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "126"
+    },
+    "tags": [
+      "MTB",
+      "12-Speed",
+      "Eagle"
+    ]
+  },
+  {
+    "id": "sram-nx-eagle-chain",
+    "name": "NX Eagle Chain",
+    "brand": "SRAM",
+    "category": "chain",
+    "price": 25,
+    "weightG": 270,
+    "year": 2018,
+    "attrs": {
+      "speeds": 12,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "126"
+    },
+    "tags": [
+      "MTB",
+      "12-Speed",
+      "Eagle",
+      "Value"
+    ]
+  },
+  {
+    "id": "kmc-x12-chain",
+    "name": "X12 Chain",
+    "brand": "KMC",
+    "category": "chain",
+    "price": 40,
+    "weightG": 255,
+    "year": 2019,
+    "attrs": {
+      "speeds": 12,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "126",
+      "Compatibility": "Shimano, SRAM Eagle, Campagnolo 12s"
+    },
+    "tags": [
+      "Road",
+      "MTB",
+      "12-Speed"
+    ]
+  },
+  {
+    "id": "kmc-x11-chain",
+    "name": "X11 Chain",
+    "brand": "KMC",
+    "category": "chain",
+    "price": 35,
+    "weightG": 257,
+    "year": 2016,
+    "attrs": {
+      "speeds": 11,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "118"
+    },
+    "tags": [
+      "Road",
+      "MTB",
+      "11-Speed"
+    ]
+  },
+  {
+    "id": "ybn-sla-h12-chain",
+    "name": "SLA-H12 Chain",
+    "brand": "YBN",
+    "category": "chain",
+    "price": 55,
+    "weightG": 246,
+    "year": 2020,
+    "attrs": {
+      "speeds": 12,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "126"
+    },
+    "tags": [
+      "Road",
+      "MTB",
+      "12-Speed"
+    ]
+  },
+  {
+    "id": "campagnolo-super-record-12-chain",
+    "name": "Super Record 12s Chain",
+    "brand": "Campagnolo",
+    "category": "chain",
+    "price": 95,
+    "weightG": 220,
+    "year": 2019,
+    "attrs": {
+      "speeds": 12,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "110"
+    },
+    "tags": [
+      "Road",
+      "12-Speed",
+      "Campagnolo"
+    ]
+  },
+  {
+    "id": "campagnolo-chorus-12-chain",
+    "name": "Chorus 12s Chain",
+    "brand": "Campagnolo",
+    "category": "chain",
+    "price": 55,
+    "weightG": 230,
+    "year": 2019,
+    "attrs": {
+      "speeds": 12,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "110"
+    },
+    "tags": [
+      "Road",
+      "12-Speed",
+      "Campagnolo"
+    ]
+  },
+  {
+    "id": "campagnolo-ekar-chain",
+    "name": "Ekar 13s Chain",
+    "brand": "Campagnolo",
+    "category": "chain",
+    "price": 55,
+    "weightG": 240,
+    "year": 2020,
+    "attrs": {
+      "speeds": 13,
+      "flattop": false
+    },
+    "specs": {
+      "Links": "114"
+    },
+    "tags": [
+      "Gravel",
+      "13-Speed",
+      "Campagnolo"
+    ]
+  },
+  {
+    "id": "kmc-z510hx-chain",
+    "name": "Z510HX 1/8\" Chain",
+    "brand": "KMC",
+    "category": "chain",
+    "price": 15,
+    "weightG": 400,
+    "year": 2015,
+    "attrs": {
+      "speeds": 1,
+      "flattop": false
+    },
+    "specs": {
+      "Width": "1/8\"",
+      "Links": "112"
+    },
+    "tags": [
+      "Track",
+      "BMX",
+      "Single Speed"
+    ]
+  },
+  {
+    "id": "izumi-super-toughness-kai-chain",
+    "name": "Super Toughness KAI 1/8\" Chain",
+    "brand": "Izumi",
+    "category": "chain",
+    "price": 80,
+    "weightG": 430,
+    "year": 2018,
+    "attrs": {
+      "speeds": 1,
+      "flattop": false
+    },
+    "specs": {
+      "Width": "1/8\"",
+      "Rating": "NJS approved"
+    },
+    "tags": [
+      "Track",
+      "NJS",
+      "Single Speed"
+    ]
+  }
 ]

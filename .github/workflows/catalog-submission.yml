@@ -1,0 +1,30 @@
+# Checks frame submissions opened from the app's "Add a frame" page and comments the result.
+# Nothing is written to the repo here; a maintainer imports with scripts/import-submission.mjs.
+name: Catalog submission
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    if: startsWith(github.event.issue.title, '[Frame]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check submission
+        env:
+          BODY: ${{ github.event.issue.body }}
+        run: printf '%s' "$BODY" | node scripts/import-submission.mjs - --check > result.md
+      - name: Comment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file result.md --edit-last || gh issue comment "$NUMBER" --repo "$GITHUB_REPOSITORY" --body-file result.md

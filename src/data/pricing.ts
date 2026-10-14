@@ -1,5 +1,5 @@
 import type { Part } from '@/types/parts'
-import type { Build, ComponentSlot } from '@/types/build'
+import type { Build, ComponentSlot, PartStatus } from '@/types/build'
 import { getPartById } from './partsDatabase'
 
 /**
@@ -7,12 +7,16 @@ import { getPartById } from './partsDatabase'
  * or price feed. Everything is derived deterministically from the part id and MSRP so
  * the numbers are stable across reloads and identical for everyone viewing a share link.
  * "Buy" links go to each retailer's real search page for the part.
+ * Discontinued (vintage / NOS) parts get used-market listings instead, around the part's
+ * `price`, which for those parts is today's typical used value.
  */
 
 export interface Merchant {
   id: string
   name: string
   searchUrl: (query: string) => string
+  /** Used / secondhand marketplace rather than a retailer. */
+  used?: boolean
 }
 
 export const MERCHANTS: Merchant[] = [
@@ -22,6 +26,14 @@ export const MERCHANTS: Merchant[] = [
   { id: 'worldwide', name: 'Worldwide Cyclery', searchUrl: (q) => `https://www.worldwidecyclery.com/search?q=${encodeURIComponent(q)}` },
   { id: 'amazon', name: 'Amazon', searchUrl: (q) => `https://www.amazon.com/s?k=${encodeURIComponent(q)}` },
   { id: 'crc', name: 'Chain Reaction', searchUrl: (q) => `https://www.chainreactioncycles.com/us/en/search?q=${encodeURIComponent(q)}` },
+]
+
+/** Where discontinued parts turn up. */
+export const USED_MARKETS: Merchant[] = [
+  { id: 'ebay', name: 'eBay', used: true, searchUrl: (q) => `https://www.ebay.com/sch/i.html?_nkw=${encodeURIComponent(q)}` },
+  { id: 'pinkbike', name: 'Pinkbike Buy/Sell', used: true, searchUrl: (q) => `https://www.pinkbike.com/buysell/list/?q=${encodeURIComponent(q)}` },
+  { id: 'tpc', name: 'The Pro’s Closet', used: true, searchUrl: (q) => `https://www.theproscloset.com/search?q=${encodeURIComponent(q)}` },
+  { id: 'bikeswap', name: 'r/bikeswap', used: true, searchUrl: (q) => `https://www.reddit.com/r/bikeswap/search/?q=${encodeURIComponent(q)}&restrict_sr=1` },
 ]
 
 export interface Offer {
@@ -97,6 +109,11 @@ export function getOffers(part: Part): Offer[] {
   const rand = rngFor('offers', part.id)
   const msrp = part.price
   const query = `${part.brand} ${part.name}`
+  if (part.discontinued) {
+    const offers = usedOffers(rand, msrp, query)
+    offerCache.set(part.id, offers)
+    return offers
+  }
   // Every part is stocked somewhere; 2–5 retailers carry it.
   const shuffled = [...MERCHANTS].sort(() => rand() - 0.5)
   const count = 2 + Math.floor(rand() * 4)
@@ -120,6 +137,19 @@ export function getOffers(part: Part): Offer[] {
 
   offers.sort((a, b) => Number(b.inStock) - Number(a.inStock) || a.total - b.total)
   offerCache.set(part.id, offers)
+  return offers
+}
+
+/** Simulated secondhand listings: wide spread around the typical used value, a listing isn't always up. */
+function usedOffers(rand: () => number, value: number, query: string): Offer[] {
+  const shuffled = [...USED_MARKETS].sort(() => rand() - 0.5)
+  const count = 2 + Math.floor(rand() * 3)
+  const offers = shuffled.slice(0, count).map((merchant, i): Offer => {
+    const base = retailRound(value * (0.75 + rand() * 0.6))
+    const shipping = merchant.id === 'bikeswap' ? 0 : [8, 10, 12, 15][Math.floor(rand() * 4)]
+    return { merchant, base, shipping, inStock: i === 0 || rand() < 0.6, total: round2(base + shipping), url: merchant.searchUrl(query) }
+  })
+  offers.sort((a, b) => Number(b.inStock) - Number(a.inStock) || a.total - b.total)
   return offers
 }
 
@@ -170,6 +200,55 @@ export function getBuildTotals(build: Build): BuildTotals {
   return { parts: round2(parts), extras: round2(extras), total: round2(parts + extras), missingPrices }
 }
 
+// ---------- tracking totals ----------
+
+/** Statuses meaning "I have this part" (vs. still to buy). */
+export const ACQUIRED_STATUSES: ReadonlySet<PartStatus> = new Set(['owned', 'purchased', 'partsbin'])
+
+export const isAcquired = (slot: ComponentSlot) => slot.status != null && ACQUIRED_STATUSES.has(slot.status)
+
+export interface TrackingTotals {
+  /** What you actually paid for acquired parts (tracking.pricePaid). */
+  spent: number
+  /** Acquired parts with no price paid recorded — `spent` is then a lower bound. */
+  unrecorded: number
+  /** Today's best price for parts still to buy (status 'wanted' or unset). */
+  toBuy: number
+  /** Parts still to buy with no known price. */
+  toBuyUnpriced: number
+  /** Extras (additional items) at their listed price. */
+  extras: number
+  /** Sum of service-log costs. */
+  service: number
+  acquiredCount: number
+  toBuyCount: number
+}
+
+/** The tracker's money view of a build: spent so far vs. still to buy. */
+export function getTrackingTotals(build: Build): TrackingTotals {
+  const t: TrackingTotals = { spent: 0, unrecorded: 0, toBuy: 0, toBuyUnpriced: 0, extras: 0, service: 0, acquiredCount: 0, toBuyCount: 0 }
+  for (const slot of build.components) {
+    if (!slot.part) continue
+    if (isAcquired(slot)) {
+      t.acquiredCount++
+      if (slot.tracking?.pricePaid != null) t.spent += slot.tracking.pricePaid
+      else t.unrecorded++
+    } else {
+      t.toBuyCount++
+      const price = getSlotPrice(slot)
+      if (price == null) t.toBuyUnpriced++
+      else t.toBuy += price
+    }
+  }
+  t.extras = (build.additionalItems ?? []).reduce((s, i) => s + (i.price ?? 0), 0)
+  t.service = (build.serviceLog ?? []).reduce((s, e) => s + (e.cost ?? 0), 0)
+  t.spent = round2(t.spent)
+  t.toBuy = round2(t.toBuy)
+  t.extras = round2(t.extras)
+  t.service = round2(t.service)
+  return t
+}
+
 // ---------- price history ----------
 
 const HISTORY_DAYS = 180
@@ -184,7 +263,7 @@ function isoDay(offsetDays: number): string {
 
 /**
  * Daily lowest-price history for the last 180 days, ending at today's best price.
- * Simulated: a gentle random walk around MSRP with a few sale dips.
+ * Simulated: a random walk between today's best and the regular price, with a few sale dips.
  */
 export function getPriceHistory(part: Part): PricePoint[] {
   const best = getBestOffer(part)
@@ -193,23 +272,26 @@ export function getPriceHistory(part: Part): PricePoint[] {
   if (cached) return cached
 
   const rand = rngFor('history', part.id)
-  const msrp = part.price
+  // Walk a multiplier of today's best total so history and today share one basis (incl. shipping).
   const sales: Array<[number, number, number]> = [] // [startDay, length, depth]
   const saleCount = Math.floor(rand() * 4)
   for (let i = 0; i < saleCount; i++) {
-    sales.push([Math.floor(rand() * HISTORY_DAYS), 4 + Math.floor(rand() * 12), 0.1 + rand() * 0.2])
+    sales.push([Math.floor(rand() * HISTORY_DAYS), 4 + Math.floor(rand() * 12), 0.08 + rand() * 0.12])
   }
 
+  // Before today's deal, prices hovered between today's best and the regular (MSRP / pre-promo) price.
+  const regular = Math.max(part.price + best.shipping, best.base + best.shipping) / best.total
+  const walk = () => Math.min(regular, 0.98 + rand() * (regular - 0.96))
   const points: PricePoint[] = []
-  let level = msrp * (0.92 + rand() * 0.1)
+  let level = walk()
   for (let day = HISTORY_DAYS - 1; day >= 0; day--) {
     // Prices change a few times a month, not daily.
-    if (rand() < 0.08) level = msrp * (0.85 + rand() * 0.17)
+    if (rand() < 0.08) level = walk()
     const sale = sales.find(([start, len]) => day <= start && day > start - len)
-    let price = sale ? level * (1 - sale[2]) : level
+    let factor = sale ? level * (1 - sale[2]) : level
     // Converge on today's real best price over the last two weeks.
-    if (day < 14) price = best.total + (price - best.total) * (day / 14)
-    points.push({ date: isoDay(day), price: round2(day === 0 ? best.total : retailRound(price)) })
+    if (day < 14) factor = 1 + (factor - 1) * (day / 14)
+    points.push({ date: isoDay(day), price: day === 0 ? best.total : round2(retailRound(best.total * factor)) })
   }
   historyCache.set(part.id, points)
   return points

@@ -1,0 +1,720 @@
+[
+  {
+    "id": "shimano-xt-m730-hubs",
+    "name": "Deore XT HB-M730 / FH-M730 Hub Set",
+    "brand": "Shimano",
+    "category": "hub",
+    "price": 60,
+    "weightG": 680,
+    "year": 1987,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 130mm",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "6-speed Uniglide (UG) — HG cassettes do not fit; check your hub",
+      "Original MSRP": "~$100 (1987)",
+      "Bearings": "Cup-and-cone"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M730"
+    ]
+  },
+  {
+    "id": "shimano-xt-m732-hubs",
+    "name": "Deore XT HB-M732 / FH-M732 Hub Set",
+    "brand": "Shimano",
+    "category": "hub",
+    "price": 70,
+    "weightG": 650,
+    "year": 1990,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 7s",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "7-speed Hyperglide",
+      "Spacing": "135mm (some early hubs 130mm)",
+      "Bearings": "Cup-and-cone"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M732",
+      "7-Speed"
+    ]
+  },
+  {
+    "id": "shimano-xt-m737-hubs",
+    "name": "Deore XT HB-M737 / FH-M737 Hub Set",
+    "brand": "Shimano",
+    "category": "hub",
+    "price": 70,
+    "weightG": 620,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "8-speed Hyperglide (fits 8/9/10s MTB cassettes)",
+      "Bearings": "Cup-and-cone"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M737",
+      "8-Speed"
+    ]
+  },
+  {
+    "id": "shimano-xt-m739-hubs",
+    "name": "Deore XT HB-M739 / FH-M739 Parallax Hub Set",
+    "brand": "Shimano",
+    "category": "hub",
+    "price": 60,
+    "weightG": 610,
+    "year": 1996,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "8-speed Hyperglide (fits 8/9/10s MTB cassettes)",
+      "Note": "Large-diameter \"Parallax\" alloy shells",
+      "Bearings": "Cup-and-cone"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M739",
+      "Parallax"
+    ]
+  },
+  {
+    "id": "shimano-xt-m750-hubs",
+    "name": "Deore XT HB-M750 / FH-M750 Hub Set",
+    "brand": "Shimano",
+    "category": "hub",
+    "price": 60,
+    "weightG": 590,
+    "year": 1999,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "Hyperglide 8/9-speed",
+      "Bearings": "Cup-and-cone"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M750",
+      "9-Speed"
+    ]
+  },
+  {
+    "id": "shimano-xt-m756-disc-hubs",
+    "name": "Deore XT HB-M756 / FH-M756 Disc Hub Set",
+    "brand": "Shimano",
+    "category": "hub",
+    "price": 70,
+    "weightG": 700,
+    "year": 2003,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "6-Bolt"
+    },
+    "specs": {
+      "Freehub Body": "Hyperglide 8/9-speed",
+      "Rotor": "6-bolt (pre-Center Lock)",
+      "Note": "Pairs with IS-tab disc frames/forks of the era"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "Disc",
+      "9-Speed"
+    ]
+  },
+  {
+    "id": "shimano-xt-m770-hubs",
+    "name": "Deore XT HB-M770 / FH-M770 Hub Set",
+    "brand": "Shimano",
+    "category": "hub",
+    "price": 70,
+    "weightG": 600,
+    "year": 2007,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "Hyperglide 8/9/10-speed",
+      "Note": "Last rim-brake XT hubs — a touring favorite",
+      "Bearings": "Cup-and-cone"
+    },
+    "tags": [
+      "Deore XT",
+      "M770",
+      "Touring",
+      "Discontinued"
+    ]
+  },
+  {
+    "id": "shimano-xtr-m950-hubs",
+    "name": "XTR HB-M950 / FH-M950 Hub Set",
+    "brand": "Shimano",
+    "category": "hub",
+    "price": 120,
+    "weightG": 470,
+    "year": 1999,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "Hyperglide 8/9-speed (alloy)",
+      "Bearings": "Cup-and-cone",
+      "Original MSRP": "~$300 (1999)"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "M950",
+      "9-Speed"
+    ]
+  },
+  {
+    "id": "shimano-deore-lx-m570-hubs",
+    "name": "Deore LX HB-M570 / FH-M570 Hub Set",
+    "brand": "Shimano",
+    "category": "hub",
+    "price": 45,
+    "weightG": 660,
+    "year": 2001,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "Hyperglide 8/9-speed",
+      "Bearings": "Cup-and-cone"
+    },
+    "tags": [
+      "Vintage",
+      "Deore LX",
+      "9-Speed"
+    ]
+  },
+  {
+    "id": "suntour-xc-pro-hubs",
+    "name": "XC Pro Hub Set",
+    "brand": "Suntour",
+    "category": "hub",
+    "price": 90,
+    "weightG": 610,
+    "year": 1990,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "Suntour-spline 7-speed cassette — NOT Shimano HG compatible; needs Suntour cogs",
+      "Spacing": "135mm (early hubs 130mm)",
+      "Bearings": "Sealed cartridge"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour XC Pro"
+    ]
+  },
+  {
+    "id": "bullseye-hubs",
+    "name": "Sealed Freewheel Hub Set",
+    "brand": "Bullseye",
+    "category": "hub",
+    "price": 175,
+    "weightG": 560,
+    "year": 1985,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 126mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Thread": "English 1.37\" x 24 TPI freewheel",
+      "Spacing": "126mm (130mm also made)",
+      "Bearings": "Sealed cartridge",
+      "Note": "Collectible; big-diameter alloy axles"
+    },
+    "tags": [
+      "Vintage",
+      "Freewheel",
+      "Collectible"
+    ]
+  },
+  {
+    "id": "ringle-super-bubba-hubs",
+    "name": "Super Bubba / Bubba Hub Set",
+    "brand": "Ringlé",
+    "category": "hub",
+    "price": 150,
+    "weightG": 520,
+    "year": 1994,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "Shimano HG 8-speed compatible",
+      "Bearings": "Sealed cartridge",
+      "Finish": "Anodized colors"
+    },
+    "tags": [
+      "Vintage",
+      "Ringlé",
+      "Collectible"
+    ]
+  },
+  {
+    "id": "chris-king-classic-mtb-hubs",
+    "name": "Classic MTB Hub Set (QR, rim brake)",
+    "brand": "Chris King",
+    "category": "hub",
+    "price": 350,
+    "weightG": 470,
+    "year": 2008,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "Shimano HG 8-10s (stainless or Ti)",
+      "Engagement": "72 POE RingDrive",
+      "Note": "Non-disc King hubs — no longer catalogued; used/NOS"
+    },
+    "tags": [
+      "Chris King",
+      "Rim Brake",
+      "Premium",
+      "Discontinued"
+    ]
+  },
+  {
+    "id": "chris-king-iso-disc-hubs",
+    "name": "ISO Disc Hub Set (QR)",
+    "brand": "Chris King",
+    "category": "hub",
+    "price": 760,
+    "weightG": 500,
+    "year": 2012,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "6-Bolt"
+    },
+    "specs": {
+      "Freehub Body": "Shimano HG (stainless or Ti)",
+      "Engagement": "72 POE RingDrive",
+      "Axles": "QR end caps; convertible to thru-axle"
+    },
+    "tags": [
+      "Chris King",
+      "Disc",
+      "Premium"
+    ]
+  },
+  {
+    "id": "phil-wood-freewheel-hubs",
+    "name": "Freewheel Hub Set",
+    "brand": "Phil Wood",
+    "category": "hub",
+    "price": 430,
+    "weightG": 520,
+    "year": 2015,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Thread": "English 1.37\" x 24 TPI freewheel",
+      "Spacing": "126 / 130 / 135mm options",
+      "Bearings": "Sealed cartridge",
+      "Construction": "Made in USA"
+    },
+    "tags": [
+      "Phil Wood",
+      "Freewheel",
+      "Touring"
+    ]
+  },
+  {
+    "id": "phil-wood-pro-cassette-hubs",
+    "name": "Pro Cassette Hub Set",
+    "brand": "Phil Wood",
+    "category": "hub",
+    "price": 620,
+    "weightG": 540,
+    "year": 2015,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "Shimano HG (steel or Ti)",
+      "Spacing": "130 / 135mm",
+      "Construction": "Made in USA"
+    },
+    "tags": [
+      "Phil Wood",
+      "Touring",
+      "Premium"
+    ]
+  },
+  {
+    "id": "white-industries-mi5-hubs",
+    "name": "MI5 Hub Set (rim brake)",
+    "brand": "White Industries",
+    "category": "hub",
+    "price": 656,
+    "weightG": 412,
+    "year": 2013,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "Ti: Shimano HG 8-12s / Micro Spline / XD/XDR / Campy",
+      "Spacing": "130 or 135mm QR (interchangeable)",
+      "Note": "Rim brake only; no radial lacing",
+      "Construction": "Made in Petaluma, CA"
+    },
+    "tags": [
+      "White Industries",
+      "Rim Brake",
+      "Alt"
+    ]
+  },
+  {
+    "id": "white-industries-xmr-hubs",
+    "name": "XMR Disc Hub Set (QR)",
+    "brand": "White Industries",
+    "category": "hub",
+    "price": 712,
+    "weightG": 400,
+    "year": 2018,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "6-Bolt"
+    },
+    "specs": {
+      "Freehub Body": "Ti: Shimano HG 8-12s / Micro Spline / XD/XDR / Campy",
+      "Axles": "10x135 QR or 12x142",
+      "Construction": "Made in Petaluma, CA"
+    },
+    "tags": [
+      "White Industries",
+      "Disc",
+      "Alt"
+    ]
+  },
+  {
+    "id": "white-industries-eno-flip-flop-rear-hub",
+    "name": "ENO Flip Flop Rear Hub",
+    "brand": "White Industries",
+    "category": "hub",
+    "price": 274,
+    "weightG": 261,
+    "year": 2015,
+    "attrs": {
+      "rearAxle": "QR 135mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Thread": "Freewheel side 1.375\" x 24 TPI; fixed side uses White Industries splined cogs",
+      "Axle": "135mm bolt-on (130mm and 12x142 also); ECC eccentric version for vertical dropouts",
+      "Construction": "Made in Petaluma, CA"
+    },
+    "tags": [
+      "Single Speed",
+      "Freewheel",
+      "Rear Only"
+    ]
+  },
+  {
+    "id": "paul-word-fhub-hubs",
+    "name": "WORD / FHub Hub Set",
+    "brand": "Paul",
+    "category": "hub",
+    "price": 350,
+    "weightG": 350,
+    "year": 2016,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Thread": "English 1.37\" x 24 TPI (single-speed freewheel)",
+      "Note": "Dishless single-speed rear",
+      "Construction": "Made in Chico, CA"
+    },
+    "tags": [
+      "Paul",
+      "Single Speed",
+      "Alt"
+    ]
+  },
+  {
+    "id": "paul-disk-word-hubs",
+    "name": "Disk WORD / Disk FHub Hub Set (QR)",
+    "brand": "Paul",
+    "category": "hub",
+    "price": 387,
+    "weightG": 415,
+    "year": 2016,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "6-Bolt"
+    },
+    "specs": {
+      "Thread": "English 1.37\" x 24 TPI (single-speed freewheel)",
+      "Axles": "QR, bolt-on or 12x142 / 15mm",
+      "Construction": "Made in Chico, CA"
+    },
+    "tags": [
+      "Paul",
+      "Single Speed",
+      "Disc"
+    ]
+  },
+  {
+    "id": "surly-ultra-new-hubs",
+    "name": "Ultra New Hub Set",
+    "brand": "Surly",
+    "category": "hub",
+    "price": 150,
+    "weightG": 640,
+    "year": 2010,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Track Fixed",
+      "rotorInterface": "6-Bolt"
+    },
+    "specs": {
+      "Rear": "Fixed/free threaded with lockring, 10mm solid bolt-on axle (135mm; 130/120 also made)",
+      "Note": "Fixed cog or single-speed freewheel"
+    },
+    "tags": [
+      "Surly",
+      "Single Speed",
+      "Disc",
+      "Discontinued"
+    ]
+  },
+  {
+    "id": "hope-pro-2-evo-qr-hubs",
+    "name": "Pro 2 Evo Hub Set (QR)",
+    "brand": "Hope",
+    "category": "hub",
+    "price": 160,
+    "weightG": 480,
+    "year": 2009,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "6-Bolt"
+    },
+    "specs": {
+      "Freehub Body": "Shimano HG (alloy)",
+      "Axles": "QR end caps; convertible",
+      "Engagement": "4 pawls, 40 POE"
+    },
+    "tags": [
+      "Hope",
+      "Disc",
+      "Discontinued"
+    ]
+  },
+  {
+    "id": "velo-orange-freewheel-rear-hub-126",
+    "name": "Grand Cru High Flange Freewheel Rear Hub 126mm",
+    "brand": "Velo Orange",
+    "category": "hub",
+    "price": 88,
+    "weightG": 295,
+    "year": 2015,
+    "attrs": {
+      "rearAxle": "QR 126mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Thread": "English — 5/6/7-speed freewheels",
+      "Drillings": "36h",
+      "Bearings": "Sealed cartridge",
+      "Note": "For 126mm vintage road and early-80s MTB frames"
+    },
+    "tags": [
+      "Velo Orange",
+      "Freewheel",
+      "Rear Only"
+    ]
+  },
+  {
+    "id": "velo-orange-chronos-rim-hubs",
+    "name": "Chronos Rim Brake Hub Set",
+    "brand": "Velo Orange",
+    "category": "hub",
+    "price": 310,
+    "weightG": 430,
+    "year": 2021,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "11-speed Shimano road width (8-10s with spacer), Campy or XD",
+      "Spacing": "130 or 135mm via end caps",
+      "Engagement": "Floating ratchet"
+    },
+    "tags": [
+      "Velo Orange",
+      "Rim Brake",
+      "Alt"
+    ]
+  },
+  {
+    "id": "velo-orange-chronos-disc-hubs",
+    "name": "Chronos Disc Hub Set (QR)",
+    "brand": "Velo Orange",
+    "category": "hub",
+    "price": 340,
+    "weightG": 450,
+    "year": 2021,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "6-Bolt"
+    },
+    "specs": {
+      "Freehub Body": "11-speed Shimano road width (8-10s with spacer), Micro Spline, Campy or XD",
+      "Axles": "135 QR or 12x142 via end caps",
+      "Engagement": "Floating ratchet"
+    },
+    "tags": [
+      "Velo Orange",
+      "Disc",
+      "Alt"
+    ]
+  },
+  {
+    "id": "velo-orange-chronos-rim-hubs-130",
+    "name": "Chronos Rim Brake Hub Set (130mm)",
+    "brand": "Velo Orange",
+    "category": "hub",
+    "price": 310,
+    "weightG": 430,
+    "year": 2021,
+    "attrs": {
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 130mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Freehub Body": "11-speed Shimano road width (8-10s with spacer), Campy or XD",
+      "Spacing": "130mm end caps (135 also included option)",
+      "Engagement": "Floating ratchet"
+    },
+    "tags": [
+      "Velo Orange",
+      "Rim Brake",
+      "Rando"
+    ]
+  },
+  {
+    "id": "phil-wood-single-speed-freewheel-rear-hub-120",
+    "name": "Single-Speed Freewheel Rear Hub 120mm",
+    "brand": "Phil Wood",
+    "category": "hub",
+    "price": 260,
+    "weightG": 330,
+    "year": 2015,
+    "attrs": {
+      "rearAxle": "120mm Track",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Thread": "English 1.37\" x 24 TPI single-speed freewheel",
+      "Axle": "Solid bolt-on, 120mm (130/135 also made)",
+      "Construction": "Made in USA"
+    },
+    "tags": [
+      "Phil Wood",
+      "Single Speed",
+      "Rear Only"
+    ]
+  }
+]

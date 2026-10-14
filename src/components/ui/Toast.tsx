@@ -25,9 +25,9 @@ const ToastFrame = styled(Frame).attrs({ variant: 'window' })`
 `
 
 const typeColors: Record<ToastType['type'], string> = {
-  success: '#22c55e',
-  error:   '#c0392b',
-  info:    '#000000',
+  success: 'var(--win-ok)',
+  error:   'var(--win-bad)',
+  info:    'var(--win-text)',
 }
 
 const icons: Record<ToastType['type'], string> = {

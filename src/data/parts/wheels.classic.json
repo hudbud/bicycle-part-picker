@@ -1,0 +1,1031 @@
+[
+  {
+    "id": "shimano-xt-m732-araya-rm20-wheels-26",
+    "name": "Deore XT M732 / Araya RM-20 26\" Wheelset",
+    "brand": "Shimano",
+    "category": "wheels",
+    "price": 120,
+    "weightG": 1950,
+    "year": 1990,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 16,
+      "rimDepthMm": 15,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 7s",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Period OEM/shop build, 36h 3-cross",
+      "Hubs": "Deore XT M732 (7-speed HG)",
+      "Rims": "Araya RM-20"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "26\"",
+      "7-Speed"
+    ]
+  },
+  {
+    "id": "shimano-xt-m737-mavic-217-wheels-26",
+    "name": "Deore XT M737 / Mavic 217 26\" Wheelset",
+    "brand": "Shimano",
+    "category": "wheels",
+    "price": 130,
+    "weightG": 1900,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 18,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Period shop build, 32/36h",
+      "Hubs": "Deore XT M737 (8-speed HG)",
+      "Rims": "Mavic 217 SUP"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "26\"",
+      "8-Speed"
+    ]
+  },
+  {
+    "id": "shimano-xtr-m950-mavic-x517-wheels-26",
+    "name": "XTR M950 / Mavic X517 26\" Wheelset",
+    "brand": "Shimano",
+    "category": "wheels",
+    "price": 220,
+    "weightG": 1720,
+    "year": 1999,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 19,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Period shop build, 32h",
+      "Hubs": "XTR M950",
+      "Rims": "Mavic X517"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "26\"",
+      "9-Speed"
+    ]
+  },
+  {
+    "id": "phil-wood-araya-rm20-freewheel-wheels-26",
+    "name": "Freewheel / Araya RM-20 26\" Wheelset (130mm)",
+    "brand": "Phil Wood",
+    "category": "wheels",
+    "price": 350,
+    "weightG": 1900,
+    "year": 1988,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 16,
+      "rimDepthMm": 15,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 130mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Period custom build (Ritchey / Fat Chance era), 36h",
+      "Hubs": "Phil Wood sealed freewheel hubs",
+      "Thread": "English freewheel"
+    },
+    "tags": [
+      "Vintage",
+      "Phil Wood",
+      "26\"",
+      "Freewheel"
+    ]
+  },
+  {
+    "id": "bullseye-araya-7x-freewheel-wheels-26",
+    "name": "Freewheel / Araya 7X 26\" Wheelset (126mm)",
+    "brand": "Bullseye",
+    "category": "wheels",
+    "price": 300,
+    "weightG": 2100,
+    "year": 1984,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 19,
+      "rimDepthMm": 16,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 126mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Period custom build, 36h",
+      "Hubs": "Bullseye sealed freewheel hubs",
+      "Rims": "Araya 7X 26 x 1.75"
+    },
+    "tags": [
+      "Vintage",
+      "Bullseye",
+      "26\"",
+      "Freewheel"
+    ]
+  },
+  {
+    "id": "mavic-crossmax-26-vbrake",
+    "name": "Crossmax 26\" (V-Brake)",
+    "brand": "Mavic",
+    "category": "wheels",
+    "price": 150,
+    "weightG": 1640,
+    "year": 1999,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 19,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Spokes": "Straight-pull, 24/24",
+      "Note": "First-generation Crossmax system wheel"
+    },
+    "tags": [
+      "Vintage",
+      "Crossmax",
+      "26\"",
+      "XC"
+    ]
+  },
+  {
+    "id": "mavic-crossmax-sl-26-vbrake",
+    "name": "Crossmax SL 26\" (V-Brake)",
+    "brand": "Mavic",
+    "category": "wheels",
+    "price": 200,
+    "weightG": 1550,
+    "year": 2002,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 19,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Spokes": "Zicral aluminum straight-pull, 24/24",
+      "Rim": "Machined (ISM) rim-brake rims"
+    },
+    "tags": [
+      "Vintage",
+      "Crossmax",
+      "26\"",
+      "XC"
+    ]
+  },
+  {
+    "id": "mavic-crossmax-ust-26",
+    "name": "Crossmax UST 26\" (V-Brake)",
+    "brand": "Mavic",
+    "category": "wheels",
+    "price": 170,
+    "weightG": 1720,
+    "year": 2001,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 19,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake",
+      "tubeless": true
+    },
+    "specs": {
+      "Tubeless": "UST (needs UST tires)",
+      "Spokes": "Straight-pull, 24/24"
+    },
+    "tags": [
+      "Vintage",
+      "Crossmax",
+      "26\"",
+      "UST"
+    ]
+  },
+  {
+    "id": "mavic-crossmax-sl-disc-26",
+    "name": "Crossmax SL Disc 26\"",
+    "brand": "Mavic",
+    "category": "wheels",
+    "price": 220,
+    "weightG": 1600,
+    "year": 2004,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 19,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "6-Bolt",
+      "tubeless": true
+    },
+    "specs": {
+      "Tubeless": "UST",
+      "Rotor": "6-bolt",
+      "Spokes": "Zicral aluminum straight-pull, 24/24"
+    },
+    "tags": [
+      "Vintage",
+      "Crossmax",
+      "26\"",
+      "Disc"
+    ]
+  },
+  {
+    "id": "mavic-crossride-disc-26",
+    "name": "Crossride Disc 26\"",
+    "brand": "Mavic",
+    "category": "wheels",
+    "price": 90,
+    "weightG": 1890,
+    "year": 2003,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 19,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "6-Bolt",
+      "tubeless": false
+    },
+    "specs": {
+      "Rotor": "6-bolt",
+      "Spokes": "Steel J-bend, 24/24"
+    },
+    "tags": [
+      "Vintage",
+      "Mavic",
+      "26\"",
+      "Disc"
+    ]
+  },
+  {
+    "id": "shimano-xtr-wh-m975-26",
+    "name": "XTR WH-M975 26\"",
+    "brand": "Shimano",
+    "category": "wheels",
+    "price": 250,
+    "weightG": 1650,
+    "year": 2004,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 20,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Center Lock",
+      "tubeless": false
+    },
+    "specs": {
+      "Rotor": "Center Lock (the first Center Lock wheels)",
+      "Spokes": "Straight-pull, 24/24",
+      "Original MSRP": "~$900 (2004)"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "26\"",
+      "Disc"
+    ]
+  },
+  {
+    "id": "sun-ringle-rhyno-lite-26-wheels",
+    "name": "Rhyno Lite 26\" Wheelset (Rim Brake)",
+    "brand": "Sun Ringlé",
+    "category": "wheels",
+    "price": 260,
+    "weightG": 2250,
+    "year": 2018,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 21,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Hubs": "Shimano Deore-level cup-and-cone, 36h",
+      "Note": "Bombproof 26\" rim-brake wheels for vintage MTB conversions"
+    },
+    "tags": [
+      "26\"",
+      "Touring",
+      "Durable"
+    ]
+  },
+  {
+    "id": "sun-ringle-rhyno-lite-26-disc-wheels",
+    "name": "Rhyno Lite 26\" Disc Wheelset",
+    "brand": "Sun Ringlé",
+    "category": "wheels",
+    "price": 280,
+    "weightG": 2350,
+    "year": 2018,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 21,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "6-Bolt",
+      "tubeless": false
+    },
+    "specs": {
+      "Hubs": "Shimano Deore-level 6-bolt, 36h",
+      "Note": "Rim also has a brake track"
+    },
+    "tags": [
+      "26\"",
+      "Touring",
+      "Disc"
+    ]
+  },
+  {
+    "id": "white-industries-xmr-cliffhanger-wheels-26",
+    "name": "XMR / Velocity Cliffhanger 26\" Disc Wheelset",
+    "brand": "White Industries",
+    "category": "wheels",
+    "price": 1050,
+    "weightG": 1850,
+    "year": 2018,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 21,
+      "rimDepthMm": 19,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "6-Bolt",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Handbuilt, 32h",
+      "Hubs": "White Industries XMR (QR)",
+      "Rims": "Velocity Cliffhanger"
+    },
+    "tags": [
+      "26\"",
+      "Alt",
+      "Disc",
+      "Handbuilt"
+    ]
+  },
+  {
+    "id": "white-industries-eno-cliffhanger-ss-wheels-26",
+    "name": "ENO / Velocity Cliffhanger 26\" Single-Speed Wheelset",
+    "brand": "White Industries",
+    "category": "wheels",
+    "price": 560,
+    "weightG": 1950,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 21,
+      "rimDepthMm": 19,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Handbuilt, 32h",
+      "Hubs": "White Industries ENO flip-flop rear (bolt-on 135) + MI5 front",
+      "Note": "Freewheel side; ENO ECC eccentric version for vertical dropouts"
+    },
+    "tags": [
+      "26\"",
+      "Single Speed",
+      "Handbuilt"
+    ]
+  },
+  {
+    "id": "velo-orange-voyager-disc-650b-wheels",
+    "name": "Voyager Disc 650B Wheelset",
+    "brand": "Velo Orange",
+    "category": "wheels",
+    "price": 575,
+    "weightG": 2050,
+    "year": 2022,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 20,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "6-Bolt",
+      "tubeless": true
+    },
+    "specs": {
+      "Hubs": "VO Chronos Disc (6-bolt, floating ratchet)",
+      "Spokes": "Sapim Race, 32h",
+      "Tire Range": "38mm–2.4\"",
+      "Note": "Sold as separate front/rear wheels; 26\" and 700c also made. 11s body — 8-10s with spacer"
+    },
+    "tags": [
+      "650B",
+      "Alt",
+      "Disc",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "velo-orange-enterprise-700c-wheels",
+    "name": "Enterprise 700c Wheelset (130mm)",
+    "brand": "Velo Orange",
+    "category": "wheels",
+    "price": 505,
+    "weightG": 1890,
+    "year": 2022,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 18,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 130mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Hubs": "VO Chronos rim brake",
+      "Spokes": "Sapim Race, 32h",
+      "Tire Range": "25–38mm",
+      "Note": "Polished box rims; sold as separate front/rear. 11s body — 8-10s with spacer"
+    },
+    "tags": [
+      "700C",
+      "Rando",
+      "Rim Brake"
+    ]
+  },
+  {
+    "id": "velo-orange-chronos-voyager-650b-wheels",
+    "name": "Chronos / Voyager 650B Rim-Brake Wheelset",
+    "brand": "Velo Orange",
+    "category": "wheels",
+    "price": 560,
+    "weightG": 2000,
+    "year": 2022,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 20,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "Rim Brake",
+      "tubeless": true
+    },
+    "specs": {
+      "Build": "Handbuilt from VO Chronos rim-brake hubs + Voyager rims, 32h",
+      "Spacing": "Rear 130 or 135 via end caps"
+    },
+    "tags": [
+      "650B",
+      "Rando",
+      "Rim Brake",
+      "Handbuilt"
+    ]
+  },
+  {
+    "id": "shimano-xt-m770-mavic-a719-700c-wheels",
+    "name": "Deore XT M770 / Mavic A719 700c Touring Wheelset",
+    "brand": "Shimano",
+    "category": "wheels",
+    "price": 180,
+    "weightG": 2050,
+    "year": 2007,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 20,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Period touring build, 36h 3-cross",
+      "Hubs": "Deore XT M770 (rim brake)",
+      "Rims": "Mavic A719"
+    },
+    "tags": [
+      "700C",
+      "Touring",
+      "Rim Brake",
+      "Discontinued"
+    ]
+  },
+  {
+    "id": "phil-wood-dyad-700c-touring-wheels",
+    "name": "Pro Cassette / Velocity Dyad 700c Touring Wheelset",
+    "brand": "Phil Wood",
+    "category": "wheels",
+    "price": 950,
+    "weightG": 2000,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 19,
+      "rimDepthMm": 22,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Handbuilt, 36h 3-cross",
+      "Hubs": "Phil Wood Pro Cassette (rim brake)",
+      "Rims": "Velocity Dyad"
+    },
+    "tags": [
+      "700C",
+      "Touring",
+      "Rim Brake",
+      "Handbuilt"
+    ]
+  },
+  {
+    "id": "sun-ringle-rhyno-lite-700c-disc-wheels",
+    "name": "Rhyno Lite 700c Disc Touring Wheelset",
+    "brand": "Sun Ringlé",
+    "category": "wheels",
+    "price": 290,
+    "weightG": 2400,
+    "year": 2018,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 21,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 8-10s / MTB",
+      "rotorInterface": "6-Bolt",
+      "tubeless": false
+    },
+    "specs": {
+      "Hubs": "Shimano Deore-level 6-bolt, 36h",
+      "Note": "Rim also has a brake track"
+    },
+    "tags": [
+      "700C",
+      "Touring",
+      "Disc"
+    ]
+  },
+  {
+    "id": "paul-word-tb14-700c-ss-wheels",
+    "name": "WORD / H Plus Son TB14 700c Single-Speed Wheelset",
+    "brand": "Paul",
+    "category": "wheels",
+    "price": 560,
+    "weightG": 1750,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 21,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Handbuilt, 32h",
+      "Hubs": "Paul WORD (135, freewheel) + FHub",
+      "Rims": "H Plus Son TB14"
+    },
+    "tags": [
+      "700C",
+      "Single Speed",
+      "Handbuilt"
+    ]
+  },
+  {
+    "id": "paul-disk-word-archetype-650b-ss-wheels",
+    "name": "Disk WORD / H Plus Son Archetype 650B Single-Speed Wheelset",
+    "brand": "Paul",
+    "category": "wheels",
+    "price": 600,
+    "weightG": 1800,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 25,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "6-Bolt",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Handbuilt, 32h",
+      "Hubs": "Paul Disk WORD + Disk FHub (QR)",
+      "Rims": "H Plus Son Archetype"
+    },
+    "tags": [
+      "650B",
+      "Single Speed",
+      "Disc",
+      "Handbuilt"
+    ]
+  },
+  {
+    "id": "velo-orange-chronos-voyager-650b-wheels-130",
+    "name": "Chronos / Voyager 650B Rim-Brake Wheelset (130mm)",
+    "brand": "Velo Orange",
+    "category": "wheels",
+    "price": 560,
+    "weightG": 2000,
+    "year": 2022,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 20,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 130mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "Rim Brake",
+      "tubeless": true
+    },
+    "specs": {
+      "Build": "Handbuilt from VO Chronos rim-brake hubs (130mm end caps) + Voyager rims, 32h",
+      "Note": "For 130mm 650B rando/canti frames (Crust Lightning Bolt, Romanceür…)"
+    },
+    "tags": [
+      "650B",
+      "Rando",
+      "Rim Brake",
+      "Handbuilt"
+    ]
+  },
+  {
+    "id": "white-industries-t11-archetype-650b-wheels",
+    "name": "T11 / H Plus Son Archetype 650B Wheelset (130mm)",
+    "brand": "White Industries",
+    "category": "wheels",
+    "price": 900,
+    "weightG": 1650,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 25,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 130mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Handbuilt, 28/32h",
+      "Hubs": "White Industries T11 (rim brake, 130 QR)",
+      "Rims": "H Plus Son Archetype 650B"
+    },
+    "tags": [
+      "650B",
+      "Rando",
+      "Rim Brake",
+      "Handbuilt"
+    ]
+  },
+  {
+    "id": "velo-orange-voyager-disc-26-ta-wheels",
+    "name": "Voyager Disc 26\" Wheelset (12mm thru-axle)",
+    "brand": "Velo Orange",
+    "category": "wheels",
+    "price": 575,
+    "weightG": 2000,
+    "year": 2022,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 20,
+      "frontAxle": "12x100mm",
+      "rearAxle": "12x142mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "6-Bolt",
+      "tubeless": true
+    },
+    "specs": {
+      "Hubs": "VO Chronos Disc, 12x100 / 12x142 end caps (QR also)",
+      "Spokes": "Sapim Race, 32h",
+      "Tire Range": "38mm–2.4\"",
+      "Note": "Sold as separate front/rear wheels. 11s body — 8-10s with spacer"
+    },
+    "tags": [
+      "26\"",
+      "Alt",
+      "Disc",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "velo-orange-voyager-disc-650b-ta-wheels",
+    "name": "Voyager Disc 650B Wheelset (12mm thru-axle)",
+    "brand": "Velo Orange",
+    "category": "wheels",
+    "price": 575,
+    "weightG": 2050,
+    "year": 2022,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 20,
+      "frontAxle": "12x100mm",
+      "rearAxle": "12x142mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "6-Bolt",
+      "tubeless": true
+    },
+    "specs": {
+      "Hubs": "VO Chronos Disc, 12x100 / 12x142 end caps (QR also)",
+      "Spokes": "Sapim Race, 32h",
+      "Tire Range": "38mm–2.4\"",
+      "Note": "Sold as separate front/rear wheels"
+    },
+    "tags": [
+      "650B",
+      "Alt",
+      "Disc",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "velo-orange-voyager-disc-700c-ta-wheels",
+    "name": "Voyager Disc 700c Wheelset (12mm thru-axle)",
+    "brand": "Velo Orange",
+    "category": "wheels",
+    "price": 575,
+    "weightG": 2120,
+    "year": 2022,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 20,
+      "frontAxle": "12x100mm",
+      "rearAxle": "12x142mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "6-Bolt",
+      "tubeless": true
+    },
+    "specs": {
+      "Hubs": "VO Chronos Disc, 12x100 / 12x142 end caps (QR also)",
+      "Spokes": "Sapim Race, 32h",
+      "Tire Range": "38mm–2.4\"",
+      "Note": "Sold as separate front/rear wheels"
+    },
+    "tags": [
+      "700C",
+      "Alt",
+      "Disc",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "velo-orange-orbital-disc-650b-ta-wheels",
+    "name": "Orbital Disc 650B Wheelset (12mm thru-axle)",
+    "brand": "Velo Orange",
+    "category": "wheels",
+    "price": 595,
+    "weightG": 1700,
+    "year": 2023,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 25,
+      "rimDepthMm": 22,
+      "frontAxle": "12x100mm",
+      "rearAxle": "12x142mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "6-Bolt",
+      "tubeless": true
+    },
+    "specs": {
+      "Hubs": "VO Chronos Disc, 12x100 / 12x142 end caps (QR also)",
+      "Spokes": "Double-butted stainless, 28h",
+      "Tire Range": "45mm–2.5\"",
+      "Note": "Sold as separate front/rear; internal width approximate"
+    },
+    "tags": [
+      "650B",
+      "Alt",
+      "Disc",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "velo-orange-orbital-disc-700c-ta-wheels",
+    "name": "Orbital Disc 700c / 29er Wheelset (12mm thru-axle)",
+    "brand": "Velo Orange",
+    "category": "wheels",
+    "price": 595,
+    "weightG": 1780,
+    "year": 2023,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 25,
+      "rimDepthMm": 22,
+      "frontAxle": "12x100mm",
+      "rearAxle": "12x142mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "6-Bolt",
+      "tubeless": true
+    },
+    "specs": {
+      "Hubs": "VO Chronos Disc, 12x100 / 12x142 end caps (QR also)",
+      "Spokes": "Double-butted stainless, 28/32h",
+      "Tire Range": "45mm–2.5\"",
+      "Rear Weight": "981g",
+      "Note": "Sold as separate front/rear; internal width approximate"
+    },
+    "tags": [
+      "700C",
+      "29er",
+      "Disc",
+      "Thru-Axle"
+    ]
+  },
+  {
+    "id": "velo-orange-orbital-disc-20-wheels",
+    "name": "Orbital Disc 20\" Mini Velo Wheelset",
+    "brand": "Velo Orange",
+    "category": "wheels",
+    "price": 510,
+    "weightG": 1364,
+    "year": 2023,
+    "attrs": {
+      "wheelSize": 406,
+      "material": "aluminum",
+      "rimInternalMm": 25,
+      "rimDepthMm": 20,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "QR 135mm",
+      "freehub": "Shimano HG 11/12s Road",
+      "rotorInterface": "6-Bolt",
+      "tubeless": true
+    },
+    "specs": {
+      "Hubs": "VO Chronos (front QR 100; rear disc 135 QR or 12x142)",
+      "Spokes": "Double-butted stainless, 32h",
+      "Tire Range": "45mm–2.5\"",
+      "Weights": "Front 612g / rear 752g",
+      "Note": "For the VO Neutrino; internal width approximate"
+    },
+    "tags": [
+      "20\"",
+      "Mini Velo",
+      "Disc",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "phil-wood-a23-700c-ss-wheels-120",
+    "name": "Single-Speed Freewheel / Velocity A23 700c Wheelset (120mm)",
+    "brand": "Phil Wood",
+    "category": "wheels",
+    "price": 650,
+    "weightG": 1700,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 18,
+      "rimDepthMm": 20,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "120mm Track",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Handbuilt, 32h",
+      "Hubs": "Phil Wood 120mm bolt-on freewheel rear + QR front",
+      "Rims": "Velocity A23",
+      "Note": "For 120mm road single-speeds (Rivendell Roaduno)"
+    },
+    "tags": [
+      "700C",
+      "Single Speed",
+      "Handbuilt"
+    ]
+  },
+  {
+    "id": "phil-wood-archetype-650b-ss-wheels-120",
+    "name": "Single-Speed Freewheel / H Plus Son Archetype 650B Wheelset (120mm)",
+    "brand": "Phil Wood",
+    "category": "wheels",
+    "price": 650,
+    "weightG": 1680,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 25,
+      "frontAxle": "QR 100mm",
+      "rearAxle": "120mm Track",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake",
+      "tubeless": false
+    },
+    "specs": {
+      "Build": "Handbuilt, 32h",
+      "Hubs": "Phil Wood 120mm bolt-on freewheel rear + QR front",
+      "Rims": "H Plus Son Archetype 650B"
+    },
+    "tags": [
+      "650B",
+      "Single Speed",
+      "Handbuilt"
+    ]
+  }
+]

@@ -40,13 +40,12 @@ const material: SpecField = { key: 'material', label: 'Material', filter: 'enum'
 const weight: SpecField = { key: 'weightG', label: 'Weight', filter: 'range', column: true, unit: 'g' }
 const speeds: SpecField = { key: 'speeds', label: 'Speeds', filter: 'enum', column: true }
 const wheelSize: SpecField = { key: 'wheelSize', label: 'Wheel Size', filter: 'enum', column: true }
-const disciplines: SpecField = { key: 'disciplines', label: 'Use', filter: 'enum' }
 const year: SpecField = { key: 'year', label: 'Year' }
 const color: SpecField = { key: 'color', label: 'Color' }
 
 export const SPEC_SCHEMA: Record<PartCategory, SpecField[]> = {
   frame: [
-    disciplines, material,
+    material,
     { key: 'suspension', label: 'Suspension', filter: 'enum', column: true },
     { key: 'wheelSizes', label: 'Wheel Sizes', filter: 'enum', column: true },
     { key: 'maxTireMm', label: 'Max Tire', filter: 'range', column: true, unit: 'mm' },
@@ -64,10 +63,12 @@ export const SPEC_SCHEMA: Record<PartCategory, SpecField[]> = {
     { key: 'derailleurHanger', label: 'Derailleur Hanger' },
     { key: 'frontDerailleurMount', label: 'Front Derailleur Mount', filter: 'enum' },
     { key: 'maxRotorMm', label: 'Max Rotor', unit: 'mm' },
+    { key: 'brakeReachMm', label: 'Brake Reach', unit: 'mm' },
+    { key: 'downtubeBosses', label: 'Downtube Shifter Bosses' },
     weight, year, color,
   ],
   fork: [
-    disciplines, material,
+    material,
     { key: 'travelMm', label: 'Travel', filter: 'range', column: true, unit: 'mm' },
     { key: 'wheelSizes', label: 'Wheel Sizes', filter: 'enum', column: true },
     { key: 'steerer', label: 'Steerer', filter: 'enum' },
@@ -76,6 +77,7 @@ export const SPEC_SCHEMA: Record<PartCategory, SpecField[]> = {
     { key: 'maxTireMm', label: 'Max Tire', filter: 'range', unit: 'mm' },
     { key: 'springType', label: 'Spring', filter: 'enum' },
     { key: 'maxRotorMm', label: 'Max Rotor', unit: 'mm' },
+    { key: 'brakeReachMm', label: 'Brake Reach', unit: 'mm' },
     weight, year,
   ],
   rearShock: [
@@ -90,7 +92,7 @@ export const SPEC_SCHEMA: Record<PartCategory, SpecField[]> = {
     material, weight, color,
   ],
   wheels: [
-    disciplines, wheelSize, material,
+    wheelSize, material,
     { key: 'rimDepthMm', label: 'Rim Depth', filter: 'range', column: true, unit: 'mm' },
     { key: 'rimInternalMm', label: 'Internal Width', filter: 'range', column: true, unit: 'mm' },
     { key: 'frontAxle', label: 'Front Axle', filter: 'enum' },
@@ -118,13 +120,13 @@ export const SPEC_SCHEMA: Record<PartCategory, SpecField[]> = {
   ],
   spokes: [material, weight],
   tires: [
-    disciplines, wheelSize,
+    wheelSize,
     { key: 'tireWidthMm', label: 'Width', filter: 'range', column: true, unit: 'mm' },
     { key: 'tubeless', label: 'Tubeless Ready', filter: 'bool', column: true },
     weight, year, color,
   ],
   crankset: [
-    disciplines, speeds,
+    speeds,
     { key: 'chainrings', label: 'Chainrings', column: true },
     { key: 'chainringCount', label: 'Rings', filter: 'enum' },
     { key: 'bbSpindle', label: 'Spindle', filter: 'enum', column: true },
@@ -142,7 +144,7 @@ export const SPEC_SCHEMA: Record<PartCategory, SpecField[]> = {
     weight, color,
   ],
   cassette: [
-    disciplines, speeds,
+    speeds,
     { key: 'cassetteRange', label: 'Range', column: true },
     { key: 'freehub', label: 'Freehub', filter: 'enum', column: true },
     { key: 'largestCogT', label: 'Largest Cog', filter: 'range', unit: 'T' },
@@ -154,7 +156,7 @@ export const SPEC_SCHEMA: Record<PartCategory, SpecField[]> = {
     weight,
   ],
   rearDerailleur: [
-    disciplines, speeds,
+    speeds,
     { key: 'shiftSystem', label: 'Shift System', filter: 'enum', column: true },
     { key: 'maxCogT', label: 'Max Cog', filter: 'range', column: true, unit: 'T' },
     { key: 'electronic', label: 'Electronic', filter: 'bool' },
@@ -168,18 +170,29 @@ export const SPEC_SCHEMA: Record<PartCategory, SpecField[]> = {
     weight,
   ],
   shifters: [
-    disciplines, speeds,
+    speeds,
     { key: 'shiftSystem', label: 'Shift System', filter: 'enum', column: true },
+    { key: 'shifterMount', label: 'Mount', filter: 'enum', column: true },
     { key: 'handlebarType', label: 'Bar Type', filter: 'enum', column: true },
     { key: 'brakeType', label: 'Brake Lever', filter: 'enum' },
+    { key: 'cablePull', label: 'Brake Pull', filter: 'enum' },
     { key: 'electronic', label: 'Electronic', filter: 'bool' },
     weight, year,
   ],
   brakes: [
-    disciplines,
     { key: 'brakeType', label: 'Type', filter: 'enum', column: true },
     { key: 'brakeMount', label: 'Mount', filter: 'enum', column: true },
+    { key: 'cablePull', label: 'Cable Pull', filter: 'enum', column: true },
+    { key: 'includesLevers', label: 'Includes Levers', filter: 'bool' },
+    { key: 'reachMinMm', label: 'Min Reach', unit: 'mm' },
+    { key: 'reachMaxMm', label: 'Max Reach', unit: 'mm' },
     weight, year,
+  ],
+  brakeLevers: [
+    { key: 'handlebarType', label: 'Bar Type', filter: 'enum', column: true },
+    { key: 'brakeType', label: 'Actuates', filter: 'enum', column: true },
+    { key: 'cablePull', label: 'Cable Pull', filter: 'enum', column: true },
+    material, weight, year, color,
   ],
   rotors: [
     { key: 'rotorSizeMm', label: 'Size', filter: 'enum', column: true, unit: 'mm' },
@@ -187,7 +200,7 @@ export const SPEC_SCHEMA: Record<PartCategory, SpecField[]> = {
     weight,
   ],
   handlebars: [
-    disciplines, material,
+    material,
     { key: 'handlebarType', label: 'Type', filter: 'enum', column: true },
     { key: 'barClampMm', label: 'Clamp', filter: 'enum', column: true, unit: 'mm' },
     { key: 'barWidthMm', label: 'Width', filter: 'range', column: true, unit: 'mm' },
@@ -211,13 +224,11 @@ export const SPEC_SCHEMA: Record<PartCategory, SpecField[]> = {
   ],
   dropperPost: [],
   saddle: [
-    disciplines,
     { key: 'saddleWidthMm', label: 'Width', filter: 'range', column: true, unit: 'mm' },
     { key: 'railMaterial', label: 'Rails', filter: 'enum', column: true },
     weight, color,
   ],
   pedals: [
-    disciplines,
     { key: 'pedalSystem', label: 'System', filter: 'enum', column: true },
     material, weight,
   ],
@@ -242,7 +253,6 @@ export function formatSpecValue(field: SpecField, value: SpecValue): string {
   if (field.key === 'wheelSize') return formatWheelSize(value as WheelSize)
   if (field.key === 'wheelSizes') return (value as WheelSize[]).map(formatWheelSize).join(', ')
   if (field.key === 'material') return cap(String(value))
-  if (field.key === 'disciplines') return (value as string[]).map((d) => (d === 'mtb' ? 'MTB' : cap(d))).join(', ')
   if (field.key === 'speeds') return value === 1 ? 'Single' : `${value}-speed`
   if (field.key === 'chainringCount') return `${value}x`
   if (typeof value === 'boolean') return value ? 'Yes' : 'No'
@@ -253,7 +263,6 @@ export function formatSpecValue(field: SpecField, value: SpecValue): string {
 /** Format a single enum facet value (used in filter checkbox labels). */
 export function formatFacetValue(field: SpecField, value: string | number | boolean): string {
   if (field.key === 'wheelSizes' || field.key === 'wheelSize') return formatWheelSize(value as WheelSize)
-  if (field.key === 'disciplines') return value === 'mtb' ? 'MTB' : cap(String(value))
   return formatSpecValue(field, value as SpecValue)
 }
 

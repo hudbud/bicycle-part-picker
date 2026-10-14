@@ -1,5 +1,9 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "echo 'nothing to install: the old address only serves moved/'",
+  "buildCommand": "echo 'nothing to build: the site moved to Cloudflare (wrangler.jsonc)'",
+  "outputDirectory": "moved",
+  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }],
+  "headers": [{ "source": "/(.*)", "headers": [{ "key": "Cache-Control", "value": "no-store" }] }]
 }

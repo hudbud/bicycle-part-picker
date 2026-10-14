@@ -1,0 +1,3555 @@
+[
+  {
+    "id": "specialized-stumpjumper-1981",
+    "name": "Stumpjumper (1981–82)",
+    "brand": "Specialized",
+    "category": "frame",
+    "price": 1500,
+    "weightG": 2600,
+    "year": 1981,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 25.4
+    },
+    "specs": {
+      "Original MSRP": "$750 complete bike / ≈$395 frame & fork (1981)",
+      "Tubing": "Tange CrMo, TIG-welded",
+      "Made In": "Japan (Toyo)",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "126mm",
+      "Seatpost": "25.4mm reported — measure before buying (verify)",
+      "Brakes": "Mafac cantilevers (stock)",
+      "Stock Fork": "Biplane-crown CrMo",
+      "Frame Weight": "≈2.6kg (estimated)",
+      "Notes": "The first mass-produced mountain bike; a Smithsonian piece. Originals with the biplane fork command collector prices — condition and originality drive value."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Historic",
+      "Steel",
+      "Rigid"
+    ]
+  },
+  {
+    "id": "specialized-stumpjumper-m2-1998",
+    "name": "Stumpjumper M2 (1998)",
+    "brand": "Specialized",
+    "category": "frame",
+    "price": 250,
+    "weightG": 1550,
+    "year": 1998,
+    "discontinued": true,
+    "attrs": {
+      "material": "aluminum",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 80,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 30.9
+    },
+    "specs": {
+      "Original MSRP": "$1,200 complete bike (1998)",
+      "Tubing": "M2 metal-matrix (aluminum + ceramic) composite, butted, TIG-welded",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "30.9mm",
+      "Front Derailleur": "31.8mm clamp, bottom-pull",
+      "Headset": "1-1/8\" threadless (stock: Ritchey Logic Expert)",
+      "Stock Fork": "RockShox Judy T2",
+      "Frame Weight": "≈1.55kg (estimated)"
+    },
+    "tags": [
+      "Vintage",
+      "Aluminum",
+      "Hardtail",
+      "M2"
+    ]
+  },
+  {
+    "id": "bridgestone-mb-0-1991",
+    "name": "MB-0 (1991)",
+    "brand": "Bridgestone",
+    "category": "frame",
+    "price": 1200,
+    "weightG": 1815,
+    "year": 1991,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Original MSRP": "≈$1,500–1,700 complete bike (1991)",
+      "Tubing": "Ritchey Logic Prestige, lugged",
+      "Made In": "Japan",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "130mm",
+      "Seatpost": "27.2mm (verify — not in Sheldon Brown's table)",
+      "Front Derailleur": "28.6mm clamp, top-pull",
+      "Headset": "1\" threaded, Ritchey Logic Comp (ISO 30.2mm cups / 26.4mm crown race)",
+      "Brakes": "Dia-Compe 986 cantilevers (stock)",
+      "Stock Fork": "Ritchey Logic rigid",
+      "Frame Weight": "4.0 lb (catalog)",
+      "Notes": "The flagship one-year Bridgestone MTB. Highly collectible."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Rigid",
+      "Grant Petersen"
+    ]
+  },
+  {
+    "id": "bridgestone-mb-1-1993",
+    "name": "MB-1 (1993)",
+    "brand": "Bridgestone",
+    "category": "frame",
+    "price": 550,
+    "weightG": 1995,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 60,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Original MSRP": "$1,515–1,575 complete bike (1993)",
+      "Tubing": "Ritchey Logic Prestige, lugged",
+      "Made In": "Japan",
+      "BB Shell": "68mm English (stock Tioga BB-401, 124.5mm spindle)",
+      "Rear Spacing": "130mm",
+      "Seatpost": "27.2mm",
+      "Headset": "1\" threaded (stock: Shimano Deore DX)",
+      "Brakes": "Dia-Compe 987 cantilevers (stock)",
+      "Tire Clearance": "Catalog: fits Ritchey 2.35\"",
+      "Frame Weight": "≈4.4 lb",
+      "Notes": "Limited run of ≈1,000."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Rigid",
+      "Grant Petersen"
+    ]
+  },
+  {
+    "id": "bridgestone-mb-2-1993",
+    "name": "MB-2 (1993)",
+    "brand": "Bridgestone",
+    "category": "frame",
+    "price": 450,
+    "weightG": 2085,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Original MSRP": "$1,175–1,215 complete bike (1993)",
+      "Tubing": "Ritchey Logic Prestige main tubes, Logic CrMo rear, lugged",
+      "Made In": "Japan",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "130mm",
+      "Seatpost": "27.2mm (1994 MB-2: 29.4mm per Sheldon Brown — different frame)",
+      "Headset": "1\" threaded",
+      "Frame Weight": "≈4.6 lb"
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Rigid",
+      "Grant Petersen"
+    ]
+  },
+  {
+    "id": "bridgestone-mb-3-1993",
+    "name": "MB-3 (1993)",
+    "brand": "Bridgestone",
+    "category": "frame",
+    "price": 350,
+    "weightG": 2270,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$835–890 complete bike (1993)",
+      "Tubing": "Ritchey Logic CrMo, lugged",
+      "Made In": "Japan",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "130mm",
+      "Seatpost": "27.0mm",
+      "Headset": "1\" threaded (stock: Tange Levin CDS)",
+      "Brakes": "Dia-Compe 986 cantilevers (stock)",
+      "Frame Weight": "5.0 lb (catalog)"
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Rigid",
+      "Grant Petersen"
+    ]
+  },
+  {
+    "id": "bridgestone-mb-5-1993",
+    "name": "MB-5 (1993)",
+    "brand": "Bridgestone",
+    "category": "frame",
+    "price": 200,
+    "weightG": 2495,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 26.2
+    },
+    "specs": {
+      "Original MSRP": "$535–560 complete bike (1993)",
+      "Tubing": "Tange double-butted CrMo, TIG-welded",
+      "Made In": "Taiwan",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "130mm",
+      "Seatpost": "26.2mm (1992/93 catalog chart; 1991 MB-5 was 26.8mm)",
+      "Headset": "1\" threaded, JIS",
+      "Brakes": "Dia-Compe XCE cantilevers (stock)",
+      "Frame Weight": "5.5 lb (catalog)",
+      "Notes": "26.2mm posts are rare — a 25.4mm post with a shim works."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Rigid",
+      "Grant Petersen",
+      "Budget"
+    ]
+  },
+  {
+    "id": "bridgestone-xo-1-1992",
+    "name": "XO-1 (1992)",
+    "brand": "Bridgestone",
+    "category": "frame",
+    "price": 900,
+    "weightG": 2200,
+    "year": 1992,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 42,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": true,
+      "brakeReachMm": 49,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "≈$1,000 complete bike (1992)",
+      "Tubing": "Ishiwata 019 / 022E / 024E CrMo, lugged",
+      "Made In": "Japan",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "126mm",
+      "Seatpost": "27.0mm",
+      "Front Derailleur": "28.6mm clamp, bottom-pull (stock: Shimano 105)",
+      "Brakes": "Standard-reach sidepulls (stock: Dia-Compe BRS 300); reach ≈49mm estimated — verify",
+      "Tire Clearance": "Up to ≈1.6\" (fork crown is the limit); stock 26x1.25\" Tioga City Slicker",
+      "Headset": "1\" threaded (stock: Shimano Ultegra)",
+      "Shifters": "Downtube bosses (stock: bar-end/thumbie mix)",
+      "Frame Weight": "≈2.2kg (estimated)",
+      "Notes": "Grant Petersen's cult \"un-racer\" with moustache bars (run of ≈1,000, ≈24 lb complete); the only XO-1 with sidepulls and 26\" road-ish clearance. Needs a sidepull fork (the matching XO-1 fork)."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Rigid",
+      "Grant Petersen",
+      "All-Rounder"
+    ]
+  },
+  {
+    "id": "bridgestone-xo-1-1993",
+    "name": "XO-1 (1993)",
+    "brand": "Bridgestone",
+    "category": "frame",
+    "price": 800,
+    "weightG": 2250,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 51,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": true,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$1,115–1,175 complete bike (1993)",
+      "Tubing": "CrMo, lugged",
+      "Made In": "Japan",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "128mm (splits the difference; takes 126 or 130mm hubs — a 130mm QR hub is the easy fit)",
+      "Seatpost": "27.0mm",
+      "Brakes": "Cantilever (stock: Dia-Compe 986)",
+      "Tire Clearance": "Up to 2.0\" (catalog)",
+      "Headset": "1\" threaded (stock: Tange Falcon)",
+      "Frame Weight": "≈2.25kg (estimated)"
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Rigid",
+      "Grant Petersen",
+      "All-Rounder"
+    ]
+  },
+  {
+    "id": "ritchey-p-21-1993",
+    "name": "P-21 (1993)",
+    "brand": "Ritchey",
+    "category": "frame",
+    "price": 500,
+    "weightG": 2000,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "≈$800–900 frameset (1993, verify)",
+      "Tubing": "Ritchey Logic CrMo, TIG-welded",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.0mm",
+      "Headset": "1\" threaded",
+      "Frame Weight": "≈2.0kg (estimated)",
+      "Notes": "Tom Ritchey's production race frame."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Rigid",
+      "Race"
+    ]
+  },
+  {
+    "id": "fat-chance-yo-eddy-1994",
+    "name": "Yo Eddy (1994)",
+    "brand": "Fat Chance",
+    "category": "frame",
+    "price": 1500,
+    "weightG": 2050,
+    "year": 1994,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 60,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Threaded 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 50,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 29.4
+    },
+    "specs": {
+      "Original MSRP": "≈$1,000 frame & fork (1994, verify)",
+      "Tubing": "Oversized CrMo, TIG-welded",
+      "Made In": "Somerville, MA, USA",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "29.4mm (Sheldon Brown) — rare size; a 27.2mm post with a shim works",
+      "Front Derailleur": "31.8mm clamp (verify)",
+      "Headset": "1-1/8\" threaded",
+      "Stock Fork": "Yo Eddy rigid (paint-matched)",
+      "Notes": "Chris Chance's oversize-tube icon. Built for rigid forks or short-travel (≈50mm) suspension of the era."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Handbuilt",
+      "USA"
+    ]
+  },
+  {
+    "id": "yeti-fro-1988",
+    "name": "FRO (1988)",
+    "brand": "Yeti",
+    "category": "frame",
+    "price": 1200,
+    "weightG": 2150,
+    "year": 1988,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 26.4
+    },
+    "specs": {
+      "Original MSRP": "≈$800 frameset (1988, verify)",
+      "Tubing": "True Temper CrMo, TIG-welded, loop seatstays",
+      "Made In": "Agoura Hills, CA, USA",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "130mm",
+      "Seatpost": "26.4mm",
+      "Headset": "1\" threaded",
+      "Notes": "\"For Racing Only\" — John Parker's race frame with the signature Yeti loop stay. Turquoise/yellow paint commands a premium."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Rigid",
+      "Race",
+      "USA"
+    ]
+  },
+  {
+    "id": "breezer-lightning-1997",
+    "name": "Lightning (1997)",
+    "brand": "Breezer",
+    "category": "frame",
+    "price": 900,
+    "weightG": 1900,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Original MSRP": "$2,900 complete bike (1997)",
+      "Tubing": "Breezer D'Fusion 4130 CrMo, fillet-brazed/TIG",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.2mm",
+      "Front Derailleur": "28.6mm clamp, bottom-pull",
+      "Headset": "1-1/8\" threadless (stock: Dia-Compe Aheadset)",
+      "Brakes": "V-brake bosses (stock: XTR V-Brake)",
+      "Stock Fork": "Breezer rigid",
+      "Notes": "Joe Breeze's top steel race frame; ≈20.9 lb complete with XTR."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Race",
+      "Joe Breeze"
+    ]
+  },
+  {
+    "id": "bontrager-privateer-1996",
+    "name": "Privateer (1996)",
+    "brand": "Bontrager",
+    "category": "frame",
+    "price": 450,
+    "weightG": 2100,
+    "year": 1996,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$949 complete bike (1996)",
+      "Tubing": "True Temper CrMo (custom-drawn), TIG-welded",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.0mm",
+      "Front Derailleur": "28.6mm clamp, top-pull",
+      "Headset": "1\" threaded (stock: Tange Levin)",
+      "Stock Fork": "Tange rigid",
+      "Notes": "Keith Bontrager's production steel frame (Santa Cruz era), signature curved seatstay bridge."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Keith Bontrager"
+    ]
+  },
+  {
+    "id": "bontrager-race-lite-1997",
+    "name": "Race Lite (1997)",
+    "brand": "Bontrager",
+    "category": "frame",
+    "price": 800,
+    "weightG": 1950,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Original MSRP": "$2,299 complete bike (1997)",
+      "Tubing": "4130 CrMo, TIG-welded",
+      "Made In": "Santa Cruz, CA, USA",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "26.8mm",
+      "Front Derailleur": "28.6mm clamp, top-pull",
+      "Headset": "1\" (stock: Shimano Deore LX)",
+      "Stock Fork": "RockShox Judy XC",
+      "Notes": "Pre-Trek Bontrager race frame. Kept the 1\" head tube when most went 1-1/8\"."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Race",
+      "Keith Bontrager",
+      "USA"
+    ]
+  },
+  {
+    "id": "ibis-mojo-1998",
+    "name": "Mojo (1998)",
+    "brand": "Ibis",
+    "category": "frame",
+    "price": 1200,
+    "weightG": 2000,
+    "year": 1998,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 28.6
+    },
+    "specs": {
+      "Original MSRP": "$1,850 complete bike (1998)",
+      "Tubing": "Ibis \"Moron\" oversized steel, TIG-welded",
+      "Made In": "Sebastopol, CA, USA",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "28.6mm (rare — a 27.2mm post with a shim works)",
+      "Front Derailleur": "31.8mm clamp, bottom-pull",
+      "Headset": "1-1/8\" threadless",
+      "Stock Fork": "RockShox Judy XC",
+      "Notes": "Scot Nicol's classic; the \"hand job\" cable hanger is often missing — check."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "USA"
+    ]
+  },
+  {
+    "id": "merlin-mountain-1994",
+    "name": "Mountain (1994)",
+    "brand": "Merlin",
+    "category": "frame",
+    "price": 800,
+    "weightG": 1450,
+    "year": 1994,
+    "discontinued": true,
+    "attrs": {
+      "material": "titanium",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Threaded 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 50,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Original MSRP": "≈$1,500 frame (1994, verify)",
+      "Tubing": "3Al/2.5V titanium, TIG-welded",
+      "Made In": "Cambridge, MA, USA",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.2mm",
+      "Headset": "1-1/8\" threaded (verify — early-90s Merlins were 1\")",
+      "Notes": "Bead-blasted titanium with the classic Merlin decals. Inspect chainstay/dropout welds."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Titanium",
+      "USA"
+    ]
+  },
+  {
+    "id": "gt-zaskar-1995",
+    "name": "Zaskar (1995)",
+    "brand": "GT",
+    "category": "frame",
+    "price": 350,
+    "weightG": 1650,
+    "year": 1995,
+    "discontinued": true,
+    "attrs": {
+      "material": "aluminum",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$1,579.99 complete bike (1995)",
+      "Tubing": "6061-T6 aluminum, TIG-welded, triple triangle",
+      "BB Shell": "English threaded",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.0mm",
+      "Front Derailleur": "31.8mm clamp, bottom-pull",
+      "Headset": "1-1/8\" threadless (stock: Tioga Aheadset)",
+      "Stock Fork": "GT Bologna Lite rigid CrMo",
+      "Notes": "GT's triple-triangle race hardtail; huge Euro race history."
+    },
+    "tags": [
+      "Vintage",
+      "Aluminum",
+      "Race",
+      "Triple Triangle"
+    ]
+  },
+  {
+    "id": "diamondback-apex-1995",
+    "name": "Apex (1995)",
+    "brand": "Diamondback",
+    "category": "frame",
+    "price": 200,
+    "weightG": 2200,
+    "year": 1995,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Threaded 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 50,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$850 complete bike (1995)",
+      "Tubing": "True Temper TT Lite double-butted CrMo, TIG-welded",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.0mm",
+      "Front Derailleur": "28.6mm clamp, top-pull",
+      "Headset": "1-1/8\" threaded (stock: Tioga Alchemy)",
+      "Stock Fork": "Spinner rigid"
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Budget"
+    ]
+  },
+  {
+    "id": "kona-explosif-1995",
+    "name": "Explosif (1995)",
+    "brand": "Kona",
+    "category": "frame",
+    "price": 400,
+    "weightG": 2050,
+    "year": 1995,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Threaded 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$1,399 complete bike (1995)",
+      "Tubing": "Columbus Max CrMo, TIG-welded (1994: Tange Prestige)",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.0mm",
+      "Front Derailleur": "28.6mm clamp, bottom-pull",
+      "Headset": "1-1/8\" threaded",
+      "Stock Fork": "Marzocchi XCR",
+      "Notes": "Kona's steel race frame, sloping top tube."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Race"
+    ]
+  },
+  {
+    "id": "kona-cinder-cone-1995",
+    "name": "Cinder Cone (1995)",
+    "brand": "Kona",
+    "category": "frame",
+    "price": 200,
+    "weightG": 2300,
+    "year": 1995,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Threaded 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$749 complete bike (1995)",
+      "Tubing": "Tange Infinity double-butted CrMo, TIG-welded",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.0mm per 1995 catalog (Sheldon Brown lists 26.6mm — measure)",
+      "Front Derailleur": "28.6mm clamp, bottom-pull",
+      "Headset": "1-1/8\" threaded",
+      "Stock Fork": "Kona Project Two rigid (suspension-corrected)"
+    },
+    "tags": [
+      "Vintage",
+      "Steel"
+    ]
+  },
+  {
+    "id": "kona-lava-dome-1995",
+    "name": "Lava Dome (1995)",
+    "brand": "Kona",
+    "category": "frame",
+    "price": 180,
+    "weightG": 2350,
+    "year": 1995,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Threaded 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$599 complete bike (1995)",
+      "Tubing": "Tange Infinity double-butted CrMo, TIG-welded",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.0mm",
+      "Front Derailleur": "28.6mm clamp, bottom-pull",
+      "Headset": "1-1/8\" threaded (stock: Kona Race Light Impact)",
+      "Stock Fork": "Kona Project Two TB rigid",
+      "Notes": "A favorite base for rigid commuter/touring conversions."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Budget"
+    ]
+  },
+  {
+    "id": "kona-hei-hei-1997",
+    "name": "Hei Hei (1997)",
+    "brand": "Kona",
+    "category": "frame",
+    "price": 700,
+    "weightG": 1500,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "material": "titanium",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 80,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$3,799 complete bike (1997)",
+      "Tubing": "3Al/2.5V titanium, welded",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.0mm (1997 catalog; 1995 spec listed 27.2mm — measure)",
+      "Front Derailleur": "31.8mm clamp, top-pull",
+      "Headset": "1-1/8\" threadless (stock: Dia-Compe Aheadset ATC)",
+      "Brakes": "V-brake bosses (stock: XTR V-Brake)",
+      "Stock Fork": "Marzocchi Bomber Z1"
+    },
+    "tags": [
+      "Vintage",
+      "Titanium",
+      "Collectible"
+    ]
+  },
+  {
+    "id": "marin-pine-mountain-1994",
+    "name": "Pine Mountain (1994)",
+    "brand": "Marin",
+    "category": "frame",
+    "price": 300,
+    "weightG": 2250,
+    "year": 1994,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Threaded 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 50,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$1,200 complete bike (1994)",
+      "Tubing": "Tange double-butted CrMo, TIG-welded",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.0mm",
+      "Headset": "1-1/8\" threaded (verify)",
+      "Stock Fork": "Butted CrMo rigid",
+      "Notes": "Marin's classic steel trail frame, popular for 26\" adventure/touring builds."
+    },
+    "tags": [
+      "Vintage",
+      "Steel"
+    ]
+  },
+  {
+    "id": "marin-team-titanium-1997",
+    "name": "Team Titanium (1997)",
+    "brand": "Marin",
+    "category": "frame",
+    "price": 600,
+    "weightG": 1450,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "material": "titanium",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Original MSRP": "$2,299 complete bike (1997)",
+      "Tubing": "3Al/2.5V titanium, welded",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.2mm",
+      "Front Derailleur": "31.8mm clamp, bottom-pull",
+      "Headset": "1-1/8\" threadless",
+      "Brakes": "V-brake bosses",
+      "Stock Fork": "Answer Manitou FS"
+    },
+    "tags": [
+      "Vintage",
+      "Titanium"
+    ]
+  },
+  {
+    "id": "trek-970-1995",
+    "name": "970 (1995)",
+    "brand": "Trek",
+    "category": "frame",
+    "price": 200,
+    "weightG": 2150,
+    "year": 1995,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Original MSRP": "$899.99 complete bike (1995)",
+      "Tubing": "True Temper OX III CrMo, TIG-welded",
+      "Made In": "USA",
+      "BB Shell": "73mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.2mm",
+      "Front Derailleur": "31.8mm clamp, top-pull",
+      "Headset": "1-1/8\" threadless (stock: Dia-Compe Kontak Aheadset)",
+      "Stock Fork": "Trek System 2 rigid"
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "USA"
+    ]
+  },
+  {
+    "id": "trek-8000-1995",
+    "name": "8000 (1995)",
+    "brand": "Trek",
+    "category": "frame",
+    "price": 200,
+    "weightG": 1550,
+    "year": 1995,
+    "discontinued": true,
+    "attrs": {
+      "material": "aluminum",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Original MSRP": "$939.99 complete bike (1995)",
+      "Tubing": "Easton ProGram EA60 aluminum, bonded to cast lugs",
+      "Made In": "USA",
+      "BB Shell": "73mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.2mm",
+      "Front Derailleur": "34.9mm clamp, top-pull",
+      "Headset": "1-1/8\" threadless (stock: Dia-Compe Kontak Aheadset)",
+      "Stock Fork": "Trek System 2 rigid",
+      "Notes": "Bonded frames — inspect joints for corrosion/creaking."
+    },
+    "tags": [
+      "Vintage",
+      "Aluminum",
+      "Bonded",
+      "USA"
+    ]
+  },
+  {
+    "id": "gary-fisher-hoo-koo-e-koo-1996",
+    "name": "Hoo Koo E Koo (1996)",
+    "brand": "Gary Fisher",
+    "category": "frame",
+    "price": 180,
+    "weightG": 2250,
+    "year": 1996,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Original MSRP": "$749.99 complete bike (1996)",
+      "Tubing": "True Temper double-butted CrMo, TIG-welded",
+      "BB Shell": "73mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.2mm",
+      "Front Derailleur": "31.8mm clamp, top-pull",
+      "Headset": "1-1/8\" threadless",
+      "Stock Fork": "RockShox Quadra 21R"
+    },
+    "tags": [
+      "Vintage",
+      "Steel"
+    ]
+  },
+  {
+    "id": "gary-fisher-paragon-1997",
+    "name": "Paragon (1997)",
+    "brand": "Gary Fisher",
+    "category": "frame",
+    "price": 200,
+    "weightG": 1600,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "material": "aluminum",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Original MSRP": "$1,199.99 complete bike (1997)",
+      "Tubing": "Easton 6061-T6 double-butted aluminum, TIG-welded",
+      "BB Shell": "73mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.2mm",
+      "Front Derailleur": "34.9mm clamp, top-pull",
+      "Headset": "1-1/8\" threadless",
+      "Brakes": "V-brake bosses",
+      "Stock Fork": "RockShox Indy SL"
+    },
+    "tags": [
+      "Vintage",
+      "Aluminum"
+    ]
+  },
+  {
+    "id": "cannondale-m500-1996",
+    "name": "M500 (1996)",
+    "brand": "Cannondale",
+    "category": "frame",
+    "price": 150,
+    "weightG": 1650,
+    "year": 1996,
+    "discontinued": true,
+    "attrs": {
+      "material": "aluminum",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Original MSRP": "$849.99 complete bike (1996)",
+      "Tubing": "6061-T6 double-butted, heat-treated aluminum, fat tubes",
+      "Made In": "Bedford, PA, USA",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "27.2mm",
+      "Front Derailleur": "Clamp, bottom-pull (≈31.8mm — verify)",
+      "Headset": "1-1/8\" threadless (stock: Dia-Compe Aheadset)",
+      "Stock Fork": "Cannondale P-Bone aluminum rigid",
+      "Notes": "Standard 1-1/8\" head tube — unlike the 1992–93 M-series (1-1/4\") and Headshok F-series."
+    },
+    "tags": [
+      "Vintage",
+      "Aluminum",
+      "USA"
+    ]
+  },
+  {
+    "id": "klein-attitude-comp-1997",
+    "name": "Attitude Comp (1997)",
+    "brand": "Klein",
+    "category": "frame",
+    "price": 400,
+    "weightG": 1500,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "material": "aluminum",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 31.6
+    },
+    "specs": {
+      "Original MSRP": "$1,699 complete bike (1997); Attitude Race $2,099",
+      "Tubing": "Klein Gradient aluminum, oversized",
+      "Made In": "Chehalis, WA, USA",
+      "BB Shell": "73mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "31.6mm",
+      "Front Derailleur": "34.9mm clamp, bottom-pull",
+      "Headset": "1-1/8\" threadless (stock: Tange DX)",
+      "Brakes": "V-brake bosses",
+      "Stock Fork": "RockShox Indy SL",
+      "Notes": "1997+ uses standard headset/BB — the 1994–96 Attitude used Klein's proprietary Airhead headset and press-fit BB."
+    },
+    "tags": [
+      "Vintage",
+      "Aluminum",
+      "USA",
+      "Collectible"
+    ]
+  },
+  {
+    "id": "klein-pulse-comp-1996",
+    "name": "Pulse Comp (1996)",
+    "brand": "Klein",
+    "category": "frame",
+    "price": 350,
+    "weightG": 1550,
+    "year": 1996,
+    "discontinued": true,
+    "attrs": {
+      "material": "aluminum",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 31.6
+    },
+    "specs": {
+      "Original MSRP": "$1,799 complete bike (1996)",
+      "Tubing": "Klein Gradient aluminum",
+      "Made In": "Chehalis, WA, USA",
+      "BB Shell": "73mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "31.6mm",
+      "Front Derailleur": "34.9mm clamp, top-pull",
+      "Headset": "1-1/8\" threadless (Aheadset)"
+    },
+    "tags": [
+      "Vintage",
+      "Aluminum",
+      "USA"
+    ]
+  },
+  {
+    "id": "rocky-mountain-blizzard-1997",
+    "name": "Blizzard (1997)",
+    "brand": "Rocky Mountain",
+    "category": "frame",
+    "price": 500,
+    "weightG": 2000,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Original MSRP": "$2,079 complete bike (1997)",
+      "Tubing": "Tange Prestige heat-treated CrMo, TIG-welded",
+      "Made In": "Vancouver, BC, Canada",
+      "BB Shell": "68mm English",
+      "Rear Spacing": "135mm",
+      "Seatpost": "26.8mm",
+      "Front Derailleur": "28.6mm clamp, top-pull",
+      "Headset": "1-1/8\" threadless (stock: Race Face Real Seal)",
+      "Stock Fork": "RockShox Judy XC",
+      "Notes": "The Canadian steel race frame — paint schemes are a big part of the value."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Race",
+      "Collectible"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "peugeot-px-10-1975",
+    "name": "PX-10E (c. 1975)",
+    "brand": "Peugeot",
+    "price": 600,
+    "weightG": 2250,
+    "year": 1975,
+    "url": "https://classicrendezvous.com/country-of-origin/france/peugeot/px10-history/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 28,
+      "bbShell": "Italian",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 55,
+      "downtubeBosses": false,
+      "seatpostMm": 26.4
+    },
+    "specs": {
+      "Tubing": "Reynolds 531 double-butted throughout, lugged (Nervex Professional or plain Nervex lugs mid-70s)",
+      "Made In": "France (Beaulieu)",
+      "Wheels": "700c tubulars stock (Mavic Montlhéry / Super Champion sew-ups); 700c clinchers fit",
+      "Tire Clearance": "≈25–28mm (verify)",
+      "Rear": "120mm (5-speed era); 531 stays cold-set to 126mm easily",
+      "BB Shell": "French 35×1mm (both cups right-hand thread) — needs a French-thread BB; shell is commonly re-tapped to Italian 36×24",
+      "Headset": "1\" threaded, French 25×1mm threads (French headset needed)",
+      "Stem": "French 22.0mm quill (not 22.2mm)",
+      "Seatpost": "26.4mm (early-70s Nervex Pro lugs); 26.6mm reported on 1976 plain-lug frames — measure",
+      "Brakes": "Mafac Racer centerpulls (stock), through-bolt mounting; reach ≈55mm (est.)",
+      "Dropouts": "Simplex forged with integral hanger",
+      "Shifters": "Clamp-on Simplex downtube levers (no bosses)",
+      "Frame Weight": "≈2.25kg (est.)",
+      "Notes": "The PX-10 had fender clearance and mounts per period sources. Full French standard everywhere: Stronglight 93 crank, French-thread Normandy/Maillard freewheel hubs, Simplex Delrin derailleurs. Many \"PX-10s\" are actually PR-10/PX-10LE variants — check the 531 \"tubing throughout\" decal and chromed stays."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race",
+      "French"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "peugeot-uo-8-1975",
+    "name": "UO-8 (mid-1970s)",
+    "brand": "Peugeot",
+    "price": 150,
+    "weightG": 3000,
+    "year": 1975,
+    "url": "https://en.wikipedia.org/wiki/Peugeot_UO-8",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 32,
+      "bbShell": "Italian",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 60,
+      "downtubeBosses": false,
+      "seatpostMm": 25.4
+    },
+    "specs": {
+      "Tubing": "Carbolite 103 mild/hi-tensile steel (\"Tube Special\" decal), lugged",
+      "Made In": "France",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes (US-market UO-8s mostly came on 27×1-1/4\" steel rims; some on 700c — verify per bike)",
+      "Tire Clearance": "27×1-1/4\" (≈32mm) with fenders",
+      "Rear": "120mm; mild steel cold-sets to 126mm",
+      "BB Shell": "French 35×1mm (both cups right-hand thread) — needs a French-thread BB; shell is commonly re-tapped to Italian 36×24",
+      "Headset": "1\" threaded, French 25×1mm",
+      "Stem": "French 22.0mm quill",
+      "Seatpost": "≈25.4mm without shim (Sheldon Brown lists 25.4–25.5; some came with a 22mm post in a shim) — measure",
+      "Brakes": "Mafac Racer centerpulls (stock); long reach (≈60mm est.)",
+      "Frame Weight": "≈3.0kg (est.; ≈28 lb complete bike)",
+      "Notes": "The bike-boom French ten-speed; long wheelbase, soft ride, cheap to buy. Simplex derailleurs and French-thread everything; most are converted to city/single-speed builds. Cottered steel cranks stock."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Urban",
+      "French",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "raleigh-super-course-1975",
+    "name": "Super Course (1971–77)",
+    "brand": "Raleigh",
+    "price": 300,
+    "weightG": 2500,
+    "year": 1975,
+    "url": "https://www.sheldonbrown.com/retroraleighs/super-course.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 32,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 60,
+      "downtubeBosses": false,
+      "seatpostMm": 26.4
+    },
+    "specs": {
+      "Tubing": "Reynolds 531 plain-gauge main tubes; hi-tensile stays & fork; lugged (Nervex/Capella)",
+      "Made In": "England (Carlton, Worksop)",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes (US models: Weinmann alloy 27\" rims — verify per bike)",
+      "Tire Clearance": "27×1-1/4\" (≈32mm) (verify)",
+      "Rear": "120mm; cold-sets to 126mm",
+      "BB Shell": "68mm, standard British (BSA 1.37×24) — the cheapest Raleigh to use standard threading rather than Raleigh-proprietary",
+      "Seatpost": "26.4mm (1971–77); 27.2mm on 1979+ 531 DB frames",
+      "Brakes": "Weinmann centerpulls (stock), long reach (≈60mm est.)",
+      "Frame Weight": "≈2.5kg (est.)",
+      "Notes": "Bike-boom sport-tourer with fender clearance; a staple xbiking/commuter base."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Touring",
+      "British",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "raleigh-international-1975",
+    "name": "International (1970–76)",
+    "brand": "Raleigh",
+    "price": 700,
+    "weightG": 2300,
+    "year": 1975,
+    "url": "https://www.sheldonbrown.com/retroraleighs/international.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 32,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 60,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "Reynolds 531 double-butted throughout; Nervex Professional lugs",
+      "Made In": "England (Carlton)",
+      "Dropouts": "Campagnolo with eyelets front & rear",
+      "Wheels": "700c tubulars stock (Campagnolo hubs / tubulars); takes 700c clinchers",
+      "Tire Clearance": "Very generous for a 70s road frame — ≈32mm (verify)",
+      "Rear": "120mm (Simplex 5-speed freewheel stock); cold-sets to 126mm",
+      "BB Shell": "68mm British (BSA)",
+      "Seatpost": "27.2mm",
+      "Brakes": "Weinmann long-reach centerpulls (needed for the clearance); reach ≈60mm (est.)",
+      "Shifters": "Campagnolo Nuovo Record clamp-on downtube levers",
+      "Frame Weight": "≈2.3kg (est.)",
+      "Notes": "Relaxed, long, light-touring geometry with full Campagnolo NR (except brakes). Many were parted out for the Campy bits; the frame makes a superb fendered light tourer / randonneur."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Road",
+      "All-Road",
+      "British"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "raleigh-competition-1978",
+    "name": "Competition GS (1978)",
+    "brand": "Raleigh",
+    "price": 450,
+    "weightG": 2300,
+    "year": 1978,
+    "url": "https://www.sheldonbrown.com/retroraleighs/competition.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 28,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 52,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "Reynolds 531 butted tubes, forks and stays; Bocama Professional lugs; Vagner crown; Campagnolo fork ends",
+      "Made In": "England (Carlton)",
+      "Wheels": "700c clinchers stock (Weinmann A124, 700×25c)",
+      "Tire Clearance": "≈28mm (verify)",
+      "Rear": "120mm (verify); cold-sets to 126mm",
+      "BB Shell": "68mm British (BSA)",
+      "Seatpost": "27.2mm (Campagnolo Gran Sport stock)",
+      "Brakes": "Weinmann 605 sidepulls (stock); reach ≈52mm (est.)",
+      "Geometry": "74° head / 74° seat (21.5\" catalog frame)",
+      "Frame Weight": "≈2.3kg (est.)",
+      "Notes": "1974 straight-gauge 531 Competitions take a 27.0mm post; 1984 531 DB versions 27.2mm."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race",
+      "British"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "motobecane-grand-record-1975",
+    "name": "Grand Record (mid-1970s)",
+    "brand": "Motobecane",
+    "price": 500,
+    "weightG": 2300,
+    "year": 1975,
+    "url": "https://classicrendezvous.com/country-of-origin/france/motobecane/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 28,
+      "bbShell": "Italian",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 55,
+      "downtubeBosses": false,
+      "seatpostMm": 26.4
+    },
+    "specs": {
+      "Tubing": "Reynolds 531 double-butted; Nervex lugs",
+      "Made In": "France",
+      "Wheels": "700c (tubulars stock — verify)",
+      "Tire Clearance": "≈25–28mm (verify)",
+      "Rear": "120mm; cold-sets to 126mm",
+      "BB Shell": "French 35×1mm (both cups right-hand thread) — needs a French-thread BB; shell is commonly re-tapped to Italian 36×24. Some later Motobecanes are Swiss-threaded — check before buying a BB (verify)",
+      "Headset": "1\" threaded, French 25×1mm",
+      "Stem": "French 22.0mm quill",
+      "Seatpost": "26.4mm (Sheldon Brown, 1972 / early-70s Grand Record)",
+      "Brakes": "Centerpulls stock (verify); reach ≈55mm (est.)",
+      "Frame Weight": "≈2.3kg (est.)",
+      "Notes": "Partial Campagnolo build, distinctive black paint with red head-tube and seat bands. One step below Le Champion / Team Champion."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race",
+      "French"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "gitane-tour-de-france-1975",
+    "name": "Tour de France (mid-1970s)",
+    "brand": "Gitane",
+    "price": 550,
+    "weightG": 2300,
+    "year": 1975,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 28,
+      "bbShell": "Italian",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 55,
+      "downtubeBosses": false,
+      "seatpostMm": 26.4
+    },
+    "specs": {
+      "Tubing": "Reynolds 531 double-butted throughout, lugged",
+      "Made In": "France (Machecoul)",
+      "Wheels": "700c tubulars stock",
+      "Tire Clearance": "≈25–28mm (verify)",
+      "Rear": "120mm; cold-sets to 126mm",
+      "BB Shell": "French 35×1mm (both cups right-hand thread) — needs a French-thread BB; shell is commonly re-tapped to Italian 36×24",
+      "Headset": "1\" threaded, French 25×1mm",
+      "Stem": "French 22.0mm quill",
+      "Seatpost": "26.4mm (Sheldon Brown, 1973 example — measure)",
+      "Brakes": "Mafac Racer centerpulls stock (verify); reach ≈55mm (est.)",
+      "Dropouts": "Simplex forged with hanger (verify)",
+      "Frame Weight": "≈2.3kg (est.)",
+      "Notes": "Gitane's bike-boom flagship; French standards throughout (Stronglight crank, Simplex derailleurs, French-thread freewheel hubs)."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race",
+      "French"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "miyata-610-1985",
+    "name": "610 (mid-1980s)",
+    "brand": "Miyata",
+    "price": 350,
+    "weightG": 2500,
+    "year": 1985,
+    "url": "https://en.wikipedia.org/wiki/Miyata",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 35,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Tubing": "Miyata splined triple-butted CrMo, lugged",
+      "Made In": "Japan",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes — cantilevers make 700c conversion easy (mid/late-80s 610s came 700c; verify per year)",
+      "Tire Clearance": "≈32–35mm with fenders (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.8mm (1994: 26.8; a 1980 610 measured 26.7) (verify)",
+      "Brakes": "Cantilever bosses",
+      "Mounts": "Rack & fender eyelets, multiple bottle mounts",
+      "Frame Weight": "≈2.5kg (est.)",
+      "Notes": "One step below the 1000, slightly lighter than a Trek 520/720 of the era; often described as stiffer than the 1000."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Touring",
+      "Rack Mounts",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "miyata-1000-1985",
+    "name": "1000 (1984–85)",
+    "brand": "Miyata",
+    "price": 700,
+    "weightG": 2600,
+    "year": 1985,
+    "url": "https://en.wikipedia.org/wiki/Miyata",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 38,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Tubing": "Miyata splined triple-butted CrMo, lugged",
+      "Made In": "Japan",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes — cantilevers make 700c conversion easy (verify per year; later 1000s came 700c)",
+      "Tire Clearance": "≈35–38mm with fenders (verify)",
+      "Rear": "126mm (spread to 130 for modern hubs)",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.8mm (Sheldon Brown, 1984–85)",
+      "Brakes": "Cantilever bosses",
+      "Mounts": "Front low-rider + rear rack eyelets, 3 bottle mounts, fender eyelets",
+      "Frame Weight": "≈2.6kg (est.)",
+      "Notes": "Sheldon Brown: \"possibly the finest off-the-shelf touring bike available at the time.\" Long chainstays, stable loaded handling."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Touring",
+      "Rack Mounts",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "miyata-team-1985",
+    "name": "Team (1982–85)",
+    "brand": "Miyata",
+    "price": 450,
+    "weightG": 2000,
+    "year": 1985,
+    "url": "https://classicrendezvous.com/country-of-origin/japan/miyata/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 25,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 45,
+      "downtubeBosses": true,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Tubing": "Miyata splined triple-butted CrMo, lugged",
+      "Made In": "Japan",
+      "Wheels": "700c",
+      "Tire Clearance": "≈25mm (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.8mm (Sheldon Brown, 1982 & 1985)",
+      "Brakes": "Short-reach sidepulls (≈39–49mm est.)",
+      "Frame Weight": "≈2.0kg (est.)",
+      "Notes": "Miyata's race frame — the first Japanese made-and-equipped bikes to hang in the European pro peloton."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race",
+      "Japanese"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "nishiki-international-1981",
+    "name": "International (1981)",
+    "brand": "Nishiki",
+    "price": 300,
+    "weightG": 2500,
+    "year": 1981,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes-m-z.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 32,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 57,
+      "downtubeBosses": true,
+      "seatpostMm": 26.6
+    },
+    "specs": {
+      "Tubing": "Tange No. 2 CrMo double-butted, lugged",
+      "Made In": "Japan (Kawamura)",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes",
+      "Tire Clearance": "27×1-1/4\" (≈32mm) with fenders (verify)",
+      "Rear": "126mm (verify)",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.6mm (Sheldon Brown, 1981)",
+      "Brakes": "Long-reach sidepulls/centerpulls (verify; mid-80s Internationals switched to cantilevers)",
+      "Mounts": "Rack & fender eyelets",
+      "Frame Weight": "≈2.5kg (est.)",
+      "Notes": "Kawamura-built sport-tourer; a go-to budget xbiking/commuter frame."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Touring",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "nishiki-olympic-12-1985",
+    "name": "Olympic 12 (mid-1980s)",
+    "brand": "Nishiki",
+    "price": 150,
+    "weightG": 2800,
+    "year": 1985,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes-m-z.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 32,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 57,
+      "downtubeBosses": true,
+      "seatpostMm": 26.6
+    },
+    "specs": {
+      "Tubing": "Hi-tensile / CrMo-main-tube lugged steel (varies by year — verify)",
+      "Made In": "Japan (Kawamura)",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes",
+      "Tire Clearance": "27×1-1/4\" (≈32mm)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.6mm (Sheldon Brown, Olympic 12 '80s; 1970s Olympics take 26.0mm)",
+      "Brakes": "Long-reach sidepulls (verify)",
+      "Frame Weight": "≈2.8kg (est.)",
+      "Notes": "Entry-level Nishiki; extremely common used and a popular fixed/commuter conversion."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Urban",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "fuji-s10-s-1975",
+    "name": "S10-S (mid-1970s)",
+    "brand": "Fuji",
+    "price": 200,
+    "weightG": 2700,
+    "year": 1975,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 32,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 60,
+      "downtubeBosses": false,
+      "seatpostMm": 26.4
+    },
+    "specs": {
+      "Tubing": "Fuji \"Valite\" double-butted steel, lugged (verify)",
+      "Made In": "Japan",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes",
+      "Tire Clearance": "27×1-1/4\" (≈32mm) with fenders (verify)",
+      "Rear": "120mm (verify); cold-sets to 126mm",
+      "BB Shell": "68mm English (JIS)",
+      "Seatpost": "26.4mm (verify — measure)",
+      "Brakes": "Centerpulls stock (verify); long reach",
+      "Frame Weight": "≈2.7kg (est.)",
+      "Notes": "Bike-boom Japanese ten-speed that out-built many European competitors at its price; SunTour/Sugino stock."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "fuji-touring-series-1983",
+    "name": "Touring Series (early 1980s)",
+    "brand": "Fuji",
+    "price": 350,
+    "weightG": 2700,
+    "year": 1983,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 35,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Tubing": "CrMo, lugged (verify gauge/brand by year)",
+      "Made In": "Japan",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes — cantilevers make 700c conversion easy (verify per year)",
+      "Tire Clearance": "≈32–35mm with fenders (verify)",
+      "Rear": "126mm (verify)",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.8mm (verify — Sheldon Brown lists 26.8 for the 1997 Touring Series)",
+      "Brakes": "Cantilever bosses",
+      "Mounts": "Rack & fender eyelets, multiple bottle mounts",
+      "Frame Weight": "≈2.7kg (est.)"
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Touring",
+      "Rack Mounts",
+      "Japanese"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "panasonic-dx-2000-1982",
+    "name": "DX-2000 (1982)",
+    "brand": "Panasonic",
+    "price": 250,
+    "weightG": 2500,
+    "year": 1982,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes-m-z.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 32,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 57,
+      "downtubeBosses": true,
+      "seatpostMm": 26.6
+    },
+    "specs": {
+      "Tubing": "CrMo double-butted main tubes, lugged (verify)",
+      "Made In": "Japan (National/Panasonic)",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes (verify per bike)",
+      "Tire Clearance": "≈28–32mm (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.6mm (Sheldon Brown, 1982)",
+      "Brakes": "Long-reach sidepulls (verify)",
+      "Frame Weight": "≈2.5kg (est.)",
+      "Notes": "Panasonic also built many Schwinn Le Tour/Voyageur frames of this period."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "univega-gran-turismo-1983",
+    "name": "Gran Turismo (1983)",
+    "brand": "Univega",
+    "price": 400,
+    "weightG": 2600,
+    "year": 1983,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes-m-z.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 38,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Tubing": "CrMo double-butted, lugged (verify brand)",
+      "Made In": "Japan (Miyata-built — verify)",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes — cantilevers make 700c conversion easy (verify per year)",
+      "Tire Clearance": "≈35–38mm with fenders (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.8mm (1983; 1982 Gran Turismo 26.6mm)",
+      "Brakes": "Cantilever bosses",
+      "Mounts": "Front & rear rack eyelets, fender eyelets, 3 bottle mounts (verify)",
+      "Frame Weight": "≈2.6kg (est.)",
+      "Notes": "Full loaded tourer, long chainstays; often compared with the Miyata 1000."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Touring",
+      "Rack Mounts",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "centurion-ironman-expert-1987",
+    "name": "Ironman Expert \"Dave Scott\" (1987)",
+    "brand": "Centurion",
+    "price": 350,
+    "weightG": 2065,
+    "year": 1987,
+    "url": "https://www.vintagecenturion.com/models/competition/ironman/87-89_expert.shtml",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 25,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 45,
+      "downtubeBosses": true,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$520 complete bike (1987)",
+      "Tubing": "Tange No. 1 CrMo, lugged; TIG-welded unicrown fork",
+      "Made In": "Japan",
+      "Wheels": "700c (stock Wolber Super Champion Alpine, 700×20)",
+      "Tire Clearance": "≈25mm (verify)",
+      "Rear": "126mm (Shimano 105 HB-1050, 6-speed freewheel)",
+      "BB Shell": "68mm English",
+      "Seatpost": "27.0mm (Sugino SP-KCL)",
+      "Brakes": "Short-reach sidepulls (stock Shimano 105 SLR BR-1050)",
+      "Frame Weight": "4.55 lb / ≈2.07kg (56cm, catalog); fork 1.50 lb",
+      "Notes": "The Dave Scott Ironman — iconic red/white (and 1987-only magenta/yellow \"Miami Vice\") paint. 1985–86 Ironman and 1987–89 Master use the same Tange 1 frame with a sloping-crown fork and 600 parts."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "centurion-pro-tour-1984",
+    "name": "Pro Tour 15 (1984)",
+    "brand": "Centurion",
+    "price": 400,
+    "weightG": 2184,
+    "year": 1984,
+    "url": "https://www.vintagecenturion.com/models/touring/protour.shtml",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 35,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Original MSRP": "$479 complete bike (1984)",
+      "Tubing": "Tange Champion No. 2 CrMo double-butted, lugged; Tange Hi-Tension fork w/ investment-cast crown",
+      "Made In": "Japan",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes (stock Araya 16A 27×1-1/8\") — cantilevers make 700c conversion easy",
+      "Tire Clearance": "≈32–35mm (verify)",
+      "Rear": "126mm (verify)",
+      "BB Shell": "68mm English",
+      "Seatpost": "27.0mm (SR Laprade CT-P5 stock)",
+      "Brakes": "Cantilever bosses (stock Dia-Compe GC 960)",
+      "Frame Weight": "2,184g (19.5\" frame, catalog)",
+      "Notes": "Pre-1984 Pro Tours used Dia-Compe centerpulls on brazed-on pivots instead of cantilevers."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Touring",
+      "Rack Mounts",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "schwinn-paramount-p13-1975",
+    "name": "Paramount P-13 (mid-1970s)",
+    "brand": "Schwinn",
+    "price": 1500,
+    "weightG": 2250,
+    "year": 1975,
+    "url": "https://en.wikipedia.org/wiki/Schwinn_Paramount",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 28,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 47,
+      "downtubeBosses": false,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "Reynolds 531 double-butted, hand-brazed lugged (Nervex lugs on early-70s frames)",
+      "Made In": "USA (Chicago)",
+      "Dropouts": "Campagnolo",
+      "Wheels": "700c tubulars stock (verify)",
+      "Tire Clearance": "≈25–28mm (verify)",
+      "Rear": "120mm (5-speed era; verify); cold-sets to 126mm",
+      "BB Shell": "68mm English (verify)",
+      "Seatpost": "27.2mm (verify — 27.2 measured on a 1972 Paramount track frame)",
+      "Brakes": "Campagnolo Record sidepulls (stock, verify)",
+      "Frame Weight": "≈2.25kg (est.)",
+      "Notes": "Schwinn's hand-built Chicago racer with full Campagnolo; strong collector demand. Late-80s/90s Paramounts were built by Waterford."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race",
+      "Made in USA"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "schwinn-super-le-tour-1982",
+    "name": "Super Le Tour (early 1980s)",
+    "brand": "Schwinn",
+    "price": 250,
+    "weightG": 2600,
+    "year": 1982,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 32,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 57,
+      "downtubeBosses": true,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Tubing": "CrMo double-butted main tubes, lugged (verify)",
+      "Made In": "Japan (Panasonic/Bridgestone-built — varies by year, verify)",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes",
+      "Tire Clearance": "27×1-1/4\" (≈32mm) with fenders (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.8mm (verify — measure; Le Tour models range 26.4–26.8)",
+      "Brakes": "Long-reach sidepulls (verify)",
+      "Frame Weight": "≈2.6kg (est.)",
+      "Notes": "Japanese-built Schwinn sport-tourer; a common cheap xbiking/commuter base."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "schwinn-voyageur-1983",
+    "name": "Voyageur (early 1980s)",
+    "brand": "Schwinn",
+    "price": 400,
+    "weightG": 2700,
+    "year": 1983,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 35,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Tubing": "CrMo double-butted, lugged (verify)",
+      "Made In": "Japan (Panasonic-built, verify)",
+      "Wheels": "27\" (630) wheels stock; 700c conversion needs long-reach brakes — cantilevers make 700c conversion easy",
+      "Tire Clearance": "≈32–35mm with fenders (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.8mm (verify)",
+      "Brakes": "Cantilever bosses",
+      "Mounts": "Rack & fender eyelets, multiple bottle mounts",
+      "Frame Weight": "≈2.7kg (est.)",
+      "Notes": "Schwinn's Japanese-built loaded tourer (Voyageur / Voyageur SP / Voyageur 11.8)."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Touring",
+      "Rack Mounts",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "trek-520-1984",
+    "name": "520 (1983–85 lugged)",
+    "brand": "Trek",
+    "price": 500,
+    "weightG": 2600,
+    "year": 1984,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 35,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "CrMo double-butted (Ishiwata / Reynolds by year — verify), lugged & brazed",
+      "Made In": "USA (Waterloo, WI)",
+      "Wheels": "27\" (630) or 700c depending on year (verify); cantilevers make conversion easy",
+      "Tire Clearance": "≈32–35mm with fenders (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "27.2mm (most US-made Treks)",
+      "Brakes": "Cantilever bosses",
+      "Mounts": "Front & rear rack eyelets, fender eyelets, 3 bottle mounts (verify)",
+      "Frame Weight": "≈2.6kg (est.)",
+      "Notes": "The first generation of Trek's long-running touring model — lugged, US-built; later 520s went TIG-welded."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Touring",
+      "Rack Mounts",
+      "Made in USA"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "trek-720-1982",
+    "name": "720 (1982)",
+    "brand": "Trek",
+    "price": 900,
+    "weightG": 2500,
+    "year": 1982,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes-m-z.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 38,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "Reynolds 531 double-butted, lugged & brazed (verify)",
+      "Made In": "USA (Waterloo, WI)",
+      "Wheels": "27\" (630) or 700c (verify); cantilevers make conversion easy",
+      "Tire Clearance": "≈35–38mm with fenders (verify)",
+      "Rear": "126mm (verify)",
+      "BB Shell": "68mm English",
+      "Seatpost": "27.2mm (Sheldon Brown, 1982)",
+      "Brakes": "Cantilever bosses",
+      "Mounts": "Front low-rider + rear rack eyelets, fender eyelets, 3 bottle mounts (verify)",
+      "Frame Weight": "≈2.5kg (est.)",
+      "Notes": "Trek's top lugged touring frame of the early 80s; sought after by tourers and randonneurs."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Touring",
+      "Rack Mounts",
+      "Made in USA"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "trek-510-1984",
+    "name": "510 (mid-1980s)",
+    "brand": "Trek",
+    "price": 400,
+    "weightG": 2400,
+    "year": 1984,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 32,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 57,
+      "downtubeBosses": true,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "CrMo double-butted (Ishiwata 022 / Reynolds by year — verify), lugged",
+      "Made In": "USA (Waterloo, WI)",
+      "Wheels": "700c or 27\" by year (verify)",
+      "Tire Clearance": "≈28–32mm (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "27.2mm (most US-made Treks)",
+      "Brakes": "Long-reach sidepulls (verify)",
+      "Mounts": "Rack & fender eyelets (verify)",
+      "Frame Weight": "≈2.4kg (est.)",
+      "Notes": "Lugged sport-tourer — a road-geometry sibling of the 520 with fender room."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "All-Road",
+      "Made in USA"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "trek-610-1983",
+    "name": "610 (early 1980s)",
+    "brand": "Trek",
+    "price": 450,
+    "weightG": 2350,
+    "year": 1983,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 32,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 57,
+      "downtubeBosses": true,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "Reynolds 531 double-butted, lugged (verify)",
+      "Made In": "USA (Waterloo, WI)",
+      "Wheels": "700c or 27\" by year (verify)",
+      "Tire Clearance": "≈28–32mm (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "27.2mm (most US-made Treks)",
+      "Brakes": "Long-reach sidepulls (verify)",
+      "Mounts": "Rack & fender eyelets (verify)",
+      "Frame Weight": "≈2.35kg (est.)",
+      "Notes": "Lugged 531 sport-tourer; light, fender-friendly, popular for rando/all-road builds."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "All-Road",
+      "Made in USA"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "specialized-sequoia-1985",
+    "name": "Sequoia (1985)",
+    "brand": "Specialized",
+    "price": 500,
+    "weightG": 2300,
+    "year": 1985,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes-m-z.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 32,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 52,
+      "downtubeBosses": true,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Tubing": "Tange CrMo double-butted, lugged (verify)",
+      "Made In": "Japan",
+      "Wheels": "700c (verify; early-80s Sequoias may be 27\")",
+      "Tire Clearance": "≈28–32mm (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.8mm (Sheldon Brown, 1985)",
+      "Brakes": "Long-reach sidepulls (verify)",
+      "Mounts": "Rack & fender eyelets",
+      "Frame Weight": "≈2.3kg (est.)",
+      "Notes": "Specialized's original sport-tourer (Tim Neenan design); the name returned in 2007 as a steel all-road bike."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "All-Road",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "specialized-allez-1984",
+    "name": "Allez (mid-1980s lugged)",
+    "brand": "Specialized",
+    "price": 400,
+    "weightG": 2100,
+    "year": 1984,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 25,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 45,
+      "downtubeBosses": true,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Tubing": "Tange CrMo double-butted, lugged (verify)",
+      "Made In": "Japan",
+      "Wheels": "700c",
+      "Tire Clearance": "≈25mm (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "27.0mm (verify — measure)",
+      "Brakes": "Short-reach sidepulls (≈39–49mm est.)",
+      "Frame Weight": "≈2.1kg (est.)",
+      "Notes": "Specialized's Japanese-built lugged race frame, before the Allez went TIG/aluminum."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race",
+      "Japanese"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "specialized-expedition-1984",
+    "name": "Expedition (early–mid 1980s)",
+    "brand": "Specialized",
+    "price": 600,
+    "weightG": 2600,
+    "year": 1984,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 38,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Tubing": "Tange CrMo double-butted, lugged (verify)",
+      "Made In": "Japan",
+      "Wheels": "27\" (630) or 700c by year (verify); cantilevers make conversion easy",
+      "Tire Clearance": "≈35–38mm with fenders (verify)",
+      "Rear": "126mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.8mm (verify — measure)",
+      "Brakes": "Cantilever bosses",
+      "Mounts": "Front low-rider + rear rack eyelets, fender eyelets, 3 bottle mounts (verify)",
+      "Frame Weight": "≈2.6kg (est.)",
+      "Notes": "Specialized's full loaded tourer of the early 80s; uncommon and well regarded."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Touring",
+      "Rack Mounts",
+      "Japanese",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "specialized-rockhopper-1987",
+    "name": "Rockhopper (1987)",
+    "brand": "Specialized",
+    "price": 200,
+    "weightG": 2600,
+    "year": 1987,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes-m-z.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 54,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": false,
+      "seatpostMm": 26.4
+    },
+    "specs": {
+      "Tubing": "CrMo main tubes, TIG-welded (verify)",
+      "Made In": "Japan / Taiwan (verify)",
+      "Wheels": "26\"",
+      "Tire Clearance": "≈2.125\" (verify)",
+      "Rear": "126mm or 130mm (MTBs moved 126→130 around 1987 — measure; verify)",
+      "BB Shell": "68mm or 73mm English (verify)",
+      "Seatpost": "26.4mm (Sheldon Brown, 1987)",
+      "Brakes": "Cantilever bosses (some mid-80s Specialized MTBs used a rear U-brake under the chainstays — check; verify)",
+      "Shifters": "Thumb shifters on the bar (no downtube bosses)",
+      "Frame Weight": "≈2.6kg (est.)",
+      "Notes": "Classic rigid 80s MTB — a top pick for drop-bar/swept-bar xbiking conversions."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "MTB",
+      "Rigid",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "specialized-stumpjumper-1984",
+    "name": "Stumpjumper (1984)",
+    "brand": "Specialized",
+    "price": 450,
+    "weightG": 2500,
+    "year": 1984,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 54,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": false,
+      "seatpostMm": 26.4
+    },
+    "specs": {
+      "Tubing": "Tange CrMo, TIG-welded (verify)",
+      "Made In": "Japan (verify)",
+      "Wheels": "26\"",
+      "Tire Clearance": "≈2.125\" (verify)",
+      "Rear": "126mm (verify)",
+      "BB Shell": "68mm or 73mm English (verify)",
+      "Seatpost": "26.4mm (verify — measure; 1981 originals take 25.4mm)",
+      "Brakes": "Cantilever bosses",
+      "Frame Weight": "≈2.5kg (est.)",
+      "Notes": "Second-generation Stumpjumper (Sport / Team variants) after the 1981–82 original; already in the catalog as specialized-stumpjumper-1981 for the first gen."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "MTB",
+      "Rigid",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "cannondale-st-600-1986",
+    "name": "ST 400 / ST 600 Touring (mid-1980s)",
+    "brand": "Cannondale",
+    "price": 300,
+    "weightG": 1900,
+    "year": 1986,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes.html",
+    "attrs": {
+      "material": "aluminum",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 35,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "Oversize aluminum, TIG-welded; CrMo fork",
+      "Made In": "USA (Bedford, PA)",
+      "Wheels": "27\" (630) on early years, 700c later (verify per year); cantilevers make conversion easy",
+      "Tire Clearance": "≈32–35mm with fenders (verify)",
+      "Rear": "126mm (verify); aluminum — do not cold-set",
+      "BB Shell": "68mm English",
+      "Seatpost": "27.2mm (all Cannondale)",
+      "Brakes": "Cantilever bosses",
+      "Mounts": "Front & rear rack eyelets, multiple bottle mounts",
+      "Frame Weight": "≈1.9kg (est.)",
+      "Notes": "ST 400 and ST 600 share the frame; trims differ in components. Stiff loaded tourer from Cannondale's first decade of fat-tube aluminum."
+    },
+    "tags": [
+      "Vintage",
+      "Aluminum",
+      "Touring",
+      "Rack Mounts",
+      "Made in USA"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "bridgestone-rb-1-1993",
+    "name": "RB-1 (1993)",
+    "brand": "Bridgestone",
+    "price": 700,
+    "weightG": 1900,
+    "year": 1993,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 28,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 49,
+      "downtubeBosses": true,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Tubing": "CrMo double-butted (Ishiwata / Tange by year — verify), lugged",
+      "Made In": "Japan",
+      "Wheels": "700c",
+      "Tire Clearance": "≈25–28mm (verify)",
+      "Rear": "126mm (verify — some 1993 Bridgestones split 126/130)",
+      "BB Shell": "68mm English",
+      "Seatpost": "27.0mm (Sheldon Brown, RB-1 1993)",
+      "Brakes": "Standard-reach sidepulls (≈39–49mm est.)",
+      "Frame Weight": "≈1.9kg (est.)",
+      "Notes": "Grant Petersen-era lugged road racer; a cult classic. Several were sold as frame+fork only."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Grant Petersen",
+      "Japanese"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "bridgestone-rb-t-1993",
+    "name": "RB-T (1992–93)",
+    "brand": "Bridgestone",
+    "price": 550,
+    "weightG": 2200,
+    "year": 1993,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 35,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 27
+    },
+    "specs": {
+      "Tubing": "CrMo, lugged (verify)",
+      "Made In": "Japan",
+      "Wheels": "700c",
+      "Tire Clearance": "≈32–35mm (verify)",
+      "Rear": "126mm (verify — may be 130mm)",
+      "BB Shell": "68mm English",
+      "Seatpost": "27.0mm (verify)",
+      "Brakes": "Cantilever bosses",
+      "Mounts": "Rack & fender eyelets",
+      "Frame Weight": "≈2.2kg (est.)",
+      "Notes": "The \"touring\" RB — RB-1-style road frame with cantilevers and room for fat tires/fenders; a proto-Rivendell all-roader."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "All-Road",
+      "Touring",
+      "Grant Petersen",
+      "Japanese"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "gt-karakoram-1997",
+    "name": "Karakoram (1997)",
+    "brand": "GT",
+    "price": 200,
+    "weightG": 2300,
+    "year": 1997,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "suspension": "Hardtail",
+      "maxForkTravelMm": 63,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": false,
+      "seatpostMm": 26.8
+    },
+    "specs": {
+      "Tubing": "CrMo, TIG-welded, GT triple triangle",
+      "Wheels": "26\"",
+      "Tire Clearance": "≈2.2\" (verify)",
+      "Rear": "135mm",
+      "BB Shell": "73mm English (verify)",
+      "Seatpost": "26.8mm (Sheldon Brown, 1997)",
+      "Headset": "1-1/8\" threadless (verify; earlier Karakorams 1\" threaded)",
+      "Brakes": "Canti/V-brake bosses",
+      "Frame Weight": "≈2.3kg (est.)",
+      "Notes": "Mid-range steel triple-triangle hardtail; inexpensive and a popular commuter/touring conversion."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "MTB",
+      "Hardtail",
+      "Triple Triangle",
+      "xbiking"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "colnago-master-1987",
+    "name": "Master (late 1980s)",
+    "brand": "Colnago",
+    "price": 1500,
+    "weightG": 2000,
+    "year": 1987,
+    "url": "https://classicrendezvous.com/country-of-origin/italy/colnago/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 25,
+      "bbShell": "Italian",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 45,
+      "downtubeBosses": true,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "Columbus Gilco star-fluted (crimped) tubing, lugged; crimped \"Precisa\" straight-blade fork on later years",
+      "Made In": "Italy (Cambiago)",
+      "Wheels": "700c",
+      "Tire Clearance": "≈25mm (verify)",
+      "Rear": "126mm (130mm from ≈1990 — verify)",
+      "BB Shell": "70mm Italian (36×24)",
+      "Seatpost": "27.2mm (verify; Master Più 27.2)",
+      "Brakes": "Short-reach sidepulls",
+      "Frame Weight": "≈2.0kg (est.)",
+      "Notes": "Ernesto Colnago's crimped-tube flagship (successor to the Super/Profil). The Master X-Light/Olympic carried the design into the 2000s."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race",
+      "Italian"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "de-rosa-professional-1985",
+    "name": "Professional (mid-1980s)",
+    "brand": "De Rosa",
+    "price": 1200,
+    "weightG": 2000,
+    "year": 1985,
+    "url": "https://classicrendezvous.com/country-of-origin/italy/de-rosa/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 25,
+      "bbShell": "Italian",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 45,
+      "downtubeBosses": true,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "Columbus SL (SLX on later Professionals — verify), lugged",
+      "Made In": "Italy (Cusano Milanino)",
+      "Wheels": "700c",
+      "Tire Clearance": "≈25mm (verify)",
+      "Rear": "126mm",
+      "BB Shell": "70mm Italian (36×24)",
+      "Seatpost": "27.2mm (Sheldon Brown lists 27.2 for 1982 Super Prestige and 1991–95 SLX De Rosas)",
+      "Brakes": "Short-reach sidepulls",
+      "Frame Weight": "≈2.0kg (est.)",
+      "Notes": "Ugo De Rosa's classic Campagnolo-era race frame — the builder of Merckx's bikes in the 1970s."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race",
+      "Italian"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "eddy-merckx-corsa-extra-1990",
+    "name": "Corsa Extra (c. 1990)",
+    "brand": "Eddy Merckx",
+    "price": 1200,
+    "weightG": 2050,
+    "year": 1990,
+    "url": "https://classicrendezvous.com/country-of-origin/benelux/eddy-merckx/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 25,
+      "bbShell": "Italian",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 45,
+      "downtubeBosses": true,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "Columbus SLX/TSX (by year), lugged",
+      "Made In": "Belgium (Meise)",
+      "Wheels": "700c",
+      "Tire Clearance": "≈25mm (verify)",
+      "Rear": "126mm (130mm on 8-speed-era frames — verify)",
+      "BB Shell": "Italian 36×24 (verify — check; some Merckx frames are English)",
+      "Seatpost": "27.2mm (Sheldon Brown lists 27.2 for 1985 Team and 1996 Corsa)",
+      "Brakes": "Short-reach sidepulls",
+      "Frame Weight": "≈2.05kg (est.)",
+      "Notes": "Heavier-gauge, stiff \"Extra\" version of the Corsa — built for bigger riders and cobbles; ridden by the 7-Eleven and Motorola pro teams."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "bianchi-specialissima-1984",
+    "name": "Specialissima (mid-1980s)",
+    "brand": "Bianchi",
+    "price": 900,
+    "weightG": 2000,
+    "year": 1984,
+    "url": "https://classicrendezvous.com/country-of-origin/italy/bianchi/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 25,
+      "bbShell": "Italian",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 45,
+      "downtubeBosses": true,
+      "seatpostMm": 27.2
+    },
+    "specs": {
+      "Tubing": "Columbus SL, lugged (verify)",
+      "Made In": "Italy",
+      "Wheels": "700c",
+      "Tire Clearance": "≈25mm (verify)",
+      "Rear": "126mm",
+      "BB Shell": "70mm Italian (36×24)",
+      "Seatpost": "27.2mm (verify — Columbus-tubed Bianchis of the era: 27.2)",
+      "Brakes": "Short-reach sidepulls (Campagnolo stock)",
+      "Frame Weight": "≈2.0kg (est.)",
+      "Notes": "Bianchi's Campagnolo-equipped celeste race frame of the 80s; the name returned on modern carbon frames."
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Steel",
+      "Lugged",
+      "Road",
+      "Race",
+      "Italian"
+    ]
+  },
+  {
+    "category": "frame",
+    "discontinued": true,
+    "id": "bianchi-volpe-1998",
+    "name": "Volpe (1997–99)",
+    "brand": "Bianchi",
+    "price": 300,
+    "weightG": 2400,
+    "year": 1998,
+    "url": "https://www.sheldonbrown.com/seatpost-sizes.html",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxTireMm": 38,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "downtubeBosses": true,
+      "seatpostMm": 26.6
+    },
+    "specs": {
+      "Tubing": "CrMo, TIG-welded (verify)",
+      "Wheels": "700c",
+      "Tire Clearance": "≈35–38mm with fenders (verify)",
+      "Rear": "130mm",
+      "BB Shell": "68mm English",
+      "Seatpost": "26.6mm (Sheldon Brown, 1997–99)",
+      "Headset": "1\" threaded (verify)",
+      "Brakes": "Cantilever bosses",
+      "Mounts": "Rack & fender eyelets, 3 bottle mounts (verify)",
+      "Frame Weight": "≈2.4kg (est.)",
+      "Notes": "Bianchi's do-everything cross/touring bike — a 90s precursor to modern all-road/gravel steel bikes."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Touring",
+      "All-Road",
+      "Cyclocross",
+      "Rack Mounts",
+      "xbiking"
+    ]
+  }
+]

@@ -1,83 +1,18 @@
 [
-  {
-    "id": "chris-king-r45-disc",
-    "name": "R45 Disc Hub Set",
-    "brand": "Chris King",
-    "category": "hub",
-    "price": 580,
-    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "45-point", "freehub": "XD / HG / Micro Spline" },
-    "tags": ["Road", "Gravel", "Disc", "Ceramic"]
-  },
-  {
-    "id": "chris-king-r45-clincher",
-    "name": "R45 Rim Brake Hub Set",
-    "brand": "Chris King",
-    "category": "hub",
-    "price": 520,
-    "specs": { "axle": "QR 100/130mm", "brakeType": "rim", "engagement": "45-point", "freehub": "HG" },
-    "tags": ["Road", "Rim Brake", "Ceramic"]
-  },
-  {
-    "id": "dt-swiss-350-disc",
-    "name": "350 Hub Set",
-    "brand": "DT Swiss",
-    "category": "hub",
-    "price": 180,
-    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "3-pawl", "freehub": "HG / XD" },
-    "tags": ["Road", "MTB", "Gravel", "Disc"]
-  },
-  {
-    "id": "hope-pro-5-disc",
-    "name": "Pro 5 Hub Set",
-    "brand": "Hope",
-    "category": "hub",
-    "price": 310,
-    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "48-tooth", "freehub": "HG / XD / Micro Spline" },
-    "tags": ["MTB", "Gravel", "Disc", "CNC"]
-  },
-  {
-    "id": "shimano-xt-m8110",
-    "name": "Deore XT M8110 Hub Set",
-    "brand": "Shimano",
-    "category": "hub",
-    "price": 95,
-    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "36-tooth", "freehub": "Micro Spline" },
-    "tags": ["MTB", "Disc"]
-  },
-  {
-    "id": "industry-nine-1-1",
-    "name": "1/1 Hub Set",
-    "brand": "Industry Nine",
-    "category": "hub",
-    "price": 380,
-    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "690-point", "freehub": "XD / HG / Micro Spline" },
-    "tags": ["MTB", "Gravel", "Disc", "Instant Engagement"]
-  },
-  {
-    "id": "white-industries-t11",
-    "name": "T11 Hub Set",
-    "brand": "White Industries",
-    "category": "hub",
-    "price": 340,
-    "specs": { "axle": "QR 100/130mm", "brakeType": "rim", "engagement": "72-tooth", "freehub": "HG" },
-    "tags": ["Road", "Track", "Rim Brake"]
-  },
-  {
-    "id": "onyx-classic-disc",
-    "name": "Classic Hub Set",
-    "brand": "Onyx Racing",
-    "category": "hub",
-    "price": 460,
-    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "sprag-clutch", "freehub": "XD / HG / Micro Spline" },
-    "tags": ["MTB", "Gravel", "Disc", "Silent", "Instant Engagement"]
-  },
-  {
-    "id": "novatec-d711-disc",
-    "name": "D711SB / D712SB Hub Set",
-    "brand": "Novatec",
-    "category": "hub",
-    "price": 75,
-    "specs": { "axle": "12mm thru-axle", "brakeType": "disc", "engagement": "4-pawl", "freehub": "HG" },
-    "tags": ["Road", "Gravel", "Budget"]
-  }
+  {"id":"chris-king-r45-disc","name":"R45D Hub Set","brand":"Chris King","category":"hub","price":820,"weightG":386,"year":2018,"attrs":{"frontAxle":"12x100mm","rearAxle":"12x142mm","freehub":"Shimano HG 11/12s Road","rotorInterface":"Center Lock"},"specs":{"Engagement":"45 POE (RingDrive)","Bearings":"Chris King stainless"},"tags":["Road","Gravel","Disc","Premium"]},
+  {"id":"chris-king-r45-clincher","name":"R45 Rim Brake Hub Set","brand":"Chris King","category":"hub","price":640,"weightG":300,"year":2016,"attrs":{"frontAxle":"QR 100mm","rearAxle":"QR 130mm","freehub":"Shimano HG 11/12s Road","rotorInterface":"Rim Brake"},"specs":{"Engagement":"45 POE (RingDrive)"},"tags":["Road","Rim Brake","Premium"]},
+  {"id":"dt-swiss-350-disc","name":"350 Road Disc Hub Set","brand":"DT Swiss","category":"hub","price":370,"weightG":400,"year":2019,"attrs":{"frontAxle":"12x100mm","rearAxle":"12x142mm","freehub":"Shimano HG 11/12s Road","rotorInterface":"Center Lock"},"specs":{"Engagement":"Ratchet 36T (36 POE)"},"tags":["Road","Gravel","Disc"]},
+  {"id":"dt-swiss-240-exp-road-xdr","name":"240 EXP Road Disc Hub Set (XDR)","brand":"DT Swiss","category":"hub","price":640,"weightG":330,"year":2020,"attrs":{"frontAxle":"12x100mm","rearAxle":"12x142mm","freehub":"SRAM XDR","rotorInterface":"Center Lock"},"specs":{"Engagement":"Ratchet EXP 36T"},"tags":["Road","Gravel","Lightweight","SRAM AXS"]},
+  {"id":"dt-swiss-350-boost","name":"350 Boost Hub Set","brand":"DT Swiss","category":"hub","price":380,"weightG":430,"year":2019,"attrs":{"frontAxle":"15x110mm Boost","rearAxle":"12x148mm Boost","freehub":"SRAM XD","rotorInterface":"6-Bolt"},"specs":{"Engagement":"Ratchet 36T (36 POE)"},"tags":["MTB","Boost","Disc"]},
+  {"id":"hope-pro-5-disc","name":"Pro 5 Boost Hub Set","brand":"Hope","category":"hub","price":420,"weightG":485,"year":2023,"attrs":{"frontAxle":"15x110mm Boost","rearAxle":"12x148mm Boost","freehub":"SRAM XD","rotorInterface":"6-Bolt"},"specs":{"Engagement":"44 POE (4-pawl)","Construction":"CNC, made in UK"},"tags":["MTB","Boost","CNC"]},
+  {"id":"hope-pro-5-dh","name":"Pro 5 DH Hub Set (20x110 / 157)","brand":"Hope","category":"hub","price":440,"weightG":560,"year":2023,"attrs":{"frontAxle":"20x110mm","rearAxle":"12x157mm SuperBoost","freehub":"Shimano HG 8-10s / MTB","rotorInterface":"6-Bolt"},"specs":{"Engagement":"44 POE (4-pawl)"},"tags":["MTB","Downhill","CNC"]},
+  {"id":"shimano-xt-m8110","name":"Deore XT HB-M8110 / FH-M8110 Hub Set","brand":"Shimano","category":"hub","price":165,"weightG":525,"year":2019,"attrs":{"frontAxle":"15x110mm Boost","rearAxle":"12x148mm Boost","freehub":"Shimano Microspline","rotorInterface":"Center Lock"},"specs":{"Engagement":"36 POE"},"tags":["MTB","Boost","Microspline"]},
+  {"id":"industry-nine-1-1","name":"1/1 Boost Hub Set","brand":"Industry Nine","category":"hub","price":455,"weightG":530,"year":2020,"attrs":{"frontAxle":"15x110mm Boost","rearAxle":"12x148mm Boost","freehub":"Shimano Microspline","rotorInterface":"6-Bolt"},"specs":{"Engagement":"90 POE"},"tags":["MTB","Boost","Fast Engagement"]},
+  {"id":"onyx-classic-disc","name":"Classic Boost Hub Set","brand":"Onyx Racing","category":"hub","price":620,"weightG":640,"year":2019,"attrs":{"frontAxle":"15x110mm Boost","rearAxle":"12x148mm Boost","freehub":"SRAM XD","rotorInterface":"6-Bolt"},"specs":{"Engagement":"Sprag clutch (instant, silent)"},"tags":["MTB","Silent","Instant Engagement"]},
+  {"id":"white-industries-t11","name":"T11 Hub Set","brand":"White Industries","category":"hub","price":600,"weightG":345,"year":2015,"attrs":{"frontAxle":"QR 100mm","rearAxle":"QR 130mm","freehub":"Shimano HG 11/12s Road","rotorInterface":"Rim Brake"},"specs":{"Engagement":"24 POE","Construction":"Made in USA"},"tags":["Road","Rim Brake","Titanium Freehub"]},
+  {"id":"novatec-d711-disc","name":"D711SB / D712SB Hub Set","brand":"Novatec","category":"hub","price":140,"weightG":420,"year":2018,"attrs":{"frontAxle":"12x100mm","rearAxle":"12x142mm","freehub":"Shimano HG 11/12s Road","rotorInterface":"6-Bolt"},"specs":{"Engagement":"4-pawl"},"tags":["Road","Gravel","Budget"]},
+  {"id":"shimano-105-r7070-hubs","name":"105 HB-R7070 / FH-R7070 Hub Set","brand":"Shimano","category":"hub","price":110,"weightG":517,"year":2019,"attrs":{"frontAxle":"12x100mm","rearAxle":"12x142mm","freehub":"Shimano HG 11/12s Road","rotorInterface":"Center Lock"},"specs":{"Bearings":"Cup-and-cone"},"tags":["Road","Gravel","Budget"]},
+  {"id":"shimano-deore-m525a-hubs","name":"Deore HB-M525A / FH-M525A Hub Set","brand":"Shimano","category":"hub","price":60,"weightG":650,"year":2016,"attrs":{"frontAxle":"QR 100mm","rearAxle":"QR 135mm","freehub":"Shimano HG 8-10s / MTB","rotorInterface":"6-Bolt"},"specs":{"Bearings":"Cup-and-cone"},"tags":["Urban","Touring","Budget"]},
+  {"id":"phil-wood-track-hubs","name":"High Flange Track Hub Set","brand":"Phil Wood","category":"hub","price":470,"weightG":560,"year":2018,"attrs":{"frontAxle":"100mm Nutted","rearAxle":"120mm Track","freehub":"Track Fixed","rotorInterface":"Rim Brake"},"specs":{"Rear":"Fixed/fixed","Construction":"Made in USA"},"tags":["Track","Fixed Gear","Premium"]},
+  {"id":"profile-racing-elite-hubs","name":"Elite Cassette Hub Set","brand":"Profile Racing","category":"hub","price":410,"weightG":610,"year":2019,"attrs":{"frontAxle":"3/8\" BMX","rearAxle":"110mm BMX","freehub":"BMX Cassette Driver","rotorInterface":"Rim Brake"},"specs":{"Rear":"9T driver, 14mm axle, RHD/LHD"},"tags":["BMX","Cassette","Made in USA"]}
 ]

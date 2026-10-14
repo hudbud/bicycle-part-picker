@@ -57,11 +57,33 @@ const FRONT_WHEEL: PartCategory[] = ['frontWheel', 'wheels', 'hub', 'rim']
 const REAR_WHEEL: PartCategory[] = ['rearWheel', 'wheels', 'hub', 'rim']
 
 // Shift systems that share a cable pull with each other.
-const SHIFT_FAMILIES: ShiftSystem[][] = [['Shimano Road 11s', 'Shimano GRX 11s']]
+const SHIFT_FAMILIES: ShiftSystem[][] = [
+  ['Shimano Road 11s', 'Shimano GRX 11s'],
+  ['Shimano 7-9s', 'Shimano Road 10s'],
+]
 
-function shiftCompatible(a: ShiftSystem, b: ShiftSystem): boolean {
+/** Can `shifter` drive `derailleur`? Friction shifters drive any cable derailleur. */
+function shiftCompatible(shifter: Part, derailleur: Part): boolean {
+  const a = shifter.attrs!.shiftSystem!, b = derailleur.attrs!.shiftSystem!
+  if (a === 'Friction') return !derailleur.attrs?.electronic
   return a === b || SHIFT_FAMILIES.some((f) => f.includes(a) && f.includes(b))
 }
+
+/**
+ * Do two speed counts work together? Rear derailleurs 7–10s are speed-agnostic within a
+ * shift system (the shift-system rule covers pull ratio), and 5–8s chains are all 3/32".
+ */
+function speedsCompatible(category: PartCategory, s: number, drive: number): boolean {
+  if (s === drive) return true
+  if (category === 'rearDerailleur') return s >= 7 && s <= 10 && drive >= 7 && drive <= 10
+  if (category === 'chain') return s <= 8 && drive <= 8
+  return false
+}
+
+// Lever clamp families: road levers are 23.8mm, MTB levers 22.2mm.
+const ROAD_LEVER_BARS = ['Drop', 'Integrated Drop', 'Bullhorn', 'Mustache']
+const roadBar = (t: string) => ROAD_LEVER_BARS.includes(t)
+const hydraulic = (t: string) => t.startsWith('Hydraulic')
 
 /** severity of fitting `cassette` onto `hub`, or null if it fits as-is. */
 function freehubFit(cassette: Freehub, hub: Freehub): { severity: IssueSeverity; how: string } | null {
@@ -69,21 +91,26 @@ function freehubFit(cassette: Freehub, hub: Freehub): { severity: IssueSeverity;
   if (cassette === 'SRAM XD' && hub === 'SRAM XDR') return { severity: 'note', how: 'fits with the 1.85mm spacer that ships with XDR wheels' }
   if (cassette === 'Shimano HG 8-10s / MTB' && hub === 'Shimano HG 11/12s Road') return { severity: 'note', how: 'fits with a 1.85mm spacer behind the cassette' }
   if (cassette === 'Shimano HG 11/12s Road' && hub === 'Shimano HG 8-10s / MTB') return { severity: 'warning', how: 'fits MTB-width HG bodies, but not older 10-speed road bodies — check your hub' }
+  if (cassette === 'Shimano HG 7s' && hub === 'Shimano HG 8-10s / MTB') return { severity: 'note', how: 'fits with a 4.5mm spacer behind the cassette' }
+  if (cassette === 'Shimano HG 7s' && hub === 'Shimano HG 11/12s Road') return { severity: 'note', how: 'fits with 1.85mm + 4.5mm spacers behind the cassette' }
   return { severity: 'error', how: '' }
 }
 
-const steererTop = (s: string) => (s === 'Straight 1"' ? '1"' : '1-1/8"')
+const steererTop = (s: string) => (s.endsWith(' 1"') ? '1"' : '1-1/8"')
+/** Head-tube size, ignoring threads: 'tapered' | '1-1/8"' | '1"'. */
+const steererSize = (s: string) => (s.startsWith('Tapered') ? 'tapered' : steererTop(s))
+const threaded = (s: string) => s.startsWith('Threaded')
 
 function runRules(p: Parts, emit: Emit) {
-  const { frame, fork, headset, stem, tires, cassette, sprocket, chain, crankset, bottomBracket, rearDerailleur, frontDerailleur, shifters, brakes, rotors, handlebars, seatpost, rearShock } = p
+  const { frame, fork, headset, stem, tires, cassette, sprocket, chain, crankset, bottomBracket, rearDerailleur, frontDerailleur, shifters, brakes, brakeLevers, rotors, handlebars, seatpost, rearShock } = p
   const front = (k: keyof PartAttrs) => pick(p, k, FRONT_WHEEL)
   const rear = (k: keyof PartAttrs) => pick(p, k, REAR_WHEEL)
 
   // ---------- Frameset: steerer & headset ----------
   if (has(frame, 'steerer') && has(fork, 'steerer')) {
     const f = frame.attrs.steerer, k = fork.attrs.steerer
-    if (f !== k) {
-      if (f.startsWith('Tapered') && k === 'Straight 1-1/8"') {
+    if (steererSize(f) !== steererSize(k)) {
+      if (f.startsWith('Tapered') && steererSize(k) === '1-1/8"') {
         emit('warning', 'steerer', ['frame', 'fork'], `${name(fork)} has a straight 1-1/8" steerer; ${name(frame)} has a tapered head tube. It will only fit with a reducing lower headset cup.`)
       } else {
         emit('error', 'steerer', ['frame', 'fork'], `${name(fork)} has a ${k} steerer, which won't fit the ${f} head tube on ${name(frame)}.`)
@@ -94,10 +121,20 @@ function runRules(p: Parts, emit: Emit) {
     emit('error', 'headset-frame', ['headset', 'frame'], `${name(headset)} is ${headset.attrs.headsetStd}, but ${name(frame)} needs a ${frame.attrs.headsetStd} headset.`)
   }
   if (has(headset, 'steerer') && has(fork, 'steerer') && headset.attrs.steerer !== fork.attrs.steerer) {
-    emit('error', 'headset-fork', ['headset', 'fork'], `${name(headset)} is for ${headset.attrs.steerer} steerers; ${name(fork)} is ${fork.attrs.steerer}.`)
+    const h = headset.attrs.steerer, k = fork.attrs.steerer
+    emit('error', 'headset-fork', ['headset', 'fork'], steererSize(h) === steererSize(k) && threaded(h) !== threaded(k)
+      ? `${name(headset)} is a ${threaded(h) ? 'threaded' : 'threadless'} headset; ${name(fork)} has a ${threaded(k) ? 'threaded' : 'threadless'} steerer.`
+      : `${name(headset)} is for ${h} steerers; ${name(fork)} is ${k}.`)
   }
-  if (has(stem, 'steerer') && has(fork, 'steerer') && steererTop(stem.attrs.steerer) !== steererTop(fork.attrs.steerer)) {
-    emit('error', 'stem-steerer', ['stem', 'fork'], `${name(stem)} clamps a ${steererTop(stem.attrs.steerer)} steerer; the top of ${name(fork)}'s steerer is ${steererTop(fork.attrs.steerer)}.`)
+  if (has(stem, 'steerer') && has(fork, 'steerer')) {
+    const st = stem.attrs.steerer, k = fork.attrs.steerer
+    if (steererTop(st) !== steererTop(k)) {
+      emit('error', 'stem-steerer', ['stem', 'fork'], `${name(stem)} ${threaded(st) ? 'is a quill for' : 'clamps'} a ${steererTop(st)} steerer; the top of ${name(fork)}'s steerer is ${steererTop(k)}.`)
+    } else if (threaded(st) && !threaded(k)) {
+      emit('error', 'stem-steerer', ['stem', 'fork'], `${name(stem)} is a quill stem — it needs a threaded steerer, and ${name(fork)} is threadless.`)
+    } else if (!threaded(st) && threaded(k)) {
+      emit('warning', 'stem-steerer', ['stem', 'fork'], `${name(fork)} has a threaded steerer; ${name(stem)} is a threadless stem. It fits with a quill-to-threadless adapter (adds height and weight) — or use a quill stem.`)
+    }
   }
 
   // ---------- Suspension ----------
@@ -137,12 +174,23 @@ function runRules(p: Parts, emit: Emit) {
   }
 
   const frontAxle = front('frontAxle')
+  const slot9mm = (a: string) => a === 'QR 100mm' || a === '100mm Nutted'
   if (frontAxle && has(fork, 'frontAxle') && frontAxle[1].attrs!.frontAxle !== fork.attrs.frontAxle) {
-    emit('error', 'front-axle', [frontAxle[0], 'fork'], `${name(frontAxle[1])} has a ${frontAxle[1].attrs!.frontAxle} front axle, but ${name(fork)} is ${fork.attrs.frontAxle}.`)
+    if (slot9mm(frontAxle[1].attrs!.frontAxle!) && slot9mm(fork.attrs.frontAxle)) {
+      // Same 100mm, 9mm-slot dropout — only the clamping (QR skewer vs axle nuts) differs.
+      emit('note', 'front-axle', [frontAxle[0], 'fork'], `${name(frontAxle[1])} is ${frontAxle[1].attrs!.frontAxle} and ${name(fork)} is ${fork.attrs.frontAxle} — same 9mm dropout, so it fits; just bring the right skewer or a wrench.`)
+    } else emit('error', 'front-axle', [frontAxle[0], 'fork'], `${name(frontAxle[1])} has a ${frontAxle[1].attrs!.frontAxle} front axle, but ${name(fork)} is ${fork.attrs.frontAxle}.`)
   }
   const rearAxle = rear('rearAxle')
   if (rearAxle && has(frame, 'rearAxle') && rearAxle[1].attrs!.rearAxle !== frame.attrs.rearAxle) {
-    emit('error', 'rear-axle', [rearAxle[0], 'frame'], `${name(rearAxle[1])} has a ${rearAxle[1].attrs!.rearAxle} rear axle, but ${name(frame)} is ${frame.attrs.rearAxle}.`)
+    const hub = rearAxle[1].attrs!.rearAxle!, dropouts = frame.attrs.rearAxle
+    const qr = (a: string) => a.startsWith('QR ')
+    if (frame.attrs.material === 'steel' && qr(hub) && qr(dropouts)) {
+      // Steel frames flex a few mm, and can be permanently cold-set by a shop.
+      emit('warning', 'rear-axle', [rearAxle[0], 'frame'], `${name(rearAxle[1])} is ${hub.slice(3)}; ${name(frame)} is spaced ${dropouts.slice(3)}. On steel you can spring it in or have the frame cold-set — or respace the hub.`)
+    } else {
+      emit('error', 'rear-axle', [rearAxle[0], 'frame'], `${name(rearAxle[1])} has a ${hub} rear axle, but ${name(frame)} is ${dropouts}.`)
+    }
   }
 
   // ---------- Tires ----------
@@ -199,7 +247,14 @@ function runRules(p: Parts, emit: Emit) {
     }
   }
   if (has(sprocket, 'freehub') && freehub && sprocket.attrs.freehub !== freehub[1].attrs!.freehub) {
-    emit('error', 'sprocket-freehub', ['sprocket', freehub[0]], `${name(sprocket)} fits ${sprocket.attrs.freehub} hubs; ${name(freehub[1])} has ${freehub[1].attrs!.freehub}.`)
+    const cog = sprocket.attrs.freehub, hub = freehub[1].attrs!.freehub!
+    if (cog === 'Thread-on Freewheel' && hub === 'Track Fixed') {
+      emit('note', 'sprocket-freehub', ['sprocket', freehub[0]], `${name(sprocket)} threads onto ${name(freehub[1])}'s fixed-gear threads fine — it just won't use the lockring.`)
+    } else if (cog === 'Track Fixed' && hub === 'Thread-on Freewheel') {
+      emit('warning', 'sprocket-freehub', ['sprocket', freehub[0]], `${name(sprocket)} is a fixed cog, but ${name(freehub[1])} has freewheel threads with no lockring — the cog can unscrew under back-pressure. Use a track hub.`)
+    } else {
+      emit('error', 'sprocket-freehub', ['sprocket', freehub[0]], `${name(sprocket)} fits ${cog} hubs; ${name(freehub[1])} has ${hub}.`)
+    }
   }
   if (cassette && sprocket) {
     emit('warning', 'cassette-and-sprocket', ['cassette', 'sprocket'], `You've chosen both a cassette and a single-speed cog — a bike runs one or the other.`)
@@ -213,12 +268,15 @@ function runRules(p: Parts, emit: Emit) {
   }
 
   // ---------- Drivetrain: speeds & shift systems ----------
-  const speedParts = ([['cassette', cassette], ['chain', chain], ['rearDerailleur', rearDerailleur], ['shifters', shifters]] as const)
-    .filter(([, part]) => has(part, 'speeds') && part!.attrs!.speeds! > 1) as Array<[PartCategory, Part]>
-  const speedSet = new Set(speedParts.map(([, part]) => part.attrs!.speeds))
-  if (speedSet.size > 1) {
-    const detail = speedParts.map(([c, part]) => `${getCategoryLabel(c)} ${part.attrs!.speeds}s`).join(', ')
-    emit('error', 'speeds', speedParts.map(([c]) => c), `Mixed drivetrain speeds (${detail}). Cassette, chain, derailleur and shifters must all be the same speed.`)
+  // Friction shifters work at any speed, so they don't take part in the speed check.
+  const speedParts = ([['cassette', cassette], ['shifters', shifters], ['chain', chain], ['rearDerailleur', rearDerailleur]] as const)
+    .filter(([, part]) => has(part, 'speeds') && part!.attrs!.speeds! > 1 && part!.attrs!.shiftSystem !== 'Friction') as Array<[PartCategory, Part]>
+  if (speedParts.length > 1) {
+    const drive = speedParts[0][1].attrs!.speeds!
+    if (speedParts.some(([c, part]) => !speedsCompatible(c, part.attrs!.speeds!, drive))) {
+      const detail = speedParts.map(([c, part]) => `${getCategoryLabel(c)} ${part.attrs!.speeds}s`).join(', ')
+      emit('error', 'speeds', speedParts.map(([c]) => c), `Mixed drivetrain speeds (${detail}). Cassette, chain, derailleur and shifters must all be the same speed.`)
+    }
   }
   if (has(crankset, 'speeds') && crankset.attrs.speeds > 1 && speedParts.length > 0) {
     const drive = speedParts[0][1].attrs!.speeds!
@@ -226,7 +284,7 @@ function runRules(p: Parts, emit: Emit) {
       emit('warning', 'crank-speeds', ['crankset', speedParts[0][0]], `${name(crankset)} is designed for ${crankset.attrs.speeds}-speed; the rest of the drivetrain is ${drive}-speed. Shifting and chain fit may suffer.`)
     }
   }
-  if (has(shifters, 'shiftSystem') && has(rearDerailleur, 'shiftSystem') && !shiftCompatible(shifters.attrs.shiftSystem, rearDerailleur.attrs.shiftSystem)) {
+  if (has(shifters, 'shiftSystem') && has(rearDerailleur, 'shiftSystem') && !shiftCompatible(shifters, rearDerailleur)) {
     emit('error', 'shift-system', ['shifters', 'rearDerailleur'], `${name(shifters)} (${shifters.attrs.shiftSystem}) can't control ${name(rearDerailleur)} (${rearDerailleur.attrs.shiftSystem}).`)
   }
   if (has(cassette, 'largestCogT') && has(rearDerailleur, 'maxCogT') && cassette.attrs.largestCogT > rearDerailleur.attrs.maxCogT) {
@@ -234,8 +292,9 @@ function runRules(p: Parts, emit: Emit) {
   }
   if (chain?.attrs?.flattop === false && cassette?.attrs?.freehub === 'SRAM XDR' && cassette.attrs.speeds === 12) {
     emit('warning', 'flattop', ['chain', 'cassette'], `SRAM 12-speed road (XDR) drivetrains are designed for a Flattop chain; ${name(chain)} isn't one.`)
-  } else if (chain?.attrs?.flattop === true && has(cassette, 'freehub') && cassette.attrs.freehub !== 'SRAM XDR') {
-    emit('warning', 'flattop', ['chain', 'cassette'], `${name(chain)} is a SRAM Flattop chain, made for SRAM AXS road cassettes — not ${name(cassette)}.`)
+  } else if (chain?.attrs?.flattop === true && cassette && cassette.brand !== 'SRAM') {
+    // Flattop (road AXS, Transmission T-Type, Apex Eagle) is designed around SRAM's own cassettes.
+    emit('warning', 'flattop', ['chain', 'cassette'], `${name(chain)} is a SRAM Flattop chain, made for SRAM 12/13-speed cassettes — not ${name(cassette)}.`)
   }
 
   // ---------- Drivetrain: front derailleur ----------
@@ -250,21 +309,37 @@ function runRules(p: Parts, emit: Emit) {
     }
   }
   if (has(frontDerailleur, 'frontDerailleurMount') && has(frame, 'frontDerailleurMount') && frame.attrs.frontDerailleurMount !== 'None' && frontDerailleur.attrs.frontDerailleurMount !== frame.attrs.frontDerailleurMount) {
-    emit('warning', 'fd-mount', ['frontDerailleur', 'frame'], `${name(frontDerailleur)} is ${frontDerailleur.attrs.frontDerailleurMount.toLowerCase()} mount; ${name(frame)} is ${frame.attrs.frontDerailleurMount.toLowerCase()}. You'll need an adapter clamp.`)
+    // A braze-on FD on a round seat tube just needs the common band-clamp adapter.
+    const bandAdapter = frontDerailleur.attrs.frontDerailleurMount === 'Braze-on' && frame.attrs.frontDerailleurMount === 'Clamp'
+    emit(bandAdapter ? 'note' : 'warning', 'fd-mount', ['frontDerailleur', 'frame'], `${name(frontDerailleur)} is ${frontDerailleur.attrs.frontDerailleurMount.toLowerCase()} mount; ${name(frame)} is ${frame.attrs.frontDerailleurMount.toLowerCase()}. You'll need an adapter clamp.`)
   }
 
   // ---------- Brakes ----------
   if (has(brakes, 'brakeMount')) {
     const need = brakes.attrs.brakeMount
-    const isDisc = (m: string) => m === 'Flat Mount' || m === 'Post Mount'
+    const isDisc = (m: string) => m === 'Flat Mount' || m === 'Post Mount' || m === 'IS Disc'
+    const bosses = (m: string) => m === 'V-Brake/Cantilever' || m === 'U-Brake'
     for (const [cat, part] of [['frame', frame], ['fork', fork]] as const) {
       if (!has(part, 'brakeMount')) continue
       const got = part.attrs.brakeMount
-      if (got === need) continue
-      if (got === 'None') {
+      if (got === need) {
+        if (need === 'Rim Caliper' && has(part, 'brakeReachMm') && has(brakes, 'reachMinMm') && has(brakes, 'reachMaxMm')) {
+          const reach = part.attrs.brakeReachMm, lo = brakes.attrs.reachMinMm, hi = brakes.attrs.reachMaxMm
+          if (reach < lo || reach > hi) {
+            emit('error', 'brake-reach', ['brakes', cat], `${name(part)} needs ${reach}mm of brake reach; ${name(brakes)} cover ${lo}–${hi}mm. Look for ${reach > hi ? 'long-reach' : 'short-reach'} calipers.`)
+          }
+        }
+        continue
+      }
+      // BMX U-brakes are rear-only; a brakeless fork is normal.
+      if (need === 'U-Brake' && cat === 'fork' && got === 'None') continue
+      if (bosses(need) && bosses(got)) {
+        // Mid-80s MTBs: cantis up front, a U-brake / roller cam under the chainstay.
+        emit('warning', 'brake-mount', ['brakes', cat], `${name(part)} has ${got === 'U-Brake' ? 'U-brake / roller-cam' : 'cantilever'} bosses, but ${name(brakes)} are for ${need === 'U-Brake' ? 'U-brake / roller-cam' : 'cantilever / V-brake'} bosses. You'll need a matching ${cat === 'frame' ? 'rear' : 'front'} brake — add it as a custom part.`)
+      } else if (got === 'None') {
         emit('error', 'brake-mount', ['brakes', cat], `${name(part)} has no brake mounts.`)
       } else if (isDisc(got) && isDisc(need)) {
-        emit('warning', 'brake-mount', ['brakes', cat], `${name(brakes)} are ${need.toLowerCase()}; ${name(part)} is ${got.toLowerCase()}. You'll need a mount adapter.`)
+        emit('warning', 'brake-mount', ['brakes', cat], `${name(brakes)} are for ${need} mounts; ${name(part)} has ${got} mounts. You'll need a mount adapter.`)
       } else {
         emit('error', 'brake-mount', ['brakes', cat], `${name(brakes)} need ${need} mounts; ${name(part)} has ${got}.`)
       }
@@ -304,29 +379,54 @@ function runRules(p: Parts, emit: Emit) {
   }
 
   // ---------- Levers & cockpit ----------
-  if (has(shifters, 'brakeType') && has(brakes, 'brakeType')) {
-    const lever = shifters.attrs.brakeType, caliper = brakes.attrs.brakeType
-    const hydraulic = (t: string) => t === 'Hydraulic Disc'
-    if (hydraulic(lever) !== hydraulic(caliper)) {
-      emit('error', 'lever-brake', ['shifters', 'brakes'], hydraulic(lever)
-        ? `${name(shifters)} are hydraulic levers; ${name(brakes)} are cable-actuated.`
-        : `${name(shifters)} are cable levers; ${name(brakes)} are hydraulic.`)
+  // Brake levers come from the Brake Levers slot, from brake-lever shifters (STI, Ergopower…),
+  // or are bundled with the brakes (most flat-bar hydraulics).
+  const leverSources = ([['brakeLevers', brakeLevers], ['shifters', shifters]] as const)
+    .filter(([, part]) => has(part, 'brakeType')) as Array<[PartCategory, Part]>
+  const bundled = brakes?.attrs?.includesLevers === true
+  if (bundled && leverSources.length > 0) {
+    emit('warning', 'double-levers', ['brakes', leverSources[0][0]], `${name(brakes!)} come with their own levers, and ${name(leverSources[0][1])} ${leverSources[0][0] === 'shifters' ? 'have brake levers built in' : 'are brake levers too'}.`)
+  } else if (leverSources.length > 1) {
+    emit('note', 'double-levers', ['brakeLevers', 'shifters'], `${name(shifters!)} already have brake levers — ${name(brakeLevers!)} only make sense as interrupter / cross-top levers.`)
+  }
+  const lever = bundled ? undefined : leverSources[0]
+  if (lever && has(brakes, 'brakeType')) {
+    const [lcat, lpart] = lever
+    const l = lpart.attrs!.brakeType!, caliper = brakes.attrs.brakeType
+    if (hydraulic(l) !== hydraulic(caliper)) {
+      emit('error', 'lever-brake', [lcat, 'brakes'], hydraulic(l)
+        ? `${name(lpart)} are hydraulic levers; ${name(brakes)} are cable-actuated.`
+        : `${name(lpart)} are cable levers; ${name(brakes)} are hydraulic.`)
+    } else if (hydraulic(l) && l !== caliper) {
+      emit('error', 'lever-brake', [lcat, 'brakes'], `${name(lpart)} are ${l.toLowerCase()} levers; ${name(brakes)} are ${caliper.toLowerCase()} — different hydraulic systems.`)
+    } else if (!hydraulic(l) && has(lpart, 'cablePull') && has(brakes, 'cablePull') && lpart.attrs.cablePull !== brakes.attrs.cablePull) {
+      emit('error', 'cable-pull', [lcat, 'brakes'], lpart.attrs.cablePull === 'Short'
+        ? `${name(lpart)} are short-pull levers; ${name(brakes)} need long pull. They'll feel spongy and bottom out — use long-pull levers or a travel adapter (e.g. a Travel Agent).`
+        : `${name(lpart)} are long-pull (V-brake) levers; ${name(brakes)} need short pull. Expect weak braking — use short-pull levers.`)
     }
   }
-  if (has(shifters, 'handlebarType') && has(handlebars, 'handlebarType')) {
-    const dropLevers = shifters.attrs.handlebarType === 'Drop' || shifters.attrs.handlebarType === 'Integrated Drop'
-    const dropBar = handlebars.attrs.handlebarType === 'Drop' || handlebars.attrs.handlebarType === 'Integrated Drop'
-    if (dropLevers !== dropBar) {
-      emit('error', 'lever-bar', ['shifters', 'handlebars'], dropLevers
-        ? `${name(shifters)} are drop-bar levers; ${name(handlebars)} is a ${handlebars.attrs.handlebarType.toLowerCase()} bar.`
-        : `${name(shifters)} are flat-bar shifters; ${name(handlebars)} is a drop bar.`)
+  if (has(brakes, 'brakeType') && !bundled && !lever) {
+    emit('note', 'levers-missing', ['brakeLevers', 'brakes'], `${name(brakes)} don't include levers, and your shifters don't have any — add brake levers${brakes.attrs.cablePull ? ` (${brakes.attrs.cablePull.toLowerCase()} pull)` : ''}.`)
+  }
+  for (const [cat, part] of [['shifters', shifters], ['brakeLevers', brakeLevers]] as const) {
+    if (!has(part, 'handlebarType') || !has(handlebars, 'handlebarType')) continue
+    if (cat === 'shifters' && (part.attrs.shifterMount === 'Downtube' || part.attrs.shifterMount === 'Stem')) continue
+    const roadLevers = roadBar(part.attrs.handlebarType), road = roadBar(handlebars.attrs.handlebarType)
+    if (roadLevers !== road) {
+      const what = cat === 'shifters' ? (part.attrs.shifterMount === 'Bar-End' ? 'bar-end shifters' : roadLevers ? 'drop-bar levers' : 'flat-bar shifters') : roadLevers ? 'road (23.8mm) levers' : 'flat-bar (22.2mm) levers'
+      emit('error', 'lever-bar', [cat, 'handlebars'], `${name(part)} are ${what}; ${name(handlebars)} is a ${handlebars.attrs.handlebarType.toLowerCase()} bar${road ? ' with a 23.8mm grip area' : ' with 22.2mm grips'}.`)
     }
+  }
+  if (shifters?.attrs?.shifterMount === 'Downtube' && frame?.attrs?.downtubeBosses === false) {
+    emit('warning', 'downtube-bosses', ['shifters', 'frame'], `${name(frame)} has no downtube shifter bosses — ${name(shifters)} will need a band-on clamp.`)
   }
   if (handlebars?.attrs?.handlebarType === 'Integrated Drop' && stem) {
     emit('warning', 'integrated-cockpit', ['handlebars', 'stem'], `${name(handlebars)} is a one-piece bar/stem — you don't need a separate stem.`)
   } else if (has(handlebars, 'barClampMm') && has(stem, 'barClampMm') && handlebars.attrs.barClampMm !== stem.attrs.barClampMm) {
     const bar = handlebars.attrs.barClampMm, clamp = stem.attrs.barClampMm
-    if (bar < clamp) {
+    if (Math.abs(bar - clamp) <= 0.4) {
+      emit('note', 'bar-clamp', ['handlebars', 'stem'], `${name(handlebars)} is ${bar}mm and ${name(stem)} clamps ${clamp}mm — close enough to work, but check it clamps up without creaking.`)
+    } else if (bar < clamp) {
       emit('warning', 'bar-clamp', ['handlebars', 'stem'], `${name(handlebars)} is ${bar}mm at the clamp; ${name(stem)} clamps ${clamp}mm. Works with a shim, but a matching stem is better.`)
     } else {
       emit('error', 'bar-clamp', ['handlebars', 'stem'], `${name(handlebars)} is ${bar}mm at the clamp — too big for ${name(stem)}'s ${clamp}mm clamp.`)

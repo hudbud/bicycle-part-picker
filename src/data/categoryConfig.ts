@@ -1,5 +1,4 @@
 import type { PartCategory } from '@/types/parts'
-import type { BikeType } from '@/types/build'
 
 export type CategoryGroup = 'Frameset' | 'Wheels & Tires' | 'Drivetrain' | 'Brakes' | 'Cockpit' | 'Contact Points'
 
@@ -36,6 +35,7 @@ export const ALL_CATEGORIES: CategoryMeta[] = [
   { id: 'frontDerailleur', label: 'Front Derailleur', plural: 'Front Derailleurs', slug: 'front-derailleur', group: 'Drivetrain', required: false, blurb: 'Only for 2x drivetrains. Check your frame’s mount type.' },
   { id: 'shifters', label: 'Shifters / Levers', plural: 'Shifters & Levers', slug: 'shifters', group: 'Drivetrain', required: false, blurb: 'Drop-bar levers usually also actuate your brakes; flat-bar triggers don’t.' },
   { id: 'brakes', label: 'Brakes', plural: 'Brakes', slug: 'brakes', group: 'Brakes', required: true, blurb: 'Priced as a front + rear set. Caliper mount must match your frame and fork.' },
+  { id: 'brakeLevers', label: 'Brake Levers', plural: 'Brake Levers', slug: 'brake-levers', group: 'Brakes', required: false, blurb: 'Only if your shifters don’t include them. Cable pull (short vs long) must match your brakes.' },
   { id: 'rotors', label: 'Rotors', plural: 'Rotors', slug: 'rotors', group: 'Brakes', defaultQty: 2, required: false, blurb: 'Priced per rotor. Center Lock or 6-bolt — match your hubs.' },
   { id: 'handlebars', label: 'Handlebars', plural: 'Handlebars', slug: 'handlebars', group: 'Cockpit', required: true, blurb: 'Drop, flat or riser. Clamp diameter must match your stem.' },
   { id: 'stem', label: 'Stem', plural: 'Stems', slug: 'stem', group: 'Cockpit', required: true, blurb: 'Length and angle set your reach. Clamp must match your bars.' },
@@ -62,11 +62,6 @@ export const BROWSABLE_CATEGORIES: CategoryMeta[] = [
 const ALL_META: CategoryMeta[] = [...ALL_CATEGORIES, ...WHEEL_SUB_CATEGORIES]
 
 export const CATEGORY_GROUPS: CategoryGroup[] = ['Frameset', 'Wheels & Tires', 'Drivetrain', 'Brakes', 'Cockpit', 'Contact Points']
-
-/** @deprecated Bike-type templates removed — always returns the full category list. */
-export function getCategoriesForBikeType(_bikeType?: BikeType): CategoryMeta[] {
-  return ALL_CATEGORIES
-}
 
 export function getCategoryMeta(category: PartCategory): CategoryMeta | undefined {
   return ALL_META.find((c) => c.id === category)

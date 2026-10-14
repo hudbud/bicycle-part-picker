@@ -1,0 +1,36 @@
+// Cloudflare Workers: serves the built site from dist/ and runs the account API (worker/)
+// under /api. Deploy with `npm run deploy`; apply new migrations first with
+// `npx wrangler@4 d1 migrations apply ppp-accounts --remote`.
+{
+  "name": "bicycle-part-picker",
+  "main": "worker/index.ts",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // Any path that isn't a file gets index.html, so client-side routes load directly.
+    "not_found_handling": "single-page-application",
+    // Only the API runs the Worker; everything else is served straight from the assets.
+    "run_worker_first": ["/api/*"]
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ppp-accounts",
+      "database_id": "1f23d1f5-6314-4697-8610-1e2940576f87",
+      "migrations_dir": "migrations"
+    }
+  ],
+  // Hosted bike photos (see migrations/0002_photos.sql).
+  "r2_buckets": [
+    { "binding": "PHOTOS", "bucket_name": "ppp-photos" }
+  ],
+  // Email sign-in links (worker/email.ts) stay hidden until sending is set up, on a domain you own:
+  //   Cloudflare Email Service (Workers Paid plan): "send_email": [{ "name": "EMAIL" }]
+  //   or Resend: npx wrangler@4 secret put RESEND_API_KEY
+  // plus "EMAIL_FROM": "Pedal Parts Picker <sign-in@your-domain>" in vars below.
+  "vars": {
+    // Public OAuth client ID (Google Cloud → Credentials). Not a secret.
+    "GOOGLE_CLIENT_ID": "505658178341-nr14t307jvi3qf1ufiu9o7l0kuj5n1d6.apps.googleusercontent.com"
+  }
+}

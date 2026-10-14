@@ -5,9 +5,14 @@ import { LandingPage } from '@/pages/LandingPage'
 import { BuilderPage } from '@/pages/BuilderPage'
 import { SharedBuildPage } from '@/pages/SharedBuildPage'
 import { GaragePage } from '@/pages/GaragePage'
+import { BikePage } from '@/pages/BikePage'
+import { ImportBikePage } from '@/pages/ImportBikePage'
+import { PublicBikePage } from '@/pages/PublicBikePage'
 import { PartsPage } from '@/pages/PartsPage'
 import { AboutPage } from '@/pages/AboutPage'
 import { NotFoundPage } from '@/pages/NotFoundPage'
+import { SignInLinkPage } from '@/pages/SignInLinkPage'
+import { MoveInPage } from '@/pages/MoveInPage'
 import { ProductsIndexPage } from '@/pages/ProductsIndexPage'
 import { ProductBrowsePage } from '@/pages/ProductBrowsePage'
 import { ProductDetailPage } from '@/pages/ProductDetailPage'
@@ -17,12 +22,13 @@ import { GuideDetailPage } from '@/pages/GuideDetailPage'
 import { CompletedBuildsPage } from '@/pages/CompletedBuildsPage'
 import { CompletedBuildDetailPage } from '@/pages/CompletedBuildDetailPage'
 import { TrendsPage } from '@/pages/TrendsPage'
+import { SubmitFramePage } from '@/pages/SubmitFramePage'
 
 function RoutedContent() {
   const location = useLocation()
   return (
     // Keying by pathname resets the boundary when the user navigates away from a broken page.
-    <ErrorBoundary key={location.pathname + location.search}>
+    <ErrorBoundary key={location.pathname}>
       <Routes>
         <Route path="/" element={<LandingPage />} />
         <Route path="/build" element={<BuilderPage />} />
@@ -37,8 +43,14 @@ function RoutedContent() {
         <Route path="/builds/:buildId" element={<CompletedBuildDetailPage />} />
         <Route path="/trends" element={<TrendsPage />} />
         <Route path="/garage" element={<GaragePage />} />
+        <Route path="/garage/import" element={<ImportBikePage />} />
+        <Route path="/garage/:bikeId" element={<BikePage />} />
+        <Route path="/bike" element={<PublicBikePage />} />
         <Route path="/parts" element={<PartsPage />} />
+        <Route path="/submit/frame" element={<SubmitFramePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/sign-in" element={<SignInLinkPage />} />
+        <Route path="/move-in" element={<MoveInPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </ErrorBoundary>

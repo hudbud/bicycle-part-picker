@@ -1,0 +1,503 @@
+[
+  {
+    "id": "shimano-cs-hg70-7-cassette",
+    "name": "CS-HG70 7-Speed",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 40,
+    "weightG": 330,
+    "year": 1990,
+    "attrs": {
+      "speeds": 7,
+      "cassetteRange": "12-28T",
+      "smallestCogT": 12,
+      "largestCogT": 28,
+      "freehub": "Shimano HG 7s"
+    },
+    "specs": {
+      "Era": "Deore XT / LX 7-speed Hyperglide",
+      "Note": "Needs a 7-speed freehub body (or a 4.5mm spacer on an 8–10s body)"
+    },
+    "tags": [
+      "Vintage",
+      "Hyperglide",
+      "7-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-xtr-cs-m900-cassette",
+    "name": "XTR CS-M900 8-Speed",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 90,
+    "weightG": 270,
+    "year": 1992,
+    "attrs": {
+      "speeds": 8,
+      "cassetteRange": "12-28T",
+      "smallestCogT": 12,
+      "largestCogT": 28,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Era": "Original XTR group"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "M900",
+      "8-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-cs-hg50-8-cassette",
+    "name": "CS-HG50 8-Speed",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 30,
+    "weightG": 370,
+    "year": 1997,
+    "attrs": {
+      "speeds": 8,
+      "cassetteRange": "11-30T",
+      "smallestCogT": 11,
+      "largestCogT": 30,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Era": "Deore LX / STX-RC 8-speed",
+      "Cogs": "11-13-15-17-20-23-26-30"
+    },
+    "tags": [
+      "Vintage",
+      "Hyperglide",
+      "8-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-xtr-cs-m950-cassette",
+    "name": "XTR CS-M950 9-Speed",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 90,
+    "weightG": 240,
+    "year": 1997,
+    "attrs": {
+      "speeds": 9,
+      "cassetteRange": "11-34T",
+      "smallestCogT": 11,
+      "largestCogT": 34,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Construction": "Titanium large cogs on alloy spider",
+      "Era": "First 9-speed XTR (M952 group)"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-cs-m760-cassette",
+    "name": "Deore XT CS-M760 9-Speed",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 45,
+    "weightG": 305,
+    "year": 2003,
+    "attrs": {
+      "speeds": 9,
+      "cassetteRange": "11-34T",
+      "smallestCogT": 11,
+      "largestCogT": 34,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Cogs": "11-13-15-17-20-23-26-30-34"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M760",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-ultegra-cs-6500-cassette",
+    "name": "Ultegra CS-6500 9-Speed",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 30,
+    "weightG": 250,
+    "year": 1999,
+    "attrs": {
+      "speeds": 9,
+      "cassetteRange": "12-25T",
+      "smallestCogT": 12,
+      "largestCogT": 25,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Other Ranges": "11-23, 12-23, 12-27, 13-25"
+    },
+    "tags": [
+      "Vintage",
+      "Ultegra",
+      "9-Speed",
+      "Road"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-105-cs-5700-cassette",
+    "name": "105 CS-5700 10-Speed",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 35,
+    "weightG": 270,
+    "year": 2009,
+    "attrs": {
+      "speeds": 10,
+      "cassetteRange": "11-28T",
+      "smallestCogT": 11,
+      "largestCogT": 28,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Other Ranges": "11-25, 12-25, 12-27, 12-30"
+    },
+    "tags": [
+      "105",
+      "10-Speed",
+      "Road"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-cs-hg41-8-cassette",
+    "name": "CS-HG41-8",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 25,
+    "weightG": 450,
+    "year": 2016,
+    "attrs": {
+      "speeds": 8,
+      "cassetteRange": "11-32T",
+      "smallestCogT": 11,
+      "largestCogT": 32,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Other Ranges": "11-30, 11-34"
+    },
+    "tags": [
+      "Budget",
+      "8-Speed",
+      "Alt"
+    ]
+  },
+  {
+    "id": "shimano-cs-hg400-9-cassette",
+    "name": "CS-HG400-9",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 35,
+    "weightG": 416,
+    "year": 2017,
+    "attrs": {
+      "speeds": 9,
+      "cassetteRange": "11-36T",
+      "smallestCogT": 11,
+      "largestCogT": 36,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Other Ranges": "11-32, 11-34, 12-36"
+    },
+    "tags": [
+      "9-Speed",
+      "Alt",
+      "Touring"
+    ]
+  },
+  {
+    "id": "shimano-cs-hg500-10-cassette",
+    "name": "CS-HG500-10",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 45,
+    "weightG": 470,
+    "year": 2014,
+    "attrs": {
+      "speeds": 10,
+      "cassetteRange": "11-42T",
+      "smallestCogT": 11,
+      "largestCogT": 42,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Other Ranges": "11-32, 11-34, 11-36"
+    },
+    "tags": [
+      "10-Speed",
+      "MTB"
+    ]
+  },
+  {
+    "id": "shimano-cs-hg50-10-cassette",
+    "name": "CS-HG50-10 Road",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 40,
+    "weightG": 330,
+    "year": 2009,
+    "attrs": {
+      "speeds": 10,
+      "cassetteRange": "11-36T",
+      "smallestCogT": 11,
+      "largestCogT": 36,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Pairs With": "10s road (5700/4600) shifters, or 9s MTB derailleurs via the shared cable pull",
+      "Other Ranges": "11-25, 11-28, 11-32"
+    },
+    "tags": [
+      "10-Speed",
+      "Road",
+      "Touring"
+    ]
+  },
+  {
+    "id": "shimano-deore-cs-m4100-10-cassette",
+    "name": "Deore CS-M4100-10",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 50,
+    "weightG": 573,
+    "year": 2020,
+    "attrs": {
+      "speeds": 10,
+      "cassetteRange": "11-46T",
+      "smallestCogT": 11,
+      "largestCogT": 46,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Note": "Fits standard HG freehubs"
+    },
+    "tags": [
+      "10-Speed",
+      "MTB",
+      "Wide Range"
+    ]
+  },
+  {
+    "id": "shimano-deore-cs-m5100-11-cassette",
+    "name": "Deore CS-M5100-11",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 70,
+    "weightG": 620,
+    "year": 2020,
+    "attrs": {
+      "speeds": 11,
+      "cassetteRange": "11-51T",
+      "smallestCogT": 11,
+      "largestCogT": 51,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Note": "Fits standard HG freehubs — needs a 51T-capable derailleur (RD-M5100)"
+    },
+    "tags": [
+      "11-Speed",
+      "MTB",
+      "Wide Range"
+    ]
+  },
+  {
+    "id": "shimano-slx-cs-m7000-11-cassette",
+    "name": "SLX CS-M7000-11",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 65,
+    "weightG": 535,
+    "year": 2016,
+    "attrs": {
+      "speeds": 11,
+      "cassetteRange": "11-46T",
+      "smallestCogT": 11,
+      "largestCogT": 46,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Other Ranges": "11-40, 11-42"
+    },
+    "tags": [
+      "11-Speed",
+      "MTB",
+      "SLX"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "sunrace-csms3-10-cassette",
+    "name": "CSMS3 10-Speed",
+    "brand": "SunRace",
+    "category": "cassette",
+    "price": 60,
+    "weightG": 515,
+    "year": 2016,
+    "attrs": {
+      "speeds": 10,
+      "cassetteRange": "11-42T",
+      "smallestCogT": 11,
+      "largestCogT": 42,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Other Ranges": "11-36, 11-40, 11-46",
+      "Note": "Shimano 10s-compatible spacing"
+    },
+    "tags": [
+      "10-Speed",
+      "Wide Range",
+      "Value"
+    ]
+  },
+  {
+    "id": "sunrace-csms8-11-cassette",
+    "name": "CSMS8 11-Speed",
+    "brand": "SunRace",
+    "category": "cassette",
+    "price": 80,
+    "weightG": 560,
+    "year": 2017,
+    "attrs": {
+      "speeds": 11,
+      "cassetteRange": "11-46T",
+      "smallestCogT": 11,
+      "largestCogT": 46,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Other Ranges": "11-36, 11-40, 11-42",
+      "Note": "Fits standard HG freehubs"
+    },
+    "tags": [
+      "11-Speed",
+      "Wide Range",
+      "Value"
+    ]
+  },
+  {
+    "id": "microshift-advent-x-cassette-11-48",
+    "name": "Advent X Cassette 11-48T",
+    "brand": "Microshift",
+    "category": "cassette",
+    "price": 60,
+    "weightG": 579,
+    "year": 2020,
+    "attrs": {
+      "speeds": 10,
+      "cassetteRange": "11-48T",
+      "smallestCogT": 11,
+      "largestCogT": 48,
+      "freehub": "Shimano HG 8-10s / MTB"
+    },
+    "specs": {
+      "Note": "Advent X system only (own cable pull); fits HG freehubs"
+    },
+    "tags": [
+      "10-Speed",
+      "Advent X",
+      "Value"
+    ]
+  },
+  {
+    "id": "shimano-mf-tz500-7-freewheel",
+    "name": "MF-TZ500-7 Freewheel",
+    "brand": "Shimano",
+    "category": "cassette",
+    "price": 20,
+    "weightG": 470,
+    "year": 2016,
+    "attrs": {
+      "speeds": 7,
+      "cassetteRange": "14-34T",
+      "smallestCogT": 14,
+      "largestCogT": 34,
+      "freehub": "Thread-on Freewheel"
+    },
+    "specs": {
+      "Type": "7-speed thread-on freewheel (1.37\" x 24 tpi)",
+      "Other Ranges": "14-28"
+    },
+    "tags": [
+      "Freewheel",
+      "7-Speed",
+      "Budget"
+    ]
+  },
+  {
+    "id": "dnp-epoch-8-freewheel",
+    "name": "Epoch 8-Speed Freewheel",
+    "brand": "DNP",
+    "category": "cassette",
+    "price": 45,
+    "weightG": 400,
+    "year": 2010,
+    "attrs": {
+      "speeds": 8,
+      "cassetteRange": "11-32T",
+      "smallestCogT": 11,
+      "largestCogT": 32,
+      "freehub": "Thread-on Freewheel"
+    },
+    "specs": {
+      "Type": "Thread-on freewheel (1.37\" x 24 tpi)",
+      "Other Ranges": "11-28, 11-34",
+      "Note": "Popular upgrade for 130/135mm freewheel hubs (Phil Wood, White Industries, vintage)"
+    },
+    "tags": [
+      "Freewheel",
+      "8-Speed",
+      "Alt"
+    ]
+  },
+  {
+    "id": "suntour-new-winner-pro-7-freewheel",
+    "name": "New Winner Pro 7-Speed Freewheel",
+    "brand": "Suntour",
+    "category": "cassette",
+    "price": 70,
+    "weightG": 350,
+    "year": 1988,
+    "attrs": {
+      "speeds": 7,
+      "cassetteRange": "13-28T",
+      "smallestCogT": 13,
+      "largestCogT": 28,
+      "freehub": "Thread-on Freewheel"
+    },
+    "specs": {
+      "Type": "Thread-on freewheel; Accushift-indexed spacing",
+      "Note": "Ultra-7 narrow spacing on some versions — check before indexing"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour",
+      "Freewheel"
+    ],
+    "discontinued": true
+  }
+]

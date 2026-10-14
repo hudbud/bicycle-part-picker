@@ -1,7 +1,7 @@
 import { create } from 'zustand'
 import { persist } from 'zustand/middleware'
 import type { Part, PartCategory } from '@/types/parts'
-import type { PartStatus } from '@/types/build'
+import type { PartStatus, PartTracking } from '@/types/build'
 
 export interface BinItem {
   id: string
@@ -9,11 +9,13 @@ export interface BinItem {
   status: PartStatus
   notes?: string
   addedAt: string
+  quantity?: number
+  tracking?: PartTracking
 }
 
 interface PartsBinState {
   items: BinItem[]
-  addItem: (part: Part, status: PartStatus, notes?: string) => void
+  addItem: (part: Part, status: PartStatus, notes?: string, extra?: Pick<BinItem, 'quantity' | 'tracking'>) => void
   updateItem: (id: string, updates: Partial<Omit<BinItem, 'id' | 'addedAt'>>) => void
   removeItem: (id: string) => void
   getTotalValue: () => number
@@ -26,13 +28,15 @@ export const usePartsBinStore = create<PartsBinState>()(
     (set, get) => ({
       items: [],
 
-      addItem: (part, status, notes) => {
+      addItem: (part, status, notes, extra) => {
         const item: BinItem = {
           id: crypto.randomUUID(),
           part,
           status,
           notes,
           addedAt: new Date().toISOString(),
+          ...(extra?.quantity && extra.quantity !== 1 ? { quantity: extra.quantity } : {}),
+          ...(extra?.tracking ? { tracking: extra.tracking } : {}),
         }
         set((s) => ({ items: [item, ...s.items] }))
       },

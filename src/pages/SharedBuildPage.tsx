@@ -1,140 +1,95 @@
-import { useParams, useSearchParams, Link } from 'react-router-dom'
-import { useMemo } from 'react'
+import { useParams, useSearchParams, useNavigate } from 'react-router-dom'
+import { useMemo, useState } from 'react'
 import type { Build } from '@/types/build'
-import type { PartCategory } from '@/types/parts'
 import { useGarageStore } from '@/store/garageStore'
-import { decodeSharedBuild } from '@/utils/buildCodec'
-import { StatusBadge } from '@/components/ui/StatusBadge'
-import { getCategoryLabel } from '@/data/categoryConfig'
+import { useBuildStore } from '@/store/buildStore'
+import { useToast } from '@/hooks/useToast'
+import { buildShareUrl, decodeSharedBuild } from '@/utils/buildCodec'
 import { EmptyState } from '@/components/ui/EmptyState'
-import { Window, WindowHeader, WindowContent, Table, TableBody, TableHead, TableRow, TableHeadCell, TableDataCell, Button, Toolbar } from 'react95'
+import { ConfirmDialog } from '@/components/ui/ConfirmDialog'
+import { BuildPartList } from '@/components/build/BuildPartList'
+import { ShareDialog } from '@/components/share/ShareDialog'
+import { Window, WindowHeader, WindowContent, Button, Toolbar } from 'react95'
 import styled from 'styled-components'
+import { PhotoImg } from '@/components/photos/PhotoImg'
 
 const PageWindow = styled(Window)`
   width: 100%;
-  max-width: 900px;
+  max-width: 1100px;
   margin: 0 auto;
 `
 
-const BuildPhoto = styled.img`
+const BuildPhoto = styled(PhotoImg)`
   width: 100%;
   max-height: 280px;
   object-fit: cover;
   display: block;
-  border-bottom: 2px solid #888;
+  border-bottom: 2px solid var(--win-shadow);
 `
 
-const WHEEL_SUB_LABELS: Partial<Record<PartCategory, string>> = {
-  frontWheel: 'Front Wheel',
-  rearWheel: 'Rear Wheel',
-  hub: 'Hub',
-  rim: 'Rim',
-  spokes: 'Spokes',
-}
-
-function SharedBuildView({ build }: { build: Build }) {
-  const partsTotal = build.components.reduce((s, c) => s + (c.part?.price ?? 0), 0)
-  const extrasTotal = (build.additionalItems ?? []).reduce((s, i) => s + (i.price ?? 0), 0)
-  const total = partsTotal + extrasTotal
+function SharedBuildView({ build, isShareLink }: { build: Build; isShareLink: boolean }) {
+  const navigate = useNavigate()
+  const loadBuild = useBuildStore((s) => s.loadBuild)
+  const hasUnsavedWork = useBuildStore((s) => s.hasUnsavedWork)
+  const { success } = useToast()
+  const [confirmOpen, setConfirmOpen] = useState(false)
+  const [showShare, setShowShare] = useState(false)
 
   const createdAt = build.createdAt
     ? new Intl.DateTimeFormat('en', { dateStyle: 'medium' }).format(new Date(build.createdAt))
     : null
 
-  const getLabel = (category: PartCategory) =>
-    getCategoryLabel(category) ?? WHEEL_SUB_LABELS[category] ?? null
+  // A share link is someone else's build: open it as a fresh, unsaved copy.
+  const openInBuilder = () => {
+    loadBuild(isShareLink ? { ...build, id: undefined } : build)
+    success('Build opened in the builder')
+    navigate('/build')
+  }
+
+  const copyLink = async () => {
+    const url = isShareLink ? window.location.href : buildShareUrl(build)
+    await navigator.clipboard.writeText(url).catch(() => {})
+    success('Link copied!')
+  }
 
   return (
     <PageWindow>
       <WindowHeader active>
-        <span>Shared Build — {build.name}</span>
+        <span>{isShareLink ? 'Shared Build' : 'Saved Build'} — {build.name}</span>
       </WindowHeader>
-      <Toolbar style={{ gap: 8, flexWrap: 'wrap' }}>
-        {build.ownerName && <span style={{ fontSize: 12 }}>by {build.ownerName}</span>}
-        {createdAt && <span style={{ fontSize: 12 }}>{createdAt}</span>}
-        <span style={{ fontSize: 11, border: '1px solid #888', padding: '1px 6px' }}>Shared Build</span>
+      <Toolbar style={{ gap: 6, flexWrap: 'wrap', justifyContent: 'space-between' }}>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap', paddingLeft: 4 }}>
+          <strong style={{ fontSize: 14 }}>{build.name}</strong>
+          {build.ownerName && <span style={{ fontSize: 12 }}>by {build.ownerName}</span>}
+          {createdAt && <span style={{ fontSize: 12 }}>{createdAt}</span>}
+        </div>
+        <div style={{ display: 'flex', gap: 4, flexWrap: 'wrap' }}>
+          <Button size="sm" onClick={() => (hasUnsavedWork() ? setConfirmOpen(true) : openInBuilder())}>
+            Open in Builder
+          </Button>
+          <Button size="sm" variant="flat" onClick={() => setShowShare(true)}>Share / Post</Button>
+          <Button size="sm" variant="flat" onClick={copyLink}>Copy link</Button>
+        </div>
       </Toolbar>
 
-      {build.photo && <BuildPhoto src={build.photo} alt={`${build.name} photo`} />}
+      {build.photos?.[0] && <BuildPhoto photo={build.photos[0]} alt={`${build.name} photo`} />}
 
       <WindowContent>
         {build.description && (
-          <p style={{ fontSize: 13, marginBottom: 12 }}>{build.description}</p>
+          <p style={{ fontSize: 13, margin: '0 0 10px' }}>{build.description}</p>
         )}
-
-        <Table style={{ width: '100%', marginBottom: 12 }}>
-          <TableHead>
-            <TableRow>
-              <TableHeadCell style={{ width: 140 }}>Category</TableHeadCell>
-              <TableHeadCell>Part</TableHeadCell>
-              <TableHeadCell style={{ width: 90, textAlign: 'right' }}>Price</TableHeadCell>
-              <TableHeadCell style={{ width: 120 }}>Status</TableHeadCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {build.components.map((slot) => {
-              const label = getLabel(slot.category)
-              if (!label) return null
-              const isWheelSub = slot.category in WHEEL_SUB_LABELS
-              return (
-                <TableRow key={slot.category}>
-                  <TableDataCell style={{ fontSize: 12, fontWeight: 500, paddingLeft: isWheelSub ? 20 : undefined }}>
-                    {isWheelSub && <span style={{ marginRight: 4, opacity: 0.5 }}>└</span>}
-                    {label}
-                  </TableDataCell>
-                  <TableDataCell style={{ fontSize: 13 }}>
-                    {slot.part ? `${slot.part.brand} ${slot.part.name}` : '—'}
-                  </TableDataCell>
-                  <TableDataCell style={{ textAlign: 'right', fontSize: 13, fontWeight: 700 }}>
-                    {slot.part?.price ? `$${slot.part.price.toLocaleString()}` : '—'}
-                  </TableDataCell>
-                  <TableDataCell>
-                    {slot.status && <StatusBadge status={slot.status} />}
-                  </TableDataCell>
-                </TableRow>
-              )
-            })}
-
-            {(build.additionalItems ?? []).length > 0 && (
-              <>
-                <TableRow style={{ background: '#d4d0c8' }}>
-                  <td colSpan={4} style={{ fontSize: 11, fontWeight: 700, padding: '4px 8px' }}>
-                    Extras &amp; Accessories
-                  </td>
-                </TableRow>
-                {build.additionalItems!.map((item) => (
-                  <TableRow key={item.id}>
-                    <TableDataCell style={{ fontSize: 12, paddingLeft: 16 }}>
-                      <span style={{ marginRight: 4, opacity: 0.4 }}>·</span>
-                      {item.name}
-                      {item.notes && <span style={{ fontSize: 11, opacity: 0.6, marginLeft: 8 }}>{item.notes}</span>}
-                    </TableDataCell>
-                    <TableDataCell />
-                    <TableDataCell style={{ textAlign: 'right', fontSize: 13, fontWeight: 700 }}>
-                      {item.price ? `$${item.price.toLocaleString()}` : '—'}
-                    </TableDataCell>
-                    <TableDataCell />
-                  </TableRow>
-                ))}
-              </>
-            )}
-          </TableBody>
-        </Table>
-
-        {total > 0 && (
-          <div style={{ textAlign: 'right', marginBottom: 12 }}>
-            <span style={{ fontSize: 12, marginRight: 8 }}>Total:</span>
-            <strong style={{ fontSize: 18 }}>${total.toLocaleString()}</strong>
-          </div>
-        )}
-
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderTop: '1px solid #888', paddingTop: 12 }}>
-          <Link to="/build" style={{ textDecoration: 'none' }}>
-            <Button variant="flat">Build something like this →</Button>
-          </Link>
-          <Button variant="flat" onClick={() => navigator.clipboard.writeText(window.location.href)}>Copy link</Button>
-        </div>
+        <BuildPartList build={build} showStatus />
       </WindowContent>
+
+      <ShareDialog open={showShare} onClose={() => setShowShare(false)} build={build} />
+      <ConfirmDialog
+        open={confirmOpen}
+        title="Replace current build?"
+        message="Your current build has never been saved to the Garage. Opening this one will replace it."
+        confirmLabel="Replace"
+        onConfirm={() => { setConfirmOpen(false); openInBuilder() }}
+        onCancel={() => setConfirmOpen(false)}
+      />
     </PageWindow>
   )
 }
@@ -143,12 +98,13 @@ export function SharedBuildPage() {
   const { buildId } = useParams()
   const [searchParams] = useSearchParams()
   const { getBuildById } = useGarageStore()
+  const isShareLink = !buildId || buildId === 'shared'
 
   const build = useMemo<Build | null>(() => {
-    if (buildId && buildId !== 'shared') return getBuildById(buildId) ?? null
+    if (!isShareLink) return getBuildById(buildId!) ?? null
     const b = searchParams.get('b')
     return b ? decodeSharedBuild(b) : null
-  }, [buildId, searchParams, getBuildById])
+  }, [isShareLink, buildId, searchParams, getBuildById])
 
   if (!build) {
     return (
@@ -157,7 +113,7 @@ export function SharedBuildPage() {
         <WindowContent>
           <EmptyState
             heading="Build not found"
-            subtext="This build doesn't exist or has been made private."
+            subtext="This link is broken or the build no longer exists."
             action={{ label: 'Start your own build', onClick: () => window.location.assign('/build') }}
           />
         </WindowContent>
@@ -165,5 +121,5 @@ export function SharedBuildPage() {
     )
   }
 
-  return <SharedBuildView build={build} />
+  return <SharedBuildView build={build} isShareLink={isShareLink} />
 }

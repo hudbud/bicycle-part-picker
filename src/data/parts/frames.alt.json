@@ -1,0 +1,3563 @@
+[
+  {
+    "id": "crust-evasion-frame",
+    "name": "Evasion Frame",
+    "brand": "Crust",
+    "category": "frame",
+    "price": 925,
+    "weightG": 2665,
+    "year": 2024,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        559,
+        584,
+        622
+      ],
+      "maxTireMm": 71,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 180,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "None",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,175 with fork (headset not included)",
+      "Tubing": "Heat-treated CrMo, TIG welded",
+      "Tire Clearance": "27.5 x 2.8\" (design) · 26 x 3.0\" · 29 x 2.0\"",
+      "Rear": "12x142 thru-axle, rocker dropouts",
+      "BB Shell": "73mm BSA",
+      "Drivetrain": "1x only, MTB crank (~40T max)",
+      "Seatpost": "27.2mm, 30.0mm collar",
+      "Weight": "5 lb 14 oz (L, frame)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "27.5+"
+    ]
+  },
+  {
+    "id": "crust-bombora-frame",
+    "name": "Bombora Frame",
+    "brand": "Crust",
+    "category": "frame",
+    "price": 925,
+    "weightG": 2270,
+    "year": 2024,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 58,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "None",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,175 with fork (headset not included)",
+      "Tubing": "Heat-treated CrMo, TIG welded",
+      "Tire Clearance": "650b x 2.3\" (design) · 700c x 48mm",
+      "BB Shell": "68mm BSA",
+      "Drivetrain": "1x road crank, 44T max",
+      "Brakes": "Flat mount front & rear (180 F / 160 R max)",
+      "Weight": "5 lb (L, frame)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "650b"
+    ]
+  },
+  {
+    "id": "crust-lightning-bolt-canti-frame",
+    "name": "Lightning Bolt Canti Frame",
+    "brand": "Crust",
+    "category": "frame",
+    "price": 950,
+    "weightG": 2210,
+    "year": 2024,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584
+      ],
+      "maxTireMm": 48,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,175 with Gran Trajet-crown fork (headset not included)",
+      "Tubing": "Heat-treated CrMo, TIG welded",
+      "Head Tube": "1\" threaded, 26.4mm (JIS) crown race",
+      "Tire Clearance": "650b x 48mm (42mm with fenders)",
+      "Rear Spacing": "130mm QR",
+      "Brakes": "Cantilever posts",
+      "Front Derailleur": "28.6mm clamp",
+      "Weight": "2.21 kg (XL frame)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Canti"
+    ]
+  },
+  {
+    "id": "crust-noreaster-disc-frame",
+    "name": "Nor'Easter Disc Frame",
+    "brand": "Crust",
+    "category": "frame",
+    "price": 1000,
+    "weightG": 2190,
+    "year": 2024,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        559,
+        584,
+        622
+      ],
+      "maxTireMm": 71,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 160,
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,250 with fork + thru-axles (headset not included)",
+      "Construction": "Brazed lugs + TIG",
+      "Head Tube": "1\" threaded, 26.4mm (JIS) crown race",
+      "Tire Clearance": "27.5 x 2.8\" · 26 x 2.8\" · 29 x 2.0\" (55–58cm); 62cm 29 x 2.6\"",
+      "Brakes": "IS disc, 160mm",
+      "Canti Version": "9x135 QR rear, canti posts, 27.5 x 2.8\" only",
+      "Front Derailleur": "28.6mm clamp",
+      "Weight": "2.19 kg (55cm frame)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Lugged"
+    ]
+  },
+  {
+    "id": "crust-romanceur-canti-frame",
+    "name": "Romanceür Canti Frame",
+    "brand": "Crust",
+    "category": "frame",
+    "price": 1200,
+    "weightG": 2210,
+    "year": 2024,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584
+      ],
+      "maxTireMm": 56,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,475 with fork (headset not included)",
+      "Tubing": "Reynolds 853, fillet-brazed with ornate lugs (made in Taiwan)",
+      "Head Tube": "1\" threaded, 26.4mm (JIS) crown race",
+      "Tire Clearance": "650b x 48mm with fenders · 27.5 x 2.2\" without",
+      "Rear Spacing": "130mm QR",
+      "Brakes": "Cantilever (two cable stops)",
+      "Disc Version": "12x142 TA, IS disc 160mm",
+      "Weight": "2.21 kg (58cm frame)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Reynolds 853",
+      "Rando"
+    ]
+  },
+  {
+    "id": "crust-scapegoat-frame",
+    "name": "Scapegoat Frame",
+    "brand": "Crust",
+    "category": "frame",
+    "price": 925,
+    "weightG": 3170,
+    "year": 2023,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 100,
+      "material": "steel",
+      "wheelSizes": [
+        559,
+        584,
+        622
+      ],
+      "maxTireMm": 96,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 180,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 31.6,
+      "frontDerailleurMount": "None",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,175 with fork + thru-axles (headset not included)",
+      "Tubing": "Heat-treated CrMo, TIG welded",
+      "Tire Clearance": "27.5 x 3.8\" (design) · 26 x 3.8\" · 29 x 3.0\"",
+      "Rear": "12x148 Boost, rocker dropouts (SS / IGH / 1x)",
+      "Brakes": "IS front & rear (203 F / 180 R max)",
+      "Seatpost": "31.6mm, 35.0mm collar",
+      "Fork": "432mm A-C (suspension-corrected) — travel limit is approximate"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Plus"
+    ]
+  },
+  {
+    "id": "rivendell-appaloosa-frame",
+    "name": "Appaloosa Frame",
+    "brand": "Rivendell",
+    "category": "frame",
+    "price": 1550,
+    "weightG": 2700,
+    "year": 2026,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 56,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "seatpostMm": 26.8,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,800 with fork, FSA Duron 1\" headset and 113mm Shimano BB installed",
+      "Wheel Size": "650b in 46/51cm, 700c in 54cm+",
+      "Tire Clearance": "1.5–2.2\"",
+      "Brakes": "Canti or V (Rivendell recommends V)",
+      "Seatpost": "26.8mm (not included)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Lugged",
+      "Quill"
+    ]
+  },
+  {
+    "id": "rivendell-platypus-frame",
+    "name": "Platypus Frame",
+    "brand": "Rivendell",
+    "category": "frame",
+    "price": 1550,
+    "weightG": 2600,
+    "year": 2026,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 50,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,800 with fork, FSA Duron 1\" headset and 113mm BB",
+      "Style": "Lugged step-through / mixte-style",
+      "Wheel Size": "650b in small sizes, 700c in large (check size chart)",
+      "Tire Clearance": "True 50mm",
+      "Brakes": "V-brake posts",
+      "Front Derailleur": "28.6mm clamp"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Lugged",
+      "Step-Through"
+    ]
+  },
+  {
+    "id": "rivendell-atlantis-frame",
+    "name": "Atlantis Frame",
+    "brand": "Rivendell",
+    "category": "frame",
+    "price": 1500,
+    "weightG": 2700,
+    "year": 2025,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": true
+    },
+    "specs": {
+      "Frameset": "$1,750 with fork, headset and seatpost",
+      "Wheel Size": "650b in 47/50/53cm, 700c in 55cm+",
+      "Tire Clearance": "2.25\" max",
+      "Brakes": "Canti or V",
+      "Seat Tube": "Ovalized at BB (31.8 x 25.4), 28.6mm at top"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Lugged",
+      "Touring"
+    ]
+  },
+  {
+    "id": "rivendell-sam-hillborne-frame",
+    "name": "Sam Hillborne Frame",
+    "brand": "Rivendell",
+    "category": "frame",
+    "price": 1500,
+    "weightG": 2450,
+    "year": 2025,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 48,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": true
+    },
+    "specs": {
+      "Frameset": "$1,750 with fork and FSA Duron 1\" threaded headset",
+      "Tubing": "Rivendell \"SILVER\" CrMo, investment-cast lugs & crown",
+      "Wheel Size": "650b in 48/51cm, 700c in 54cm+",
+      "Tire Clearance": "48mm (45mm with fenders)",
+      "Brakes": "Canti or V",
+      "Extras": "Kickstand plate"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Lugged",
+      "Country Bike"
+    ]
+  },
+  {
+    "id": "rivendell-homer-hilsen-frame",
+    "name": "A. Homer Hilsen Frame",
+    "brand": "Rivendell",
+    "category": "frame",
+    "price": 1500,
+    "weightG": 2300,
+    "year": 2025,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 48,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 58,
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": true
+    },
+    "specs": {
+      "Frameset": "$1,750 with fork, FSA Duron 1\" threaded headset, 113mm square-taper BB",
+      "Wheel Size": "650b in 47.5/51cm, 700c in 54.5cm+",
+      "Tire Clearance": "38–48mm (43mm with fenders)",
+      "Brakes": "Long-reach calipers: Tektro R559, longer Paul centerpulls, Yokozuna long reach",
+      "Seat Tube": "28.6mm OD"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Lugged",
+      "Long Reach"
+    ]
+  },
+  {
+    "id": "rivendell-roaduno-frame",
+    "name": "Roaduno Frame",
+    "brand": "Rivendell",
+    "category": "frame",
+    "price": 1500,
+    "weightG": 2200,
+    "year": 2024,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 46,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "120mm Track",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 58,
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "seatpostMm": 26.8,
+      "frontDerailleurMount": "None",
+      "downtubeBosses": true
+    },
+    "specs": {
+      "Frameset": "$1,750 with fork, FSA Duron headset, Kalloy post and 110mm Shimano BB",
+      "Concept": "Single-ring road bike, 5–8 cog freewheel",
+      "Rear Spacing": "120mm — \"you need a track hub or a pre-1975 road hub\"",
+      "Dropouts": "Rear-facing with integrated derailleur hanger",
+      "Wheel Size": "650b in 47.5cm, 700c in 51cm+",
+      "Tire Clearance": "46mm (43mm with fenders)",
+      "Brakes": "Long reach: Tektro R559, Paul Racer long, Yokozuna LR75",
+      "Seatpost": "26.8mm",
+      "Shifting": "Downtube shifter boss (rear only)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Lugged",
+      "1x Road"
+    ]
+  },
+  {
+    "id": "rivendell-clem-smith-jr-frame",
+    "name": "Clem Smith Jr. Frame",
+    "brand": "Rivendell",
+    "category": "frame",
+    "price": 1200,
+    "weightG": 2800,
+    "year": 2026,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        559,
+        622
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,400 with fork, FSA Duron headset and 113mm BB",
+      "Construction": "TIG-welded with investment-cast fork crown",
+      "Wheel Size": "26\" in smaller sizes, 700c in larger (2026 batch: 64cm/700c only)",
+      "Brakes": "V-brakes",
+      "Front Derailleur": "31.8mm clamp, all sizes"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Upright",
+      "Budget Riv"
+    ]
+  },
+  {
+    "id": "velo-orange-piolet-frame",
+    "name": "Piolet Frame",
+    "brand": "Velo Orange",
+    "category": "frame",
+    "price": 725,
+    "weightG": 2700,
+    "year": 2022,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        559,
+        584,
+        622
+      ],
+      "maxTireMm": 61,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 180,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$925 with fork (headset not included)",
+      "Tubing": "4130 double-butted CrMo; triple-butted fork",
+      "Wheel Size": "Small: 26 x 2.4\"; M–XL: 29 x 2.4\" or 27.5 x 2.6\"",
+      "Brakes": "IS disc, 160–180mm",
+      "BB Shell": "73mm BSA (MTB cranks only)",
+      "Front Derailleur": "28.6mm bottom-pull",
+      "Seatpost": "27.2mm, 30.0mm collar"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Expedition"
+    ]
+  },
+  {
+    "id": "velo-orange-polyvalent-frame",
+    "name": "Polyvalent 650b Diamond Frame",
+    "brand": "Velo Orange",
+    "category": "frame",
+    "price": 725,
+    "weightG": 2450,
+    "year": 2023,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        559,
+        584
+      ],
+      "maxTireMm": 54,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 180,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$925 with fork + thru-axles (headset not included)",
+      "Tubing": "4130 double-butted CrMo",
+      "Tire Clearance": "650b x 48 / 26 x 2.3\" with fenders; 650b x 2.1\" without",
+      "Brakes": "IS disc, 160/180mm",
+      "Front Derailleur": "28.6mm"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Low Trail"
+    ]
+  },
+  {
+    "id": "velo-orange-pass-hunter-frame",
+    "name": "Pass Hunter Frame",
+    "brand": "Velo Orange",
+    "category": "frame",
+    "price": 725,
+    "weightG": 2300,
+    "year": 2022,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 48,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$925 with fork (headset not included)",
+      "Tubing": "4130 double-butted CrMo",
+      "Head Tube": "Tapered: EC34/28.6 upper, EC44/40 lower",
+      "Tire Clearance": "650b x 48 / 700 x 32 (650b x 42 / 700 x 28 with fenders)",
+      "Brakes": "Flat mount, 140/160mm",
+      "Front Derailleur": "28.6mm"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "All-Road",
+      "Light Touring"
+    ]
+  },
+  {
+    "id": "velo-orange-neutrino-frame",
+    "name": "Neutrino Mini Velo Frame",
+    "brand": "Velo Orange",
+    "category": "frame",
+    "price": 700,
+    "weightG": 2400,
+    "year": 2022,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        406
+      ],
+      "maxTireMm": 58,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 31.6,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$875 with fork (headset not included)",
+      "Tubing": "4130 double-butted CrMo",
+      "Wheel Size": "20\" (406 BSD), 2.3\" with fenders",
+      "Rear": "Sliding 135mm QR dropouts (geared / SS / IGH)",
+      "Brakes": "Post mount rear, IS front, 160mm",
+      "Seatpost": "31.6mm, 35.0mm collar",
+      "Front Derailleur": "35.0mm (1x recommended)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Mini Velo",
+      "20\""
+    ]
+  },
+  {
+    "id": "velo-orange-rando-frame",
+    "name": "Rando Frame",
+    "brand": "Velo Orange",
+    "category": "frame",
+    "price": 750,
+    "weightG": 2084,
+    "year": 2023,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 35,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 52,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": true
+    },
+    "specs": {
+      "Frameset": "$950 with fork",
+      "Tubing": "4130 double-butted lightweight CrMo",
+      "Tire Clearance": "700 x 32 design; 35mm max (vertical-dropout 130mm version), 38mm (rear-facing 120mm version)",
+      "Brakes": "47–57mm reach caliper",
+      "Front Derailleur": "28.6mm",
+      "Weight": "4 lb 9.5 oz (M frame)"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Rando",
+      "Rim Brake"
+    ]
+  },
+  {
+    "id": "surly-bridge-club-frame",
+    "name": "Bridge Club Frame",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 749,
+    "weightG": 2800,
+    "year": 2023,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        559,
+        584,
+        622
+      ],
+      "maxTireMm": 71,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 180,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$899 with fork",
+      "Tubing": "4130 CrMo (Natch), double-butted main triangle",
+      "Rear Spacing": "\"Gnot-Boost\" 138mm — fits 10x135 QR or 10x141 hubs",
+      "Tire Clearance": "700 x 47 · 27.5 x 2.8\" (2.6\" with fenders) · 26 x 3\"",
+      "Brakes": "51mm IS (180 R / 203 F max)",
+      "Front Derailleur": "High-clamp top-pull, 28.6mm",
+      "BB Shell": "73mm"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Do-It-All"
+    ]
+  },
+  {
+    "id": "surly-ogre-frame",
+    "name": "Ogre Frame",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 749,
+    "weightG": 2700,
+    "year": 2022,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 64,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$899 with fork",
+      "Tubing": "4130 CrMo (Natch), double-butted",
+      "Rear Spacing": "\"Gnot-Boost\" 145mm — 12x148 axle included, also fits 12x142 / 135 QR",
+      "Tire Clearance": "29 x 2.5\" or 27.5 x 2.8\" with fenders",
+      "Brakes": "51mm IS (160 R / 203 F max)",
+      "Fork": "445mm A-C rigid",
+      "Front Derailleur": "High-clamp top-pull, 31.8mm"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Expedition"
+    ]
+  },
+  {
+    "id": "surly-karate-monkey-frame",
+    "name": "Karate Monkey Frame",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 919,
+    "weightG": 2600,
+    "year": 2023,
+    "attrs": {
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 140,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 64,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 203,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 30.9,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,099 with rigid fork",
+      "Tubing": "4130 CrMo (Natch), double-butted, trumpet-flared",
+      "Head Tube": "44mm: ZS44/28.6 | EC44/30 (tapered forks via EC44/40)",
+      "Rear Spacing": "\"Gnot-Boost\" 145mm — 12x142 or 12x148",
+      "Tire Clearance": "29 x 2.5\" · 27.5 x 3.0\"",
+      "Fork Travel": "Up to 551mm A-C (27.5+ 140mm / ~120mm 29)",
+      "Front Derailleur": "High-clamp top-pull, 34.9mm"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Hardtail"
+    ]
+  },
+  {
+    "id": "surly-disc-trucker-frame",
+    "name": "Disc Trucker 700c Frame",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 829,
+    "weightG": 2700,
+    "year": 2024,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 47,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$999 with fork + axles",
+      "Tubing": "4130 CrMo (Natch); lugged fork",
+      "Tire Clearance": "700 x 47 with or without fenders (26\" version: 26 x 2.1\")",
+      "Brakes": "Flat mount 140/160",
+      "Front Derailleur": "Bottom-pull, 28.6mm",
+      "Note": "Current thru-axle version; pre-2024 Disc Trucker was 135mm QR with post mount"
+    },
+    "tags": [
+      "Alt",
+      "Touring",
+      "Steel",
+      "Disc"
+    ]
+  },
+  {
+    "id": "surly-krampus-frame",
+    "name": "Krampus Frame",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 919,
+    "weightG": 2900,
+    "year": 2023,
+    "attrs": {
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 120,
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 76,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 203,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 30.9,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,099 with rigid fork",
+      "Tubing": "4130 CrMo (Natch), double-butted, trumpet-flared",
+      "Head Tube": "44mm: ZS44/28.6 | EC44/30",
+      "Rear Spacing": "\"Gnot-Boost\" 145mm — 12x142 or 12x148",
+      "Tire Clearance": "29 x 3.0\"",
+      "Fork Travel": "Max 550mm A-C (29+ 120mm)",
+      "Weight": "9 lb 10 oz (M, frame + fork)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "29+"
+    ]
+  },
+  {
+    "id": "surly-midnight-special-frame",
+    "name": "Midnight Special Frame",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 929,
+    "weightG": 2500,
+    "year": 2022,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 60,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,099 with fork + axles",
+      "Head Tube": "44mm: ZS44/28.6 | EC44/30",
+      "Rear Spacing": "12x142 (or 10x135 with Surly 10/12 adapter washers)",
+      "Tire Clearance": "27.5 x 2.35\" / 700 x 42 (650b x 50 / 700 x 38 with fenders)",
+      "Brakes": "Flat mount 140, 160 max",
+      "Front Derailleur": "Bottom-pull, 28.6mm"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "All-Road",
+      "650b"
+    ]
+  },
+  {
+    "id": "surly-grappler-frame",
+    "name": "Grappler Frame",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 699,
+    "weightG": 2900,
+    "year": 2022,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 76,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 203,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 30.9,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$849 with fork + 12x148 axle",
+      "Concept": "Drop-bar rigid 27.5+ trail bike",
+      "Rear Spacing": "\"Gnot-Boost\" 145mm — 12x142 or 12x148",
+      "Tire Clearance": "27.5 x 3.0\" (2.8\" with fenders); 29 x 2.5\" rear / 2.1\" front with fenders",
+      "Fork": "420mm A-C rigid",
+      "Seatpost": "30.9mm, dropper-compatible",
+      "Front Derailleur": "High-clamp top-pull, 34.9mm"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Drop-Bar MTB"
+    ]
+  },
+  {
+    "id": "surly-long-haul-trucker-frame",
+    "name": "Long Haul Trucker Frame",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 450,
+    "weightG": 2600,
+    "year": 2005,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        559,
+        622
+      ],
+      "maxTireMm": 45,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": true
+    },
+    "specs": {
+      "Original MSRP": "~$650 frameset (2021)",
+      "Tubing": "4130 CrMo, double-butted",
+      "Rear Spacing": "132.5mm — fits 130 or 135mm QR",
+      "Wheel Size": "26\" in small sizes, 26\" or 700c in 56cm+",
+      "Tire Clearance": "700 x 45 / 26 x 2.1\"",
+      "Brakes": "Canti posts",
+      "Shifting": "Downtube shifter bosses (bar-ends on cable stops)",
+      "Production": "2005–2021, discontinued"
+    },
+    "tags": [
+      "Alt",
+      "Touring",
+      "Steel",
+      "Canti"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "black-mountain-cycles-mcd-frame",
+    "name": "MCD Frame",
+    "brand": "Black Mountain Cycles",
+    "category": "frame",
+    "price": 600,
+    "weightG": 2400,
+    "year": 2017,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 50,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Original MSRP": "~$795 frameset",
+      "Concept": "Monstercross Disc",
+      "Tire Clearance": "700 x 45 optimized; ~700 x 50 / 650b x 50 max",
+      "Rear": "12x142 TA (V1: 1.0 thread pitch, V1.2+: 1.5)",
+      "Brakes": "IS front & rear; 160mm front, 140/160 rear",
+      "Front Derailleur": "28.6mm"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Monstercross",
+      "Disc"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "black-mountain-cycles-monstercross-frame",
+    "name": "Monstercross V6 Frame",
+    "brand": "Black Mountain Cycles",
+    "category": "frame",
+    "price": 745,
+    "weightG": 2270,
+    "year": 2023,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 50,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": true
+    },
+    "specs": {
+      "Frameset": "From $895 with fork",
+      "Tubing": "Double-butted heat-treated CrMo",
+      "Tire Clearance": "700 x 50 measured (46cm: 650b x 50 only)",
+      "Rear Spacing": "132.5mm — fits 130 or 135mm hubs",
+      "Brakes": "Canti posts only (no disc)",
+      "Front Derailleur": "28.6mm road clamp, bottom-pull via roller or top-pull",
+      "Weight": "5 lb (56cm frame)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Monstercross",
+      "Canti"
+    ]
+  },
+  {
+    "id": "jones-steel-plus-swb-diamond-frame",
+    "name": "Steel Plus SWB Diamond Frame",
+    "brand": "Jones",
+    "category": "frame",
+    "price": 850,
+    "weightG": 2550,
+    "year": 2022,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 76,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "From $1,250 with steel Truss fork",
+      "Tubing": "Custom-butted heat-treated 4130",
+      "BB": "68mm BSA in a pinch-bolt eccentric shell (EBB)",
+      "Tire Clearance": "27.5 x 3\" / 29 x 2.6\" rear (fork: 27.5 x 4\" / 29 x 3.25\")",
+      "Brakes": "Low-mount 51mm IS rear",
+      "Front Hub": "Jones forks are 15x150 TA (fat-bike front) — not in this catalog yet",
+      "Head Tube": "69°, standard 1-1/8\" EC34",
+      "Front Derailleur": "31.8mm",
+      "Weight": "4,213g frameset w/ Truss fork (M)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Jones",
+      "Plus"
+    ]
+  },
+  {
+    "id": "jones-steel-plus-lwb-spaceframe",
+    "name": "Steel Plus LWB Spaceframe",
+    "brand": "Jones",
+    "category": "frame",
+    "price": 1100,
+    "weightG": 2900,
+    "year": 2022,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 76,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "From $1,500 with steel Truss fork",
+      "Design": "Spaceframe (twin top tubes to rear dropouts)",
+      "BB": "68mm BSA in pinch-bolt EBB (76–88mm drop)",
+      "Tire Clearance": "29 x 3.0\" (29+) / 27.5 x 3.8\"",
+      "Chainstays": "19\" (LWB)",
+      "Front Hub": "Jones forks are 15x150 TA — not in this catalog yet",
+      "Weight": "4,555g frameset w/ Truss fork (S)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Jones",
+      "29+"
+    ]
+  },
+  {
+    "id": "all-city-space-horse-frame",
+    "name": "Space Horse Frame",
+    "brand": "All-City",
+    "category": "frame",
+    "price": 749,
+    "weightG": 2400,
+    "year": 2022,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 47,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$899 with fork",
+      "Tubing": "612 Select CrMo, TIG + brazed",
+      "Tire Clearance": "700 x 45 / 650b x 47 (43–46cm: 650b x 47 only)",
+      "Brakes": "Flat mount 140–160",
+      "Front Derailleur": "28.6mm band clamp"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "All-Road",
+      "Touring"
+    ]
+  },
+  {
+    "id": "all-city-gorilla-monsoon-frame",
+    "name": "Gorilla Monsoon Frame",
+    "brand": "All-City",
+    "category": "frame",
+    "price": 829,
+    "weightG": 2500,
+    "year": 2022,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 61,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$999 with Bi-Wing crown fork",
+      "Tubing": "612 Select CrMo",
+      "Tire Clearance": "27.5 x 2.4\" (design) / 700 x 42",
+      "Brakes": "Flat mount 140–160",
+      "BB Shell": "73mm",
+      "Drivetrain": "1x, 42T max; 28.6mm FD band clamp"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Monster Gravel"
+    ]
+  },
+  {
+    "id": "soma-wolverine-frame",
+    "name": "Wolverine v4.1 Frame",
+    "brand": "Soma",
+    "category": "frame",
+    "price": 800,
+    "weightG": 2218,
+    "year": 2022,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 50,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Tubing": "Tange Prestige heat-treated double-butted CrMo",
+      "Head Tube": "44mm ID: ZS44/30 lower for straight forks, EC44/40 for tapered",
+      "Rear": "12x142 TA, IRD Broski sliding dropouts (geared or SS)",
+      "Tire Clearance": "700 x 45 with fenders / 29 x 1.95\" without (46cm: 650b)",
+      "Brakes": "Flat mount, 160mm (not 140)",
+      "Front Derailleur": "28.6mm",
+      "Weight": "4.89 lb (frame)"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Gravel",
+      "Single Speed Capable"
+    ]
+  },
+  {
+    "id": "soma-double-cross-frame",
+    "name": "Double Cross Disc Frame",
+    "brand": "Soma",
+    "category": "frame",
+    "price": 600,
+    "weightG": 1928,
+    "year": 2021,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 45,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 140,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Tubing": "Tange Prestige heat-treated CrMo front triangle",
+      "Rear Spacing": "135mm QR",
+      "Tire Clearance": "700 x 45 / 650b x 47",
+      "Brakes": "Flat mount 140 (160 with adapter)",
+      "Front Derailleur": "28.6mm bottom-pull",
+      "Weight": "4.25 lb (50cm)"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Cyclocross",
+      "Commuter"
+    ]
+  },
+  {
+    "id": "soma-pescadero-frame",
+    "name": "Pescadero Frame",
+    "brand": "Soma",
+    "category": "frame",
+    "price": 650,
+    "weightG": 1905,
+    "year": 2023,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 38,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "Rim Caliper",
+      "brakeReachMm": 64,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$799.95 with lugged-crown fork",
+      "Tubing": "Tange Prestige heat-treated butted CrMo",
+      "Tire Clearance": "700 x 38 (35 with fenders)",
+      "Brakes": "Long-reach centerpull or dual-pivot, 62mm+ reach, recessed bolt",
+      "Dropouts": "Breezer-style",
+      "Front Derailleur": "28.6mm bottom-pull",
+      "Weight": "4.2 lb (51cm)"
+    },
+    "tags": [
+      "Alt",
+      "Steel",
+      "Road Plus",
+      "Rim Brake"
+    ]
+  },
+  {
+    "id": "sklar-supersomething-frame",
+    "name": "SuperSomething Frame",
+    "brand": "Sklar",
+    "category": "frame",
+    "price": 1349,
+    "weightG": 2520,
+    "year": 2025,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 52,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC44",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,599 with steel fork (carbon fork option)",
+      "Tubing": "Custom-drawn double-butted heat-treated CrMo, size-specific",
+      "Head Tube": "EC34 upper / EC44 lower; steel fork is 1-1/8\" straight",
+      "Brakes": "Flat mount, 160 direct",
+      "Drivetrain": "Designed around 1x (FD possible)",
+      "Tire Clearance": "700 x 52",
+      "Weight": "2,520g (L frame)",
+      "Note": "Short-run production model; Sklar customs vary"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Made in USA"
+    ]
+  },
+  {
+    "id": "sklar-pbj-frame",
+    "name": "PBJ Frame",
+    "brand": "Sklar",
+    "category": "frame",
+    "price": 1349,
+    "weightG": 2600,
+    "year": 2025,
+    "attrs": {
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 120,
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC44",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 31.6,
+      "frontDerailleurMount": "None",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,599 with 485mm A-C steel fork",
+      "Concept": "All-terrain bike, rigid or up to 120mm suspension",
+      "Head Tube": "EC34/EC44 — straight steel fork, or tapered suspension fork via EC44/40",
+      "Tire Clearance": "29 x 2.6\" (most 2.8s)",
+      "Brakes": "160mm post mount rear",
+      "Drivetrain": "1x, 36T max, 52mm Boost chainline",
+      "Seatpost": "31.6mm, stealth dropper routing"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Made in USA"
+    ]
+  },
+  {
+    "id": "sklar-tall-tale-frame",
+    "name": "Tall Tale Frame",
+    "brand": "Sklar",
+    "category": "frame",
+    "price": 1199,
+    "weightG": 2650,
+    "year": 2025,
+    "attrs": {
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "udh": true,
+      "maxForkTravelMm": 140,
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 203,
+      "headsetStd": "EC34/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "frontDerailleurMount": "None",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frame": "Frame only (no fork)",
+      "Tubing": "Double-butted heat-treated CrMo, oval-butted",
+      "Head Tube": "EC34/EC44 with 1.5\" crown race (tapered)",
+      "Rear": "12x148 Boost, UDH dropout",
+      "Fork Travel": "130mm (S), 140mm (M/L), 150mm (XL)",
+      "Tire Clearance": "29 x 2.6\" (most 2.8s)",
+      "Seatpost": "31.6mm stealth dropper",
+      "Drivetrain": "1x, 36T max"
+    },
+    "tags": [
+      "Steel",
+      "Hardtail",
+      "Trail",
+      "Made in USA"
+    ]
+  },
+  {
+    "id": "breadwinner-g-road-frame",
+    "name": "G-Road Frame",
+    "brand": "Breadwinner",
+    "category": "frame",
+    "price": 3195,
+    "weightG": 2300,
+    "year": 2024,
+    "attrs": {
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 54,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "frontDerailleurMount": "Clamp",
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$3,595 with Igleheart segmented fork + White Industries headset",
+      "Tubing": "Columbus Spirit",
+      "Note": "Custom — specs vary; made to measure in Portland, OR",
+      "Dropouts": "Breadwinner stainless thru-axle dropouts, Robert Axle",
+      "Tire Clearance": "2.1\" on 700c or 650b",
+      "Options": "EBB single-speed option"
+    },
+    "tags": [
+      "Alt",
+      "Custom",
+      "Steel",
+      "Made in USA"
+    ]
+  },
+  {
+    "id": "surly-lowside-frame",
+    "name": "Lowside Frameset",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 999,
+    "weightG": 2700,
+    "year": 2026,
+    "url": "https://surlybikes.com/products/lowside-frameset-blue-monday",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559,
+        584
+      ],
+      "maxTireMm": 76,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 203,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 30.9,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxForkTravelMm": 100,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$999 frame + rigid fork (12x148 rear axle included)",
+      "Concept": "Single-speed 26\"/27.5+ trail and pub-cruiser frame; successor to the 1x1. Design unchanged since 2018 launch",
+      "Tubing": "4130 CrMo (Natch), double-butted main triangle, TIG welded, ED coated",
+      "Tire Clearance": "26 x 3.0\" design; max 27.5 x 2.8\"",
+      "Rear": "Horizontal slotted dropouts, \"Gnot-Boost\" 145mm — 12x142 or 12x148 (axle incl.), 10x135 QR with Surly adapter washers; derailleur hanger (verify)",
+      "Brakes": "51mm IS front and rear, 203mm max rotor",
+      "Head Tube": "44mm: ZS44/28.6 | EC44/30",
+      "Fork": "Rigid 420mm A-C, 47mm offset, 15x110; max suspension fork 490mm A-C (26\" 100mm)",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "30.9mm, dropper-compatible, 33.1mm clamp",
+      "Front Derailleur": "High direct-mount top-pull, 34.9mm clamp (1x recommended; 33T/36T Boost max ring)",
+      "Frame Weight": "~2,700g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "MTB",
+      "Hardtail",
+      "Single Speed",
+      "Plus"
+    ]
+  },
+  {
+    "id": "surly-preamble-frame",
+    "name": "Preamble Frameset",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 599,
+    "weightG": 2300,
+    "year": 2023,
+    "url": "https://surlybikes.com/products/preamble-frameset-black",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        584
+      ],
+      "maxTireMm": 41,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 180,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$599 frame + fork",
+      "Concept": "Affordable steel pavement/gravel utility bike, offered flat-bar or drop-bar; launch year 2023 (verify)",
+      "Tubing": "Surly 4130 CrMo (Natch), double-butted main triangle, TIG welded, ED coated",
+      "Wheel Size": "650b on XS–SM, 700c on MD–XL",
+      "Tire Clearance": "650b x 41mm (XS–SM) / 700c x 41mm (MD–XL), with or without fenders",
+      "Rear": "Single-position cast vertical dropout, \"Gnot-Boost\" 138mm — 10x135 or 10x141 QR",
+      "Brakes": "51mm IS; 180mm max rear, 203mm max front",
+      "Fork": "Rigid steel, 380mm (XS–SM) / 400mm (MD–XL) A-C, 10x100 QR, crown + mid-blade rack mounts",
+      "BB Shell": "68mm BSA threaded",
+      "Seatpost": "27.2mm, 30.0mm clamp (not dropper-compatible)",
+      "Front Derailleur": "High direct-mount top-pull, 28.6mm (2x up to 46/36T)",
+      "Mounts": "2 bottle mounts, front/rear rack and fender mounts",
+      "Frame Weight": "~2,300g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "All-Road",
+      "Commuter",
+      "Rack Mounts",
+      "Budget"
+    ]
+  },
+  {
+    "id": "surly-ecr-frame",
+    "name": "ECR Frameset",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 750,
+    "weightG": 2900,
+    "year": 2019,
+    "url": "https://web.archive.org/web/20200513090124/https://surlybikes.com/bikes/ecr",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        584
+      ],
+      "maxTireMm": 76,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$750 frame + fork (2020 MSRP; discontinued)",
+      "Concept": "Plus-tire off-road touring / bikepacking rig. Final generation: 27.5+ on XS–M, 29+ on M–XL (model year 2019 (verify))",
+      "Tubing": "4130 CrMo (Natch), double-butted main triangle, TIG welded, ED coated",
+      "Tire Clearance": "29 x 3.0\" (29+ sizes) or 27.5 x 3.0\" (27.5+ sizes), with or without fenders",
+      "Rear": "Horizontal slotted dropouts w/ optional vertical dumpout, \"Gnot-Boost\" 145mm — 12x142 or 12x148 (axle incl.), 10x135 with adapter washers; Rohloff OEM2 slot, trailer mounts",
+      "Brakes": "51mm IS; 160mm max rear (Surly adapter), 203mm front",
+      "Fork": "Rigid steel, 468mm (29+) / 447mm (27.5+) A-C, 43mm offset, 10x100 QR; Surly lists no suspension fork length",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "27.2mm, 30.0mm clamp",
+      "Front Derailleur": "High direct-mount top-pull, 31.8mm (1x/2x/3x)",
+      "Mounts": "Rack + fender mounts, multiple three-pack mounts, mid-blade fork mounts",
+      "Frame Weight": "~2,900g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "29+",
+      "27.5+",
+      "Plus",
+      "Touring",
+      "Expedition",
+      "Rack Mounts",
+      "Rigid"
+    ]
+  },
+  {
+    "id": "surly-pack-rat-frame",
+    "name": "Pack Rat Frameset",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 515,
+    "weightG": 2300,
+    "year": 2018,
+    "url": "https://web.archive.org/web/20220325225425/https://surlybikes.com/bikes/pack_rat",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        559
+      ],
+      "maxTireMm": 48,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "downtubeBosses": true
+    },
+    "specs": {
+      "Frameset": "$515 frame + fork (MSRP; discontinued ~2022)",
+      "Concept": "Front-load (porteur) cargo/commuter road bike designed around the Surly 8-/24-Pack racks",
+      "Tubing": "4130 CrMo (Natch), double-butted main triangle, TIG welded; lugged-crown fork with tapered blades",
+      "Wheel Size": "26\" on 38–50cm, 650b on 52–58cm",
+      "Tire Clearance": "650b x 48mm (52–58cm) / 26 x 2.0\" (38–50cm), with or without fenders",
+      "Rear": "Semi-horizontal dropouts, \"Gnot-rite\" 132.5mm — 130 or 135mm QR",
+      "Brakes": "Cantilever front and rear",
+      "Fork": "Rigid 400mm A-C, 44mm offset, low-trail front-load geometry, upper + mid-blade rack mounts",
+      "BB Shell": "68mm BSA threaded",
+      "Seatpost": "27.2mm, 30.0mm clamp",
+      "Front Derailleur": "Bottom-pull clamp, 28.6mm (2x up to 39/53T)",
+      "Shifters": "Downtube shifter bosses",
+      "Frame Weight": "~2,300g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "Commuter",
+      "Urban",
+      "Rack Mounts",
+      "Low Trail",
+      "Canti",
+      "Rim Brake",
+      "650b"
+    ]
+  },
+  {
+    "id": "surly-troll-frame",
+    "name": "Troll Frameset",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 675,
+    "weightG": 2600,
+    "year": 2019,
+    "url": "https://web.archive.org/web/20220325225430/https://surlybikes.com/bikes/troll",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 76,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 160,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$675 frame + fork (2022 MSRP; discontinued)",
+      "Concept": "26\" expedition/utility touring frame; Gnot-Boost, 26 x 3.0\" generation (model year 2019 (verify))",
+      "Tubing": "4130 CrMo (Natch), double-butted main triangle, TIG welded, ED coated",
+      "Tire Clearance": "26 x 3.0\" (26 x 2.8\" with fenders)",
+      "Rear": "Horizontal slotted dropouts w/ derailleur hanger + optional vertical dumpout, \"Gnot-Boost\" 145mm — 12x142 or 12x148 (axle not incl.), 10x135 QR with included adapter washers; Rohloff OEM2 slot, trailer mounts; single-speed/IGH capable",
+      "Brakes": "51mm IS disc (160mm max rear with Surly adapter, 203mm front) + removable canti posts front and rear",
+      "Fork": "Rigid steel 420mm A-C, 43mm offset, 10x100 QR; Surly lists no max suspension fork length",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "27.2mm, 30.0mm clamp",
+      "Front Derailleur": "High direct-mount top-pull, 28.6mm (26mm offset adapter incl.)",
+      "Mounts": "Front/rear rack + fender mounts, 4 three-pack fork mounts, trailer mounts",
+      "Frame Weight": "~2,600g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "Touring",
+      "Expedition",
+      "Rack Mounts",
+      "Single Speed Capable",
+      "Plus"
+    ]
+  },
+  {
+    "id": "surly-sorceress-frame",
+    "name": "Sorceress Frame",
+    "brand": "Surly",
+    "category": "frame",
+    "price": 999,
+    "weightG": 2700,
+    "year": 2026,
+    "url": "https://surlybikes.com/products/sorceress-frame-hot-honey-bling",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        584
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 203,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 30.9,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 150,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$999 frame only (no fork)",
+      "Concept": "Modern long/low/slack steel trail hardtail designed around a 140mm fork",
+      "Tubing": "4130 CrMo (Natch), double-butted, trumpet-flared tubes, TIG welded, ED coated",
+      "Wheel Size": "27.5\" on XS, 29\" on SM–XL",
+      "Tire Clearance": "29/27.5 x 2.6\" (no fenders)",
+      "Rear": "Surly/SRAM \"DUH\" swappable dropout system: UDH hanger, SRAM Full-Mount, or single-speed chip (geared + SS configs included); 12x148 (SS axle incl.)",
+      "Brakes": "51mm IS rear, 203mm max rotor",
+      "Head Tube": "ZS44/28.6 upper | EC44/40 lower (tapered)",
+      "Fork": "Max 572mm A-C (29\" 150mm); designed for 140mm",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "30.9mm, dropper-compatible, 33.1mm clamp; max insertion 247–408mm by size",
+      "Front Derailleur": "None (1x only, 32T max ring at 55mm CL)",
+      "Frame Weight": "~2,700g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Single Speed Capable",
+      "27.5"
+    ]
+  },
+  {
+    "id": "esker-hayduke-frame",
+    "name": "Hayduke Frame",
+    "brand": "Esker",
+    "category": "frame",
+    "price": 1000,
+    "weightG": 3016,
+    "year": 2026,
+    "url": "https://eskercycles.com/2026-hayduke/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 76,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 130,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,000 frame (headset + seat collar incl.; fork optional)",
+      "Concept": "Steel 29er bikepacking/trail hardtail; current generation has longer wheelbase, more BB drop, taller stack and 3.0\" clearance",
+      "Tubing": "Custom seamless quad-butted tapered DOM 4130 CrMo, size-specific, ED coated",
+      "Tire Clearance": "Designed around 29 x 2.6\"; up to 29 x 3.0\"",
+      "Rear": "Esker Portage adjustable dropouts (UDH), 148mm, M12x1.0x180 axle; single-speed capable",
+      "Brakes": "Post mount, 180mm native (larger rotor via adapter not confirmed)",
+      "Head Tube": "44mm: ZS44 upper | EC44 lower",
+      "Fork": "120mm at 30% sag (495mm A-C), ±10mm approved",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "31.6mm, internal dropper routing, 34.9mm clamp",
+      "Front Derailleur": "None (1x; 34T round / 32T oval max, 52/55mm chainline)",
+      "Mounts": "Rack, mid-mount, top tube and three-pack mounts",
+      "Frame Weight": "3,016g Medium incl. dropouts, UDH, axle, seat collar and cable guides"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Rack Mounts",
+      "Single Speed Capable",
+      "Adventure"
+    ]
+  },
+  {
+    "id": "esker-hayduke-ti-frame",
+    "name": "Hayduke Ti Frame",
+    "brand": "Esker",
+    "category": "frame",
+    "price": 2750,
+    "weightG": 2329,
+    "year": 2026,
+    "url": "https://eskercycles.com/2026-hayduke-ti-frame/",
+    "attrs": {
+      "material": "titanium",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 76,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 130,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$2,750 frame (headset + seat collar incl.; fork optional)",
+      "Concept": "Titanium version of the Hayduke 29er bikepacking/trail hardtail",
+      "Tubing": "Seamless, double-butted, cold-shaped 3Al/2.5V titanium",
+      "Tire Clearance": "Designed around 29 x 2.6\"; marketed up to 29 x 3.0\" (spec table says 2.8\" (verify))",
+      "Rear": "Esker Portage adjustable dropouts (UDH), 148mm, M12x1.0x180 axle; single-speed capable",
+      "Brakes": "Post mount via Portage dropout, 180mm native (verify)",
+      "Head Tube": "44mm: ZS44 upper | EC44 lower",
+      "Fork": "120mm at 30% sag (495mm A-C), ±10mm approved",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "31.6mm, internal dropper routing, 34.9mm clamp",
+      "Front Derailleur": "None (1x; 34T round / 32T oval max)",
+      "Frame Weight": "2,329g Medium incl. dropouts, UDH, axle, seat collar and cable guides"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Titanium",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Rack Mounts",
+      "Single Speed Capable",
+      "Adventure"
+    ]
+  },
+  {
+    "id": "esker-japhy-frame",
+    "name": "Japhy Frame",
+    "brand": "Esker",
+    "category": "frame",
+    "price": 1000,
+    "weightG": 2855,
+    "year": 2026,
+    "url": "https://eskercycles.com/2026-japhy/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 71,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 130,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,000 frame (headset + seat collar incl.; fork optional)",
+      "Concept": "Steel 29er trail hardtail; current generation adds stack, steeper STA, shorter seat tube and drops the seatstay bridge",
+      "Tubing": "Custom seamless quad-butted tapered DOM 4130 CrMo, size-specific, ED coated",
+      "Tire Clearance": "Designed around 29 x 2.6\"; up to 29 x 2.8\"",
+      "Rear": "Esker Portage adjustable dropouts (UDH), 148mm, M12x1.0x180 axle; single-speed capable",
+      "Brakes": "Post mount via Portage dropout, 180mm native (verify)",
+      "Head Tube": "44mm: ZS44 upper | EC44 lower",
+      "Fork": "120mm at 30% sag (495mm A-C), ±10mm approved",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "31.6mm, internal dropper routing, 34.9mm clamp",
+      "Front Derailleur": "None (1x; 34T round / 32T oval max, 52/55mm chainline)",
+      "Frame Weight": "2,855g Medium incl. dropouts, UDH, axle, seat collar and cable guides"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Single Speed Capable"
+    ]
+  },
+  {
+    "id": "esker-japhy-ti-frame",
+    "name": "Japhy Ti Frame",
+    "brand": "Esker",
+    "category": "frame",
+    "price": 2750,
+    "weightG": 2189,
+    "year": 2026,
+    "url": "https://eskercycles.com/2026-japhy-ti-frame/",
+    "attrs": {
+      "material": "titanium",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 71,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 130,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$2,750 frame (headset + seat collar incl.; fork optional)",
+      "Concept": "Titanium version of the Japhy 29er trail hardtail",
+      "Tubing": "Seamless, double-butted, cold-shaped 3Al/2.5V titanium",
+      "Tire Clearance": "Designed around 29 x 2.6\"; up to 29 x 2.8\"",
+      "Rear": "Esker Portage adjustable dropouts (UDH), 148mm, M12x1.0x180 axle; single-speed capable",
+      "Brakes": "Post mount via Portage dropout, 180mm native (verify)",
+      "Head Tube": "44mm: ZS44 upper | EC44 lower",
+      "Fork": "120mm at 30% sag (495mm A-C), ±10mm approved",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "31.6mm, internal dropper routing, 34.9mm clamp",
+      "Front Derailleur": "None (1x; 34T round / 32T oval max)",
+      "Frame Weight": "2,189g Medium incl. dropouts, UDH, axle, seat collar and cable guides"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Titanium",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Single Speed Capable"
+    ]
+  },
+  {
+    "id": "kona-unit-frame",
+    "name": "Unit Frameset",
+    "brand": "Kona",
+    "category": "frame",
+    "price": 599,
+    "weightG": 2500,
+    "year": 2021,
+    "url": "https://archive.konaworld.com/archive/2021/unit.cfm",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 100,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$599 USD frame + Kona Plus (Omni) rigid fork + Kona thru axles (2021); current Unit is complete-only ($1,299)",
+      "Concept": "Rigid 29er single speed / 1x trail and bikepacking frame; Unit X complete uses the same frame",
+      "Tubing": "Reynolds 520 butted cromoly",
+      "Rear": "Modular sliding dropouts, 148x12 Boost thru axle, single speed or geared",
+      "Head Tube": "44mm; stock ZS44 internal cups for 1-1/8\" (TH ZST No.10), external EC44 lower cup for tapered forks",
+      "Fork": "Kona Plus rigid, 110x15 Boost, 470mm A-C; suspension fork max ~100mm (verify)",
+      "Brakes": "Post mount, 180mm F / 160mm R stock; 180mm rear max (verify)",
+      "Tire Clearance": "29 x 2.6\" stock (max 2.6\", verify)",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "31.6mm",
+      "Geometry": "68 HTA, 75 STA, 430mm chainstays, reach 425-510mm",
+      "Mounts": "Bento box mounts",
+      "Frame Weight": "~2,500g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "MTB",
+      "Hardtail",
+      "Single Speed Capable"
+    ]
+  },
+  {
+    "id": "kona-honzo-st-frame",
+    "name": "Honzo ST Frame",
+    "brand": "Kona",
+    "category": "frame",
+    "price": 599,
+    "weightG": 2600,
+    "year": 2021,
+    "url": "https://archive.konaworld.com/archive/2021/honzo_st_frame.cfm",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 203,
+      "headsetStd": "ZS44/ZS56",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 140,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$599 USD frame only (2021) incl. Kona thru axle, seat clamp, frame protection; current konaworld.com listing $750 with revised geometry",
+      "Concept": "Steel 29er trail hardtail, short chainstays",
+      "Tubing": "Kona Cromoly butted",
+      "Rear": "Adjustable sliding dropouts, 148x12 Boost thru axle",
+      "Head Tube": "Zero-stack tapered (FSA No.57B ZS44/ZS56 on 2020 complete, verify)",
+      "Fork": "Designed around 140mm, 551mm A-C, 110x15",
+      "Brakes": "Post mount; 203mm max rotor (verify)",
+      "Tire Clearance": "29 x 2.6\" (verify)",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "31.6mm, internal dropper routing",
+      "Geometry": "66 HTA, 76 STA, 417mm chainstays, 62.5mm BB drop, reach 425/450/475/510mm",
+      "Frame Weight": "~2,600g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Single Speed Capable"
+    ]
+  },
+  {
+    "id": "kona-honzo-esd-frame",
+    "name": "Honzo ESD Frame",
+    "brand": "Kona",
+    "category": "frame",
+    "price": 665,
+    "weightG": 2900,
+    "year": 2021,
+    "url": "https://archive.konaworld.com/archive/2021/honzo_esd.cfm",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 203,
+      "headsetStd": "ZS44/ZS56",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 160,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$665 USD frame only (2021) incl. Kona thru axle; current konaworld.com listing $750",
+      "Concept": "Long-travel steel enduro hardtail (ESD = Extra Steep Descending)",
+      "Tubing": "Kona Cromoly butted",
+      "Rear": "148x12 Boost thru axle",
+      "Head Tube": "Zero-stack tapered (FSA Orbit 1.5E ZS on complete; ZS44/ZS56, verify)",
+      "Fork": "150mm stock (Marzocchi Z1), 560mm A-C; max ~160mm (verify)",
+      "Brakes": "Post mount, 203mm F / 180mm R stock; 203mm max (verify)",
+      "Tire Clearance": "29 x 2.5\" F / 2.4\" R stock; max ~2.6\" (verify)",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "31.6mm, internal dropper routing",
+      "Geometry": "63 HTA, 77.5 STA, 417mm chainstays, reach 440/465/490/525mm",
+      "Frame Weight": "~2,900g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "MTB",
+      "Hardtail",
+      "Enduro"
+    ]
+  },
+  {
+    "id": "ritchey-p-29er-frame",
+    "name": "P-29er Frame",
+    "brand": "Ritchey",
+    "category": "frame",
+    "price": 1199,
+    "weightG": 2315,
+    "year": 2025,
+    "url": "https://ritcheylogic.com/bike/frames/p-29er-frame",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 58,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "IS42/IS52",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 27.2,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 100,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,199 frame only, WCS integrated headset included",
+      "Concept": "Classic XC steel 29er hardtail",
+      "Tubing": "Triple-butted Ritchey Logic steel, forged tapered head tube",
+      "Rear": "Boost 148x12 thru axle, replaceable hanger/slider dropouts",
+      "Head Tube": "Integrated tapered: IS42/28.6 upper, IS52/40 lower",
+      "Fork": "100mm suspension or 483mm A-C rigid",
+      "Drivetrain": "1x only, 38T max ring, 52mm chainline; not SRAM T-Type compatible",
+      "Brakes": "Post mount, 160mm (180mm max)",
+      "Tire Clearance": "29 x 2.25\" (2.3\" max)",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "27.2mm, integrated seat collar, stealth dropper routing",
+      "Cable Routing": "External",
+      "Mounts": "Two bottle mounts",
+      "Frame Weight": "2,315g (M)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "MTB",
+      "Hardtail",
+      "XC",
+      "1x Only",
+      "Classic"
+    ]
+  },
+  {
+    "id": "ritchey-ascent-frame",
+    "name": "Ascent Frameset",
+    "brand": "Ritchey",
+    "category": "frame",
+    "price": 1399,
+    "weightG": 2400,
+    "year": 2025,
+    "url": "https://ritcheylogic.com/bike/frames/ascent-frameset",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        584
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "Integrated 45x45",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "downtubeBosses": true
+    },
+    "specs": {
+      "Frameset": "$1,399 frame + Ritchey steel rigid fork (1,125g) + WCS headset",
+      "Concept": "Rigid steel adventure / bikepacking mountain bike",
+      "Tubing": "Ritchey Logic steel",
+      "Rear": "Boost 148x12 thru axle",
+      "Head Tube": "Straight 1-1/8\" integrated: IS42/28.6 upper, IS42/30 lower",
+      "Fork": "Ritchey steel rigid, 435mm A-C, 52mm rake, 110x15 Boost; designed rigid (suspension fork not specified, verify)",
+      "Front Derailleur": "29.8mm clamp, Side Swing double (11-speed only)",
+      "Brakes": "Post mount, 160mm rear (front 180mm max)",
+      "Tire Clearance": "27.5 x 2.6\" or 29 x 2.6\"",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "27.2mm",
+      "Mounts": "Rack and fender mounts, multi-purpose downtube mount",
+      "Model Year": "2025 (verify)",
+      "Frame Weight": "2,400g (L)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "MTB",
+      "Touring",
+      "Adventure",
+      "Rack Mounts",
+      "650b"
+    ]
+  },
+  {
+    "id": "ritchey-timberwolf-frame",
+    "name": "Timberwolf Frame",
+    "brand": "Ritchey",
+    "category": "frame",
+    "price": 1200,
+    "weightG": 2410,
+    "year": 2015,
+    "url": "http://ritcheylogic.com/frames/mountain/timberwolf-frame",
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        584
+      ],
+      "maxTireMm": 61,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "IS42/IS52",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 30.9,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 140,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$1,199.95 frame kit (WCS integrated headset)",
+      "Concept": "650b steel trail hardtail; revival of the 1984 Timberwolf name",
+      "Tubing": "Ritchey Logic steel, forged and machined tapered head tube",
+      "Rear": "Dropouts convertible between 142x12 and standard QR (ships with 142x12 + axle)",
+      "Head Tube": "Integrated tapered: IS42/28.6 upper, IS52/40 lower",
+      "Fork": "Optimized for 140mm travel-adjustable fork (geometry at 105mm sagged)",
+      "Brakes": "Post mount (verify); 180mm max (verify)",
+      "Tire Clearance": "27.5 x 2.4\"",
+      "BB Shell": "73mm BSA threaded (verify)",
+      "Seatpost": "30.9mm, internal dropper routing",
+      "Front Derailleur": "None listed (verify)",
+      "Model Year": "c. 2015 (verify); URL via web.archive.org 2016-03 snapshot",
+      "Frame Weight": "2,410g (S, frame only)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "650b",
+      "27.5"
+    ]
+  },
+  {
+    "id": "stanton-switchback-genv-frame",
+    "name": "Switchback GenV Frame",
+    "brand": "Stanton",
+    "category": "frame",
+    "price": 1200,
+    "weightG": 2650,
+    "year": 2026,
+    "url": "https://www.stantonbikes.com/products/switchback-genv",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        584
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 203,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 30.9,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 160,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "£899 (~$1,200) frame only incl. Boost rear axle, seat clamp, dropouts, UDH hanger",
+      "Concept": "27.5\" (or mullet) steel trail/enduro hardtail, hand-built UK brand",
+      "Tubing": "Custom seamless heat-treated triple-butted steel",
+      "Rear": "Swappable GenV dropouts: 12x148 Boost (UDH) stock; 12x142 and single speed options sold separately",
+      "Head Tube": "44mm, ZS44 upper / EC44 lower cups",
+      "Fork": "140mm on 27.5 (approved to 160mm); mullet 130mm (to 150mm)",
+      "Drivetrain": "UDH, 55mm chainline, SRAM T-Type compatible",
+      "Brakes": "Post mount; 203mm max (verify)",
+      "Tire Clearance": "27.5 x 2.6\" max",
+      "BB Shell": "73mm BSA threaded (verify)",
+      "Seatpost": "30.9mm (34.9mm clamp), internal dropper routing",
+      "Frame Weight": "~2,650g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Enduro",
+      "27.5",
+      "Mullet"
+    ]
+  },
+  {
+    "id": "stanton-switch9er-genv-frame",
+    "name": "Switch9er GenV Frame",
+    "brand": "Stanton",
+    "category": "frame",
+    "price": 1200,
+    "weightG": 2650,
+    "year": 2026,
+    "url": "https://www.stantonbikes.com/products/switch9er-genv",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 61,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 203,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 30.9,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 160,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "£899 (~$1,200) frame only",
+      "Concept": "29er sibling of the Switchback; steel trail/enduro hardtail",
+      "Tubing": "Custom seamless heat-treated triple-butted steel",
+      "Rear": "GenV swappable dropouts, 12x148 Boost (UDH); 12x142 and single speed options",
+      "Head Tube": "44mm ZS44/EC44 (verify)",
+      "Fork": "130-160mm, designed around 140mm",
+      "Brakes": "Post mount; 203mm max (verify)",
+      "Tire Clearance": "29 x 2.4\" max",
+      "BB Shell": "73mm BSA threaded, ISCG05",
+      "Seatpost": "30.9mm (34.9mm clamp)",
+      "Cable Routing": "Full internal",
+      "Frame Weight": "2,650g"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Enduro"
+    ]
+  },
+  {
+    "id": "cotic-solaris-frame",
+    "name": "Solaris Frame",
+    "brand": "Cotic",
+    "category": "frame",
+    "price": 1600,
+    "weightG": 2550,
+    "year": 2025,
+    "url": "https://cotic.co.uk/product/solaris",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 64,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": true,
+      "maxForkTravelMm": 130,
+      "downtubeBosses": true
+    },
+    "specs": {
+      "Frameset": "£1,199 (~$1,600) frame only",
+      "Concept": "Steel 29er trail/XC hardtail; current successor to the SolarisMAX (cotic.co.uk/product/solarismax redirects here). Made in Czechia",
+      "Tubing": "Reynolds 853 front triangle, 4130 CrMo rear",
+      "Rear": "Boost 148x12 (Burgtec M12x1.0 axle on 2025 gloss frames), UDH on 2025 gloss frames",
+      "Head Tube": "44mm: ZS44/28.6 upper, EC44/40 lower",
+      "Fork": "100-130mm (max 130mm, 543mm A-C)",
+      "Front Derailleur": "34.9mm band-on clamp, Side Swing (11-speed)",
+      "Brakes": "PM7 post mount, 180mm rotor only",
+      "Tire Clearance": "29 x 2.5\"",
+      "BB Shell": "73mm BSA threaded, ISCG05",
+      "Seatpost": "31.6mm, stealth dropper routing",
+      "Mounts": "Downtube bosses at 64mm spacing plus triple under-downtube mount",
+      "Frame Weight": "~2,550g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "XC"
+    ]
+  },
+  {
+    "id": "ragley-mmmbop-frame",
+    "name": "Mmmbop Frame",
+    "brand": "Ragley",
+    "category": "frame",
+    "price": 465,
+    "weightG": 2300,
+    "year": 2023,
+    "url": "https://www.ragleybikes.com/products/mmmbop-hardtail-frame-2023",
+    "attrs": {
+      "material": "aluminum",
+      "wheelSizes": [
+        584
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 203,
+      "headsetStd": "ZS44/ZS56",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 160,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "£349.99 (~$465) frame only",
+      "Concept": "27.5\" alloy hardcore/enduro hardtail; 29er sibling is the Big Al",
+      "Tubing": "6061 aluminum",
+      "Rear": "12x148 Boost, 175mm M12x1.5 axle",
+      "Head Tube": "Tapered: ZS44/28.6 upper, ZS56/40 lower",
+      "Fork": "150-160mm (542mm A-C at 150mm), 37mm offset",
+      "Brakes": "Post mount 160mm; 203mm max with adaptor (verify)",
+      "Tire Clearance": "27.5 x 2.6\"",
+      "BB Shell": "73mm BSA threaded, ISCG05",
+      "Seatpost": "31.6mm (34.9mm clamp), internal dropper routing",
+      "Geometry": "63 HTA, 75 STA",
+      "UDH": "Not listed (verify)",
+      "Frame Weight": "~2,300g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Aluminum",
+      "MTB",
+      "Hardtail",
+      "Enduro",
+      "27.5"
+    ]
+  },
+  {
+    "id": "marin-pine-mountain-2-frame",
+    "name": "Pine Mountain 2 Frame",
+    "brand": "Marin",
+    "category": "frame",
+    "price": 700,
+    "weightG": 2700,
+    "year": 2024,
+    "url": "https://marinbikes.com/en-au/products/2024-pine-mountain-2",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "IS42/IS52",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 30.9,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 120,
+      "downtubeBosses": true
+    },
+    "specs": {
+      "Frameset": "Complete bike only; price = est. frame value (verify). Complete $2,399 USD",
+      "Concept": "Steel 29er trail/bikepacking hardtail with plentiful gear mounts",
+      "Tubing": "Series 3 double-butted heat-treated CrMo",
+      "Rear": "Custom cast Boost 148x12 thru-axle dropouts",
+      "Head Tube": "Tapered, FSA Orbit ITA 1-1/8\" x 1-1/2\" (IS42/IS52, verify)",
+      "Fork": "RockShox 35 Gold 120mm stock",
+      "Brakes": "Post mount, TRP Slate EVO 180mm F/R stock",
+      "Tire Clearance": "29 x 2.6\" stock (max, verify)",
+      "BB Shell": "73mm BSA threaded",
+      "Seatpost": "30.9mm dropper (TranzX)",
+      "Geometry": "Reach 425/450/475/510mm",
+      "UDH": "Not confirmed (verify)",
+      "Frame Weight": "~2,700g frame only (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Chromoly",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Adventure"
+    ]
+  },
+  {
+    "id": "chumba-sendero-steel-frame",
+    "name": "Sendero Steel Frame",
+    "brand": "Chumba",
+    "category": "frame",
+    "price": 1695,
+    "weightG": 2450,
+    "year": 2024,
+    "url": "https://chumbausa.com/sendero-steel-mountain-bike-29er-27plus",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        584
+      ],
+      "maxTireMm": 71,
+      "bbShell": "T47",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 130
+    },
+    "specs": {
+      "Frameset": "Frame only, from $1,695 (handmade to order in Kansas City, MO)",
+      "Tubing": "Chumba Select OS double-butted CrMo (Velospec heat-treated USA tubeset upgrade)",
+      "Tire Clearance": "29 x 2.4\" all dropout positions; 29 x 2.6\" mid/rear; 29 x 2.8\" rearmost (M/L/XL); 27+ x 2.8\" (M/L/XL)",
+      "Rear": "148x12 Boost, Paragon (PMW) sliding dropouts: geared, SRAM Transmission/UDH, single speed or Rohloff",
+      "BB Shell": "T47 73mm threaded (frames ordered after July 2024; earlier frames 73mm BSA)",
+      "Head Tube": "Machined ZS44 upper / EC44 lower — tapered or straight 1-1/8\" forks",
+      "Fork": "Optimized for 120–130mm (530–540mm A-C)",
+      "Brakes": "Post mount on slider (max rotor verify)",
+      "Seatpost": "31.6mm, internal dropper port",
+      "Frame Weight": "~2,450g (est.)"
+    },
+    "tags": [
+      "Steel",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Made in USA",
+      "Single Speed Capable",
+      "Alt",
+      "xbiking"
+    ]
+  },
+  {
+    "id": "bombtrack-beyond-frame",
+    "name": "Beyond Frameset",
+    "brand": "Bombtrack",
+    "category": "frame",
+    "price": 1170,
+    "weightG": 2540,
+    "year": 2025,
+    "url": "https://www.bombtrack.com/products/bombtrack-beyond-frameset",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        584
+      ],
+      "maxTireMm": 53,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x142mm",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 160,
+      "headsetStd": "ZS44/EC56",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 27.2,
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxForkTravelMm": 0
+    },
+    "specs": {
+      "Frameset": "€1,079.99 (~$1,170) frame + 4130 CrMo fork",
+      "Tubing": "4130 double-butted CrMo, ED coated",
+      "Tire Clearance": "29 x 2.1\" (M–XL) / 27.5 x 2.1\" (XS–S) without fenders",
+      "Rear": "12x142mm thru-axle, rack/fender mounts",
+      "BB Shell": "73mm BSA",
+      "Head Tube": "Tapered 1-1/2\" to 1-1/8\", external-cup headset (exact cup std verify)",
+      "Brakes": "Flat mount 140/160 rear (160mm max); fork 203mm max",
+      "Seatpost": "27.2mm (29.8mm clamp)",
+      "Front Derailleur": "28.6mm clamp",
+      "Fork": "Rigid 4130, 15x100 TA, triple cage + rack mounts, internal dynamo routing (1,500g)",
+      "Frame Weight": "2,540g (M, incl. TA, bolts, clamp, hanger)"
+    },
+    "tags": [
+      "Steel",
+      "Touring",
+      "Drop-Bar MTB",
+      "Rack Mounts",
+      "Adventure"
+    ]
+  },
+  {
+    "id": "breezer-radar-frame",
+    "name": "Radar Frame",
+    "brand": "Breezer",
+    "category": "frame",
+    "price": 600,
+    "weightG": 2300,
+    "year": 2025,
+    "url": "https://www.breezerbikes.com/products/radar-team-25",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 61,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Flat Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "ZS44/EC56",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 30.9,
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 0
+    },
+    "specs": {
+      "Frameset": "Complete bike only (Radar Sport $1,399.99 / Pro $1,699.99 / Team $1,999.99); price = est. frame value (verify)",
+      "Tubing": "Breezer 4130 butted CrMo",
+      "Tire Clearance": "29 x 2.4\" (ships with 29 x 2.25\" WTB Nineline)",
+      "Rear": "148mm Boost thru-axle, UDH compatible",
+      "BB Shell": "English threaded",
+      "Head Tube": "Tapered 1-1/8\" to 1-1/2\" (cup standard verify)",
+      "Brakes": "Flat mount front & rear (max rotor verify)",
+      "Seatpost": "30.9mm",
+      "Mounts": "Three-pack on down tube, fork legs and seatstay; bento, fender and rack mounts",
+      "Front Derailleur": "1x (verify)",
+      "Frame Weight": "~2,300g (est.)"
+    },
+    "tags": [
+      "Steel",
+      "Gravel",
+      "Drop-Bar MTB",
+      "Rack Mounts",
+      "Adventure"
+    ]
+  },
+  {
+    "id": "starling-murmur-frame",
+    "name": "Murmur Frame",
+    "brand": "Starling",
+    "category": "frame",
+    "price": 2592,
+    "weightG": 3700,
+    "year": 2024,
+    "url": "https://www.starlingcycles.com/frames/murmur/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 200,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Full Suspension",
+      "travelMm": 135,
+      "shockSize": "210x55",
+      "shockMount": "Standard",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 170
+    },
+    "specs": {
+      "Frameset": "US$2,592 frame only, without shock",
+      "Tubing": "Reynolds 853 front triangle (EU-made); heat-treated CrMo swingarm (Taiwan)",
+      "Suspension": "Single pivot; adjustable shock mount for 120/135/150/165mm",
+      "Shock": "210x55 (120/135/150mm) or 230x65 (165mm), standard eye (verify)",
+      "Tire Clearance": "29 x 2.6\"",
+      "Rear": "148x12 Boost (non-Boost with spacer), SRAM UDH; mullet swingarm option",
+      "BB Shell": "73mm threaded, ISCG05",
+      "Head Tube": "ZS44/28.6 top, EC44/40 bottom",
+      "Brakes": "Post mount, up to 200mm",
+      "Seatpost": "31.6mm (aluminium seat-tube insert)",
+      "Fork": "150mm standard (130–170mm)",
+      "Frame Weight": "~3,700g without shock (est.)"
+    },
+    "tags": [
+      "Steel",
+      "MTB",
+      "Full Suspension",
+      "Trail",
+      "Enduro",
+      "Alt"
+    ]
+  },
+  {
+    "id": "crust-florida-man-frame",
+    "name": "Florida Man Frame",
+    "brand": "Crust",
+    "category": "frame",
+    "price": 850,
+    "weightG": 2060,
+    "year": 2021,
+    "url": "https://crustbikes.com/products/florida-man",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        584,
+        622
+      ],
+      "maxTireMm": 61,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 130mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "suspension": "Rigid",
+      "derailleurHanger": false,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$850 frame + fork (headset not included); limited run, no restock planned",
+      "Tubing": "Heat-treated CrMo, TIG welded (Taiwan)",
+      "Tire Clearance": "27.5 x 2.4\" or 29 x 2.0\"; 44T max chainring",
+      "Rear": "130mm rear-facing horizontal (track-style) dropouts — fixed, single speed or coaster/IGH",
+      "BB Shell": "68mm BSA",
+      "Head Tube": "1-1/8\" threadless (cup std verify)",
+      "Brakes": "Removable canti/V-brake posts in 650b position only",
+      "Seatpost": "27.2mm",
+      "Fork": "9x100 QR, 395mm A-C, crown + leg braze-ons",
+      "Frame Weight": "2.06 kg (frame); fork 1.18 kg uncut",
+      "Notes": "Leo Rodgers signature 'country fixed' frame"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Fixed Gear",
+      "Single Speed",
+      "650b",
+      "Urban"
+    ]
+  },
+  {
+    "id": "velo-orange-camargue-frame",
+    "name": "Camargue Frameset",
+    "brand": "Velo Orange",
+    "category": "frame",
+    "price": 600,
+    "weightG": 2500,
+    "year": 2016,
+    "discontinued": true,
+    "url": "https://velo-orange.com/pages/camargue-discontinued",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        559
+      ],
+      "maxTireMm": 57,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 27.2,
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "Frame + 1-1/8\" threadless fork (original MSRP ~$600, verify); discontinued",
+      "Tubing": "4130 double-butted CrMo, bi-plane fork crown",
+      "Tire Clearance": "700c x 57mm (2.25\") without fenders, 48mm (1.9\") with fenders",
+      "Wheel Size": "700c/29er on 56–62cm; 26\" on smaller sizes",
+      "Rear": "135mm horizontal dropouts (IGH capable), double eyelets",
+      "BB Shell": "68mm BSA (verify)",
+      "Brakes": "Cantilever bosses",
+      "Seatpost": "27.2mm",
+      "Front Derailleur": "28.6mm clamp",
+      "Frame Weight": "~2,500g (est.)",
+      "Year": "c. 2015–2019 (verify)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Touring",
+      "Rack Mounts",
+      "Monstercross"
+    ]
+  },
+  {
+    "id": "velo-orange-campeur-frame",
+    "name": "Campeur Frameset",
+    "brand": "Velo Orange",
+    "category": "frame",
+    "price": 540,
+    "weightG": 2400,
+    "year": 2013,
+    "discontinued": true,
+    "url": "https://web.archive.org/web/2019/https://velo-orange.com/products/vo-campeur-frame",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        559
+      ],
+      "maxTireMm": 38,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 135mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "seatpostMm": 27.2,
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "maxForkTravelMm": 0,
+      "downtubeBosses": false
+    },
+    "specs": {
+      "Frameset": "$540 frame + 1\" threaded fork (later on sale at $432); headset not included; discontinued",
+      "Tubing": "4130 double-butted CrMo",
+      "Tire Clearance": "38mm with fenders (wider without, verify)",
+      "Wheel Size": "700c (51–63cm), 26\" (47 & 49cm)",
+      "Rear": "135mm, vertical dropouts with double eyelets",
+      "BB Shell": "68mm English",
+      "Brakes": "Cantilever",
+      "Seatpost": "27.2mm",
+      "Front Derailleur": "28.6mm clamp",
+      "Mounts": "3 bottle mounts, lowrider through-bosses, seatstay rack eyelets, kickstand plate, pump peg (57–63cm)",
+      "Frame Weight": "~2,400g (est.)",
+      "Year": "c. 2012–2019 (verify)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Touring",
+      "Rack Mounts"
+    ]
+  },
+  {
+    "id": "pipedream-moxie-mx3-frame",
+    "name": "Moxie Mx3 Frame",
+    "brand": "Pipedream",
+    "category": "frame",
+    "price": 1000,
+    "weightG": 2700,
+    "year": 2022,
+    "url": "https://www.pipedreamcycles.com/frames/moxie-mx3",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        584
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 203,
+      "headsetStd": "ZS44/EC56",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 170
+    },
+    "specs": {
+      "Frameset": "Frame only, from £749 (~$1,000) UK incl. VAT",
+      "Tubing": "Custom multi-butted 4130 CrMo, CNC chainstay/BB yoke",
+      "Tire Clearance": "29 x 2.6\" or 27.5 x 2.8\" (29 / 27.5 / mullet)",
+      "Rear": "148x12 Boost sliding dropouts (+16mm chainstay adjustment); gear, single speed and flat-mount brake sliders available",
+      "BB Shell": "73mm threaded",
+      "Head Tube": "44mm, ZS44/EC56",
+      "Fork": "Optimized for 140–170mm; 64° head angle",
+      "Brakes": "Post mount NDS slider (max rotor verify)",
+      "Seatpost": "31.6mm (verify), dropper-optimized seat tube",
+      "Frame Weight": "~2,700g (est.)"
+    },
+    "tags": [
+      "Steel",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Enduro",
+      "Single Speed Capable",
+      "Alt"
+    ]
+  },
+  {
+    "id": "pipedream-sirius-s6-crmo-frame",
+    "name": "Sirius S6 CrMo Frame",
+    "brand": "Pipedream",
+    "category": "frame",
+    "price": 1200,
+    "weightG": 2500,
+    "year": 2024,
+    "url": "https://www.pipedreamcycles.com/frames/sirius-s6-crmo",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        584
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 120
+    },
+    "specs": {
+      "Frameset": "Frame only, from £899 (~$1,200) UK incl. VAT",
+      "Tubing": "Custom-butted, heat-treated 4130 CrMo, CNC chainstay/BB yoke",
+      "Tire Clearance": "29 x 2.6\" or 27.5 x 2.8\" (29 / 27.5 / mullet)",
+      "Rear": "148x12 Boost sliding dropouts (+16mm); gear, single speed and flat-mount brake sliders",
+      "BB Shell": "73mm threaded",
+      "Head Tube": "44mm, ZS44/EC44",
+      "Fork": "Optimized for 100–120mm 29er (120–140mm 27.5); matching rigid CrMo fork available",
+      "Brakes": "Post mount NDS slider (max rotor verify)",
+      "Seatpost": "31.6mm (verify), dropper-optimized seat tube",
+      "Mounts": "Triple bottle, top tube, fork-leg, rack",
+      "Frame Weight": "~2,500g (est.)",
+      "Year": "S6 generation (year verify)"
+    },
+    "tags": [
+      "Steel",
+      "MTB",
+      "Hardtail",
+      "XC",
+      "Trail",
+      "Rack Mounts",
+      "Single Speed Capable",
+      "Alt"
+    ]
+  },
+  {
+    "id": "stooge-scrambler-frame",
+    "name": "Scrambler 29+ Frameset",
+    "brand": "Stooge",
+    "category": "frame",
+    "price": 1100,
+    "weightG": 2800,
+    "year": 2026,
+    "url": "https://stoogecycles.co.uk/product/https-stoogecycles-co-uk-product-scrambler/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        584
+      ],
+      "maxTireMm": 76,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 180,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 31.6,
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 0
+    },
+    "specs": {
+      "Frameset": "£820 (~$1,100) frame + triple-butted rigid fork, EBB insert, thru-axles, seat clamp",
+      "Tubing": "CrMo steel, TIG welded",
+      "Tire Clearance": "29 x 3.0\" (this run) or 27.5+",
+      "Rear": "148x12 Boost, modular bolt-on dropouts with gear hanger",
+      "BB Shell": "73mm threaded via eccentric BB insert",
+      "Head Tube": "Straight 1-1/8\" EC34",
+      "Brakes": "IS mounts frame & fork (max rotor verify)",
+      "Seatpost": "31.6mm, internal dropper routing",
+      "Fork": "Rigid, 57mm offset, crown rack mount, 15x110 Boost",
+      "Frame Weight": "~2,800g (est.)",
+      "Notes": "Highland Trail 550-winning design; current run in production (ETA early 2027)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "MTB",
+      "29+",
+      "Plus",
+      "Rack Mounts",
+      "Single Speed Capable"
+    ]
+  },
+  {
+    "id": "stooge-mk8-frame",
+    "name": "MK8 Frameset",
+    "brand": "Stooge",
+    "category": "frame",
+    "price": 1100,
+    "weightG": 2700,
+    "year": 2025,
+    "url": "https://stoogecycles.co.uk/product/https-stoogecycles-co-uk-product-mk6-pre-order/",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622,
+        584
+      ],
+      "maxTireMm": 71,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "IS Disc",
+      "maxRotorMm": 185,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 31.6,
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": false,
+      "maxForkTravelMm": 0
+    },
+    "specs": {
+      "Frameset": "£820 (~$1,100) frame + biplane rigid fork, EBB insert, thru-axles, seat clamp",
+      "Tubing": "CrMo steel, triple-butted fork legs",
+      "Tire Clearance": "Rear 29 x 2.6–2.8\", front 29 x 3.0–3.25\"; also 27.5+",
+      "Rear": "148x12 Boost, modular bolt-on dropouts with gear hanger",
+      "BB Shell": "73mm threaded via eccentric BB insert",
+      "Head Tube": "Straight 1-1/8\" EC34",
+      "Brakes": "IS mounts; 185mm max rear, 203mm max front",
+      "Seatpost": "31.6mm (150mm min insertion)",
+      "Fork": "Rigid biplane, 65mm offset, 15x110 Boost",
+      "Chainring": "36T max, 52mm chainline recommended",
+      "Frame Weight": "~2,700g (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "MTB",
+      "Plus",
+      "Rack Mounts",
+      "Single Speed Capable"
+    ]
+  },
+  {
+    "id": "wilde-dark-star-frame",
+    "name": "Dark Star Frame",
+    "brand": "Wilde",
+    "category": "frame",
+    "price": 1100,
+    "weightG": 2500,
+    "year": 2024,
+    "url": "https://www.wildebikes.com/products/dark-star",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "EC34/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "seatpostMm": 31.6,
+      "suspension": "Hardtail",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 130
+    },
+    "specs": {
+      "Frameset": "Frame only, $1,100 (S/XL listed at $900)",
+      "Tubing": "Wilde-exclusive BOSS Super Tubes, air-hardened seamless steel; made by ORA (Taiwan)",
+      "Tire Clearance": "29 x 2.6\"",
+      "Rear": "Boost 148, sliding dropouts (425–440mm chainstay), UDH compatible",
+      "BB Shell": "73mm English",
+      "Head Tube": "EC34/EC44",
+      "Fork": "Designed for 120–130mm or Wilde Future Proof rigid fork",
+      "Brakes": "Post mount (verify), max rotor verify",
+      "Seatpost": "31.6mm, 35.0mm collar, stealth dropper routing",
+      "Chainring": "40T max",
+      "Frame Weight": "~2,500g (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "MTB",
+      "Hardtail",
+      "Trail",
+      "Single Speed Capable"
+    ]
+  },
+  {
+    "id": "wilde-supertramp-frame",
+    "name": "Supertramp Frameset",
+    "brand": "Wilde",
+    "category": "frame",
+    "price": 1300,
+    "weightG": 2600,
+    "year": 2024,
+    "url": "https://www.wildebikes.com/products/supertramp",
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        622
+      ],
+      "maxTireMm": 66,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "12x148mm Boost",
+      "brakeMount": "Post Mount",
+      "maxRotorMm": 180,
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "seatpostMm": 31.6,
+      "suspension": "Rigid",
+      "derailleurHanger": true,
+      "frontDerailleurMount": "None",
+      "udh": true,
+      "maxForkTravelMm": 0
+    },
+    "specs": {
+      "Frameset": "$1,300 frame + segmented steel fork",
+      "Tubing": "Wilde TLC double-butted CrMo; made by Maxway (Taiwan)",
+      "Tire Clearance": "29 x 2.6\" frame / 29 x 2.8\" fork",
+      "Rear": "Boost 148x12 (M12x1.0, 179.5mm axle); Dirt Champagne frames UDH, first-gen Grey/Green non-UDH",
+      "BB Shell": "73mm English",
+      "Head Tube": "EC34/34 (Dirt Champagne); ZS44 on Grey/Green",
+      "Brakes": "Post mount rear, IS fork (max rotor verify)",
+      "Seatpost": "31.6mm, 35.0mm collar, stealth dropper routing",
+      "Mounts": "Three-pack top & bottom of down tube, top tube feedbag, fenders; fork three-pack, mid-blade rack, Surly 8/24-pack rack mounts",
+      "Chainring": "36T max",
+      "Frame Weight": "~2,600g (est.)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Steel",
+      "Touring",
+      "Rack Mounts",
+      "MTB"
+    ]
+  }
+]

@@ -1,0 +1,1315 @@
+[
+  {
+    "id": "panaracer-smoke-26x2-1",
+    "name": "Smoke 26x2.1 (original)",
+    "brand": "Panaracer",
+    "category": "tires",
+    "price": 60,
+    "weightG": 640,
+    "year": 1990,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Wire",
+      "Use": "Rear (pairs with the Dart up front)",
+      "Original MSRP": "~$30 (1991)",
+      "Note": "Original Japanese-made version, skinwall/blackwall; NOS only"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "Rear",
+      "NOS"
+    ]
+  },
+  {
+    "id": "panaracer-dart-26x2-1",
+    "name": "Dart 26x2.1 (original)",
+    "brand": "Panaracer",
+    "category": "tires",
+    "price": 55,
+    "weightG": 600,
+    "year": 1990,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Wire",
+      "Use": "Front (pairs with the Smoke out back)",
+      "Original MSRP": "~$30 (1991)",
+      "Note": "NOS only"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "Front",
+      "NOS"
+    ]
+  },
+  {
+    "id": "specialized-ground-control-26x2-1",
+    "name": "Ground Control 26x2.1 (vintage)",
+    "brand": "Specialized",
+    "category": "tires",
+    "price": 50,
+    "weightG": 690,
+    "year": 1988,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Wire",
+      "Note": "Original late-80s/early-90s Ground Control, stock on Stumpjumpers/Rockhoppers"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "Stumpjumper"
+    ]
+  },
+  {
+    "id": "specialized-hardrockr-26x1-95",
+    "name": "Hardrock'r 26x1.95",
+    "brand": "Specialized",
+    "category": "tires",
+    "price": 20,
+    "weightG": 760,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 50,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 1.95",
+      "Bead": "Wire",
+      "Note": "Budget OEM tire on Hardrocks/Rockhoppers"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "Budget"
+    ]
+  },
+  {
+    "id": "onza-porcupine-26x2-1",
+    "name": "Porcupine 26x2.1",
+    "brand": "Onza",
+    "category": "tires",
+    "price": 45,
+    "weightG": 680,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1 (2.25 also made)",
+      "Compound": "Very soft 50a / 60a options",
+      "Bead": "Wire or Kevlar"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "Soft Compound"
+    ]
+  },
+  {
+    "id": "ritchey-megabite-26x2-1",
+    "name": "Megabite 26x2.1",
+    "brand": "Ritchey",
+    "category": "tires",
+    "price": 60,
+    "weightG": 660,
+    "year": 1988,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1 (1.9 and 2.2 also made)",
+      "Bead": "Wire / Kevlar"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "Ritchey"
+    ]
+  },
+  {
+    "id": "ritchey-z-max-26x1-9",
+    "name": "Z-Max 26x1.9",
+    "brand": "Ritchey",
+    "category": "tires",
+    "price": 40,
+    "weightG": 560,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 48,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 1.9 (2.1 also made)",
+      "Bead": "Kevlar (folding)",
+      "Note": "Fast-rolling XC race tire"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "XC"
+    ]
+  },
+  {
+    "id": "irc-mythos-xc-26x2-1",
+    "name": "Mythos XC 26x2.1",
+    "brand": "IRC",
+    "category": "tires",
+    "price": 35,
+    "weightG": 600,
+    "year": 1996,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Wire / Kevlar"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "XC"
+    ]
+  },
+  {
+    "id": "tioga-psycho-26x2-1",
+    "name": "Psycho 26x2.1",
+    "brand": "Tioga",
+    "category": "tires",
+    "price": 40,
+    "weightG": 690,
+    "year": 1990,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Wire",
+      "Note": "Psycho II followed ~1993"
+    },
+    "tags": [
+      "Vintage",
+      "MTB"
+    ]
+  },
+  {
+    "id": "tioga-farmer-john-26x2-125",
+    "name": "Farmer John 26x2.125",
+    "brand": "Tioga",
+    "category": "tires",
+    "price": 75,
+    "weightG": 900,
+    "year": 1983,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 54,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.125",
+      "Bead": "Wire",
+      "Note": "Early-80s balloon knobby — clunker / first-gen Stumpjumper era"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "Klunker"
+    ]
+  },
+  {
+    "id": "michelin-hard-pack-26x1-9",
+    "name": "Hard Pack 26x1.9",
+    "brand": "Michelin",
+    "category": "tires",
+    "price": 35,
+    "weightG": 570,
+    "year": 1992,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 48,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 1.9 (2.0 also made)",
+      "Bead": "Wire / Kevlar",
+      "Use": "Hardpack / dry"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "XC"
+    ]
+  },
+  {
+    "id": "michelin-wild-gripper-26x2-1",
+    "name": "Wild Gripper 26x2.1",
+    "brand": "Michelin",
+    "category": "tires",
+    "price": 35,
+    "weightG": 640,
+    "year": 1994,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Wire / Kevlar"
+    },
+    "tags": [
+      "Vintage",
+      "MTB"
+    ]
+  },
+  {
+    "id": "panaracer-fire-xc-pro-26x2-1",
+    "name": "Fire XC Pro 26x2.1",
+    "brand": "Panaracer",
+    "category": "tires",
+    "price": 40,
+    "weightG": 590,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Kevlar (folding)",
+      "Note": "Late-90s benchmark XC tire"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "XC"
+    ]
+  },
+  {
+    "id": "panaracer-smoke-classic-26x2-1",
+    "name": "Smoke Classic 26x2.1",
+    "brand": "Panaracer",
+    "category": "tires",
+    "price": 50,
+    "weightG": 640,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Wire",
+      "Note": "Reissue of the 1990 Smoke tread"
+    },
+    "tags": [
+      "MTB",
+      "Reissue",
+      "xbiking"
+    ]
+  },
+  {
+    "id": "panaracer-dart-classic-26x2-1",
+    "name": "Dart Classic 26x2.1",
+    "brand": "Panaracer",
+    "category": "tires",
+    "price": 50,
+    "weightG": 610,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Wire",
+      "Note": "Reissue of the 1990 Dart tread"
+    },
+    "tags": [
+      "MTB",
+      "Reissue",
+      "xbiking"
+    ]
+  },
+  {
+    "id": "wtb-velociraptor-26x2-1-front",
+    "name": "Velociraptor 26x2.1 Front",
+    "brand": "WTB",
+    "category": "tires",
+    "price": 35,
+    "weightG": 700,
+    "year": 2018,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Wire",
+      "Use": "Front-specific tread",
+      "Note": "Tread design dates to the mid-90s; still made for touring/vintage"
+    },
+    "tags": [
+      "MTB",
+      "Touring",
+      "Front"
+    ]
+  },
+  {
+    "id": "wtb-velociraptor-26x2-1-rear",
+    "name": "Velociraptor 26x2.1 Rear",
+    "brand": "WTB",
+    "category": "tires",
+    "price": 35,
+    "weightG": 770,
+    "year": 2018,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Wire",
+      "Use": "Rear-specific tread"
+    },
+    "tags": [
+      "MTB",
+      "Touring",
+      "Rear"
+    ]
+  },
+  {
+    "id": "schwalbe-big-apple-26x2-35",
+    "name": "Big Apple 26x2.35",
+    "brand": "Schwalbe",
+    "category": "tires",
+    "price": 45,
+    "weightG": 750,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 60,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "60-559 (26 x 2.35)",
+      "Protection": "RaceGuard",
+      "Note": "Balloon slick — classic 26\" MTB-to-cruiser conversion"
+    },
+    "tags": [
+      "Urban",
+      "Balloon",
+      "xbiking"
+    ]
+  },
+  {
+    "id": "surly-extraterrestrial-26x46",
+    "name": "ExtraTerrestrial 26x46",
+    "brand": "Surly",
+    "category": "tires",
+    "price": 70,
+    "weightG": 870,
+    "year": 2017,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 46,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "26 x 46mm",
+      "Casing": "60 TPI, sidewall protection",
+      "Note": "Expedition touring tire"
+    },
+    "tags": [
+      "Touring",
+      "Tubeless",
+      "Alt"
+    ]
+  },
+  {
+    "id": "rene-herse-rat-trap-pass-26x2-3",
+    "name": "Rat Trap Pass TC 26x2.3",
+    "brand": "Rene Herse",
+    "category": "tires",
+    "price": 87,
+    "weightG": 520,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 56,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "26 x 2.3",
+      "Casing": "Standard (Extralight ~440g, Endurance available)",
+      "Tread": "Supple slick"
+    },
+    "tags": [
+      "Touring",
+      "Tubeless",
+      "Alt"
+    ]
+  },
+  {
+    "id": "rene-herse-naches-pass-26x1-8",
+    "name": "Naches Pass TC 26x1.8",
+    "brand": "Rene Herse",
+    "category": "tires",
+    "price": 84,
+    "weightG": 410,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 44,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "26 x 1.8",
+      "Casing": "Standard (Extralight available)",
+      "Tread": "Slick"
+    },
+    "tags": [
+      "Touring",
+      "Tubeless",
+      "Alt"
+    ]
+  },
+  {
+    "id": "schwalbe-marathon-26x1-75",
+    "name": "Marathon 26x1.75",
+    "brand": "Schwalbe",
+    "category": "tires",
+    "price": 45,
+    "weightG": 840,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 47,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "47-559 (26 x 1.75)",
+      "Protection": "GreenGuard"
+    },
+    "tags": [
+      "Touring",
+      "Puncture Resistant"
+    ]
+  },
+  {
+    "id": "maxxis-ikon-26x2-2",
+    "name": "Ikon 26x2.2 EXO TR",
+    "brand": "Maxxis",
+    "category": "tires",
+    "price": 70,
+    "weightG": 605,
+    "year": 2020,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 56,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "26 x 2.2",
+      "Casing": "EXO, 3C MaxxSpeed",
+      "Bead": "Folding, tubeless ready"
+    },
+    "tags": [
+      "MTB",
+      "XC",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "kenda-small-block-eight-26x2-1",
+    "name": "Small Block Eight 26x2.1",
+    "brand": "Kenda",
+    "category": "tires",
+    "price": 30,
+    "weightG": 590,
+    "year": 2018,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 53,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 2.1",
+      "Bead": "Wire"
+    },
+    "tags": [
+      "MTB",
+      "Budget",
+      "XC"
+    ]
+  },
+  {
+    "id": "rene-herse-switchback-hill-650x48",
+    "name": "Switchback Hill TC 650Bx48",
+    "brand": "Rene Herse",
+    "category": "tires",
+    "price": 87,
+    "weightG": 460,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 48,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "650B x 48",
+      "Casing": "Standard (Extralight ~395g, Endurance available)",
+      "Note": "Formerly Compass"
+    },
+    "tags": [
+      "650B",
+      "Rando",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "rene-herse-babyshoe-pass-650x42",
+    "name": "Babyshoe Pass TC 650Bx42",
+    "brand": "Rene Herse",
+    "category": "tires",
+    "price": 84,
+    "weightG": 390,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 42,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "650B x 42",
+      "Casing": "Standard (Extralight available)",
+      "Note": "Formerly Compass"
+    },
+    "tags": [
+      "650B",
+      "Rando",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "panaracer-gravelking-slick-650x48",
+    "name": "GravelKing Slick TLC 650Bx48",
+    "brand": "Panaracer",
+    "category": "tires",
+    "price": 60,
+    "weightG": 440,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 48,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "650B x 48",
+      "Tread": "Slick"
+    },
+    "tags": [
+      "650B",
+      "Road Plus",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "soma-shikoro-650x42",
+    "name": "Shikoro 650Bx42",
+    "brand": "Soma",
+    "category": "tires",
+    "price": 60,
+    "weightG": 420,
+    "year": 2020,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 42,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "650B x 42",
+      "Note": "Made by Panaracer"
+    },
+    "tags": [
+      "650B",
+      "Alt",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "teravail-rampart-650x47",
+    "name": "Rampart 650Bx47 Light & Supple",
+    "brand": "Teravail",
+    "category": "tires",
+    "price": 65,
+    "weightG": 490,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 47,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "650B x 47",
+      "Casing": "Light & Supple (Durable available)"
+    },
+    "tags": [
+      "650B",
+      "Road Plus",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "wtb-horizon-650x47",
+    "name": "Horizon TCS 650Bx47",
+    "brand": "WTB",
+    "category": "tires",
+    "price": 60,
+    "weightG": 515,
+    "year": 2017,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 47,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "650B x 47",
+      "Note": "The original \"Road Plus\" tire"
+    },
+    "tags": [
+      "650B",
+      "Road Plus",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "panaracer-col-de-la-vie-650x38",
+    "name": "Col de la Vie 650Bx38",
+    "brand": "Panaracer",
+    "category": "tires",
+    "price": 50,
+    "weightG": 350,
+    "year": 2010,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 38,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "650B x 38",
+      "Bead": "Folding"
+    },
+    "tags": [
+      "650B",
+      "Rando",
+      "Classic"
+    ]
+  },
+  {
+    "id": "grand-bois-hetre-650x42",
+    "name": "Hetre 650Bx42",
+    "brand": "Grand Bois",
+    "category": "tires",
+    "price": 75,
+    "weightG": 360,
+    "year": 2008,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 42,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "650B x 42",
+      "Note": "Made by Panaracer; the tire that revived 650B rando"
+    },
+    "tags": [
+      "650B",
+      "Rando",
+      "Classic"
+    ]
+  },
+  {
+    "id": "rene-herse-barlow-pass-700x38",
+    "name": "Barlow Pass TC 700x38",
+    "brand": "Rene Herse",
+    "category": "tires",
+    "price": 84,
+    "weightG": 395,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 38,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "700C x 38",
+      "Casing": "Standard (Extralight ~345g, Endurance available)",
+      "Note": "Formerly Compass"
+    },
+    "tags": [
+      "700C",
+      "Rando",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "rene-herse-snoqualmie-pass-700x44",
+    "name": "Snoqualmie Pass TC 700x44",
+    "brand": "Rene Herse",
+    "category": "tires",
+    "price": 87,
+    "weightG": 450,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 44,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "700C x 44",
+      "Casing": "Standard (Extralight available)"
+    },
+    "tags": [
+      "700C",
+      "All-Road",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "rene-herse-antelope-hill-700x55",
+    "name": "Antelope Hill TC 700x55",
+    "brand": "Rene Herse",
+    "category": "tires",
+    "price": 87,
+    "weightG": 590,
+    "year": 2020,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 55,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "29 x 2.2 (700C x 55)",
+      "Casing": "Standard (Extralight available)",
+      "Note": "Monstercross / 29er slick"
+    },
+    "tags": [
+      "700C",
+      "29er",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "schwalbe-marathon-700x38",
+    "name": "Marathon 700x38",
+    "brand": "Schwalbe",
+    "category": "tires",
+    "price": 45,
+    "weightG": 790,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 40,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "40-622 (700 x 38C)",
+      "Protection": "GreenGuard"
+    },
+    "tags": [
+      "Touring",
+      "Puncture Resistant"
+    ]
+  },
+  {
+    "id": "teravail-rampart-700x38",
+    "name": "Rampart 700x38 Light & Supple",
+    "brand": "Teravail",
+    "category": "tires",
+    "price": 65,
+    "weightG": 405,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 38,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "700C x 38",
+      "Casing": "Light & Supple (Durable available)"
+    },
+    "tags": [
+      "700C",
+      "All-Road",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "soma-shikoro-700x42",
+    "name": "Shikoro 700x42",
+    "brand": "Soma",
+    "category": "tires",
+    "price": 60,
+    "weightG": 450,
+    "year": 2020,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 42,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "700C x 42",
+      "Note": "Made by Panaracer"
+    },
+    "tags": [
+      "700C",
+      "Alt",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "surly-extraterrestrial-700x41",
+    "name": "ExtraTerrestrial 700x41",
+    "brand": "Surly",
+    "category": "tires",
+    "price": 70,
+    "weightG": 650,
+    "year": 2017,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 41,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "700C x 41",
+      "Casing": "60 TPI, sidewall protection"
+    },
+    "tags": [
+      "Touring",
+      "Tubeless",
+      "Alt"
+    ]
+  },
+  {
+    "id": "schwalbe-big-apple-700x50",
+    "name": "Big Apple 700x50",
+    "brand": "Schwalbe",
+    "category": "tires",
+    "price": 50,
+    "weightG": 700,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 50,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "50-622 (28 x 2.0)",
+      "Protection": "RaceGuard",
+      "Note": "Balloon slick for monstercross / xbiking frames"
+    },
+    "tags": [
+      "Urban",
+      "Balloon",
+      "xbiking"
+    ]
+  },
+  {
+    "id": "wtb-byway-700x40",
+    "name": "Byway TCS 700x40",
+    "brand": "WTB",
+    "category": "tires",
+    "price": 60,
+    "weightG": 495,
+    "year": 2019,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 40,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "700C x 40",
+      "Tread": "Slick center, knurled shoulders"
+    },
+    "tags": [
+      "700C",
+      "All-Road",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "surly-knard-29x3",
+    "name": "Knard 29x3.0 120 TPI",
+    "brand": "Surly",
+    "category": "tires",
+    "price": 95,
+    "weightG": 1000,
+    "year": 2012,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 76,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "29 x 3.0 (29+)",
+      "Casing": "120 TPI folding",
+      "Note": "The original 29+ tire, stock on the first Krampus"
+    },
+    "tags": [
+      "29+",
+      "Plus",
+      "Alt"
+    ]
+  },
+  {
+    "id": "surly-dirt-wizard-29x3",
+    "name": "Dirt Wizard 29x3.0",
+    "brand": "Surly",
+    "category": "tires",
+    "price": 95,
+    "weightG": 1150,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 76,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "29 x 3.0 (29+)",
+      "Casing": "60 TPI, tubeless ready"
+    },
+    "tags": [
+      "29+",
+      "Plus",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "surly-dirt-wizard-27-5x3",
+    "name": "Dirt Wizard 27.5x3.0",
+    "brand": "Surly",
+    "category": "tires",
+    "price": 95,
+    "weightG": 1050,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 76,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "27.5 x 3.0 (27.5+)",
+      "Casing": "60 TPI, tubeless ready"
+    },
+    "tags": [
+      "27.5+",
+      "Plus",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "maxxis-chronicle-29x3",
+    "name": "Chronicle 29x3.0 EXO TR",
+    "brand": "Maxxis",
+    "category": "tires",
+    "price": 95,
+    "weightG": 1040,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 76,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "29 x 3.0 (29+)",
+      "Casing": "EXO, dual compound"
+    },
+    "tags": [
+      "29+",
+      "Plus",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "maxxis-rekon-29x2-6",
+    "name": "Rekon 29x2.6 EXO TR",
+    "brand": "Maxxis",
+    "category": "tires",
+    "price": 85,
+    "weightG": 900,
+    "year": 2018,
+    "attrs": {
+      "wheelSize": 622,
+      "tireWidthMm": 66,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "29 x 2.6",
+      "Casing": "EXO, 3C MaxxTerra"
+    },
+    "tags": [
+      "29\"",
+      "Trail",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "maxxis-rekon-plus-27-5x2-8",
+    "name": "Rekon+ 27.5x2.8 EXO TR",
+    "brand": "Maxxis",
+    "category": "tires",
+    "price": 85,
+    "weightG": 845,
+    "year": 2017,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 71,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "27.5 x 2.8 (27.5+)",
+      "Casing": "EXO, 3C MaxxTerra"
+    },
+    "tags": [
+      "27.5+",
+      "Plus",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "wtb-ranger-27-5x2-8",
+    "name": "Ranger TCS Light 27.5x2.8",
+    "brand": "WTB",
+    "category": "tires",
+    "price": 70,
+    "weightG": 860,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 71,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "27.5 x 2.8 (27.5+)",
+      "Casing": "TCS Light / Fast Rolling"
+    },
+    "tags": [
+      "27.5+",
+      "Plus",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "wtb-bridger-27-5x3",
+    "name": "Bridger TCS 27.5x3.0",
+    "brand": "WTB",
+    "category": "tires",
+    "price": 75,
+    "weightG": 1050,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 76,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "27.5 x 3.0 (27.5+)",
+      "Casing": "TCS Light"
+    },
+    "tags": [
+      "27.5+",
+      "Plus",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "teravail-coronado-27-5x2-8",
+    "name": "Coronado 27.5x2.8 Light & Supple",
+    "brand": "Teravail",
+    "category": "tires",
+    "price": 85,
+    "weightG": 870,
+    "year": 2017,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 71,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "27.5 x 2.8 (27.5+)",
+      "Note": "Bikepacking plus tire; 29x2.8 also made"
+    },
+    "tags": [
+      "27.5+",
+      "Bikepacking",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "schwalbe-nobby-nic-27-5x2-8",
+    "name": "Nobby Nic 27.5x2.8 Addix",
+    "brand": "Schwalbe",
+    "category": "tires",
+    "price": 85,
+    "weightG": 860,
+    "year": 2018,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 71,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "70-584 (27.5 x 2.8)",
+      "Casing": "SnakeSkin TLE"
+    },
+    "tags": [
+      "27.5+",
+      "Plus",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "vee-tire-crown-gem-27-5x2-8",
+    "name": "Crown Gem 27.5x2.8",
+    "brand": "Vee Tire",
+    "category": "tires",
+    "price": 60,
+    "weightG": 840,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 584,
+      "tireWidthMm": 71,
+      "tubeless": true
+    },
+    "specs": {
+      "Size": "27.5 x 2.8 (27.5+)",
+      "Casing": "Tubeless ready"
+    },
+    "tags": [
+      "27.5+",
+      "Plus",
+      "Budget"
+    ]
+  },
+  {
+    "id": "surly-nate-26x3-8",
+    "name": "Nate 26x3.8 120 TPI",
+    "brand": "Surly",
+    "category": "tires",
+    "price": 125,
+    "weightG": 1380,
+    "year": 2010,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 97,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 3.8 (fat bike)",
+      "Casing": "120 TPI folding",
+      "Note": "Needs a 65mm+ fat rim and fat-bike frame"
+    },
+    "tags": [
+      "Fat",
+      "Alt",
+      "Snow"
+    ]
+  },
+  {
+    "id": "schwalbe-kojak-26x1-35",
+    "name": "Kojak 26x1.35",
+    "brand": "Schwalbe",
+    "category": "tires",
+    "price": 42,
+    "weightG": 335,
+    "year": 2010,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 35,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "35-559 (26 x 1.35)",
+      "Tread": "Slick",
+      "Protection": "RaceGuard",
+      "Note": "Fast 26\" slick — classic for XO-1 / rigid-MTB road conversions"
+    },
+    "tags": [
+      "Urban",
+      "Slick",
+      "xbiking"
+    ]
+  },
+  {
+    "id": "panaracer-pasela-26x1-25",
+    "name": "Pasela PT 26x1.25",
+    "brand": "Panaracer",
+    "category": "tires",
+    "price": 32,
+    "weightG": 360,
+    "year": 2005,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 32,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "32-559 (26 x 1.25)",
+      "Tread": "File tread",
+      "Protection": "PT belt",
+      "Casing": "Tan or black sidewall",
+      "Note": "Close to the stock 26x1.25 on the 1992 Bridgestone XO-1"
+    },
+    "tags": [
+      "Urban",
+      "Touring",
+      "Slick",
+      "xbiking"
+    ]
+  }
+]

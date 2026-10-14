@@ -24,6 +24,36 @@ import stemsData from './parts/stems.json'
 import seatpostsData from './parts/seatposts.json'
 import saddlesData from './parts/saddles.json'
 import pedalsData from './parts/pedals.json'
+import brakeLeversData from './parts/brakeLevers.json'
+
+// Alt / xbiking and vintage (1983–2004) catalog, kept in separate files per data set.
+import framesAltData from './parts/frames.alt.json'
+import forksAltData from './parts/forks.alt.json'
+import headsetsAltData from './parts/headsets.alt.json'
+import framesVintageData from './parts/frames.vintage.json'
+import forksVintageData from './parts/forks.vintage.json'
+import headsetsVintageData from './parts/headsets.vintage.json'
+import cranksetsClassicData from './parts/cranksets.classic.json'
+import bottomBracketsClassicData from './parts/bottomBrackets.classic.json'
+import chainsClassicData from './parts/chains.classic.json'
+import cassettesClassicData from './parts/cassettes.classic.json'
+import sprocketsClassicData from './parts/sprockets.classic.json'
+import rearDerailleursClassicData from './parts/rearDerailleurs.classic.json'
+import frontDerailleursClassicData from './parts/frontDerailleurs.classic.json'
+import shiftersClassicData from './parts/shifters.classic.json'
+import wheelsClassicData from './parts/wheels.classic.json'
+import tiresClassicData from './parts/tires.classic.json'
+import hubsClassicData from './parts/hubs.classic.json'
+import rimsClassicData from './parts/rims.classic.json'
+import brakesClassicData from './parts/brakes.classic.json'
+import handlebarsClassicData from './parts/handlebars.classic.json'
+import stemsClassicData from './parts/stems.classic.json'
+import seatpostsClassicData from './parts/seatposts.classic.json'
+import saddlesClassicData from './parts/saddles.classic.json'
+import pedalsClassicData from './parts/pedals.classic.json'
+
+// Community-submitted frames, imported from GitHub issues by scripts/import-submission.mjs.
+import framesCommunityData from './parts/frames.community.json'
 
 export const ALL_PARTS: Part[] = [
   ...framesData,
@@ -50,6 +80,32 @@ export const ALL_PARTS: Part[] = [
   ...seatpostsData,
   ...saddlesData,
   ...pedalsData,
+  ...brakeLeversData,
+  ...framesAltData,
+  ...forksAltData,
+  ...headsetsAltData,
+  ...framesVintageData,
+  ...forksVintageData,
+  ...headsetsVintageData,
+  ...cranksetsClassicData,
+  ...bottomBracketsClassicData,
+  ...chainsClassicData,
+  ...cassettesClassicData,
+  ...sprocketsClassicData,
+  ...rearDerailleursClassicData,
+  ...frontDerailleursClassicData,
+  ...shiftersClassicData,
+  ...wheelsClassicData,
+  ...tiresClassicData,
+  ...hubsClassicData,
+  ...rimsClassicData,
+  ...brakesClassicData,
+  ...handlebarsClassicData,
+  ...stemsClassicData,
+  ...seatpostsClassicData,
+  ...saddlesClassicData,
+  ...pedalsClassicData,
+  ...framesCommunityData,
 ] as Part[]
 
 export const PARTS_BY_CATEGORY: Record<string, Part[]> = ALL_PARTS.reduce(

@@ -1,0 +1,281 @@
+[
+  {
+    "id": "chris-king-gripnut-1in",
+    "name": "GripNut 1\" Threaded",
+    "brand": "Chris King",
+    "category": "headset",
+    "price": 175,
+    "weightG": 125,
+    "year": 2024,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "material": "aluminum",
+      "color": "Silver"
+    },
+    "specs": {
+      "Cups": "Press-in 30.2mm (ISO)",
+      "Crown Race": "26.4mm",
+      "Locknut": "GripLock (no tab washer)",
+      "Stack": "~38mm",
+      "Made in": "Portland, USA"
+    },
+    "tags": [
+      "Threaded",
+      "1\"",
+      "Premium"
+    ]
+  },
+  {
+    "id": "chris-king-gripnut-1-1-8",
+    "name": "GripNut 1-1/8\" Threaded",
+    "brand": "Chris King",
+    "category": "headset",
+    "price": 175,
+    "weightG": 145,
+    "year": 2024,
+    "attrs": {
+      "headsetStd": "EC34/EC34",
+      "steerer": "Threaded 1-1/8\"",
+      "material": "aluminum",
+      "color": "Silver"
+    },
+    "specs": {
+      "Cups": "Press-in 34mm",
+      "Crown Race": "30.0mm",
+      "Locknut": "GripLock",
+      "Made in": "Portland, USA"
+    },
+    "tags": [
+      "Threaded",
+      "1-1/8\"",
+      "Premium"
+    ]
+  },
+  {
+    "id": "chris-king-nothreadset-1in",
+    "name": "NoThreadSet 1\"",
+    "brand": "Chris King",
+    "category": "headset",
+    "price": 169,
+    "weightG": 105,
+    "year": 2024,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Straight 1\"",
+      "material": "aluminum",
+      "color": "Silver"
+    },
+    "specs": {
+      "Cups": "EC30/25.4 | EC30/26",
+      "Made in": "Portland, USA"
+    },
+    "tags": [
+      "Threadless",
+      "1\"",
+      "Premium"
+    ]
+  },
+  {
+    "id": "tange-levin-cds-1in-threaded",
+    "name": "Levin CDS 1\" Threaded",
+    "brand": "Tange",
+    "category": "headset",
+    "price": 45,
+    "weightG": 130,
+    "year": 2023,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "material": "steel",
+      "color": "Silver"
+    },
+    "specs": {
+      "Cups": "Press-in 30.0mm (JIS)",
+      "Crown Race": "27.0mm (JIS) — ISO 26.4 races available",
+      "Bearings": "Caged ball, CDS seals",
+      "Stack": "~36mm"
+    },
+    "tags": [
+      "Threaded",
+      "1\"",
+      "JIS"
+    ]
+  },
+  {
+    "id": "velo-orange-grand-cru-threaded-1in",
+    "name": "Grand Cru 1\" Threaded Headset",
+    "brand": "Velo Orange",
+    "category": "headset",
+    "price": 70,
+    "weightG": 120,
+    "year": 2024,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "material": "aluminum",
+      "color": "Silver"
+    },
+    "specs": {
+      "Cups": "Press-in 30.2mm (ISO)",
+      "Crown Race": "26.4mm",
+      "Bearings": "Sealed cartridge",
+      "Finish": "Polished"
+    },
+    "tags": [
+      "Threaded",
+      "1\"",
+      "Polished"
+    ]
+  },
+  {
+    "id": "velo-orange-grand-cru-threadless-1-1-8",
+    "name": "Grand Cru 1-1/8\" Threadless Headset",
+    "brand": "Velo Orange",
+    "category": "headset",
+    "price": 60,
+    "weightG": 110,
+    "year": 2024,
+    "attrs": {
+      "headsetStd": "EC34/EC34",
+      "steerer": "Straight 1-1/8\"",
+      "material": "aluminum",
+      "color": "Silver"
+    },
+    "specs": {
+      "Cups": "EC34/28.6 | EC34/30",
+      "Bearings": "Sealed cartridge",
+      "Finish": "Polished"
+    },
+    "tags": [
+      "Threadless",
+      "1-1/8\"",
+      "Polished"
+    ]
+  },
+  {
+    "id": "cane-creek-40-zs44-ec44-straight",
+    "name": "40 ZS44/28.6 | EC44/30",
+    "brand": "Cane Creek",
+    "category": "headset",
+    "price": 64,
+    "weightG": 110,
+    "year": 2024,
+    "attrs": {
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Straight 1-1/8\"",
+      "material": "aluminum",
+      "color": "Black"
+    },
+    "specs": {
+      "Upper": "ZS44/28.6",
+      "Lower": "EC44/30 (straight 1-1/8\" fork in a 44mm head tube)",
+      "Fits": "Surly Karate Monkey / Krampus / Midnight Special, Soma Wolverine"
+    },
+    "tags": [
+      "Zero Stack",
+      "Straight Steerer",
+      "44mm Head Tube"
+    ]
+  },
+  {
+    "id": "wolf-tooth-performance-zs44-ec44-straight",
+    "name": "Performance ZS44/28.6 | EC44/30",
+    "brand": "Wolf Tooth",
+    "category": "headset",
+    "price": 85,
+    "weightG": 112,
+    "year": 2024,
+    "attrs": {
+      "headsetStd": "ZS44/EC44",
+      "steerer": "Straight 1-1/8\"",
+      "material": "aluminum",
+      "color": "Black"
+    },
+    "specs": {
+      "Upper": "ZS44/28.6",
+      "Lower": "EC44/30",
+      "Bearings": "Stainless angular-contact",
+      "Made in": "Minnesota, USA"
+    },
+    "tags": [
+      "Zero Stack",
+      "Straight Steerer",
+      "44mm Head Tube"
+    ]
+  },
+  {
+    "id": "cane-creek-40-ec34-ec44-straight",
+    "name": "40 EC34/28.6 | EC44/30",
+    "brand": "Cane Creek",
+    "category": "headset",
+    "price": 64,
+    "weightG": 115,
+    "year": 2024,
+    "attrs": {
+      "headsetStd": "EC34/EC44",
+      "steerer": "Straight 1-1/8\"",
+      "material": "aluminum",
+      "color": "Black"
+    },
+    "specs": {
+      "Upper": "EC34/28.6",
+      "Lower": "EC44/30 (straight fork in a tapered-ready head tube)",
+      "Fits": "Sklar SuperSomething / PBJ"
+    },
+    "tags": [
+      "External Cup",
+      "Straight Steerer",
+      "Mixed Cups"
+    ]
+  },
+  {
+    "id": "cane-creek-40-ec34-ec44-tapered",
+    "name": "40 EC34/28.6 | EC44/40",
+    "brand": "Cane Creek",
+    "category": "headset",
+    "price": 64,
+    "weightG": 118,
+    "year": 2024,
+    "attrs": {
+      "headsetStd": "EC34/EC44",
+      "steerer": "Tapered 1-1/8\" to 1.5\"",
+      "material": "aluminum",
+      "color": "Black"
+    },
+    "specs": {
+      "Upper": "EC34/28.6",
+      "Lower": "EC44/40 (1.5\" crown race)",
+      "Fits": "Velo Orange Pass Hunter, Sklar Tall Tale, tapered forks in EC34/EC44 frames"
+    },
+    "tags": [
+      "External Cup",
+      "Tapered",
+      "Mixed Cups"
+    ]
+  },
+  {
+    "id": "cane-creek-40-ec30-1in",
+    "name": "40 EC30/25.4 | EC30/26",
+    "brand": "Cane Creek",
+    "category": "headset",
+    "price": 64,
+    "weightG": 100,
+    "year": 2024,
+    "attrs": {
+      "headsetStd": "EC30/EC30",
+      "steerer": "Straight 1\"",
+      "material": "aluminum",
+      "color": "Black"
+    },
+    "specs": {
+      "Cups": "EC30/25.4 | EC30/26",
+      "Use": "1\" threadless conversion for classic frames"
+    },
+    "tags": [
+      "Threadless",
+      "1\"",
+      "Classic Frame"
+    ]
+  }
+]

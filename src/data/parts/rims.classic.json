@@ -1,0 +1,594 @@
+[
+  {
+    "id": "mavic-217-26",
+    "name": "217 SUP 26\"",
+    "brand": "Mavic",
+    "category": "rim",
+    "price": 45,
+    "weightG": 490,
+    "year": 1991,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 18,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "21mm",
+      "Brake": "Rim (machined sidewall; ceramic \"CD\" version made)",
+      "Drillings": "32 / 36h"
+    },
+    "tags": [
+      "Vintage",
+      "26\"",
+      "MTB"
+    ]
+  },
+  {
+    "id": "mavic-x517-26",
+    "name": "X517 26\"",
+    "brand": "Mavic",
+    "category": "rim",
+    "price": 45,
+    "weightG": 460,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 19,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "22mm",
+      "Brake": "Rim or disc",
+      "Drillings": "28 / 32 / 36h"
+    },
+    "tags": [
+      "Vintage",
+      "26\"",
+      "MTB"
+    ]
+  },
+  {
+    "id": "mavic-ma2-700c",
+    "name": "MA2 700c",
+    "brand": "Mavic",
+    "category": "rim",
+    "price": 40,
+    "weightG": 425,
+    "year": 1983,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 14,
+      "rimDepthMm": 17,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "20mm",
+      "Brake": "Rim",
+      "Note": "80s road/touring clincher"
+    },
+    "tags": [
+      "Vintage",
+      "700C",
+      "Road"
+    ]
+  },
+  {
+    "id": "mavic-ma40-700c",
+    "name": "MA40 700c",
+    "brand": "Mavic",
+    "category": "rim",
+    "price": 40,
+    "weightG": 470,
+    "year": 1987,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 15,
+      "rimDepthMm": 18,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "20mm",
+      "Brake": "Rim",
+      "Finish": "Hard-anodized grey",
+      "Note": "Also made in 27\""
+    },
+    "tags": [
+      "Vintage",
+      "700C",
+      "Touring"
+    ]
+  },
+  {
+    "id": "mavic-open-pro-700c",
+    "name": "Open Pro 700c (classic)",
+    "brand": "Mavic",
+    "category": "rim",
+    "price": 45,
+    "weightG": 435,
+    "year": 1994,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 15,
+      "rimDepthMm": 18,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "19mm",
+      "Brake": "Rim",
+      "Note": "Pre-UST Open Pro, made until ~2016; also offered in 650c"
+    },
+    "tags": [
+      "Vintage",
+      "700C",
+      "Road"
+    ]
+  },
+  {
+    "id": "mavic-a719-700c",
+    "name": "A719 700c",
+    "brand": "Mavic",
+    "category": "rim",
+    "price": 55,
+    "weightG": 520,
+    "year": 2005,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 20,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "22mm",
+      "Brake": "Rim (eyeleted, wear indicator)",
+      "Drillings": "32 / 36h",
+      "Note": "The 2000s touring rim; 26\" version also made"
+    },
+    "tags": [
+      "700C",
+      "Touring",
+      "Discontinued"
+    ]
+  },
+  {
+    "id": "araya-rm-20-26",
+    "name": "RM-20 26\"",
+    "brand": "Araya",
+    "category": "rim",
+    "price": 40,
+    "weightG": 415,
+    "year": 1987,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 16,
+      "rimDepthMm": 15,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "20.5mm",
+      "Brake": "Rim",
+      "Size": "26 x 1.50 (narrow — best with 1.75–2.0 tires)"
+    },
+    "tags": [
+      "Vintage",
+      "26\"",
+      "MTB"
+    ]
+  },
+  {
+    "id": "araya-7x-26",
+    "name": "7X 26\"",
+    "brand": "Araya",
+    "category": "rim",
+    "price": 50,
+    "weightG": 560,
+    "year": 1982,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 19,
+      "rimDepthMm": 16,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "25mm",
+      "Brake": "Rim",
+      "Size": "26 x 1.75",
+      "Note": "Stock on the first Stumpjumpers"
+    },
+    "tags": [
+      "Vintage",
+      "26\"",
+      "Klunker"
+    ]
+  },
+  {
+    "id": "ritchey-vantage-comp-26",
+    "name": "Vantage Comp 26\"",
+    "brand": "Ritchey",
+    "category": "rim",
+    "price": 40,
+    "weightG": 440,
+    "year": 1990,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 16,
+      "rimDepthMm": 17,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "21mm",
+      "Brake": "Rim"
+    },
+    "tags": [
+      "Vintage",
+      "26\"",
+      "Ritchey"
+    ]
+  },
+  {
+    "id": "sun-rhyno-lite-26",
+    "name": "Rhyno Lite 26\"",
+    "brand": "Sun Ringlé",
+    "category": "rim",
+    "price": 45,
+    "weightG": 585,
+    "year": 2015,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 21,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "30mm",
+      "Brake": "Rim or disc",
+      "Drillings": "32 / 36h",
+      "Note": "Heavy-duty touring/tandem favorite"
+    },
+    "tags": [
+      "26\"",
+      "Touring",
+      "Durable"
+    ]
+  },
+  {
+    "id": "sun-rhyno-lite-700c",
+    "name": "Rhyno Lite 700c",
+    "brand": "Sun Ringlé",
+    "category": "rim",
+    "price": 50,
+    "weightG": 655,
+    "year": 2015,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 21,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "30mm",
+      "Brake": "Rim or disc",
+      "Drillings": "32 / 36h"
+    },
+    "tags": [
+      "700C",
+      "Touring",
+      "Durable"
+    ]
+  },
+  {
+    "id": "sun-cr18-650b",
+    "name": "CR18 650B",
+    "brand": "Sun Ringlé",
+    "category": "rim",
+    "price": 40,
+    "weightG": 490,
+    "year": 2010,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 18,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "22mm",
+      "Brake": "Rim (polished)",
+      "Drillings": "32 / 36h",
+      "Note": "The classic budget 650B conversion rim"
+    },
+    "tags": [
+      "650B",
+      "Classic",
+      "Budget"
+    ]
+  },
+  {
+    "id": "sun-cr18-26",
+    "name": "CR18 26\"",
+    "brand": "Sun Ringlé",
+    "category": "rim",
+    "price": 40,
+    "weightG": 455,
+    "year": 2010,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 18,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "22mm",
+      "Brake": "Rim (polished)",
+      "Drillings": "32 / 36h"
+    },
+    "tags": [
+      "26\"",
+      "Classic",
+      "Budget"
+    ]
+  },
+  {
+    "id": "velocity-cliffhanger-26",
+    "name": "Cliffhanger 26\"",
+    "brand": "Velocity",
+    "category": "rim",
+    "price": 95,
+    "weightG": 500,
+    "year": 2012,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 21,
+      "rimDepthMm": 19,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "26mm",
+      "Brake": "Rim or disc",
+      "Construction": "Made in USA"
+    },
+    "tags": [
+      "26\"",
+      "Touring",
+      "MTB"
+    ]
+  },
+  {
+    "id": "velocity-blunt-ss-26",
+    "name": "Blunt SS 26\"",
+    "brand": "Velocity",
+    "category": "rim",
+    "price": 95,
+    "weightG": 430,
+    "year": 2015,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 19,
+      "rimDepthMm": 21,
+      "tubeless": true
+    },
+    "specs": {
+      "External Width": "24.5mm",
+      "Brake": "Rim or disc",
+      "Construction": "Made in USA"
+    },
+    "tags": [
+      "26\"",
+      "MTB",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "velocity-dyad-700c",
+    "name": "Dyad 700c",
+    "brand": "Velocity",
+    "category": "rim",
+    "price": 95,
+    "weightG": 530,
+    "year": 2010,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 19,
+      "rimDepthMm": 22,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "24mm",
+      "Brake": "Rim or disc",
+      "Drillings": "32 / 36 / 40h",
+      "Note": "Also in 26\" and 650B"
+    },
+    "tags": [
+      "700C",
+      "Touring",
+      "Made in USA"
+    ]
+  },
+  {
+    "id": "velocity-a23-650b",
+    "name": "A23 650B",
+    "brand": "Velocity",
+    "category": "rim",
+    "price": 90,
+    "weightG": 425,
+    "year": 2015,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 18,
+      "rimDepthMm": 20,
+      "tubeless": true
+    },
+    "specs": {
+      "External Width": "23mm",
+      "Brake": "Rim or disc",
+      "Construction": "Made in USA"
+    },
+    "tags": [
+      "650B",
+      "Rando",
+      "Tubeless"
+    ]
+  },
+  {
+    "id": "velo-orange-voyager-26",
+    "name": "Voyager 26\"",
+    "brand": "Velo Orange",
+    "category": "rim",
+    "price": 98,
+    "weightG": 576,
+    "year": 2022,
+    "attrs": {
+      "wheelSize": 559,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 20,
+      "tubeless": true
+    },
+    "specs": {
+      "External Width": "27mm",
+      "Brake": "Rim or disc",
+      "ERD": "541.7mm",
+      "Tire Range": "38mm–2.4\"",
+      "Drillings": "32 / 36h",
+      "Note": "Tubeless with folding-bead tires only"
+    },
+    "tags": [
+      "26\"",
+      "Touring",
+      "Alt"
+    ]
+  },
+  {
+    "id": "velo-orange-voyager-650b",
+    "name": "Voyager 650B",
+    "brand": "Velo Orange",
+    "category": "rim",
+    "price": 98,
+    "weightG": 597,
+    "year": 2022,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 20,
+      "tubeless": true
+    },
+    "specs": {
+      "External Width": "27mm",
+      "Brake": "Rim or disc",
+      "ERD": "566.5mm",
+      "Tire Range": "38mm–2.4\"",
+      "Drillings": "32 / 36h"
+    },
+    "tags": [
+      "650B",
+      "Touring",
+      "Alt"
+    ]
+  },
+  {
+    "id": "velo-orange-voyager-700c",
+    "name": "Voyager 700c",
+    "brand": "Velo Orange",
+    "category": "rim",
+    "price": 98,
+    "weightG": 638,
+    "year": 2022,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 22,
+      "rimDepthMm": 20,
+      "tubeless": true
+    },
+    "specs": {
+      "External Width": "27mm",
+      "Brake": "Rim or disc",
+      "ERD": "601.4mm",
+      "Tire Range": "38mm–2.4\"",
+      "Drillings": "32 / 36h"
+    },
+    "tags": [
+      "700C",
+      "Touring",
+      "Alt"
+    ]
+  },
+  {
+    "id": "h-plus-son-archetype-650b",
+    "name": "Archetype 650B",
+    "brand": "H Plus Son",
+    "category": "rim",
+    "price": 80,
+    "weightG": 470,
+    "year": 2016,
+    "attrs": {
+      "wheelSize": 584,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 25,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "23mm",
+      "Brake": "Rim (machined sidewall) or disc"
+    },
+    "tags": [
+      "650B",
+      "Classic",
+      "Alt"
+    ]
+  },
+  {
+    "id": "h-plus-son-tb14-700c",
+    "name": "TB14 700c",
+    "brand": "H Plus Son",
+    "category": "rim",
+    "price": 70,
+    "weightG": 480,
+    "year": 2014,
+    "attrs": {
+      "wheelSize": 622,
+      "material": "aluminum",
+      "rimInternalMm": 17,
+      "rimDepthMm": 21,
+      "tubeless": false
+    },
+    "specs": {
+      "External Width": "23mm",
+      "Brake": "Rim (machined sidewall) or disc",
+      "Note": "Box-section; also made in 650B and 26\""
+    },
+    "tags": [
+      "700C",
+      "Classic",
+      "Alt"
+    ]
+  }
+]

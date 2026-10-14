@@ -9,7 +9,7 @@ export function Stars({ rating, showCount = true }: { rating: Rating | undefined
   return (
     <span style={{ fontSize: 11, whiteSpace: 'nowrap' }} aria-label={`Rated ${rating.avg} out of 5 by ${rating.count} riders`}>
       <span style={{ color: '#b8860b', letterSpacing: -1 }}>{'★'.repeat(full)}</span>
-      <span style={{ color: '#808080', letterSpacing: -1 }}>{'★'.repeat(5 - full)}</span>
+      <span style={{ color: 'var(--win-gray-text)', letterSpacing: -1 }}>{'★'.repeat(5 - full)}</span>
       {showCount && <span style={{ marginLeft: 4 }}>({rating.count})</span>}
     </span>
   )

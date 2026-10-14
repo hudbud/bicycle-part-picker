@@ -19,6 +19,7 @@ export type PartCategory =
   | 'frontDerailleur'
   | 'shifters'
   | 'brakes'
+  | 'brakeLevers'
   | 'rotors'
   | 'handlebars'
   | 'stem'
@@ -28,8 +29,6 @@ export type PartCategory =
   | 'dropperPost'
 
 export type Material = 'carbon' | 'aluminum' | 'steel' | 'titanium'
-
-export type Discipline = 'road' | 'gravel' | 'mtb' | 'track' | 'bmx' | 'urban'
 
 /**
  * Wheel size as ISO bead seat diameter (mm) — the only unambiguous way to say it.
@@ -54,17 +53,29 @@ export type BottomBracketSpindle =
   | '30mm'
   | 'GXP'
   | 'Square Taper'
+  | 'Octalink V1'
+  | 'Octalink V2'
+  | 'ISIS'
   | 'Campagnolo Ultra-Torque'
   | '19mm BMX'
   | '22mm BMX'
 
-export type Steerer = 'Tapered 1-1/8" to 1.5"' | 'Straight 1-1/8"' | 'Straight 1"'
+/**
+ * Fork steerer. 'Straight' = threadless (stem clamps the steerer); 'Threaded' = quill-stem
+ * era. On frames/headsets it is what the head tube / headset accepts — the engine compares
+ * frame↔fork by diameter only, since a head tube doesn't care about threads.
+ * On stems: threadless stems use 'Straight'/'Tapered' sizes, quill stems use 'Threaded'.
+ */
+export type Steerer = 'Tapered 1-1/8" to 1.5"' | 'Straight 1-1/8"' | 'Straight 1"' | 'Threaded 1"' | 'Threaded 1-1/8"'
 
 export type HeadsetStandard =
   | 'ZS44/ZS56'
   | 'IS42/IS52'
   | 'ZS44/EC44'
   | 'EC34/EC34'
+  | 'EC34/EC44'
+  | 'ZS44/EC56'
+  | 'EC30/EC30'
   | 'IS41/IS52'
   | 'Integrated 45x45'
   | 'Proprietary'
@@ -77,13 +88,31 @@ export type RearAxle =
   | '12x157mm SuperBoost'
   | 'QR 135mm'
   | 'QR 130mm'
+  | 'QR 126mm'
   | '120mm Track'
   | '110mm BMX'
 
 /** Brake caliper mounting standard on a frame/fork, and the mount a caliper needs. */
-export type BrakeMount = 'Flat Mount' | 'Post Mount' | 'Rim Caliper' | 'V-Brake/Cantilever' | 'U-Brake' | 'None'
+/**
+ * Brake caliper mounting standard on a frame/fork, and the mount a caliper needs.
+ * 'V-Brake/Cantilever' = canti bosses (also V-brakes, Magura HS hydraulic rim).
+ * 'U-Brake' = U-brake / roller-cam bosses (BMX, mid-80s MTB chainstays).
+ * 'IS Disc' = pre-2005 International Standard disc tabs (needs an IS→post adapter for post-mount calipers).
+ */
+export type BrakeMount = 'Flat Mount' | 'Post Mount' | 'IS Disc' | 'Rim Caliper' | 'V-Brake/Cantilever' | 'U-Brake' | 'None'
 
-export type BrakeType = 'Hydraulic Disc' | 'Mechanical Disc' | 'Rim Caliper' | 'V-Brake' | 'U-Brake'
+export type BrakeType =
+  | 'Hydraulic Disc'
+  | 'Mechanical Disc'
+  | 'Rim Caliper'
+  | 'V-Brake'
+  | 'U-Brake'
+  | 'Cantilever'
+  | 'Roller Cam'
+  | 'Hydraulic Rim'
+
+/** Cable pull a cable-actuated brake needs / a lever delivers. V-brakes and MTB mech discs are Long; cantis, calipers, U-brakes, road mech discs Short. */
+export type CablePull = 'Short' | 'Long'
 
 /** How a hub accepts a rotor. 'Rim Brake' = no disc interface at all. */
 export type RotorInterface = 'Center Lock' | '6-Bolt' | 'Rim Brake'
@@ -97,10 +126,17 @@ export type Freehub =
   | 'Campagnolo N3W'
   | 'Track Fixed'
   | 'BMX Cassette Driver'
+  | 'Shimano HG 7s'
+  | 'Thread-on Freewheel'
 
 /**
  * Shifter ↔ derailleur cable-pull / protocol family. A shifter and rear derailleur
  * must share a system to work together.
+ * - 'Shimano 7-9s': SIS-era Shimano MTB + road up to 9s (also Microshift's Shimano-compatible lines).
+ * - 'Shimano Road 10s': pre-4700 10s road — same pull as 7-9s, so those derailleurs interchange.
+ * - 'Shimano MTB 10/11s': Dyna-Sys 10s and 11s MTB.
+ * - 'SRAM 1:1 MTB': ESP / X-Actuation 7–11s (Grip Shift, X.0–X.9, 11s GX/X01).
+ * - 'Friction': non-indexed — works with any cable-pull rear derailleur at any speed.
  */
 export type ShiftSystem =
   | 'Shimano Road 11s'
@@ -115,8 +151,23 @@ export type ShiftSystem =
   | 'Campagnolo 12s'
   | 'Campagnolo Ekar 13s'
   | 'Single Speed'
+  | 'Shimano 7-9s'
+  | 'Shimano Road 10s'
+  | 'Shimano MTB 10/11s'
+  | 'SRAM 1:1 MTB'
+  | 'Suntour Accushift'
+  | 'Microshift Advent X'
+  | 'Friction'
 
-export type HandlebarType = 'Drop' | 'Flat' | 'Riser' | 'BMX' | 'Bullhorn' | 'Integrated Drop'
+/**
+ * Bar shape. Lever/shifter clamp families: road levers (23.8mm) fit Drop, Integrated Drop,
+ * Bullhorn and Mustache; MTB levers (22.2mm) fit Flat, Riser, BMX, Swept (Albatross, Crazy
+ * Bar, Rhino…) and H-Bar (Jones). On shifters/levers this is the family they fit.
+ */
+export type HandlebarType = 'Drop' | 'Flat' | 'Riser' | 'BMX' | 'Bullhorn' | 'Integrated Drop' | 'Swept' | 'Mustache' | 'H-Bar'
+
+/** Where a shifter mounts. Downtube and stem shifters don't care about the bar. */
+export type ShifterMount = 'Brake Lever' | 'Trigger' | 'Twist' | 'Thumb' | 'Bar-End' | 'Downtube' | 'Stem'
 
 export type PedalSystem = 'Shimano SPD' | 'Shimano SPD-SL' | 'Look Keo' | 'Crankbrothers' | 'Time' | 'Speedplay' | 'Flat'
 
@@ -129,7 +180,6 @@ export type Suspension = 'Rigid' | 'Hardtail' | 'Full Suspension'
  */
 export interface PartAttrs {
   material?: Material
-  disciplines?: Discipline[]
   color?: string
 
   // Wheel / tire fit
@@ -145,7 +195,12 @@ export interface PartAttrs {
   frontAxle?: FrontAxle         // fork, wheels, hubs
   rearAxle?: RearAxle           // frame, wheels, hubs
   brakeMount?: BrakeMount       // frame (rear), fork (front), brakes (required mount)
-  brakeType?: BrakeType         // brakes; shifters: which brake their levers actuate
+  brakeType?: BrakeType         // brakes; shifters & brakeLevers: which brake their levers actuate
+  cablePull?: CablePull         // cable brakes; brakeLevers / shifters with cable brake levers
+  includesLevers?: boolean      // brakes: sold as a lever + caliper set (most flat-bar hydraulics)
+  brakeReachMm?: number         // frame/fork with Rim Caliper mount: brake-bolt-to-rim reach needed
+  reachMinMm?: number           // rim caliper brakes: reach range
+  reachMaxMm?: number
   rotorInterface?: RotorInterface // wheels, hubs, rotors
   rotorSizeMm?: number          // rotors
   maxRotorMm?: number           // frame/fork: largest supported rotor
@@ -181,10 +236,12 @@ export interface PartAttrs {
   derailleurHanger?: boolean    // frame: has any derailleur hanger (false = single-speed / track)
   frontDerailleurMount?: 'Braze-on' | 'Clamp' | 'Direct Mount' | 'None' // frame, front derailleur
   flattop?: boolean             // chain: SRAM Flattop
+  shifterMount?: ShifterMount   // shifters
+  downtubeBosses?: boolean      // frame: has downtube shifter bosses
 
   // Cockpit
   handlebarType?: HandlebarType // handlebars; shifters: bar type they fit
-  barClampMm?: number           // handlebars, stem (25.4, 31.8, 35, 22.2)
+  barClampMm?: number           // handlebars, stem (22.2 BMX/old MTB, 25.4, 25.8 Nitto, 26.0, 31.8, 35)
   barWidthMm?: number           // handlebars
   stemLengthMm?: number         // stem
   stemAngleDeg?: number         // stem
@@ -221,4 +278,9 @@ export interface Part {
   tags: string[]
   url?: string
   isCustom?: boolean
+  /**
+   * No longer made — vintage / NOS / used-market only. For these, `price` is today's typical
+   * used-market value (not the original MSRP; put that in specs as "Original MSRP").
+   */
+  discontinued?: boolean
 }

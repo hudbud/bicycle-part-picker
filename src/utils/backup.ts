@@ -7,6 +7,8 @@ export interface GarageBackup {
   exportedAt: string
   builds: Build[]
   partsBin: BinItem[]
+  /** Uploaded photos as data URLs, by photo-store key (see `utils/photoStore`). */
+  photos?: Record<string, string>
 }
 
 function isBinItem(x: unknown): x is BinItem {
@@ -15,12 +17,13 @@ function isBinItem(x: unknown): x is BinItem {
   return typeof item.id === 'string' && typeof item.status === 'string' && typeof item.part === 'object'
 }
 
-export function buildGarageBackup(builds: Build[], partsBin: BinItem[]): string {
+export function buildGarageBackup(builds: Build[], partsBin: BinItem[], photos?: Record<string, string>): string {
   const backup: GarageBackup = {
     version: 1,
     exportedAt: new Date().toISOString(),
     builds,
     partsBin,
+    ...(photos && Object.keys(photos).length ? { photos } : {}),
   }
   return JSON.stringify(backup, null, 2)
 }
