@@ -6,7 +6,8 @@
 <meta name="robots" content="noindex">
 <title>Pedal Parts Picker has moved</title>
 <!--
-  What the old Vercel address serves now (see vercel.json). Anyone with nothing saved goes
+  What the old addresses serve now: the Vercel one (see vercel.json) and workers.dev, where
+  index.html sends every page here as /moved?to=<page>. Anyone with nothing saved goes
   straight to the same page on the new address, so old links and share links keep working.
   Anyone with bikes or parts saved here gets one button that carries them over: this page
   opens /move-in on the new address and posts this browser's saved data to it (browsers keep
@@ -62,10 +63,17 @@
 </div>
 <script>
 (function () {
-  var NEW = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? 'http://localhost:8787' : 'https://bicycle-part-picker.hudbud.workers.dev'
+  var NEW = /^(localhost|127\.0\.0\.1)$/.test(location.hostname) ? 'http://localhost:8787' : 'https://parts.hudbud.co'
   var KEYS = ['ppp-garage', 'ppp-current-build', 'ppp-parts-bin', 'ppp-custom-parts', 'ppp-settings']
-  var target = NEW + location.pathname + location.search + location.hash
+  var page = location.pathname + location.search + location.hash
+  if (/^\/moved(\.html)?$/.test(location.pathname)) {
+    page = new URLSearchParams(location.search).get('to') || '/'
+    if (page.charAt(0) !== '/' || page.charAt(1) === '/') page = '/'
+  }
+  var target = NEW + page
   var $ = function (id) { return document.getElementById(id) }
+  // Opened on the new address itself: nothing to move.
+  if (location.origin === NEW) { location.replace(target); return }
 
   function read(key) {
     try { return (JSON.parse(localStorage.getItem(key) || 'null') || {}).state || {} } catch (e) { return {} }

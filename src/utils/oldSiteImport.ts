@@ -1,6 +1,7 @@
-// The site used to live on Vercel. Browsers keep each address's storage separately, so the old
-// address's "moved" page (moved/index.html) hands its saved data to /move-in here through
-// postMessage. This adds it the way Restore backup does: nothing here is overwritten.
+// The site used to live on Vercel, then briefly on workers.dev. Browsers keep each address's
+// storage separately, so an old address's "moved" page (moved/index.html) hands its saved data
+// to /move-in here through postMessage. This adds it the way Restore backup does: nothing here
+// is overwritten.
 
 import type { Build } from '@/types/build'
 import type { Part } from '@/types/parts'
@@ -15,6 +16,7 @@ export const OLD_ORIGINS = [
   'https://bicycle-part-picker.vercel.app',
   'https://bicycle-part-picker-hudbud.vercel.app',
   'https://bicycle-part-picker-git-main-hudbud.vercel.app',
+  'https://bicycle-part-picker.hudbud.workers.dev',
 ]
 
 const isLocal = (host: string) => host === 'localhost' || host === '127.0.0.1'

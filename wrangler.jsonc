@@ -5,6 +5,14 @@
   "name": "bicycle-part-picker",
   "main": "worker/index.ts",
   "compatibility_date": "2026-10-01",
+  // The site's address. Cloudflare creates the DNS record and certificate on deploy.
+  "routes": [{ "pattern": "parts.hudbud.co", "custom_domain": true }],
+  // Kept on: the old workers.dev address now only hands visitors over (index.html → /moved),
+  // and photos uploaded there are still served from it.
+  "workers_dev": true,
+  // Otherwise `wrangler dev` presents requests as parts.hudbud.co, which turns off the
+  // localhost-only test sign-in.
+  "dev": { "host": "localhost:8787" },
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
@@ -25,10 +33,10 @@
   "r2_buckets": [
     { "binding": "PHOTOS", "bucket_name": "ppp-photos" }
   ],
-  // Email sign-in links (worker/email.ts) stay hidden until sending is set up, on a domain you own:
+  // Email sign-in links (worker/email.ts) stay hidden until sending is set up for parts.hudbud.co:
   //   Cloudflare Email Service (Workers Paid plan): "send_email": [{ "name": "EMAIL" }]
   //   or Resend: npx wrangler@4 secret put RESEND_API_KEY
-  // plus "EMAIL_FROM": "Pedal Parts Picker <sign-in@your-domain>" in vars below.
+  // plus "EMAIL_FROM": "Pedal Parts Picker <sign-in@parts.hudbud.co>" in vars below.
   "vars": {
     // Public OAuth client ID (Google Cloud → Credentials). Not a secret.
     "GOOGLE_CLIENT_ID": "505658178341-nr14t307jvi3qf1ufiu9o7l0kuj5n1d6.apps.googleusercontent.com"
