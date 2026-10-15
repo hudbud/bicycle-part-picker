@@ -1,60 +1,66 @@
 import { useBuildStore } from '@/store/buildStore'
-import { getCategoryLabel } from '@/data/categoryConfig'
 import { sanitizeFilename } from '@/utils/backup'
-import type { PartCategory } from '@/types/parts'
-
-const WHEEL_SUB_LABELS: Partial<Record<PartCategory, string>> = {
-  frontWheel: 'Front Wheel',
-  rearWheel: 'Rear Wheel',
-  hub: 'Hub',
-  rim: 'Rim',
-  spokes: 'Spokes',
-}
+import { computeCompat } from '@/hooks/useCompat'
+import { getBuildTotals } from '@/data/pricing'
+import { formatWeight } from '@/data/specSchema'
+import { formatPrice } from '@/utils/format'
+import { getSlotRows, partTitle, weightLabel } from '@/components/build/buildRows'
+import { compatSummary } from '@/components/build/buildMarkup'
+import { buildShareUrl } from '@/utils/buildCodec'
 
 export function useBuildExport() {
-  const { build, getTotalPrice } = useBuildStore()
-
-  const getLabel = (category: PartCategory) =>
-    getCategoryLabel(category) ?? WHEEL_SUB_LABELS[category] ?? category
+  const build = useBuildStore((s) => s.build)
 
   const exportText = () => {
+    const compat = computeCompat(build)
+    const rows = getSlotRows(build, compat, true)
+    const totals = getBuildTotals(build)
     const lines = [build.name, '']
-    for (const slot of build.components) {
-      if (slot.part) {
-        const price = slot.part.price ? `$${slot.part.price.toLocaleString()}` : '—'
-        lines.push(`${getLabel(slot.category).padEnd(18)} ${slot.part.brand} ${slot.part.name} (${price})`)
-      }
+    for (const row of rows) {
+      const qty = row.quantity > 1 ? `${row.quantity} × ` : ''
+      const where = row.offer ? ` @ ${row.offer.merchant.name}` : ''
+      const weight = row.weightG != null ? `, ${formatWeight(row.weightG)}` : ''
+      lines.push(`${row.label.padEnd(18)} ${qty}${partTitle(row.part!)}${row.isCustom ? ' (custom)' : ''} (${formatPrice(row.price)}${where}${weight})`)
     }
     if (build.additionalItems && build.additionalItems.length > 0) {
       lines.push('')
       lines.push('Extras & Accessories')
       for (const item of build.additionalItems) {
-        const price = item.price ? `$${item.price.toLocaleString()}` : '—'
-        lines.push(`${item.name.padEnd(18)} (${price})${item.notes ? ` — ${item.notes}` : ''}`)
+        lines.push(`${item.name.padEnd(18)} (${formatPrice(item.price)})${item.notes ? ` — ${item.notes}` : ''}`)
       }
     }
     lines.push('')
-    lines.push(`Total: $${getTotalPrice().toLocaleString()}`)
+    lines.push(`Total: ${totals.missingPrices ? '~' : ''}${formatPrice(totals.total)}`)
+    lines.push(`Estimated Weight: ${weightLabel(compat)}`)
+    lines.push(`Compatibility: ${compatSummary(build, compat)}`)
+    for (const issue of [...compat.errors, ...compat.warnings, ...compat.notes]) {
+      lines.push(`  [${issue.severity}] ${issue.message}`)
+    }
+    lines.push('')
+    lines.push(`Permalink: ${buildShareUrl(build)}`)
     return lines.join('\n')
   }
 
   const csvCell = (value: string) => `"${value.split('"').join('""')}"`
 
   const exportCsv = () => {
-    const rows = [['Category', 'Brand', 'Part', 'Price', 'Status']]
-    for (const slot of build.components) {
-      if (slot.part) {
-        rows.push([
-          getLabel(slot.category),
-          slot.part.brand,
-          slot.part.name,
-          slot.part.price?.toString() ?? '',
-          slot.status ?? '',
-        ])
-      }
+    const rows = [['Category', 'Brand', 'Part', 'Quantity', 'Unit Price', 'Price', 'Where', 'Weight (g)', 'Status / Notes']]
+    for (const row of getSlotRows(build, undefined, true)) {
+      const part = row.part!
+      rows.push([
+        row.label,
+        part.brand,
+        part.name,
+        String(row.quantity),
+        row.unitPrice?.toString() ?? '',
+        row.price?.toString() ?? '',
+        row.offer?.merchant.name ?? (row.isCustom ? 'custom' : ''),
+        row.weightG?.toString() ?? '',
+        row.slot.status ?? '',
+      ])
     }
     for (const item of build.additionalItems ?? []) {
-      rows.push([item.name, '', '', item.price?.toString() ?? '', item.notes ?? ''])
+      rows.push(['Extra', '', item.name, '1', item.price?.toString() ?? '', item.price?.toString() ?? '', '', '', item.notes ?? ''])
     }
     return rows.map((r) => r.map(csvCell).join(',')).join('\n')
   }

@@ -1,0 +1,219 @@
+[
+  {
+    "id": "white-industries-eno-freewheel-16t",
+    "name": "ENO Freewheel 16T",
+    "brand": "White Industries",
+    "category": "sprocket",
+    "price": 115,
+    "weightG": 150,
+    "year": 2005,
+    "attrs": {
+      "smallestCogT": 16,
+      "freehub": "Thread-on Freewheel",
+      "speeds": 1
+    },
+    "specs": {
+      "Available Sizes": "16–22T",
+      "Width": "3/32\" or 1/8\"",
+      "Engagement": "Sealed bearings, 6 pawls",
+      "Made": "Petaluma, CA, USA"
+    },
+    "tags": [
+      "Single Speed",
+      "Freewheel",
+      "Made in USA"
+    ]
+  },
+  {
+    "id": "white-industries-dos-eno-freewheel-16-19t",
+    "name": "Dos ENO Freewheel 16/19T",
+    "brand": "White Industries",
+    "category": "sprocket",
+    "price": 140,
+    "weightG": 200,
+    "year": 2006,
+    "attrs": {
+      "smallestCogT": 16,
+      "freehub": "Thread-on Freewheel",
+      "speeds": 1
+    },
+    "specs": {
+      "Cogs": "Two cogs on one freewheel (16/19, 17/20, 18/21 etc.) — move the chain for a bail-out gear",
+      "Width": "3/32\"",
+      "Made": "USA"
+    },
+    "tags": [
+      "Single Speed",
+      "Two-Speed",
+      "Freewheel"
+    ]
+  },
+  {
+    "id": "acs-crossfire-freewheel-16t",
+    "name": "Crossfire Freewheel 16T",
+    "brand": "ACS",
+    "category": "sprocket",
+    "price": 22,
+    "weightG": 225,
+    "year": 2005,
+    "attrs": {
+      "smallestCogT": 16,
+      "freehub": "Thread-on Freewheel",
+      "speeds": 1
+    },
+    "specs": {
+      "Available Sizes": "14–22T",
+      "Width": "1/8\" or 3/32\""
+    },
+    "tags": [
+      "Single Speed",
+      "Freewheel",
+      "BMX"
+    ]
+  },
+  {
+    "id": "shimano-sf-mx30-freewheel-18t",
+    "name": "SF-MX30 Freewheel 18T",
+    "brand": "Shimano",
+    "category": "sprocket",
+    "price": 20,
+    "weightG": 235,
+    "year": 2010,
+    "attrs": {
+      "smallestCogT": 18,
+      "freehub": "Thread-on Freewheel",
+      "speeds": 1
+    },
+    "specs": {
+      "Available Sizes": "16–22T",
+      "Width": "1/8\""
+    },
+    "tags": [
+      "Single Speed",
+      "Freewheel",
+      "Budget"
+    ]
+  },
+  {
+    "id": "dicta-freewheel-17t",
+    "name": "Single-Speed Freewheel 17T",
+    "brand": "Dicta",
+    "category": "sprocket",
+    "price": 12,
+    "weightG": 260,
+    "year": 2005,
+    "attrs": {
+      "smallestCogT": 17,
+      "freehub": "Thread-on Freewheel",
+      "speeds": 1
+    },
+    "specs": {
+      "Available Sizes": "16–22T",
+      "Width": "1/8\" or 3/32\""
+    },
+    "tags": [
+      "Single Speed",
+      "Freewheel",
+      "Budget"
+    ]
+  },
+  {
+    "id": "endless-kick-ass-cog-18t",
+    "name": "Kick Ass Cog 18T",
+    "brand": "Endless Bike Co",
+    "category": "sprocket",
+    "price": 45,
+    "weightG": 25,
+    "year": 2010,
+    "attrs": {
+      "smallestCogT": 18,
+      "freehub": "Shimano HG 8-10s / MTB",
+      "speeds": 1
+    },
+    "specs": {
+      "Material": "7075 aluminum",
+      "Width": "3/32\" or 1/8\"",
+      "Available Sizes": "15–24T",
+      "Made": "USA"
+    },
+    "tags": [
+      "Single Speed",
+      "HG",
+      "Made in USA"
+    ]
+  },
+  {
+    "id": "boone-titanium-single-speed-cog-20t",
+    "name": "Titanium Single-Speed Cog 20T",
+    "brand": "Boone",
+    "category": "sprocket",
+    "price": 65,
+    "weightG": 30,
+    "year": 2005,
+    "attrs": {
+      "smallestCogT": 20,
+      "freehub": "Shimano HG 8-10s / MTB",
+      "speeds": 1
+    },
+    "specs": {
+      "Material": "Titanium",
+      "Width": "3/32\"",
+      "Available Sizes": "16–22T",
+      "Made": "USA"
+    },
+    "tags": [
+      "Single Speed",
+      "HG",
+      "Titanium"
+    ]
+  },
+  {
+    "id": "surly-single-speed-cog-17t-1-8",
+    "name": "Cassette Cog 17T (1/8\")",
+    "brand": "Surly",
+    "category": "sprocket",
+    "price": 25,
+    "weightG": 40,
+    "year": 2005,
+    "attrs": {
+      "smallestCogT": 17,
+      "freehub": "Shimano HG 8-10s / MTB",
+      "speeds": 1
+    },
+    "specs": {
+      "Width": "1/8\" (wide), steel",
+      "Available Sizes": "16–22T",
+      "Note": "Spacers sold separately"
+    },
+    "tags": [
+      "Single Speed",
+      "HG",
+      "1/8\""
+    ]
+  },
+  {
+    "id": "white-industries-eno-freewheel-18t",
+    "name": "ENO Freewheel 18T",
+    "brand": "White Industries",
+    "category": "sprocket",
+    "price": 115,
+    "weightG": 160,
+    "year": 2005,
+    "attrs": {
+      "smallestCogT": 18,
+      "freehub": "Thread-on Freewheel",
+      "speeds": 1
+    },
+    "specs": {
+      "Available Sizes": "16–22T",
+      "Width": "3/32\" or 1/8\"",
+      "Engagement": "Sealed bearings, 6 pawls",
+      "Made": "Petaluma, CA, USA"
+    },
+    "tags": [
+      "Single Speed",
+      "Freewheel",
+      "Made in USA"
+    ]
+  }
+]

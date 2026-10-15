@@ -1,0 +1,202 @@
+{
+ "PartCategory": [
+  "frame",
+  "fork",
+  "rearShock",
+  "headset",
+  "wheels",
+  "frontWheel",
+  "rearWheel",
+  "hub",
+  "rim",
+  "spokes",
+  "tires",
+  "crankset",
+  "bottomBracket",
+  "chain",
+  "cassette",
+  "sprocket",
+  "rearDerailleur",
+  "frontDerailleur",
+  "shifters",
+  "brakes",
+  "rotors",
+  "handlebars",
+  "stem",
+  "seatpost",
+  "saddle",
+  "pedals",
+  "dropperPost",
+  "brakeLevers"
+ ],
+ "Material": [
+  "carbon",
+  "aluminum",
+  "steel",
+  "titanium"
+ ],
+ "BottomBracketShell": [
+  "BSA 68/73mm",
+  "T47",
+  "BB86/BB92",
+  "PF30",
+  "BB30",
+  "BB386EVO",
+  "Italian",
+  "BMX Mid",
+  "BMX Spanish"
+ ],
+ "BottomBracketSpindle": [
+  "24mm",
+  "DUB 28.99mm",
+  "30mm",
+  "GXP",
+  "Square Taper",
+  "Campagnolo Ultra-Torque",
+  "19mm BMX",
+  "22mm BMX",
+  "Octalink V1",
+  "Octalink V2",
+  "ISIS"
+ ],
+ "Steerer": [
+  "Tapered 1-1/8\" to 1.5\"",
+  "Straight 1-1/8\"",
+  "Straight 1\"",
+  "Threaded 1\"",
+  "Threaded 1-1/8\""
+ ],
+ "HeadsetStandard": [
+  "ZS44/ZS56",
+  "IS42/IS52",
+  "ZS44/EC44",
+  "EC34/EC34",
+  "IS41/IS52",
+  "Integrated 45x45",
+  "Proprietary",
+  "EC34/EC44",
+  "ZS44/EC56",
+  "EC30/EC30"
+ ],
+ "FrontAxle": [
+  "12x100mm",
+  "15x110mm Boost",
+  "15x100mm",
+  "20x110mm",
+  "QR 100mm",
+  "100mm Nutted",
+  "3/8\" BMX"
+ ],
+ "RearAxle": [
+  "12x142mm",
+  "12x148mm Boost",
+  "12x157mm SuperBoost",
+  "QR 135mm",
+  "QR 130mm",
+  "120mm Track",
+  "110mm BMX",
+  "QR 126mm"
+ ],
+ "BrakeMount": [
+  "Flat Mount",
+  "Post Mount",
+  "Rim Caliper",
+  "V-Brake/Cantilever",
+  "U-Brake",
+  "None",
+  "IS Disc"
+ ],
+ "BrakeType": [
+  "Hydraulic Disc",
+  "Mechanical Disc",
+  "Rim Caliper",
+  "V-Brake",
+  "U-Brake",
+  "Cantilever",
+  "Roller Cam",
+  "Hydraulic Rim"
+ ],
+ "RotorInterface": [
+  "Center Lock",
+  "6-Bolt",
+  "Rim Brake"
+ ],
+ "Freehub": [
+  "Shimano HG 11/12s Road",
+  "Shimano HG 8-10s / MTB",
+  "Shimano Microspline",
+  "SRAM XD",
+  "SRAM XDR",
+  "Campagnolo N3W",
+  "Track Fixed",
+  "BMX Cassette Driver",
+  "Shimano HG 7s",
+  "Thread-on Freewheel"
+ ],
+ "ShiftSystem": [
+  "Shimano Road 11s",
+  "Shimano Road 12s",
+  "Shimano Di2 12s",
+  "Shimano MTB 12s",
+  "Shimano GRX 11s",
+  "Shimano Linkglide 10/11s",
+  "SRAM AXS",
+  "SRAM Eagle 12s Mech",
+  "SRAM Road 11s Mech",
+  "Campagnolo 12s",
+  "Campagnolo Ekar 13s",
+  "Single Speed",
+  "Shimano 7-9s",
+  "Shimano Road 10s",
+  "Shimano MTB 10/11s",
+  "SRAM 1:1 MTB",
+  "Suntour Accushift",
+  "Microshift Advent X",
+  "Friction"
+ ],
+ "HandlebarType": [
+  "Drop",
+  "Flat",
+  "Riser",
+  "BMX",
+  "Bullhorn",
+  "Integrated Drop",
+  "Swept",
+  "Mustache",
+  "H-Bar"
+ ],
+ "PedalSystem": [
+  "Shimano SPD",
+  "Shimano SPD-SL",
+  "Look Keo",
+  "Crankbrothers",
+  "Time",
+  "Speedplay",
+  "Flat"
+ ],
+ "Suspension": [
+  "Rigid",
+  "Hardtail",
+  "Full Suspension"
+ ],
+ "WheelSize": [
+  622,
+  584,
+  559,
+  507,
+  406
+ ],
+ "CablePull": [
+  "Short",
+  "Long"
+ ],
+ "ShifterMount": [
+  "Brake Lever",
+  "Trigger",
+  "Twist",
+  "Thumb",
+  "Bar-End",
+  "Downtube",
+  "Stem"
+ ]
+}

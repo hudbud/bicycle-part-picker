@@ -1,7 +1,552 @@
 [
-  { "id": "shimano-bb-r9100", "name": "Dura-Ace SM-BBR60", "brand": "Shimano", "category": "bottomBracket", "price": 65, "specs": { "type": "threaded BSA", "shell": "68mm", "spindle": "24mm" }, "tags": ["Road", "BSA", "Threaded"] },
-  { "id": "sram-dub-bb", "name": "DUB BSA Bottom Bracket", "brand": "SRAM", "category": "bottomBracket", "price": 49, "specs": { "type": "threaded BSA", "shell": "68mm", "spindle": "DUB" }, "tags": ["Road", "BSA", "Threaded"] },
-  { "id": "token-bb386evo", "name": "BB386EVO Bottom Bracket", "brand": "Token", "category": "bottomBracket", "price": 55, "specs": { "type": "press-fit", "shell": "86.5mm", "spindle": "30mm" }, "tags": ["Road", "BB386", "Press-Fit"] },
-  { "id": "wheels-manufacturing-bb30", "name": "BB30 Bottom Bracket", "brand": "Wheels Manufacturing", "category": "bottomBracket", "price": 45, "specs": { "type": "press-fit", "shell": "68mm", "spindle": "30mm" }, "tags": ["Road", "MTB", "BB30"] },
-  { "id": "praxis-m30-t47", "name": "M30 T47 Bottom Bracket", "brand": "Praxis Works", "category": "bottomBracket", "price": 79, "specs": { "type": "threaded T47", "shell": "T47", "spindle": "30mm" }, "tags": ["Road", "T47", "Threaded"] }
+  {
+    "id": "shimano-bb-r9100",
+    "name": "Dura-Ace BB-R9100",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 65,
+    "weightG": 65,
+    "year": 2017,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "Shell Width": "68mm",
+      "Type": "Threaded, external cups"
+    },
+    "tags": [
+      "Road",
+      "BSA",
+      "Threaded"
+    ]
+  },
+  {
+    "id": "shimano-bb-mt800",
+    "name": "BB-MT800",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 40,
+    "weightG": 74,
+    "year": 2019,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "Shell Width": "68/73mm",
+      "Type": "Threaded, external cups"
+    },
+    "tags": [
+      "MTB",
+      "Gravel",
+      "BSA",
+      "Threaded"
+    ]
+  },
+  {
+    "id": "sram-dub-bb",
+    "name": "DUB BSA Bottom Bracket",
+    "brand": "SRAM",
+    "category": "bottomBracket",
+    "price": 40,
+    "weightG": 77,
+    "year": 2018,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "DUB 28.99mm"
+    },
+    "specs": {
+      "Shell Width": "68/73mm",
+      "Type": "Threaded, external cups"
+    },
+    "tags": [
+      "Road",
+      "MTB",
+      "BSA",
+      "Threaded"
+    ]
+  },
+  {
+    "id": "race-face-bsa30-bb",
+    "name": "BSA30 Bottom Bracket",
+    "brand": "Race Face",
+    "category": "bottomBracket",
+    "price": 80,
+    "weightG": 92,
+    "year": 2017,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "30mm"
+    },
+    "specs": {
+      "Shell Width": "68/73mm"
+    },
+    "tags": [
+      "MTB",
+      "BSA",
+      "30mm"
+    ]
+  },
+  {
+    "id": "sram-gxp-team-bsa-bb",
+    "name": "GXP Team BSA Bottom Bracket",
+    "brand": "SRAM",
+    "category": "bottomBracket",
+    "price": 35,
+    "weightG": 98,
+    "year": 2012,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "GXP"
+    },
+    "specs": {
+      "Shell Width": "68/73mm"
+    },
+    "tags": [
+      "MTB",
+      "BSA",
+      "GXP"
+    ]
+  },
+  {
+    "id": "shimano-bb-un300",
+    "name": "BB-UN300 Cartridge",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 25,
+    "weightG": 290,
+    "year": 2018,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "Shell Width": "68mm",
+      "Spindle Length": "110–122.5mm options",
+      "Taper": "JIS"
+    },
+    "tags": [
+      "Square Taper",
+      "BSA",
+      "Budget"
+    ]
+  },
+  {
+    "id": "campagnolo-ultra-torque-bsa",
+    "name": "Ultra-Torque BSA Cups",
+    "brand": "Campagnolo",
+    "category": "bottomBracket",
+    "price": 60,
+    "weightG": 60,
+    "year": 2015,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Campagnolo Ultra-Torque"
+    },
+    "specs": {
+      "Shell Width": "68mm"
+    },
+    "tags": [
+      "Road",
+      "BSA",
+      "Campagnolo"
+    ]
+  },
+  {
+    "id": "campagnolo-ultra-torque-italian",
+    "name": "Ultra-Torque Italian Cups",
+    "brand": "Campagnolo",
+    "category": "bottomBracket",
+    "price": 60,
+    "weightG": 62,
+    "year": 2015,
+    "attrs": {
+      "bbShell": "Italian",
+      "bbSpindle": "Campagnolo Ultra-Torque"
+    },
+    "specs": {
+      "Thread": "36x24 TPI, right-hand both sides",
+      "Shell Width": "70mm"
+    },
+    "tags": [
+      "Road",
+      "Italian",
+      "Campagnolo"
+    ]
+  },
+  {
+    "id": "wheels-manufacturing-italian-24",
+    "name": "Italian Threaded BB for Shimano 24mm",
+    "brand": "Wheels Manufacturing",
+    "category": "bottomBracket",
+    "price": 60,
+    "weightG": 85,
+    "year": 2018,
+    "attrs": {
+      "bbShell": "Italian",
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "Thread": "36x24 TPI",
+      "Shell Width": "70mm"
+    },
+    "tags": [
+      "Road",
+      "Italian",
+      "24mm"
+    ]
+  },
+  {
+    "id": "chris-king-threadfit-t47-24",
+    "name": "ThreadFit T47 (24mm)",
+    "brand": "Chris King",
+    "category": "bottomBracket",
+    "price": 160,
+    "weightG": 104,
+    "year": 2019,
+    "attrs": {
+      "bbShell": "T47",
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "Made In": "Portland, OR, USA",
+      "Variants": "T47 68 / 85.5 / 86.5"
+    },
+    "tags": [
+      "Road",
+      "Gravel",
+      "T47",
+      "Made in USA"
+    ]
+  },
+  {
+    "id": "sram-dub-t47-bb",
+    "name": "DUB T47 Bottom Bracket",
+    "brand": "SRAM",
+    "category": "bottomBracket",
+    "price": 50,
+    "weightG": 90,
+    "year": 2020,
+    "attrs": {
+      "bbShell": "T47",
+      "bbSpindle": "DUB 28.99mm"
+    },
+    "specs": {
+      "Variants": "T47 68 / 85.5"
+    },
+    "tags": [
+      "Road",
+      "Gravel",
+      "T47"
+    ]
+  },
+  {
+    "id": "praxis-m30-t47",
+    "name": "M30 T47 Bottom Bracket",
+    "brand": "Praxis Works",
+    "category": "bottomBracket",
+    "price": 79,
+    "weightG": 98,
+    "year": 2018,
+    "attrs": {
+      "bbShell": "T47",
+      "bbSpindle": "30mm"
+    },
+    "specs": {},
+    "tags": [
+      "Road",
+      "T47",
+      "Threaded"
+    ]
+  },
+  {
+    "id": "shimano-bb-rs500-pb",
+    "name": "BB-RS500-PB Press Fit",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 30,
+    "weightG": 70,
+    "year": 2015,
+    "attrs": {
+      "bbShell": "BB86/BB92",
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "Shell Width": "86.5mm road / 89.5–92mm MTB"
+    },
+    "tags": [
+      "Road",
+      "MTB",
+      "Press-Fit"
+    ]
+  },
+  {
+    "id": "sram-dub-pressfit-bb",
+    "name": "DUB Pressfit Bottom Bracket",
+    "brand": "SRAM",
+    "category": "bottomBracket",
+    "price": 50,
+    "weightG": 70,
+    "year": 2018,
+    "attrs": {
+      "bbShell": "BB86/BB92",
+      "bbSpindle": "DUB 28.99mm"
+    },
+    "specs": {
+      "Shell Width": "86.5mm road / 89.5–92mm MTB"
+    },
+    "tags": [
+      "Road",
+      "MTB",
+      "Press-Fit"
+    ]
+  },
+  {
+    "id": "sram-dub-pf30-bb",
+    "name": "DUB PF30 Bottom Bracket",
+    "brand": "SRAM",
+    "category": "bottomBracket",
+    "price": 50,
+    "weightG": 85,
+    "year": 2018,
+    "attrs": {
+      "bbShell": "PF30",
+      "bbSpindle": "DUB 28.99mm"
+    },
+    "specs": {
+      "Shell Width": "68/73mm"
+    },
+    "tags": [
+      "Road",
+      "MTB",
+      "PF30"
+    ]
+  },
+  {
+    "id": "wheels-manufacturing-pf30-30",
+    "name": "PF30 Angular Contact for 30mm",
+    "brand": "Wheels Manufacturing",
+    "category": "bottomBracket",
+    "price": 70,
+    "weightG": 95,
+    "year": 2017,
+    "attrs": {
+      "bbShell": "PF30",
+      "bbSpindle": "30mm"
+    },
+    "specs": {},
+    "tags": [
+      "Road",
+      "PF30",
+      "30mm"
+    ]
+  },
+  {
+    "id": "wheels-manufacturing-pf30-24",
+    "name": "PF30 Outboard for Shimano 24mm",
+    "brand": "Wheels Manufacturing",
+    "category": "bottomBracket",
+    "price": 80,
+    "weightG": 110,
+    "year": 2017,
+    "attrs": {
+      "bbShell": "PF30",
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "Type": "Thread-together press fit"
+    },
+    "tags": [
+      "Road",
+      "PF30",
+      "24mm"
+    ]
+  },
+  {
+    "id": "sram-dub-bb30-bb",
+    "name": "DUB BB30 Bottom Bracket",
+    "brand": "SRAM",
+    "category": "bottomBracket",
+    "price": 50,
+    "weightG": 64,
+    "year": 2018,
+    "attrs": {
+      "bbShell": "BB30",
+      "bbSpindle": "DUB 28.99mm"
+    },
+    "specs": {},
+    "tags": [
+      "Road",
+      "MTB",
+      "BB30"
+    ]
+  },
+  {
+    "id": "wheels-manufacturing-bb30",
+    "name": "BB30 Bottom Bracket",
+    "brand": "Wheels Manufacturing",
+    "category": "bottomBracket",
+    "price": 45,
+    "weightG": 60,
+    "year": 2015,
+    "attrs": {
+      "bbShell": "BB30",
+      "bbSpindle": "30mm"
+    },
+    "specs": {
+      "Type": "Press-in bearings"
+    },
+    "tags": [
+      "Road",
+      "MTB",
+      "BB30"
+    ]
+  },
+  {
+    "id": "sram-dub-bb386evo-bb",
+    "name": "DUB BB386EVO Bottom Bracket",
+    "brand": "SRAM",
+    "category": "bottomBracket",
+    "price": 55,
+    "weightG": 74,
+    "year": 2019,
+    "attrs": {
+      "bbShell": "BB386EVO",
+      "bbSpindle": "DUB 28.99mm"
+    },
+    "specs": {},
+    "tags": [
+      "Road",
+      "BB386EVO",
+      "Press-Fit"
+    ]
+  },
+  {
+    "id": "token-bb386evo",
+    "name": "BB386EVO Bottom Bracket",
+    "brand": "Token",
+    "category": "bottomBracket",
+    "price": 55,
+    "weightG": 78,
+    "year": 2016,
+    "attrs": {
+      "bbShell": "BB386EVO",
+      "bbSpindle": "30mm"
+    },
+    "specs": {
+      "Type": "Press fit"
+    },
+    "tags": [
+      "Road",
+      "BB386EVO",
+      "Press-Fit"
+    ]
+  },
+  {
+    "id": "profile-racing-mid-bb-19",
+    "name": "Mid Bottom Bracket (19mm)",
+    "brand": "Profile Racing",
+    "category": "bottomBracket",
+    "price": 55,
+    "weightG": 120,
+    "year": 2016,
+    "attrs": {
+      "bbShell": "BMX Mid",
+      "bbSpindle": "19mm BMX"
+    },
+    "specs": {
+      "Bearings": "Sealed"
+    },
+    "tags": [
+      "BMX",
+      "Mid",
+      "19mm"
+    ]
+  },
+  {
+    "id": "odyssey-mid-bb-22",
+    "name": "Mid Bottom Bracket (22mm)",
+    "brand": "Odyssey",
+    "category": "bottomBracket",
+    "price": 35,
+    "weightG": 125,
+    "year": 2017,
+    "attrs": {
+      "bbShell": "BMX Mid",
+      "bbSpindle": "22mm BMX"
+    },
+    "specs": {
+      "Bearings": "Sealed"
+    },
+    "tags": [
+      "BMX",
+      "Mid",
+      "22mm"
+    ]
+  },
+  {
+    "id": "profile-racing-spanish-bb-19",
+    "name": "Spanish Bottom Bracket (19mm)",
+    "brand": "Profile Racing",
+    "category": "bottomBracket",
+    "price": 55,
+    "weightG": 115,
+    "year": 2016,
+    "attrs": {
+      "bbShell": "BMX Spanish",
+      "bbSpindle": "19mm BMX"
+    },
+    "specs": {
+      "Bearings": "Sealed"
+    },
+    "tags": [
+      "BMX",
+      "Spanish",
+      "19mm"
+    ]
+  },
+  {
+    "id": "salt-pro-spanish-bb-22",
+    "name": "Pro Spanish Bottom Bracket (22mm)",
+    "brand": "Salt",
+    "category": "bottomBracket",
+    "price": 30,
+    "weightG": 130,
+    "year": 2018,
+    "attrs": {
+      "bbShell": "BMX Spanish",
+      "bbSpindle": "22mm BMX"
+    },
+    "specs": {
+      "Bearings": "Sealed"
+    },
+    "tags": [
+      "BMX",
+      "Spanish",
+      "22mm"
+    ]
+  },
+  {
+    "id": "wheels-manufacturing-bb30-shimano-bb",
+    "name": "BB30 to Shimano 24mm Bottom Bracket",
+    "brand": "Wheels Manufacturing",
+    "category": "bottomBracket",
+    "price": 75,
+    "weightG": 95,
+    "year": 2022,
+    "attrs": {
+      "bbShell": "BB30",
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "Bearings": "ABEC-3 sealed cartridge",
+      "Fits": "Shimano Hollowtech II road & MTB cranks"
+    },
+    "tags": [
+      "BB30",
+      "Shimano 24mm",
+      "Adapter"
+    ]
+  }
 ]

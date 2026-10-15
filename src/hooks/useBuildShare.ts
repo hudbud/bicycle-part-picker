@@ -1,29 +1,40 @@
+import { useEffect, useState } from 'react'
 import { useToast } from './useToast'
-import { useBuildStore } from '@/store/buildStore'
-import { encodeBuildForShare } from '@/utils/buildCodec'
+import { bikeShareUrl, type ShareOptions } from '@/utils/buildCodec'
+import type { Build } from '@/types/build'
 
-export function useBuildShare() {
-  const { success } = useToast()
-  const build = useBuildStore((s) => s.build)
+/**
+ * Public `/bike#…` link for a build. Encoding is async (deflate), so this is '' until the
+ * first link is ready, then keeps the previous link while a new one encodes.
+ * Build ids only exist in the sharer's own localStorage, so the whole bike rides in the
+ * URL fragment instead (catalog parts by id — see utils/buildCodec). Old
+ * `/build/shared?b=` links still open on SharedBuildPage.
+ */
+export function useBikeLink(build: Build, opts: ShareOptions): string {
+  const [url, setUrl] = useState('')
+  const { notes, pricesPaid, condition, odometer } = opts
+  useEffect(() => {
+    let live = true
+    bikeShareUrl(build, { notes, pricesPaid, condition, odometer }).then((u) => { if (live) setUrl(u) })
+    return () => { live = false }
+  }, [build, notes, pricesPaid, condition, odometer])
+  return url
+}
 
-  // Build ids only exist in the sharer's own localStorage, so an /build/:id
-  // link 404s for anyone else. The payload is encoded directly into the URL instead.
-  const getShareUrl = () => `${window.location.origin}/build/shared?b=${encodeBuildForShare(build)}`
-
-  const copyShareLink = async () => {
-    const url = getShareUrl()
+/**
+ * Copy text with a toast. If the browser blocks the clipboard, selects `fallback`
+ * (the visible field) so Ctrl+C still works.
+ */
+export function useCopyText() {
+  const { success, error } = useToast()
+  return async (text: string, message: string, fallback?: HTMLInputElement | HTMLTextAreaElement | null) => {
     try {
-      await navigator.clipboard.writeText(url)
+      await navigator.clipboard.writeText(text)
+      success(message)
     } catch {
-      const el = document.createElement('input')
-      el.value = url
-      document.body.appendChild(el)
-      el.select()
-      document.execCommand('copy')
-      document.body.removeChild(el)
+      fallback?.focus()
+      fallback?.select()
+      error('Copy blocked — text selected, press Ctrl+C')
     }
-    success(build.photo ? 'Link copied! (photo not included)' : 'Link copied!')
   }
-
-  return { copyShareLink, getShareUrl }
 }

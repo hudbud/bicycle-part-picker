@@ -1,4 +1,4 @@
-export function compressImage(file: File, maxWidth = 700, quality = 0.75): Promise<string> {
+function drawScaled(file: File, maxWidth: number): Promise<HTMLCanvasElement> {
   return new Promise((resolve, reject) => {
     const reader = new FileReader()
     reader.onload = (e) => {
@@ -11,7 +11,7 @@ export function compressImage(file: File, maxWidth = 700, quality = 0.75): Promi
         const ctx = canvas.getContext('2d')
         if (!ctx) { reject(new Error('Canvas not supported')); return }
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height)
-        resolve(canvas.toDataURL('image/jpeg', quality))
+        resolve(canvas)
       }
       img.onerror = reject
       img.src = e.target!.result as string
@@ -19,4 +19,16 @@ export function compressImage(file: File, maxWidth = 700, quality = 0.75): Promi
     reader.onerror = reject
     reader.readAsDataURL(file)
   })
+}
+
+export async function compressImage(file: File, maxWidth = 700, quality = 0.75): Promise<string> {
+  return (await drawScaled(file, maxWidth)).toDataURL('image/jpeg', quality)
+}
+
+/** A JPEG blob at most `maxWidth` wide — for the IndexedDB photo store. */
+export async function compressImageToBlob(file: File, maxWidth = 1600, quality = 0.82): Promise<Blob> {
+  const canvas = await drawScaled(file, maxWidth)
+  return new Promise((resolve, reject) =>
+    canvas.toBlob((b) => (b ? resolve(b) : reject(new Error('Could not encode image'))), 'image/jpeg', quality),
+  )
 }

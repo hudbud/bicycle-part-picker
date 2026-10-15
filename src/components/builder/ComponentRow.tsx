@@ -1,148 +1,138 @@
-import { useState } from 'react'
-import type { ComponentSlot } from '@/types/build'
+import { useNavigate } from 'react-router-dom'
 import type { PartCategory } from '@/types/parts'
-import type { PartStatus } from '@/types/build'
-import { StatusBadge } from '@/components/ui/StatusBadge'
-import { Popover } from '@/components/ui/Popover'
-import { useBuildStore } from '@/store/buildStore'
-import { useToast } from '@/hooks/useToast'
-import { TableRow, TableDataCell, Button, MenuListItem } from 'react95'
+import { TableRow, TableDataCell, Button } from 'react95'
+import { formatWeight } from '@/data/specSchema'
+import { productsPath } from '@/data/categoryConfig'
+import { RouterAnchor, TextButton, SelectionLabel, RowCompatIcon, MarketInfo } from '@/components/build/BuildCells'
+import { choosePath, isMultiQuantity, partTitle, type SlotRow } from '@/components/build/buildRows'
+import { PaidValue, ConditionSource } from '@/components/tracking/TrackingCells'
+import { StatusPicker } from './StatusPicker'
+import { QtyStepper } from './QtyStepper'
+import { useRemoveWithUndo } from './useRemoveWithUndo'
 
-interface ComponentRowProps {
-  slot: ComponentSlot
-  label: string
-  onClickRow: (category: PartCategory) => void
-  isSubRow?: boolean
-  onToggleExpand?: () => void
-  expanded?: boolean
+/** Builder column widths, shared by the header, part rows and extras rows. */
+export const COLS = {
+  component: 118,
+  status: 104,
+  paid: 76,
+  condition: 150,
+  weight: 64,
+  market: 132,
+  actions: 52,
+} as const
+export const COL_COUNT = 8
+
+/** "Choose A Frame" / "Choose Tires" — plural labels read badly with "A". */
+export function chooseLabel(label: string): string {
+  return label.endsWith('s') ? `Choose ${label}` : `Choose A ${label}`
 }
 
-const STATUSES: PartStatus[] = ['owned', 'purchased', 'partsbin', 'wanted']
+const num = { textAlign: 'right' as const, whiteSpace: 'nowrap' as const, fontVariantNumeric: 'tabular-nums' as const }
 
-export function ComponentRow({ slot, label, onClickRow, isSubRow, onToggleExpand, expanded }: ComponentRowProps) {
-  const { removePart, setPart, setPartStatus, clearPartStatus } = useBuildStore()
-  const { success } = useToast()
-  const [statusOpen, setStatusOpen] = useState(false)
+interface ComponentRowProps {
+  row: SlotRow
+  /** Opens the freeform PartSelectionModal for this slot. */
+  onCustom: (category: PartCategory) => void
+  /** Opens the tracking details dialog for this slot. */
+  onDetails: (category: PartCategory) => void
+  onToggleExpand?: () => void
+  /** Hides this row while it's empty (it comes back from "Add a line"). */
+  onHide?: () => void
+}
 
-  const handleRemove = (e: React.MouseEvent) => {
-    e.stopPropagation()
-    const { part, status } = slot
-    removePart(slot.category)
-    success('Part removed', part ? {
-      label: 'Undo',
-      onClick: () => {
-        setPart(slot.category, part)
-        if (status) setPartStatus(slot.category, status)
-      },
-    } : undefined)
-  }
-
-  const handleStatusChange = (status: PartStatus) => {
-    setPartStatus(slot.category, status)
-    setStatusOpen(false)
-  }
+/**
+ * One builder row, tracker-first: Component | Selection | Status | Paid | Condition / Source |
+ * Weight | Market (quiet: best price, where, buy) | actions.
+ */
+export function ComponentRow({ row, onCustom, onDetails, onToggleExpand, onHide }: ComponentRowProps) {
+  const navigate = useNavigate()
+  const removeWithUndo = useRemoveWithUndo()
+  const { slot, part, label } = row
+  const details = () => onDetails(row.category)
 
   return (
-    <TableRow
-      onClick={() => onClickRow(slot.category)}
-      onKeyDown={(e) => {
-        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onClickRow(slot.category) }
-      }}
-      tabIndex={0}
-      role="button"
-      aria-label={slot.part ? `${label}: ${slot.part.brand} ${slot.part.name}, change part` : `${label}: choose a part`}
-      style={{ cursor: 'pointer' }}
-    >
-      <TableDataCell style={{ width: 140, fontSize: 12, fontWeight: 500, paddingLeft: isSubRow ? 20 : undefined }}>
-        {isSubRow && <span style={{ marginRight: 4, opacity: 0.5 }}>└</span>}
-        {label}
+    <TableRow>
+      <TableDataCell style={{ width: COLS.component, fontSize: 12, paddingLeft: row.isWheelSub ? 20 : undefined }}>
+        {row.isWheelSub && <span style={{ marginRight: 4, opacity: 0.5 }}>└</span>}
+        <RouterAnchor to={productsPath(row.category)}>{label}</RouterAnchor>
       </TableDataCell>
 
-      <TableDataCell>
-        {slot.part ? (
-          <span style={{ fontSize: 13, fontWeight: 700 }}>
-            {slot.part.brand} {slot.part.name}
-            {slot.part.isCustom && <span style={{ fontSize: 11, fontWeight: 400, marginLeft: 6 }}>(custom)</span>}
-          </span>
-        ) : (
-          <span style={{ fontSize: 12, fontStyle: 'italic' }}>Add a part…</span>
-        )}
-      </TableDataCell>
-
-      <TableDataCell style={{ width: 90, textAlign: 'right', fontSize: 13, fontWeight: 700 }}>
-        {slot.part?.price ? `$${slot.part.price.toLocaleString()}` : '—'}
-      </TableDataCell>
-
-      <TableDataCell style={{ width: 120 }} onClick={(e) => e.stopPropagation()}>
-        {slot.part && (
-          <Popover
-            open={statusOpen}
-            onClose={() => setStatusOpen(false)}
-            trigger={
-              <button
-                onClick={(e) => { e.stopPropagation(); setStatusOpen(!statusOpen) }}
-                style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
-              >
-                {slot.status
-                  ? <StatusBadge status={slot.status} />
-                  : <span style={{ fontSize: 11 }}>Set status▾</span>
-                }
-              </button>
-            }
+      <TableDataCell style={{ fontSize: 13 }}>
+        {part ? (
+          <SelectionLabel
+            row={row}
+            quantityControl={isMultiQuantity(slot) ? <QtyStepper slot={slot} label={label} /> : undefined}
           >
-            <>
-              {STATUSES.map((s) => (
-                <MenuListItem key={s} onClick={() => handleStatusChange(s)} size="sm">
-                  <StatusBadge status={s} />
-                </MenuListItem>
-              ))}
-              {slot.status && (
-                <MenuListItem
-                  onClick={(e) => { e.stopPropagation(); clearPartStatus(slot.category); setStatusOpen(false) }}
-                  size="sm"
-                  style={{ borderTop: '1px solid #888' }}
-                >
-                  Clear status
-                </MenuListItem>
-              )}
-            </>
-          </Popover>
+            <span style={{ display: 'inline-flex', gap: 6 }}>
+              <TextButton onClick={details} aria-label={`Details for ${label}`} title="Paid, source, condition, serial, notes, distance">details</TextButton>
+              <TextButton onClick={() => navigate(choosePath(row.category))} aria-label={`Change ${label}`}>change</TextButton>
+              {row.isCustom && <TextButton onClick={() => onCustom(row.category)} aria-label={`Edit custom ${label}`}>edit</TextButton>}
+            </span>
+          </SelectionLabel>
+        ) : (
+          <span style={{ display: 'inline-flex', alignItems: 'center', gap: 8 }}>
+            <RowCompatIcon row={row} />
+            <Button
+              size="sm"
+              onClick={() => navigate(choosePath(row.category))}
+              style={{ fontSize: 12, height: 24, padding: '0 10px' }}
+            >
+              + {chooseLabel(label)}
+            </Button>
+            <TextButton onClick={() => onCustom(row.category)} title="Enter any part by hand" aria-label={`Add a custom ${label}`}>
+              custom…
+            </TextButton>
+            {onHide && <TextButton onClick={onHide} title="Hide this row. Add it back from “Add a line”." aria-label={`Hide the ${label} row`}>hide</TextButton>}
+          </span>
         )}
       </TableDataCell>
 
-      <TableDataCell style={{ width: 80, textAlign: 'right' }} onClick={(e) => e.stopPropagation()}>
+      <TableDataCell style={{ width: COLS.status }}>
+        {part && <StatusPicker slot={slot} />}
+      </TableDataCell>
+
+      <TableDataCell style={{ width: COLS.paid, ...num }}>
+        <PaidValue slot={slot} onEdit={details} />
+      </TableDataCell>
+
+      <TableDataCell style={{ width: COLS.condition, maxWidth: COLS.condition }}>
+        <ConditionSource slot={slot} onEdit={details} />
+      </TableDataCell>
+
+      <TableDataCell style={{ width: COLS.weight, fontSize: 12, ...num }}>
+        {part ? formatWeight(row.weightG) : ''}
+      </TableDataCell>
+
+      <TableDataCell style={{ width: COLS.market, maxWidth: COLS.market }}>
+        <MarketInfo row={row} />
+      </TableDataCell>
+
+      <TableDataCell style={{ width: COLS.actions, textAlign: 'right' }}>
         <div style={{ display: 'flex', gap: 2, justifyContent: 'flex-end' }}>
           {onToggleExpand && (
             <Button
               variant="flat"
-              onClick={(e) => { e.stopPropagation(); onToggleExpand() }}
+              onClick={onToggleExpand}
               square
+              size="sm"
               style={{ fontSize: 10 }}
-              title={expanded ? 'Collapse into Wheelset' : 'Split into hub, rim & spokes'}
-              aria-label={expanded ? 'Collapse into single Wheelset row' : 'Split Wheelset into hub, rim & spokes'}
+              title="Split into front/rear wheels, hubs, rims & spokes"
+              aria-label="Split Wheelset into front/rear wheels, hubs, rims & spokes"
             >
-              {expanded ? '▲' : '▼'}
+              ▼
             </Button>
           )}
-          {slot.part ? (
+          {part && (
             <Button
               variant="flat"
-              onClick={handleRemove}
-              aria-label={`Remove ${slot.part.name}`}
+              onClick={() => removeWithUndo(slot)}
+              aria-label={`Remove ${partTitle(part)}`}
+              title="Remove"
               square
+              size="sm"
               style={{ fontSize: 11 }}
             >
               ✕
-            </Button>
-          ) : (
-            <Button
-              variant="flat"
-              onClick={(e) => { e.stopPropagation(); onClickRow(slot.category) }}
-              aria-label={`Add ${label}`}
-              square
-              style={{ fontSize: 14 }}
-            >
-              +
             </Button>
           )}
         </div>

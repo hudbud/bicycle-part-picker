@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import { Link } from 'react-router-dom'
 import type { Part, PartCategory } from '@/types/parts'
 import { getPartsByCategory } from '@/data/partsDatabase'
 import { useCustomPartsStore } from '@/store/customPartsStore'
@@ -7,6 +8,11 @@ import { Drawer } from '@/components/ui/Drawer'
 import { Input } from '@/components/ui/Input'
 import { Button } from '@/components/ui/Button'
 import { useIsMobile } from '@/hooks/useMediaQuery'
+import { getPartPrice } from '@/data/pricing'
+import { summarizeSpecs } from '@/data/specSchema'
+import { formatPrice } from '@/utils/format'
+import { ERA_OPTIONS, matchesEra, type EraFilter } from '@/components/products/productUtils'
+import { Radio } from 'react95'
 import styled from 'styled-components'
 
 const Form = styled.form`
@@ -33,9 +39,10 @@ const Suggestions = styled.ul`
   list-style: none;
   max-height: 220px;
   overflow-y: auto;
-  background: #c0c0c0;
+  background: var(--win-face);
+  color: var(--win-text);
   border: 2px solid;
-  border-color: #fff #808080 #808080 #fff;
+  border-color: var(--win-hilight) var(--win-shadow) var(--win-shadow) var(--win-hilight);
   box-shadow: 2px 2px 0 #000;
 `
 
@@ -44,12 +51,12 @@ const SuggestionItem = styled.li<{ $active?: boolean }>`
   cursor: pointer;
   font-size: 12px;
   line-height: 1.35;
-  background: ${({ $active }) => ($active ? '#000080' : 'transparent')};
-  color: ${({ $active }) => ($active ? '#fff' : 'inherit')};
+  background: ${({ $active }) => ($active ? 'var(--win-select)' : 'transparent')};
+  color: ${({ $active }) => ($active ? 'var(--win-select-text)' : 'inherit')};
 
   &:hover {
-    background: #000080;
-    color: #fff;
+    background: var(--win-select);
+    color: var(--win-select-text);
   }
 `
 
@@ -64,6 +71,40 @@ const Hint = styled.p`
   line-height: 1.4;
   opacity: 0.75;
   margin: 0;
+`
+
+const ERA_SHORT: Record<EraFilter, string> = { '': 'Any', current: 'Current', discontinued: 'Discontinued / vintage' }
+
+const EraRow = styled.fieldset`
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 10px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 12px;
+
+  legend {
+    float: left;
+    padding: 0;
+    margin-right: 6px;
+    font-size: 12px;
+  }
+  label {
+    margin: 0;
+    font-size: 12px;
+  }
+`
+
+const UsedTag = styled.span`
+  display: inline-block;
+  margin-left: 6px;
+  padding: 0 3px;
+  border: 1px solid currentColor;
+  font-size: 10px;
+  font-weight: 700;
+  vertical-align: 1px;
 `
 
 const ButtonRow = styled.div`
@@ -100,13 +141,15 @@ export function PartSelectionModal({
   const [selectedId, setSelectedId] = useState<string | undefined>()
   const [showSuggestions, setShowSuggestions] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
+  const [era, setEra] = useState<EraFilter>('')
   const blurTimeout = useRef<number | null>(null)
 
   useEffect(() => {
     if (!open) return
     setName(selectedPart?.name ?? '')
     setBrand(selectedPart?.brand ?? '')
-    setPrice(selectedPart?.price != null ? String(selectedPart.price) : '')
+    const selectedPrice = getPartPrice(selectedPart)
+    setPrice(selectedPrice != null ? String(selectedPrice) : '')
     setUrl(selectedPart?.url ?? '')
     setSelectedId(selectedPart?.id)
     setShowSuggestions(false)
@@ -124,22 +167,38 @@ export function PartSelectionModal({
     [category, customParts],
   )
 
+  const eraCounts = useMemo(() => {
+    const discontinued = catalog.filter((p) => p.discontinued).length
+    return { '': catalog.length, current: catalog.length - discontinued, discontinued }
+  }, [catalog])
+  // Era facet only when this slot's catalog has both current and discontinued/vintage parts.
+  const showEra = eraCounts.current > 0 && eraCounts.discontinued > 0
+
   const suggestions = useMemo(() => {
     const q = name.trim().toLowerCase()
-    if (q.length < 1) return []
+    // With an era picked, list that era even before typing — handy for browsing vintage parts.
+    if (q.length < 1 && !era) return []
     return catalog
+      .filter((p) => matchesEra(p, era))
       .filter((p) =>
+        !q ||
         p.name.toLowerCase().includes(q) ||
         p.brand.toLowerCase().includes(q) ||
         p.tags.some((t) => t.toLowerCase().includes(q)),
       )
       .slice(0, 8)
-  }, [catalog, name])
+  }, [catalog, name, era])
+
+  const selectedCatalogPart = selectedId ? catalog.find((p) => p.id === selectedId) : undefined
+
+  // Catalog parts are priced live (best in-stock retailer offer), custom parts by the user.
+  const livePrice = (part: Part) => getPartPrice(part)
 
   const applySuggestion = (part: Part) => {
+    const p = livePrice(part)
     setName(part.name)
     setBrand(part.brand)
-    setPrice(part.price != null ? String(part.price) : '')
+    setPrice(p != null ? String(p) : '')
     setUrl(part.url ?? '')
     setSelectedId(part.id)
     setShowSuggestions(false)
@@ -159,7 +218,7 @@ export function PartSelectionModal({
       fromCatalog &&
       fromCatalog.name === trimmedName &&
       fromCatalog.brand === trimmedBrand &&
-      (fromCatalog.price ?? undefined) === (parsedPrice !== undefined && parsedPrice >= 0 ? parsedPrice : undefined) &&
+      livePrice(fromCatalog) === (parsedPrice !== undefined && parsedPrice >= 0 ? parsedPrice : undefined) &&
       (fromCatalog.url ?? '') === (url.trim() || '')
     ) {
       onSelect(fromCatalog)
@@ -188,6 +247,39 @@ export function PartSelectionModal({
       <Hint>
         Add any part for this slot. Start typing a name to fill details from the catalog, or enter your own.
       </Hint>
+      {category === 'frame' && (
+        <Hint>
+          Frame missing from the catalog?{' '}
+          <Link
+            to={`/submit/frame?${new URLSearchParams({ ...(name.trim() && !selectedId ? { name: name.trim() } : {}), ...(brand.trim() && !selectedId ? { brand: brand.trim() } : {}) })}`}
+            onClick={onClose}
+            style={{ color: 'var(--win-link)' }}
+          >
+            Add it with full specs
+          </Link>{' '}
+          so compatibility checks work and others can use it.
+        </Hint>
+      )}
+
+      {showEra && (
+        <EraRow>
+          <legend>Era:</legend>
+          {ERA_OPTIONS.map((o) => (
+            <Radio
+              key={o.value || 'any'}
+              name="part-era"
+              value={o.value}
+              checked={era === o.value}
+              onChange={() => {
+                setEra(o.value)
+                setShowSuggestions(true)
+                setActiveIndex(0)
+              }}
+              label={`${ERA_SHORT[o.value]} (${eraCounts[o.value]})`}
+            />
+          ))}
+        </EraRow>
+      )}
 
       <Field>
         <Input
@@ -236,9 +328,11 @@ export function PartSelectionModal({
                 }}
               >
                 <strong>{part.name}</strong>
+                {part.discontinued && era !== 'discontinued' && <UsedTag title="No longer made — price is a typical used-market value">Discontinued</UsedTag>}
                 <SuggestionMeta>
-                  {part.brand}
-                  {part.price != null ? ` · $${part.price.toLocaleString()}` : ''}
+                  {[part.brand, part.isCustom ? 'custom' : summarizeSpecs(part), livePrice(part) != null ? `${formatPrice(livePrice(part))}${part.discontinued ? ' used' : ''}` : null]
+                    .filter(Boolean)
+                    .join(' · ')}
                 </SuggestionMeta>
               </SuggestionItem>
             ))}
@@ -258,7 +352,7 @@ export function PartSelectionModal({
       />
 
       <Input
-        label="Price"
+        label={selectedCatalogPart?.discontinued ? 'Price (typical used-market value)' : 'Price'}
         type="number"
         value={price}
         onChange={(e) => {

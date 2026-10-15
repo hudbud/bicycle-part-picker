@@ -1,0 +1,802 @@
+[
+  {
+    "id": "shimano-deore-xt-fc-m730-crankset",
+    "name": "Deore XT FC-M730",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 90,
+    "weightG": 830,
+    "year": 1987,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 7,
+      "chainrings": "46/36/26",
+      "chainringCount": 3,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "BCD": "110/74mm",
+      "Taper": "JIS",
+      "BB Spindle": "73mm shell, ~122mm square-taper spindle",
+      "Rings": "Biopace oval rings stock — round 110/74 rings swap straight on",
+      "Era": "Designed for 6-speed SIS; rings work with 6/7/8-speed chains"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M730",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fc-m732-crankset",
+    "name": "Deore XT FC-M732",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 80,
+    "weightG": 810,
+    "year": 1990,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 7,
+      "chainrings": "46/36/26",
+      "chainringCount": 3,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "BCD": "110/74mm",
+      "Taper": "JIS",
+      "BB Spindle": "73mm shell, ~122mm square-taper spindle",
+      "Era": "7-speed Hyperglide / SG ramped rings"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M732",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fc-m735-crankset",
+    "name": "Deore XT FC-M735",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 70,
+    "weightG": 790,
+    "year": 1992,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 7,
+      "chainrings": "46/36/24",
+      "chainringCount": 3,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "BCD": "110/74mm",
+      "Taper": "JIS",
+      "BB Spindle": "73mm shell, ~122mm (BB-UN72/UN55 122.5)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M735",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fc-m737-crankset",
+    "name": "Deore XT FC-M737 Compact Drive",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 65,
+    "weightG": 760,
+    "year": 1994,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 8,
+      "chainrings": "42/32/22",
+      "chainringCount": 3,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "BCD": "94/58mm (Hyperdrive-C compact drive)",
+      "Taper": "JIS",
+      "BB Spindle": "73mm shell, ~113mm square-taper",
+      "Pairs With": "11-tooth Hyperdrive-C cassettes; needs a compact (small-cage) front derailleur"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M737",
+      "Compact Drive"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-xtr-fc-m952-crankset",
+    "name": "XTR FC-M952",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 140,
+    "weightG": 700,
+    "year": 2000,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 9,
+      "chainrings": "44/32/22",
+      "chainringCount": 3,
+      "bbSpindle": "Octalink V2"
+    },
+    "specs": {
+      "BCD": "94/58mm",
+      "BB Spindle": "Octalink V2 (deep splines) — will NOT fit Octalink V1 road BBs",
+      "Original MSRP": "≈$400 (2000)"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "M952",
+      "Octalink"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fc-m752-crankset",
+    "name": "Deore XT FC-M752",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 70,
+    "weightG": 790,
+    "year": 2001,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 9,
+      "chainrings": "44/32/22",
+      "chainringCount": 3,
+      "bbSpindle": "Octalink V2"
+    },
+    "specs": {
+      "BCD": "94/58mm",
+      "BB Spindle": "Octalink V2, 73mm shell (BB-M752 / BB-ES25)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M752",
+      "Octalink"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-lx-fc-m571-crankset",
+    "name": "Deore LX FC-M571",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 45,
+    "weightG": 870,
+    "year": 2003,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 9,
+      "chainrings": "44/32/22",
+      "chainringCount": 3,
+      "bbSpindle": "Octalink V2"
+    },
+    "specs": {
+      "BCD": "104/64mm",
+      "BB Spindle": "Octalink V2 (BB-ES25 / BB-ES300)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore LX",
+      "M571",
+      "Octalink"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fc-m760-crankset",
+    "name": "Deore XT FC-M760 Hollowtech II",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 90,
+    "weightG": 790,
+    "year": 2003,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 9,
+      "chainrings": "44/32/22",
+      "chainringCount": 3,
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "BCD": "104/64mm",
+      "BB Spindle": "24mm Hollowtech II, external BSA cups",
+      "Weight": "Arms + rings, excl. BB",
+      "Note": "First Hollowtech II XT — the 104/64 four-arm standard starts here"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M760",
+      "Hollowtech II"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-xtr-fc-m960-crankset",
+    "name": "XTR FC-M960 Hollowtech II",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 150,
+    "weightG": 700,
+    "year": 2003,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 9,
+      "chainrings": "44/32/22",
+      "chainringCount": 3,
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "BCD": "104/64mm",
+      "BB Spindle": "24mm Hollowtech II, external BSA cups",
+      "Weight": "Arms + rings, excl. BB"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "M960",
+      "Hollowtech II"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "suntour-xc-pro-crankset",
+    "name": "XC Pro Crankset",
+    "brand": "Suntour",
+    "category": "crankset",
+    "price": 150,
+    "weightG": 770,
+    "year": 1990,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 7,
+      "chainrings": "46/36/24",
+      "chainringCount": 3,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "BCD": "110/74mm",
+      "Taper": "JIS-style square taper",
+      "BB Spindle": "73mm shell, ~119–122mm",
+      "Era": "Top-of-the-line Suntour MTB group (XC Pro / M900)"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour XC Pro",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "cook-bros-racing-rsr-crankset",
+    "name": "RSR Crankset",
+    "brand": "Cook Bros Racing",
+    "category": "crankset",
+    "price": 450,
+    "weightG": 690,
+    "year": 1993,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 7,
+      "chainrings": "46/36/24",
+      "chainringCount": 3,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "BCD": "110/74mm",
+      "Taper": "Square taper — check spindle length on the frame, ~118–122mm",
+      "Made": "Santa Cruz, CA, USA (CNC)",
+      "Collectible": "NOS/clean sets command a premium"
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Made in USA",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "race-face-turbine-isis-crankset",
+    "name": "Turbine ISIS (2002)",
+    "brand": "Race Face",
+    "category": "crankset",
+    "price": 90,
+    "weightG": 800,
+    "year": 2002,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 9,
+      "chainrings": "44/32/22",
+      "chainringCount": 3,
+      "bbSpindle": "ISIS"
+    },
+    "specs": {
+      "BCD": "94/58mm",
+      "BB Spindle": "ISIS Drive, 73mm shell (113mm ISIS BB typical)"
+    },
+    "tags": [
+      "Vintage",
+      "ISIS",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "middleburn-rs7-isis-crankset",
+    "name": "RS7 ISIS Crankset",
+    "brand": "Middleburn",
+    "category": "crankset",
+    "price": 220,
+    "weightG": 710,
+    "year": 2001,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 9,
+      "chainrings": "44/32/22",
+      "chainringCount": 3,
+      "bbSpindle": "ISIS"
+    },
+    "specs": {
+      "Spider": "Removable Middleburn spider (Uno / 94-58 / 104-64 options)",
+      "BB Spindle": "ISIS Drive",
+      "Made": "UK (CNC)"
+    },
+    "tags": [
+      "Vintage",
+      "ISIS",
+      "Made in UK",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-ultegra-fc-6503-crankset",
+    "name": "Ultegra FC-6503 Triple",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 70,
+    "weightG": 840,
+    "year": 2002,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 172.5,
+      "speeds": 9,
+      "chainrings": "52/39/30",
+      "chainringCount": 3,
+      "bbSpindle": "Octalink V1"
+    },
+    "specs": {
+      "BCD": "130/74mm",
+      "BB Spindle": "Octalink V1 (shallow splines) — BB-6500 / BB-5500, not V2 MTB BBs",
+      "Note": "Popular on 90s–00s touring and rando conversions"
+    },
+    "tags": [
+      "Vintage",
+      "Ultegra",
+      "Octalink",
+      "Road Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-dura-ace-fc-7700-crankset",
+    "name": "Dura-Ace FC-7700",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 110,
+    "weightG": 650,
+    "year": 1997,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 172.5,
+      "speeds": 9,
+      "chainrings": "53/39",
+      "chainringCount": 2,
+      "bbSpindle": "Octalink V1"
+    },
+    "specs": {
+      "BCD": "130mm",
+      "BB Spindle": "Octalink V1, BB-7700"
+    },
+    "tags": [
+      "Vintage",
+      "Dura-Ace",
+      "Octalink"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "white-industries-mr30-crankset",
+    "name": "MR30 Crankset",
+    "brand": "White Industries",
+    "category": "crankset",
+    "price": 560,
+    "weightG": 660,
+    "year": 2017,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 172.5,
+      "speeds": 11,
+      "chainrings": "46/30",
+      "chainringCount": 2,
+      "bbSpindle": "30mm"
+    },
+    "specs": {
+      "Chainring Interface": "VBC (Variable Bolt Circle) — 1x or 2x rings, wide gearing",
+      "BB Spindle": "30mm, BSA30 / T47 BBs",
+      "Made In": "Petaluma, CA, USA",
+      "Price": "Arms + VBC 46/30 rings"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Made in USA",
+      "VBC"
+    ]
+  },
+  {
+    "id": "white-industries-m30-crankset",
+    "name": "M30 Crankset",
+    "brand": "White Industries",
+    "category": "crankset",
+    "price": 480,
+    "weightG": 600,
+    "year": 2016,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 11,
+      "chainrings": "32",
+      "chainringCount": 1,
+      "bbSpindle": "30mm"
+    },
+    "specs": {
+      "Chainring Interface": "VBC direct-mount single ring",
+      "BB Spindle": "30mm",
+      "Made In": "Petaluma, CA, USA"
+    },
+    "tags": [
+      "Alt",
+      "MTB",
+      "Made in USA",
+      "1x"
+    ]
+  },
+  {
+    "id": "sugino-xd600-triple-crankset",
+    "name": "XD600 Triple Crankset",
+    "brand": "Sugino",
+    "category": "crankset",
+    "price": 120,
+    "weightG": 870,
+    "year": 2010,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 170,
+      "speeds": 9,
+      "chainrings": "46/36/24",
+      "chainringCount": 3,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "BCD": "110/74mm",
+      "Taper": "JIS",
+      "BB Spindle": "68mm: 115–118mm / 73mm: 122mm"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Touring",
+      "Triple"
+    ]
+  },
+  {
+    "id": "sugino-ox601d-crankset",
+    "name": "OX601D Double Crankset",
+    "brand": "Sugino",
+    "category": "crankset",
+    "price": 160,
+    "weightG": 700,
+    "year": 2014,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 170,
+      "speeds": 10,
+      "chainrings": "46/30",
+      "chainringCount": 2,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "BCD": "110/74mm",
+      "Taper": "JIS",
+      "BB Spindle": "68mm, ~110mm"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Rando",
+      "Double"
+    ]
+  },
+  {
+    "id": "sunxcd-cyclone-double-crankset",
+    "name": "Cyclone Double Crankset",
+    "brand": "SunXCD",
+    "category": "crankset",
+    "price": 395,
+    "weightG": 640,
+    "year": 2017,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 170,
+      "speeds": 10,
+      "chainrings": "46/30",
+      "chainringCount": 2,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "BCD": "110/74mm",
+      "Taper": "JIS",
+      "Finish": "High polish, forged",
+      "Made": "Japan"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Rando",
+      "Made in Japan"
+    ]
+  },
+  {
+    "id": "velo-orange-grand-cru-50-4-crankset",
+    "name": "Grand Cru 50.4 BCD Double Crankset",
+    "brand": "Velo Orange",
+    "category": "crankset",
+    "price": 175,
+    "weightG": 700,
+    "year": 2016,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 170,
+      "speeds": 10,
+      "chainrings": "46/30",
+      "chainringCount": 2,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "BCD": "50.4mm (TA Cyclotouriste-style, rings to 24T inner)",
+      "Taper": "JIS",
+      "BB Spindle": "68mm, ~113mm"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Touring",
+      "Low Gearing"
+    ]
+  },
+  {
+    "id": "velo-orange-grand-cru-drillium-crankset",
+    "name": "Grand Cru Drillium Double Crankset",
+    "brand": "Velo Orange",
+    "category": "crankset",
+    "price": 150,
+    "weightG": 650,
+    "year": 2013,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 170,
+      "speeds": 10,
+      "chainrings": "48/34",
+      "chainringCount": 2,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "BCD": "110mm",
+      "Taper": "JIS",
+      "BB Spindle": "68mm, ~110mm",
+      "Finish": "Polished, drilled-look arms"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Classic Look"
+    ]
+  },
+  {
+    "id": "rene-herse-double-crankset",
+    "name": "Rene Herse Double Crankset",
+    "brand": "Rene Herse",
+    "category": "crankset",
+    "price": 610,
+    "weightG": 535,
+    "year": 2014,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 171,
+      "speeds": 11,
+      "chainrings": "48/32",
+      "chainringCount": 2,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "Spider": "Rene Herse bolt pattern — inner rings to 24T, outer rings 38–52T",
+      "Taper": "JIS",
+      "BB Spindle": "68mm, ~110–113mm"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Rando",
+      "Lightweight"
+    ]
+  },
+  {
+    "id": "shimano-deore-xt-fc-m8000-3-crankset",
+    "name": "Deore XT FC-M8000-3 Triple",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 110,
+    "weightG": 740,
+    "year": 2015,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 11,
+      "chainrings": "40/30/22",
+      "chainringCount": 3,
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "BCD": "96/64mm",
+      "BB Spindle": "24mm Hollowtech II",
+      "Note": "The last XT triple — beloved for 3x11 touring / xbiking builds"
+    },
+    "tags": [
+      "Alt",
+      "Deore XT",
+      "M8000",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-fc-m6000-3-crankset",
+    "name": "Deore FC-M6000-3 Triple",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 60,
+    "weightG": 880,
+    "year": 2015,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 10,
+      "chainrings": "40/30/22",
+      "chainringCount": 3,
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "BCD": "96/64mm",
+      "BB Spindle": "24mm Hollowtech II"
+    },
+    "tags": [
+      "Deore",
+      "M6000",
+      "Triple",
+      "10-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fc-t8000-crankset",
+    "name": "Deore XT Trekking FC-T8000",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 140,
+    "weightG": 860,
+    "year": 2015,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 170,
+      "speeds": 10,
+      "chainrings": "48/36/26",
+      "chainringCount": 3,
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "BB Spindle": "24mm Hollowtech II",
+      "Note": "Touring triple with road-ish big ring"
+    },
+    "tags": [
+      "Touring",
+      "Deore XT",
+      "Triple",
+      "10-Speed"
+    ]
+  },
+  {
+    "id": "shimano-tourney-fc-ty501-crankset",
+    "name": "Tourney FC-TY501",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 25,
+    "weightG": 1050,
+    "year": 2012,
+    "attrs": {
+      "material": "steel",
+      "crankLengthMm": 170,
+      "speeds": 8,
+      "chainrings": "42/34/24",
+      "chainringCount": 3,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "Rings": "Riveted steel rings with chain guard",
+      "Taper": "JIS",
+      "BB Spindle": "68/73mm, ~122mm",
+      "Speeds": "6/7/8-speed"
+    },
+    "tags": [
+      "Budget",
+      "Square Taper",
+      "Triple"
+    ]
+  },
+  {
+    "id": "shimano-deore-fc-m5100-1-crankset",
+    "name": "Deore FC-M5100-1",
+    "brand": "Shimano",
+    "category": "crankset",
+    "price": 70,
+    "weightG": 700,
+    "year": 2020,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 170,
+      "speeds": 11,
+      "chainrings": "32",
+      "chainringCount": 1,
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "BB Spindle": "24mm Hollowtech II",
+      "Ring Options": "30T or 32T"
+    },
+    "tags": [
+      "MTB",
+      "Deore",
+      "11-Speed",
+      "1x"
+    ]
+  }
+]

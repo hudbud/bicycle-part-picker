@@ -7,7 +7,9 @@ import { useBuildStore } from '@/store/buildStore'
 import { useGarageStore } from '@/store/garageStore'
 import { useSettingsStore } from '@/store/settingsStore'
 import { useToast } from '@/hooks/useToast'
-import { compressImage } from '@/utils/imageUtils'
+import { MAX_PHOTOS, uploadPhotos } from '@/utils/bikePhotos'
+import { PhotoImg } from '@/components/photos/PhotoImg'
+import type { BikePhoto } from '@/types/build'
 import styled from 'styled-components'
 
 const FormBody = styled.div`
@@ -16,16 +18,16 @@ const FormBody = styled.div`
   gap: 12px;
 `
 
-const PhotoPreview = styled.img`
+const PhotoPreview = styled(PhotoImg)`
   width: 100%;
   max-height: 180px;
   object-fit: cover;
-  border: 2px inset #888;
+  border: 2px inset var(--win-shadow);
   display: block;
 `
 
 const PhotoArea = styled.div`
-  border: 2px inset #888;
+  border: 2px inset var(--win-shadow);
   padding: 8px;
   display: flex;
   flex-direction: column;
@@ -38,7 +40,7 @@ interface SaveBuildDialogProps {
 }
 
 export function SaveBuildDialog({ open, onClose }: SaveBuildDialogProps) {
-  const { build, setBuildName, loadBuild, setPhoto } = useBuildStore()
+  const { build, setBuildName, loadBuild, setPhotos } = useBuildStore()
   const { saveBuild } = useGarageStore()
   const { builderName, setBuilderName } = useSettingsStore()
   const { success, error } = useToast()
@@ -46,36 +48,33 @@ export function SaveBuildDialog({ open, onClose }: SaveBuildDialogProps) {
 
   const [name, setName] = useState(build.name)
   const [description, setDescription] = useState(build.description ?? '')
-  const [photo, setLocalPhoto] = useState<string | undefined>(build.photo)
+  const [photos, setLocalPhotos] = useState<BikePhoto[]>(build.photos ?? [])
   const [compressing, setCompressing] = useState(false)
 
   useEffect(() => {
     if (open) {
       setName(build.name)
       setDescription(build.description ?? '')
-      setLocalPhoto(build.photo)
+      setLocalPhotos(build.photos ?? [])
     }
   }, [open, build])
 
   const handlePhotoChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
-    if (!file) return
+    const files = Array.from(e.target.files ?? [])
+    if (fileInputRef.current) fileInputRef.current.value = ''
+    if (!files.length) return
     setCompressing(true)
-    try {
-      const compressed = await compressImage(file)
-      setLocalPhoto(compressed)
-    } catch {
-      error('Could not process image')
-    } finally {
-      setCompressing(false)
-      if (fileInputRef.current) fileInputRef.current.value = ''
-    }
+    const { photos: added, failed } = await uploadPhotos(files)
+    setCompressing(false)
+    setLocalPhotos((ps) => [...ps, ...added].slice(0, MAX_PHOTOS))
+    if (failed) error('Could not process image')
   }
 
   const handleSave = () => {
     setBuildName(name)
-    setPhoto(photo)
-    const saved = saveBuild({ ...build, name, description, ownerName: builderName || undefined, photo })
+    setPhotos(photos)
+    const { photos: _p, ...rest } = build
+    const saved = saveBuild({ ...rest, name, description, ownerName: builderName || undefined, ...(photos.length ? { photos } : {}) })
     loadBuild(saved)
     success('Build saved!')
     onClose()
@@ -94,9 +93,10 @@ export function SaveBuildDialog({ open, onClose }: SaveBuildDialogProps) {
         />
 
         <div>
-          <label style={{ fontSize: 12, fontWeight: 700, display: 'block', marginBottom: 6 }}>Build Photo</label>
+          <label style={{ fontSize: 12, fontWeight: 700, display: 'block', marginBottom: 6 }}>Photos</label>
           <PhotoArea>
-            {photo && <PhotoPreview src={photo} alt="Build preview" />}
+            {photos[0] && <PhotoPreview photo={photos[0]} alt="Build preview" />}
+            {photos.length > 1 && <span style={{ fontSize: 11 }}>+ {photos.length - 1} more — manage them on the bike's Garage page</span>}
             <div style={{ display: 'flex', gap: 6 }}>
               <Button
                 size="sm"
@@ -104,11 +104,11 @@ export function SaveBuildDialog({ open, onClose }: SaveBuildDialogProps) {
                 onClick={() => fileInputRef.current?.click()}
                 disabled={compressing}
               >
-                {compressing ? 'Processing…' : photo ? 'Change photo' : 'Add photo'}
+                {compressing ? 'Processing…' : photos.length ? 'Add more…' : 'Add photos…'}
               </Button>
-              {photo && (
-                <Button size="sm" variant="secondary" onClick={() => setLocalPhoto(undefined)}>
-                  Remove
+              {photos.length > 0 && (
+                <Button size="sm" variant="secondary" onClick={() => setLocalPhotos((ps) => ps.slice(1))}>
+                  {photos.length > 1 ? 'Remove cover' : 'Remove'}
                 </Button>
               )}
             </div>
@@ -116,6 +116,7 @@ export function SaveBuildDialog({ open, onClose }: SaveBuildDialogProps) {
               ref={fileInputRef}
               type="file"
               accept="image/*"
+              multiple
               style={{ display: 'none' }}
               onChange={handlePhotoChange}
             />

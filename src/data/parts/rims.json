@@ -1,92 +1,17 @@
 [
-  {
-    "id": "dt-swiss-rr411",
-    "name": "RR411 Rim",
-    "brand": "DT Swiss",
-    "category": "rim",
-    "price": 85,
-    "specs": { "material": "aluminum", "rimWidth": "21mm internal", "rimDepth": "24mm", "brakeType": "disc" },
-    "tags": ["Road", "Aluminum", "Disc", "Tubeless"]
-  },
-  {
-    "id": "dt-swiss-gr531",
-    "name": "GR531 Rim",
-    "brand": "DT Swiss",
-    "category": "rim",
-    "price": 90,
-    "specs": { "material": "aluminum", "rimWidth": "25mm internal", "rimDepth": "25mm", "brakeType": "disc" },
-    "tags": ["Gravel", "Aluminum", "Disc", "Tubeless"]
-  },
-  {
-    "id": "velocity-a23",
-    "name": "A23 Rim",
-    "brand": "Velocity",
-    "category": "rim",
-    "price": 60,
-    "specs": { "material": "aluminum", "rimWidth": "23mm internal", "rimDepth": "23mm", "brakeType": "disc" },
-    "tags": ["Road", "Gravel", "Aluminum", "Budget"]
-  },
-  {
-    "id": "boyd-prologue-33",
-    "name": "Prologue 33 Rim",
-    "brand": "Boyd Cycling",
-    "category": "rim",
-    "price": 95,
-    "specs": { "material": "carbon", "rimWidth": "22mm internal", "rimDepth": "33mm", "brakeType": "disc" },
-    "tags": ["Road", "Carbon", "Aero", "Disc", "Tubeless"]
-  },
-  {
-    "id": "stans-arch-mk3",
-    "name": "Arch MK3 Rim",
-    "brand": "Stan's NoTubes",
-    "category": "rim",
-    "price": 80,
-    "specs": { "material": "aluminum", "rimWidth": "25mm internal", "rimDepth": "25mm", "brakeType": "disc" },
-    "tags": ["MTB", "Gravel", "Aluminum", "Tubeless"]
-  },
-  {
-    "id": "stans-flow-s1",
-    "name": "Flow S1 Rim",
-    "brand": "Stan's NoTubes",
-    "category": "rim",
-    "price": 90,
-    "specs": { "material": "aluminum", "rimWidth": "30mm internal", "rimDepth": "25mm", "brakeType": "disc" },
-    "tags": ["MTB", "Trail", "Aluminum", "Tubeless"]
-  },
-  {
-    "id": "enve-foundation-45",
-    "name": "Foundation 45 Rim",
-    "brand": "ENVE",
-    "category": "rim",
-    "price": 375,
-    "specs": { "material": "carbon", "rimWidth": "22mm internal", "rimDepth": "45mm", "brakeType": "disc" },
-    "tags": ["Road", "Carbon", "Aero", "Disc", "Tubeless"]
-  },
-  {
-    "id": "hunt-4season-gravel",
-    "name": "4Season Gravel Rim",
-    "brand": "Hunt",
-    "category": "rim",
-    "price": 110,
-    "specs": { "material": "carbon", "rimWidth": "25mm internal", "rimDepth": "32mm", "brakeType": "disc" },
-    "tags": ["Gravel", "Carbon", "Disc", "Tubeless"]
-  },
-  {
-    "id": "wtb-kom-i23",
-    "name": "KOM i23 TCS Rim",
-    "brand": "WTB",
-    "category": "rim",
-    "price": 55,
-    "specs": { "material": "aluminum", "rimWidth": "23mm internal", "rimDepth": "22mm", "brakeType": "disc" },
-    "tags": ["Road", "Gravel", "Aluminum", "Tubeless", "Budget"]
-  },
-  {
-    "id": "roval-control-sl-carbon",
-    "name": "Control SL Carbon Rim",
-    "brand": "Roval",
-    "category": "rim",
-    "price": 320,
-    "specs": { "material": "carbon", "rimWidth": "30mm internal", "rimDepth": "28mm", "brakeType": "disc" },
-    "tags": ["MTB", "XC", "Carbon", "Disc", "Tubeless"]
-  }
+  {"id":"dt-swiss-rr411","name":"RR 411","brand":"DT Swiss","category":"rim","price":85,"weightG":475,"year":2016,"attrs":{"wheelSize":622,"material":"aluminum","rimInternalMm":18,"rimDepthMm":24,"tubeless":true},"specs":{"Brake":"Disc or rim"},"tags":["Road","Aluminum","Tubeless"]},
+  {"id":"dt-swiss-r470","name":"R 470 Disc","brand":"DT Swiss","category":"rim","price":90,"weightG":470,"year":2019,"attrs":{"wheelSize":622,"material":"aluminum","rimInternalMm":20,"rimDepthMm":23,"tubeless":true},"specs":{"Brake":"Disc only"},"tags":["Road","Aluminum","Disc","Tubeless"]},
+  {"id":"dt-swiss-gr531","name":"GR 531","brand":"DT Swiss","category":"rim","price":90,"weightG":490,"year":2019,"attrs":{"wheelSize":622,"material":"aluminum","rimInternalMm":24,"rimDepthMm":23,"tubeless":true},"specs":{"Brake":"Disc only","Sizes":"700c / 650b"},"tags":["Gravel","Aluminum","Disc","Tubeless"]},
+  {"id":"velocity-a23","name":"A23","brand":"Velocity","category":"rim","price":70,"weightG":450,"year":2015,"attrs":{"wheelSize":622,"material":"aluminum","rimInternalMm":18,"rimDepthMm":20,"tubeless":true},"specs":{"External Width":"23mm","Brake":"Disc or rim","Construction":"Made in USA"},"tags":["Road","Urban","Aluminum"]},
+  {"id":"boyd-prologue-33","name":"Prologue","brand":"Boyd Cycling","category":"rim","price":95,"weightG":460,"year":2019,"attrs":{"wheelSize":622,"material":"aluminum","rimInternalMm":19,"rimDepthMm":24,"tubeless":true},"specs":{"Brake":"Disc or rim"},"tags":["Road","Gravel","Aluminum","Tubeless"]},
+  {"id":"wtb-kom-i23","name":"KOM Light i23 TCS 2.0","brand":"WTB","category":"rim","price":65,"weightG":435,"year":2019,"attrs":{"wheelSize":622,"material":"aluminum","rimInternalMm":23,"rimDepthMm":20,"tubeless":true},"specs":{"Brake":"Disc only"},"tags":["Gravel","Aluminum","Tubeless","Budget"]},
+  {"id":"enve-foundation-45","name":"Foundation 45","brand":"ENVE","category":"rim","price":650,"weightG":470,"year":2021,"attrs":{"wheelSize":622,"material":"carbon","rimInternalMm":25,"rimDepthMm":45,"tubeless":true},"specs":{"Rim Profile":"Hookless","Brake":"Disc only"},"tags":["Road","Carbon","Aero","Hookless"]},
+  {"id":"h-plus-son-archetype","name":"Archetype","brand":"H Plus Son","category":"rim","price":80,"weightG":480,"year":2014,"attrs":{"wheelSize":622,"material":"aluminum","rimInternalMm":17,"rimDepthMm":25,"tubeless":false},"specs":{"Brake":"Rim (machined sidewall) or disc"},"tags":["Track","Fixed Gear","Urban","Classic"]},
+  {"id":"stans-arch-mk3","name":"Arch MK3","brand":"Stan's NoTubes","category":"rim","price":95,"weightG":495,"year":2018,"attrs":{"wheelSize":622,"material":"aluminum","rimInternalMm":26,"rimDepthMm":21,"tubeless":true},"specs":{"Sizes":"29 / 27.5"},"tags":["MTB","XC","Aluminum","Tubeless"]},
+  {"id":"stans-flow-s1","name":"Flow S1","brand":"Stan's NoTubes","category":"rim","price":70,"weightG":575,"year":2019,"attrs":{"wheelSize":622,"material":"aluminum","rimInternalMm":29,"rimDepthMm":22,"tubeless":true},"specs":{"Sizes":"29 / 27.5"},"tags":["MTB","Trail","Aluminum","Tubeless"]},
+  {"id":"roval-control-sl-carbon","name":"Control SL Carbon","brand":"Roval","category":"rim","price":320,"weightG":360,"year":2021,"attrs":{"wheelSize":622,"material":"carbon","rimInternalMm":29,"rimDepthMm":23,"tubeless":true},"specs":{"Rim Profile":"Hookless"},"tags":["MTB","XC","Carbon","Tubeless"]},
+  {"id":"dt-swiss-xm-481","name":"XM 481","brand":"DT Swiss","category":"rim","price":120,"weightG":545,"year":2018,"attrs":{"wheelSize":622,"material":"aluminum","rimInternalMm":30,"rimDepthMm":21,"tubeless":true},"specs":{"Sizes":"29 / 27.5"},"tags":["MTB","Trail","Aluminum","Tubeless"]},
+  {"id":"dt-swiss-ex-511","name":"EX 511","brand":"DT Swiss","category":"rim","price":130,"weightG":570,"year":2018,"attrs":{"wheelSize":622,"material":"aluminum","rimInternalMm":30,"rimDepthMm":24,"tubeless":true},"specs":{"Sizes":"29 / 27.5"},"tags":["MTB","Enduro","Aluminum","Tubeless"]},
+  {"id":"wtb-st-i30-275","name":"ST i30 TCS 2.0 (27.5)","brand":"WTB","category":"rim","price":70,"weightG":535,"year":2019,"attrs":{"wheelSize":584,"material":"aluminum","rimInternalMm":30,"rimDepthMm":19,"tubeless":true},"specs":{},"tags":["MTB","Trail","27.5\"","Budget"]},
+  {"id":"odyssey-hazard-lite-rim","name":"Hazard Lite","brand":"Odyssey","category":"rim","price":65,"weightG":525,"year":2018,"attrs":{"wheelSize":406,"material":"aluminum","rimInternalMm":26,"rimDepthMm":25,"tubeless":false},"specs":{"Holes":"36H","Construction":"Double wall"},"tags":["BMX","Street","Aluminum"]}
 ]

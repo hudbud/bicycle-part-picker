@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "build": "tsc -b && vite build && cp moved/index.html dist/moved.html",
+    "preview": "vite preview",
+    "deploy": "npm run build && npx wrangler@4 deploy"
   },
   "dependencies": {
     "@emotion/is-prop-valid": "^1.4.0",

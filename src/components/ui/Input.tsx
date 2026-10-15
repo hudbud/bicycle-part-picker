@@ -15,7 +15,7 @@ const Label = styled.label`
 
 const ErrorText = styled.p`
   font-size: 11px;
-  color: #c0392b;
+  color: var(--win-bad);
 `
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {

@@ -1,8 +1,9 @@
 import { create } from 'zustand'
 import { persist, createJSONStorage } from 'zustand/middleware'
-import type { Build, BikeType, ComponentSlot, PartStatus, AdditionalItem } from '@/types/build'
+import type { Build, ComponentSlot, PartStatus, AdditionalItem, BikePhoto } from '@/types/build'
 import type { Part, PartCategory } from '@/types/parts'
-import { ALL_CATEGORIES } from '@/data/categoryConfig'
+import { ALL_CATEGORIES, defaultQuantity } from '@/data/categoryConfig'
+import { getBuildTotals } from '@/data/pricing'
 import { quotaSafeStorage } from '@/utils/persistStorage'
 
 const WHEEL_SUB_CATEGORIES: PartCategory[] = ['frontWheel', 'rearWheel', 'hub', 'rim', 'spokes']
@@ -20,12 +21,17 @@ function slotsForAllCategories(existing: ComponentSlot[] = [], wheelsExpanded?: 
   return [...base.slice(0, wheelsIndex), ...subSlots, ...base.slice(wheelsIndex + 1)]
 }
 
-function makeDefaultBuild(bikeType: BikeType = 'other'): Build {
+function makeDefaultBuild(): Build {
   return {
     name: 'My Build',
-    bikeType,
     components: slotsForAllCategories(),
   }
+}
+
+/** Drops a category from the hidden rows — a row you put a part in (or take one out of) stays visible. */
+function unhide(build: Build, category: PartCategory): Pick<Build, 'hiddenRows'> {
+  const rows = build.hiddenRows?.filter((c) => c !== category)
+  return { hiddenRows: rows?.length ? rows : undefined }
 }
 
 function normalizeBuild(build: Build): Build {
@@ -38,16 +44,23 @@ function normalizeBuild(build: Build): Build {
 interface BuildState {
   build: Build
   setBuildName: (name: string) => void
-  setBikeType: (type: BikeType) => void
-  setPart: (category: PartCategory, part: Part) => void
+  /** Puts a part in a slot. Quantity defaults to the category default (tires/rotors = 2). */
+  setPart: (category: PartCategory, part: Part, quantity?: number) => void
+  setQuantity: (category: PartCategory, quantity: number) => void
   removePart: (category: PartCategory) => void
+  /** Puts a whole slot back as it was (part, quantity, status, tracking) — for Undo. */
+  restoreSlot: (slot: ComponentSlot) => void
   setPartStatus: (category: PartCategory, status: PartStatus) => void
   clearPartStatus: (category: PartCategory) => void
   toggleWheelsExpanded: () => void
   addAdditionalItem: (item: Omit<AdditionalItem, 'id'>) => void
   updateAdditionalItem: (id: string, changes: Partial<Omit<AdditionalItem, 'id'>>) => void
   removeAdditionalItem: (id: string) => void
-  setPhoto: (photo: string | undefined) => void
+  /** Which empty rows the builder hides (a template's list, or [] for every row). */
+  setHiddenRows: (rows: PartCategory[]) => void
+  hideRow: (category: PartCategory) => void
+  showRow: (category: PartCategory) => void
+  setPhotos: (photos: BikePhoto[] | undefined) => void
   resetBuild: () => void
   loadBuild: (build: Build) => void
   getTotalPrice: () => number
@@ -64,21 +77,28 @@ export const useBuildStore = create<BuildState>()(
       setBuildName: (name) =>
         set((s) => ({ build: { ...s.build, name } })),
 
-      setBikeType: (bikeType) =>
+      setPart: (category, part, quantity) =>
         set((s) => ({
           build: {
             ...s.build,
-            bikeType,
-            components: slotsForAllCategories(s.build.components, s.build.wheelsExpanded),
+            ...unhide(s.build, category),
+            components: s.build.components.map((slot) => {
+              if (slot.category !== category) return slot
+              const qty = quantity ?? slot.quantity ?? defaultQuantity(category)
+              // A different part is a different physical thing — its tracking doesn't carry over.
+              const { quantity: _q, tracking, ...rest } = slot
+              if (tracking && slot.part?.id === part.id) Object.assign(rest, { tracking })
+              return qty === 1 ? { ...rest, part } : { ...rest, part, quantity: qty }
+            }),
           },
         })),
 
-      setPart: (category, part) =>
+      setQuantity: (category, quantity) =>
         set((s) => ({
           build: {
             ...s.build,
             components: s.build.components.map((slot) =>
-              slot.category === category ? { ...slot, part } : slot,
+              slot.category === category ? { ...slot, quantity: Math.max(1, Math.min(99, Math.round(quantity))) } : slot,
             ),
           },
         })),
@@ -87,9 +107,19 @@ export const useBuildStore = create<BuildState>()(
         set((s) => ({
           build: {
             ...s.build,
+            ...unhide(s.build, category),
             components: s.build.components.map((slot) =>
               slot.category === category ? { category } : slot,
             ),
+          },
+        })),
+
+      restoreSlot: (restored) =>
+        set((s) => ({
+          build: {
+            ...s.build,
+            ...unhide(s.build, restored.category),
+            components: s.build.components.map((slot) => (slot.category === restored.category ? restored : slot)),
           },
         })),
 
@@ -172,29 +202,32 @@ export const useBuildStore = create<BuildState>()(
           },
         })),
 
-      setPhoto: (photo) =>
-        set((s) => ({ build: { ...s.build, photo } })),
+      setHiddenRows: (rows) =>
+        set((s) => ({ build: { ...s.build, hiddenRows: rows.length ? [...rows] : undefined } })),
+
+      hideRow: (category) =>
+        set((s) => ({ build: { ...s.build, hiddenRows: [...new Set([...(s.build.hiddenRows ?? []), category])] } })),
+
+      showRow: (category) =>
+        set((s) => ({ build: { ...s.build, ...unhide(s.build, category) } })),
+
+      setPhotos: (photos) =>
+        set((s) => {
+          const { photos: _p, ...build } = s.build
+          return { build: photos?.length ? { ...build, photos } : build }
+        }),
 
       resetBuild: () => set({ build: makeDefaultBuild() }),
 
       loadBuild: (build) => set({ build: normalizeBuild(build) }),
 
-      getTotalPrice: () => {
-        const { build } = get()
-        const partsTotal = build.components.reduce((sum, slot) => sum + (slot.part?.price ?? 0), 0)
-        const extrasTotal = (build.additionalItems ?? []).reduce((sum, item) => sum + (item.price ?? 0), 0)
-        return partsTotal + extrasTotal
-      },
+      getTotalPrice: () => getBuildTotals(get().build).total,
 
       getFilledCount: () => {
         return get().build.components.filter((s) => s.part !== undefined).length
       },
 
-      hasMissingPrices: () => {
-        return get().build.components.some(
-          (s) => s.part !== undefined && s.part.price === undefined,
-        )
-      },
+      hasMissingPrices: () => getBuildTotals(get().build).missingPrices > 0,
 
       // True when the current build has parts but has never been saved to the garage —
       // i.e. discarding it (New Build, Load Build, Open…) would lose work with no way to recover it.

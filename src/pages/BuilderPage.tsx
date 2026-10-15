@@ -6,7 +6,7 @@ import styled from 'styled-components'
 
 const PageWindow = styled(Window)`
   width: 100%;
-  max-width: 960px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -17,7 +17,7 @@ export function BuilderPage() {
     <div style={{ paddingBottom: 60 }}>
       <PageWindow>
         <WindowHeader active>
-          <span>Pedal Parts Picker — Builder</span>
+          <span>Pedal Parts Picker — System Builder</span>
         </WindowHeader>
         <WindowContent>
           <BuildHeader />

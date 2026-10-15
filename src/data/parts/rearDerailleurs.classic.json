@@ -1,0 +1,811 @@
+[
+  {
+    "id": "shimano-deore-xt-rd-m700",
+    "name": "Deore XT RD-M700",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 90,
+    "weightG": 300,
+    "year": 1983,
+    "attrs": {
+      "speeds": 6,
+      "shiftSystem": "Friction",
+      "maxCogT": 34,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "Pre-SIS — use friction shifters",
+      "Cage": "Long cage, ~34T max",
+      "Era": "The first Deore XT (1983)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M700",
+      "Friction"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-rd-m730",
+    "name": "Deore XT RD-M730",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 60,
+    "weightG": 290,
+    "year": 1987,
+    "attrs": {
+      "speeds": 7,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 32,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "SIS (launched as 6-speed; indexes 7/8-speed with matching shifters)",
+      "Cage": "Long"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M730",
+      "SIS"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-rd-m732",
+    "name": "Deore XT RD-M732",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 50,
+    "weightG": 280,
+    "year": 1990,
+    "attrs": {
+      "speeds": 7,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 32,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "SIS 7-speed",
+      "Cage": "Long (SGS)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M732"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-rd-m735",
+    "name": "Deore XT RD-M735",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 45,
+    "weightG": 270,
+    "year": 1992,
+    "attrs": {
+      "speeds": 7,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 32,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "SIS 7-speed",
+      "Cage": "Long (SGS)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M735"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-rd-m737",
+    "name": "Deore XT RD-M737",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 40,
+    "weightG": 260,
+    "year": 1993,
+    "attrs": {
+      "speeds": 8,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 32,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "SIS 7/8-speed",
+      "Cage": "Long (SGS)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M737"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-rd-m739",
+    "name": "Deore XT RD-M739",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 40,
+    "weightG": 255,
+    "year": 1996,
+    "attrs": {
+      "speeds": 8,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 32,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "8-speed",
+      "Cage": "Long (SGS)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M739"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-rd-m750",
+    "name": "Deore XT RD-M750",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 40,
+    "weightG": 245,
+    "year": 1999,
+    "attrs": {
+      "speeds": 9,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 34,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "9-speed",
+      "Cage": "Long (SGS)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M750",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-rd-m760",
+    "name": "Deore XT RD-M760",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 35,
+    "weightG": 240,
+    "year": 2003,
+    "attrs": {
+      "speeds": 9,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 34,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "9-speed",
+      "Cage": "Long (SGS)",
+      "Action": "Top Normal (RD-M761 is the Rapid Rise / low-normal version)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M760",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-rd-m772-shadow",
+    "name": "Deore XT RD-M772 Shadow",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 45,
+    "weightG": 236,
+    "year": 2007,
+    "attrs": {
+      "speeds": 9,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 34,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "9-speed",
+      "Cage": "SGS",
+      "Design": "Low-profile Shadow — a favorite on 9-speed alt builds"
+    },
+    "tags": [
+      "Deore XT",
+      "Shadow",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-xtr-rd-m900",
+    "name": "XTR RD-M900",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 120,
+    "weightG": 230,
+    "year": 1992,
+    "attrs": {
+      "speeds": 8,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 32,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "8-speed",
+      "Era": "Original XTR"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "M900"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-xtr-rd-m950",
+    "name": "XTR RD-M950",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 90,
+    "weightG": 220,
+    "year": 1996,
+    "attrs": {
+      "speeds": 8,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 32,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "8-speed"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "M950"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-xtr-rd-m952",
+    "name": "XTR RD-M952",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 80,
+    "weightG": 200,
+    "year": 1997,
+    "attrs": {
+      "speeds": 9,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 34,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "9-speed — first 9-speed XTR"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "M952",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-dx-rd-m650",
+    "name": "Deore DX RD-M650",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 35,
+    "weightG": 300,
+    "year": 1990,
+    "attrs": {
+      "speeds": 7,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 32,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "SIS 7-speed",
+      "Cage": "Long"
+    },
+    "tags": [
+      "Vintage",
+      "Deore DX"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-lx-rd-m570",
+    "name": "Deore LX RD-M570",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 25,
+    "weightG": 280,
+    "year": 2000,
+    "attrs": {
+      "speeds": 9,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 34,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "9-speed",
+      "Cage": "Long (SGS)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore LX",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-rd-m592-sgs",
+    "name": "Deore RD-M592-SGS Shadow",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 40,
+    "weightG": 300,
+    "year": 2009,
+    "attrs": {
+      "speeds": 9,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 36,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "9-speed",
+      "Cage": "SGS long",
+      "Design": "Shadow"
+    },
+    "tags": [
+      "Deore",
+      "9-Speed",
+      "Shadow"
+    ]
+  },
+  {
+    "id": "shimano-alivio-rd-m3100-sgs",
+    "name": "Alivio RD-M3100-SGS",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 35,
+    "weightG": 334,
+    "year": 2017,
+    "attrs": {
+      "speeds": 9,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 36,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "9-speed",
+      "Cage": "SGS long"
+    },
+    "tags": [
+      "Alivio",
+      "9-Speed",
+      "Budget"
+    ]
+  },
+  {
+    "id": "shimano-tourney-rd-ty300",
+    "name": "Tourney RD-TY300",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 15,
+    "weightG": 340,
+    "year": 2013,
+    "attrs": {
+      "speeds": 7,
+      "shiftSystem": "Shimano 7-9s",
+      "maxCogT": 34,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "6/7-speed",
+      "Mount": "Direct mount or with axle-claw hanger"
+    },
+    "tags": [
+      "Tourney",
+      "7-Speed",
+      "Budget"
+    ]
+  },
+  {
+    "id": "shimano-105-rd-5700-gs",
+    "name": "105 RD-5700-GS",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 35,
+    "weightG": 220,
+    "year": 2009,
+    "attrs": {
+      "speeds": 10,
+      "shiftSystem": "Shimano Road 10s",
+      "maxCogT": 30,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "10-speed road (same pull as 7–9s)",
+      "Cage": "GS medium"
+    },
+    "tags": [
+      "105",
+      "10-Speed",
+      "Road"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-rd-m6000-gs",
+    "name": "Deore RD-M6000-GS Shadow+",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 50,
+    "weightG": 290,
+    "year": 2015,
+    "attrs": {
+      "speeds": 10,
+      "shiftSystem": "Shimano MTB 10/11s",
+      "maxCogT": 42,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "10-speed Dyna-Sys",
+      "Clutch": "Shadow Plus",
+      "Cage": "GS"
+    },
+    "tags": [
+      "Deore",
+      "10-Speed",
+      "Clutch"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-slx-rd-m7000-11-gs",
+    "name": "SLX RD-M7000-11-GS Shadow+",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 55,
+    "weightG": 299,
+    "year": 2016,
+    "attrs": {
+      "speeds": 11,
+      "shiftSystem": "Shimano MTB 10/11s",
+      "maxCogT": 46,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "11-speed",
+      "Clutch": "Shadow Plus",
+      "Cage": "GS"
+    },
+    "tags": [
+      "SLX",
+      "11-Speed",
+      "Clutch"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-rd-m8000-sgs",
+    "name": "Deore XT RD-M8000-SGS Shadow+",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 70,
+    "weightG": 262,
+    "year": 2015,
+    "attrs": {
+      "speeds": 11,
+      "shiftSystem": "Shimano MTB 10/11s",
+      "maxCogT": 46,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "11-speed",
+      "Clutch": "Shadow Plus",
+      "Cage": "SGS (GS version: 42T)"
+    },
+    "tags": [
+      "Deore XT",
+      "M8000",
+      "11-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-rd-m5100-sgs",
+    "name": "Deore RD-M5100-SGS",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 55,
+    "weightG": 314,
+    "year": 2020,
+    "attrs": {
+      "speeds": 11,
+      "shiftSystem": "Shimano MTB 10/11s",
+      "maxCogT": 51,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "11-speed",
+      "Clutch": "Shadow Plus",
+      "Cage": "SGS"
+    },
+    "tags": [
+      "Deore",
+      "11-Speed",
+      "Wide Range"
+    ]
+  },
+  {
+    "id": "shimano-deore-rd-m4120-sgs",
+    "name": "Deore RD-M4120-SGS",
+    "brand": "Shimano",
+    "category": "rearDerailleur",
+    "price": 50,
+    "weightG": 330,
+    "year": 2020,
+    "attrs": {
+      "speeds": 10,
+      "shiftSystem": "Shimano MTB 10/11s",
+      "maxCogT": 46,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "10/11-speed",
+      "Clutch": "Shadow Plus",
+      "Cage": "SGS"
+    },
+    "tags": [
+      "Deore",
+      "10-Speed",
+      "Clutch"
+    ]
+  },
+  {
+    "id": "suntour-xc-pro-rd",
+    "name": "XC Pro Rear Derailleur",
+    "brand": "Suntour",
+    "category": "rearDerailleur",
+    "price": 90,
+    "weightG": 260,
+    "year": 1990,
+    "attrs": {
+      "speeds": 7,
+      "shiftSystem": "Suntour Accushift",
+      "maxCogT": 32,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "Accushift 7-speed (works in friction too)",
+      "Cage": "Long"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour XC Pro",
+      "Accushift"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "suntour-xc-comp-rd",
+    "name": "XC Comp Rear Derailleur",
+    "brand": "Suntour",
+    "category": "rearDerailleur",
+    "price": 40,
+    "weightG": 300,
+    "year": 1990,
+    "attrs": {
+      "speeds": 7,
+      "shiftSystem": "Suntour Accushift",
+      "maxCogT": 32,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "Accushift 7-speed"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour XC Comp",
+      "Accushift"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "suntour-mountech-rd",
+    "name": "Mountech Rear Derailleur",
+    "brand": "Suntour",
+    "category": "rearDerailleur",
+    "price": 50,
+    "weightG": 310,
+    "year": 1984,
+    "attrs": {
+      "speeds": 6,
+      "shiftSystem": "Friction",
+      "maxCogT": 34,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Indexing": "Pre-index — friction shifters",
+      "Design": "Suntour slant parallelogram, long cage"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour",
+      "Friction"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "sram-esp-9-0-rd",
+    "name": "ESP 9.0 Rear Derailleur",
+    "brand": "SRAM",
+    "category": "rearDerailleur",
+    "price": 40,
+    "weightG": 250,
+    "year": 1997,
+    "attrs": {
+      "speeds": 9,
+      "shiftSystem": "SRAM 1:1 MTB",
+      "maxCogT": 34,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Actuation": "ESP 1:1 — only with SRAM ESP / Grip Shift ESP shifters",
+      "Speeds": "7/8/9-speed"
+    },
+    "tags": [
+      "Vintage",
+      "SRAM ESP",
+      "9.0"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "sram-x-0-rd-2002",
+    "name": "X.0 Rear Derailleur (9-Speed)",
+    "brand": "SRAM",
+    "category": "rearDerailleur",
+    "price": 70,
+    "weightG": 210,
+    "year": 2002,
+    "attrs": {
+      "speeds": 9,
+      "shiftSystem": "SRAM 1:1 MTB",
+      "maxCogT": 34,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Actuation": "ESP 1:1",
+      "Cage": "Long / medium",
+      "Note": "Magnesium-bodied first-gen X.0"
+    },
+    "tags": [
+      "Vintage",
+      "SRAM X.0",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "sram-x-9-rd-9-speed",
+    "name": "X.9 Rear Derailleur (9-Speed)",
+    "brand": "SRAM",
+    "category": "rearDerailleur",
+    "price": 30,
+    "weightG": 260,
+    "year": 2006,
+    "attrs": {
+      "speeds": 9,
+      "shiftSystem": "SRAM 1:1 MTB",
+      "maxCogT": 34,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Actuation": "1:1",
+      "Cage": "Long / medium"
+    },
+    "tags": [
+      "SRAM X.9",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "sram-gx-1x11-type-2-1-rd",
+    "name": "GX 1x11 Type 2.1 Rear Derailleur",
+    "brand": "SRAM",
+    "category": "rearDerailleur",
+    "price": 105,
+    "weightG": 265,
+    "year": 2015,
+    "attrs": {
+      "speeds": 11,
+      "shiftSystem": "SRAM 1:1 MTB",
+      "maxCogT": 42,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Actuation": "X-Actuation 1:1",
+      "Clutch": "Type 2.1 Roller Bearing Clutch"
+    },
+    "tags": [
+      "SRAM GX",
+      "11-Speed",
+      "1x"
+    ]
+  },
+  {
+    "id": "microshift-advent-x-rd",
+    "name": "Advent X Rear Derailleur (RD-M6205M)",
+    "brand": "Microshift",
+    "category": "rearDerailleur",
+    "price": 60,
+    "weightG": 275,
+    "year": 2020,
+    "attrs": {
+      "speeds": 10,
+      "shiftSystem": "Microshift Advent X",
+      "maxCogT": 48,
+      "electronic": false,
+      "udhRequired": false
+    },
+    "specs": {
+      "Actuation": "Advent X only — not Shimano/SRAM compatible",
+      "Clutch": "Yes (switchable)"
+    },
+    "tags": [
+      "Advent X",
+      "10-Speed",
+      "Value"
+    ]
+  }
+]

@@ -1,0 +1,411 @@
+[
+  {
+    "id": "shimano-bb-un55-68x113",
+    "name": "BB-UN55 Cartridge 68×113mm",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 25,
+    "weightG": 300,
+    "year": 2010,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "Shell Width": "68mm",
+      "Spindle Length": "113mm (doubles, many alt road/rando cranks)",
+      "Taper": "JIS"
+    },
+    "tags": [
+      "Square Taper",
+      "BSA",
+      "Budget"
+    ]
+  },
+  {
+    "id": "shimano-bb-un55-73x122",
+    "name": "BB-UN55 Cartridge 73×122.5mm",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 25,
+    "weightG": 330,
+    "year": 2010,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "Shell Width": "73mm (MTB)",
+      "Spindle Length": "122.5mm (vintage MTB triples, 46/36/24 on 110/74)",
+      "Taper": "JIS"
+    },
+    "tags": [
+      "Square Taper",
+      "BSA",
+      "MTB Triple"
+    ]
+  },
+  {
+    "id": "shimano-deore-xt-bb-un72-73x113",
+    "name": "Deore XT BB-UN72 73×113mm",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 40,
+    "weightG": 270,
+    "year": 1996,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "Shell Width": "73mm",
+      "Spindle Length": "113mm (compact-drive M737-era cranks)",
+      "Taper": "JIS",
+      "Type": "Sealed cartridge"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "Square Taper"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "tange-ln-7922-68x122",
+    "name": "LN-7922 Sealed BB 68×122mm",
+    "brand": "Tange",
+    "category": "bottomBracket",
+    "price": 30,
+    "weightG": 320,
+    "year": 2010,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "Shell Width": "68mm",
+      "Spindle Length": "122mm (triples on 68mm shells)",
+      "Taper": "JIS",
+      "Note": "Sold by Rivendell and others; also in 107–127mm lengths"
+    },
+    "tags": [
+      "Square Taper",
+      "BSA",
+      "Alt"
+    ]
+  },
+  {
+    "id": "velo-orange-grand-cru-sealed-bb-68x110",
+    "name": "Grand Cru Sealed BB 68×110mm",
+    "brand": "Velo Orange",
+    "category": "bottomBracket",
+    "price": 60,
+    "weightG": 260,
+    "year": 2012,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "Shell Width": "68mm",
+      "Spindle Length": "110mm (VO 50.4 / Drillium doubles)",
+      "Taper": "JIS",
+      "Cups": "Alloy, threaded both sides"
+    },
+    "tags": [
+      "Square Taper",
+      "BSA",
+      "Alt",
+      "xbiking"
+    ]
+  },
+  {
+    "id": "phil-wood-square-taper-bb-73x118",
+    "name": "Square Taper BB 73×118mm",
+    "brand": "Phil Wood",
+    "category": "bottomBracket",
+    "price": 190,
+    "weightG": 330,
+    "year": 2005,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "Shell Width": "73mm",
+      "Spindle Length": "118mm (other lengths 103–128mm, JIS or ISO)",
+      "Taper": "JIS",
+      "Made": "San Jose, CA, USA",
+      "Note": "Stainless cups, rebuildable sealed bearings"
+    },
+    "tags": [
+      "Square Taper",
+      "Made in USA",
+      "Lifetime"
+    ]
+  },
+  {
+    "id": "phil-wood-square-taper-bb-italian-70x113",
+    "name": "Square Taper BB Italian 70×113mm",
+    "brand": "Phil Wood",
+    "category": "bottomBracket",
+    "price": 190,
+    "weightG": 320,
+    "year": 2005,
+    "attrs": {
+      "bbShell": "Italian",
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "Shell Width": "70mm Italian (36×24 tpi, right-hand threads both sides)",
+      "Spindle Length": "113mm",
+      "Taper": "JIS (ISO on request)",
+      "Made": "USA"
+    },
+    "tags": [
+      "Square Taper",
+      "Italian",
+      "Made in USA"
+    ]
+  },
+  {
+    "id": "shimano-dura-ace-bb-7700",
+    "name": "Dura-Ace BB-7700",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 45,
+    "weightG": 230,
+    "year": 1997,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Octalink V1"
+    },
+    "specs": {
+      "Shell Width": "68mm",
+      "Spindle Length": "109.5mm",
+      "Interface": "Octalink V1 (5mm splines)"
+    },
+    "tags": [
+      "Vintage",
+      "Dura-Ace",
+      "Octalink"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-ultegra-bb-6500",
+    "name": "Ultegra BB-6500",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 35,
+    "weightG": 280,
+    "year": 1999,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Octalink V1"
+    },
+    "specs": {
+      "Shell Width": "68mm",
+      "Spindle Length": "109.5mm (doubles) / 118mm (triples)",
+      "Interface": "Octalink V1"
+    },
+    "tags": [
+      "Vintage",
+      "Ultegra",
+      "Octalink"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-xtr-bb-m952",
+    "name": "XTR BB-M952",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 50,
+    "weightG": 250,
+    "year": 2000,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Octalink V2"
+    },
+    "specs": {
+      "Shell Width": "68/73mm",
+      "Spindle Length": "113mm (73mm shell)",
+      "Interface": "Octalink V2 (9mm splines)",
+      "Cups": "Alloy left cup"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "Octalink"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-bb-es25",
+    "name": "BB-ES25 Octalink",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 25,
+    "weightG": 300,
+    "year": 2005,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "Octalink V2"
+    },
+    "specs": {
+      "Shell Width": "68/73mm",
+      "Spindle Length": "113mm / 118mm / 121mm / 126mm",
+      "Interface": "Octalink V2",
+      "Note": "Current-production replacement for XT/LX Octalink BBs"
+    },
+    "tags": [
+      "Octalink",
+      "BSA",
+      "Budget"
+    ]
+  },
+  {
+    "id": "truvativ-gigapipe-team-isis-bb",
+    "name": "GigaPipe Team ISIS",
+    "brand": "Truvativ",
+    "category": "bottomBracket",
+    "price": 35,
+    "weightG": 340,
+    "year": 2002,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "ISIS"
+    },
+    "specs": {
+      "Shell Width": "68/73mm",
+      "Spindle Length": "108mm / 113mm / 118mm",
+      "Interface": "ISIS Drive (10 splines)"
+    },
+    "tags": [
+      "Vintage",
+      "ISIS",
+      "BSA"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "chris-king-isis-bb",
+    "name": "ISIS Bottom Bracket",
+    "brand": "Chris King",
+    "category": "bottomBracket",
+    "price": 180,
+    "weightG": 300,
+    "year": 2001,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "ISIS"
+    },
+    "specs": {
+      "Shell Width": "68/73mm",
+      "Spindle Length": "108/113/118mm",
+      "Interface": "ISIS Drive",
+      "Made": "Portland, OR, USA"
+    },
+    "tags": [
+      "Vintage",
+      "ISIS",
+      "Made in USA",
+      "Collectible"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "fsa-platinum-pro-isis-bb",
+    "name": "Platinum Pro ISIS",
+    "brand": "FSA",
+    "category": "bottomBracket",
+    "price": 35,
+    "weightG": 280,
+    "year": 2003,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "ISIS"
+    },
+    "specs": {
+      "Shell Width": "68/73mm",
+      "Spindle Length": "108/113/118mm",
+      "Interface": "ISIS Drive"
+    },
+    "tags": [
+      "Vintage",
+      "ISIS",
+      "BSA"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-sm-bb52",
+    "name": "SM-BB52 Hollowtech II",
+    "brand": "Shimano",
+    "category": "bottomBracket",
+    "price": 25,
+    "weightG": 100,
+    "year": 2010,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "Shell Width": "68/73mm (spacers)",
+      "Interface": "24mm Hollowtech II external cups"
+    },
+    "tags": [
+      "24mm",
+      "BSA",
+      "Budget"
+    ]
+  },
+  {
+    "id": "chris-king-threadfit-24-bsa",
+    "name": "ThreadFit 24 BSA",
+    "brand": "Chris King",
+    "category": "bottomBracket",
+    "price": 180,
+    "weightG": 100,
+    "year": 2017,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "24mm"
+    },
+    "specs": {
+      "Shell Width": "68/73mm",
+      "Interface": "24mm external cups",
+      "Made": "Portland, OR, USA",
+      "Colors": "Many anodized colors"
+    },
+    "tags": [
+      "24mm",
+      "BSA",
+      "Made in USA"
+    ]
+  },
+  {
+    "id": "white-industries-bsa30-bb",
+    "name": "BSA30 Bottom Bracket",
+    "brand": "White Industries",
+    "category": "bottomBracket",
+    "price": 110,
+    "weightG": 110,
+    "year": 2016,
+    "attrs": {
+      "bbShell": "BSA 68/73mm",
+      "bbSpindle": "30mm"
+    },
+    "specs": {
+      "Shell Width": "68/73mm",
+      "Interface": "30mm spindle (WI R30/M30/MR30)",
+      "Made": "Petaluma, CA, USA"
+    },
+    "tags": [
+      "30mm",
+      "BSA",
+      "Made in USA"
+    ]
+  }
+]

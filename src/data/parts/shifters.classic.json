@@ -1,0 +1,1030 @@
+[
+  {
+    "id": "shimano-deore-xt-sl-m700-thumb-shifters",
+    "name": "Deore XT SL-M700 Thumb Shifters",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 80,
+    "weightG": 200,
+    "year": 1983,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Friction",
+      "shifterMount": "Thumb",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Type": "Friction thumbies (pair)",
+      "Clamp": "22.2mm bar"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "Friction",
+      "Thumb"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "suntour-power-ratchet-thumb-shifters",
+    "name": "Power Ratchet Thumb Shifters",
+    "brand": "Suntour",
+    "category": "shifters",
+    "price": 60,
+    "weightG": 190,
+    "year": 1984,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Friction",
+      "shifterMount": "Thumb",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Type": "Ratcheting friction thumbies (pair)",
+      "Clamp": "22.2mm bar",
+      "Note": "The classic 80s MTB thumbie"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour",
+      "Friction",
+      "Thumb"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "suntour-bar-con-shifters",
+    "name": "Bar-Con Bar-End Shifters",
+    "brand": "Suntour",
+    "category": "shifters",
+    "price": 90,
+    "weightG": 210,
+    "year": 1982,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Friction",
+      "shifterMount": "Bar-End",
+      "handlebarType": "Drop"
+    },
+    "specs": {
+      "Type": "Ratcheting friction bar-ends (pair)",
+      "Note": "Touring legend; works with any number of cogs"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour",
+      "Friction",
+      "Bar-End"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "simplex-retrofriction-downtube-shifters",
+    "name": "SLJ Retrofriction Downtube Shifters",
+    "brand": "Simplex",
+    "category": "shifters",
+    "price": 120,
+    "weightG": 100,
+    "year": 1978,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Friction",
+      "shifterMount": "Downtube"
+    },
+    "specs": {
+      "Type": "Retrofriction (spring-clutch) downtube levers",
+      "Mount": "Simplex-style boss; band clamps were made too"
+    },
+    "tags": [
+      "Vintage",
+      "Collectible",
+      "Friction",
+      "Downtube"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "rivendell-silver2-bar-end-shifters",
+    "name": "Silver2 Bar-End Shifters",
+    "brand": "Rivendell",
+    "category": "shifters",
+    "price": 60,
+    "weightG": 190,
+    "year": 2014,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Friction",
+      "shifterMount": "Bar-End",
+      "handlebarType": "Drop"
+    },
+    "specs": {
+      "Type": "Ratcheting friction (pair), made by Dia-Compe",
+      "Works": "5–11-speed (any rear)",
+      "Note": "Bar-end shifters can be run as thumbies on flat bars with Paul Thumbies / Rivendell mountain clamps (the compat checker treats them as drop-bar parts)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Friction",
+      "Bar-End"
+    ]
+  },
+  {
+    "id": "rivendell-silver2-thumb-shifters",
+    "name": "Silver2 Thumb Shifters (Mountain Clamp)",
+    "brand": "Rivendell",
+    "category": "shifters",
+    "price": 70,
+    "weightG": 205,
+    "year": 2014,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Friction",
+      "shifterMount": "Thumb",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Type": "Ratcheting friction (pair) on 22.2mm mountain clamps, made by Dia-Compe",
+      "Works": "5–11-speed"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Friction",
+      "Thumb"
+    ]
+  },
+  {
+    "id": "rivendell-silver2-downtube-shifters",
+    "name": "Silver2 Downtube Shifters",
+    "brand": "Rivendell",
+    "category": "shifters",
+    "price": 50,
+    "weightG": 120,
+    "year": 2014,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Friction",
+      "shifterMount": "Downtube"
+    },
+    "specs": {
+      "Type": "Ratcheting friction (pair), braze-on bosses",
+      "Works": "5–11-speed"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Friction",
+      "Downtube"
+    ]
+  },
+  {
+    "id": "velo-orange-retro-downtube-shifters",
+    "name": "Retro Downtube Shifters",
+    "brand": "Velo Orange",
+    "category": "shifters",
+    "price": 50,
+    "weightG": 110,
+    "year": 2012,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Friction",
+      "shifterMount": "Downtube"
+    },
+    "specs": {
+      "Type": "Friction (pair), braze-on bosses"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "Friction",
+      "Downtube"
+    ]
+  },
+  {
+    "id": "shimano-dura-ace-sl-bs77-bar-end-shifters",
+    "name": "Dura-Ace SL-BS77 Bar-End Shifters",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 90,
+    "weightG": 180,
+    "year": 2001,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 9,
+      "shifterMount": "Bar-End",
+      "handlebarType": "Drop"
+    },
+    "specs": {
+      "Indexing": "9-speed rear (switchable to friction); friction front",
+      "Note": "Bar-end shifters can be run as thumbies on flat bars with Paul Thumbies / Rivendell mountain clamps (the compat checker treats them as drop-bar parts)"
+    },
+    "tags": [
+      "Vintage",
+      "Dura-Ace",
+      "9-Speed",
+      "Bar-End"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-dura-ace-sl-bs79-bar-end-shifters",
+    "name": "Dura-Ace SL-BS79 Bar-End Shifters",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 110,
+    "weightG": 172,
+    "year": 2010,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano Road 10s",
+      "speeds": 10,
+      "shifterMount": "Bar-End",
+      "handlebarType": "Drop"
+    },
+    "specs": {
+      "Indexing": "10-speed rear (switchable to friction); friction front",
+      "Note": "Same pull as 7–9s Shimano — drives 9s MTB derailleurs"
+    },
+    "tags": [
+      "Dura-Ace",
+      "10-Speed",
+      "Bar-End"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-sl-bsr1-bar-end-shifters",
+    "name": "SL-BSR1 Bar-End Shifters",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 110,
+    "weightG": 180,
+    "year": 2017,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano Road 11s",
+      "speeds": 11,
+      "shifterMount": "Bar-End",
+      "handlebarType": "Drop"
+    },
+    "specs": {
+      "Indexing": "11-speed road rear (switchable to friction); friction front",
+      "Note": "Road 11s pull — not for MTB 11s derailleurs"
+    },
+    "tags": [
+      "11-Speed",
+      "Bar-End",
+      "Touring"
+    ]
+  },
+  {
+    "id": "shimano-dura-ace-sl-7700-downtube-shifters",
+    "name": "Dura-Ace SL-7700 Downtube Shifters",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 70,
+    "weightG": 110,
+    "year": 1997,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 9,
+      "shifterMount": "Downtube"
+    },
+    "specs": {
+      "Indexing": "9-speed rear; friction front"
+    },
+    "tags": [
+      "Vintage",
+      "Dura-Ace",
+      "9-Speed",
+      "Downtube"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-dura-ace-sl-7900-downtube-shifters",
+    "name": "Dura-Ace SL-7900 Downtube Shifters",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 120,
+    "weightG": 110,
+    "year": 2009,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano Road 10s",
+      "speeds": 10,
+      "shifterMount": "Downtube"
+    },
+    "specs": {
+      "Indexing": "10-speed rear; friction front"
+    },
+    "tags": [
+      "Dura-Ace",
+      "10-Speed",
+      "Downtube"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "microshift-bs-m09-bar-end-shifters",
+    "name": "BS-M09 Bar-End Shifters",
+    "brand": "Microshift",
+    "category": "shifters",
+    "price": 60,
+    "weightG": 205,
+    "year": 2010,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 9,
+      "shifterMount": "Bar-End",
+      "handlebarType": "Drop"
+    },
+    "specs": {
+      "Indexing": "9-speed Shimano-compatible rear (friction mode); friction front",
+      "Note": "Bar-end shifters can be run as thumbies on flat bars with Paul Thumbies / Rivendell mountain clamps (the compat checker treats them as drop-bar parts)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "9-Speed",
+      "Bar-End"
+    ]
+  },
+  {
+    "id": "microshift-bs-m10-bar-end-shifters",
+    "name": "BS-M10 Bar-End Shifters",
+    "brand": "Microshift",
+    "category": "shifters",
+    "price": 65,
+    "weightG": 205,
+    "year": 2010,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano Road 10s",
+      "speeds": 10,
+      "shifterMount": "Bar-End",
+      "handlebarType": "Drop"
+    },
+    "specs": {
+      "Indexing": "10-speed Shimano road rear (friction mode); friction front",
+      "Note": "Bar-end shifters can be run as thumbies on flat bars with Paul Thumbies / Rivendell mountain clamps (the compat checker treats them as drop-bar parts)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "10-Speed",
+      "Bar-End"
+    ]
+  },
+  {
+    "id": "microshift-bs-m11-bar-end-shifters",
+    "name": "BS-M11 Bar-End Shifters",
+    "brand": "Microshift",
+    "category": "shifters",
+    "price": 70,
+    "weightG": 205,
+    "year": 2014,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano Road 11s",
+      "speeds": 11,
+      "shifterMount": "Bar-End",
+      "handlebarType": "Drop"
+    },
+    "specs": {
+      "Indexing": "11-speed Shimano road rear (friction mode); friction front",
+      "Note": "Bar-end shifters can be run as thumbies on flat bars with Paul Thumbies / Rivendell mountain clamps (the compat checker treats them as drop-bar parts)"
+    },
+    "tags": [
+      "Alt",
+      "xbiking",
+      "11-Speed",
+      "Bar-End"
+    ]
+  },
+  {
+    "id": "shimano-105-st-5700-sti",
+    "name": "105 ST-5700 STI Levers",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 70,
+    "weightG": 490,
+    "year": 2009,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano Road 10s",
+      "speeds": 10,
+      "shifterMount": "Brake Lever",
+      "handlebarType": "Drop",
+      "brakeType": "Rim Caliper",
+      "cablePull": "Short"
+    },
+    "specs": {
+      "Configuration": "2x10 (left lever double)",
+      "Brakes": "Short-pull: calipers, cantis, mini-V"
+    },
+    "tags": [
+      "105",
+      "10-Speed",
+      "STI"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-sl-m732-thumb-shifters",
+    "name": "Deore XT SL-M732 Thumb Shifters",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 60,
+    "weightG": 210,
+    "year": 1990,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 7,
+      "shifterMount": "Thumb",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Indexing": "SIS 7-speed rear with friction mode; friction front",
+      "Clamp": "22.2mm"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M732",
+      "Thumb"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-st-m735-rapidfire",
+    "name": "Deore XT ST-M735 Rapidfire",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 50,
+    "weightG": 430,
+    "year": 1992,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 7,
+      "shifterMount": "Brake Lever",
+      "handlebarType": "Flat",
+      "brakeType": "Cantilever",
+      "cablePull": "Short"
+    },
+    "specs": {
+      "Type": "Rapidfire shifter + cantilever brake lever combo (pair)",
+      "Configuration": "3x7"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M735",
+      "Rapidfire"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-sl-m739-rapidfire-plus",
+    "name": "Deore XT SL-M739 Rapidfire Plus",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 40,
+    "weightG": 260,
+    "year": 1996,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 8,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Type": "Rapidfire Plus pods (pair), separate brake levers",
+      "Configuration": "3x8"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M739",
+      "Rapidfire"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-sl-m750-rapidfire-plus",
+    "name": "Deore XT SL-M750 Rapidfire Plus",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 40,
+    "weightG": 250,
+    "year": 1999,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 9,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Type": "Rapidfire Plus pods (pair)",
+      "Configuration": "3x9"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M750",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-sl-m760-rapidfire-plus",
+    "name": "Deore XT SL-M760 Rapidfire Plus",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 40,
+    "weightG": 240,
+    "year": 2003,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 9,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Type": "Rapidfire Plus pods (pair) with gear indicators",
+      "Configuration": "3x9"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "M760",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-xtr-sl-m952-rapidfire-plus",
+    "name": "XTR SL-M952 Rapidfire Plus",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 70,
+    "weightG": 220,
+    "year": 1997,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 9,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Type": "Rapidfire Plus pods (pair)",
+      "Configuration": "3x9"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "M952",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-lx-sl-m570-rapidfire-plus",
+    "name": "Deore LX SL-M570 Rapidfire Plus",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 25,
+    "weightG": 280,
+    "year": 2001,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 9,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Type": "Rapidfire Plus pods (pair)",
+      "Configuration": "3x9"
+    },
+    "tags": [
+      "Vintage",
+      "Deore LX",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-alivio-sl-m3100-r",
+    "name": "Alivio SL-M3100 Rapidfire (Right)",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 25,
+    "weightG": 140,
+    "year": 2017,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 9,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Includes": "Right-hand 9-speed shifter (2x/3x left sold separately)"
+    },
+    "tags": [
+      "Alivio",
+      "9-Speed",
+      "Budget"
+    ]
+  },
+  {
+    "id": "shimano-tourney-sl-tx50-thumb-shifters",
+    "name": "Tourney SL-TX50 Thumb Shifters",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 15,
+    "weightG": 260,
+    "year": 2013,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 7,
+      "shifterMount": "Thumb",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Indexing": "7-speed rear; friction front",
+      "Note": "Cheap and cheerful thumbie for 7s freewheel builds"
+    },
+    "tags": [
+      "Tourney",
+      "7-Speed",
+      "Thumb",
+      "Budget"
+    ]
+  },
+  {
+    "id": "grip-shift-srt-400",
+    "name": "SRT-400 Twist Shifters",
+    "brand": "Grip Shift",
+    "category": "shifters",
+    "price": 35,
+    "weightG": 180,
+    "year": 1991,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 7,
+      "shifterMount": "Twist",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Compatibility": "Shimano SIS derailleurs (pre-ESP Grip Shift)",
+      "Configuration": "3x7"
+    },
+    "tags": [
+      "Vintage",
+      "Grip Shift",
+      "Twist"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "grip-shift-srt-600",
+    "name": "SRT-600 Twist Shifters",
+    "brand": "Grip Shift",
+    "category": "shifters",
+    "price": 40,
+    "weightG": 170,
+    "year": 1994,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano 7-9s",
+      "speeds": 8,
+      "shifterMount": "Twist",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Compatibility": "Shimano SIS derailleurs (pre-ESP Grip Shift)",
+      "Configuration": "3x8 (7-speed versions too)"
+    },
+    "tags": [
+      "Vintage",
+      "Grip Shift",
+      "Twist"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "sram-esp-9-0-grip-shift",
+    "name": "ESP 9.0 Grip Shift",
+    "brand": "SRAM",
+    "category": "shifters",
+    "price": 40,
+    "weightG": 160,
+    "year": 1998,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "SRAM 1:1 MTB",
+      "speeds": 9,
+      "shifterMount": "Twist",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Compatibility": "SRAM ESP 1:1 derailleurs only",
+      "Configuration": "3x9"
+    },
+    "tags": [
+      "Vintage",
+      "SRAM ESP",
+      "Twist"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "sram-x-0-twist-shifters-9",
+    "name": "X.0 Twist Shifters (9-Speed)",
+    "brand": "SRAM",
+    "category": "shifters",
+    "price": 60,
+    "weightG": 150,
+    "year": 2002,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "SRAM 1:1 MTB",
+      "speeds": 9,
+      "shifterMount": "Twist",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Compatibility": "SRAM 1:1 derailleurs",
+      "Configuration": "3x9"
+    },
+    "tags": [
+      "Vintage",
+      "SRAM X.0",
+      "Twist"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "sram-x-9-trigger-9",
+    "name": "X.9 Trigger Shifters (9-Speed)",
+    "brand": "SRAM",
+    "category": "shifters",
+    "price": 30,
+    "weightG": 230,
+    "year": 2006,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "SRAM 1:1 MTB",
+      "speeds": 9,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Compatibility": "SRAM 1:1 derailleurs",
+      "Configuration": "3x9 pair"
+    },
+    "tags": [
+      "SRAM X.9",
+      "Trigger",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "sram-gx-11-trigger",
+    "name": "GX 11-Speed Trigger (Right)",
+    "brand": "SRAM",
+    "category": "shifters",
+    "price": 35,
+    "weightG": 120,
+    "year": 2015,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "SRAM 1:1 MTB",
+      "speeds": 11,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Compatibility": "SRAM X-Actuation 11s derailleurs",
+      "Includes": "Right-hand 1x11"
+    },
+    "tags": [
+      "SRAM GX",
+      "11-Speed",
+      "1x"
+    ]
+  },
+  {
+    "id": "suntour-xc-pro-thumb-shifters",
+    "name": "XC Pro Accushift Thumb Shifters",
+    "brand": "Suntour",
+    "category": "shifters",
+    "price": 70,
+    "weightG": 180,
+    "year": 1990,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Suntour Accushift",
+      "speeds": 7,
+      "shifterMount": "Thumb",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Indexing": "Accushift 7-speed rear with friction mode; friction front"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour XC Pro",
+      "Thumb"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "suntour-xc-comp-thumb-shifters",
+    "name": "XC Comp Accushift Thumb Shifters",
+    "brand": "Suntour",
+    "category": "shifters",
+    "price": 35,
+    "weightG": 200,
+    "year": 1990,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Suntour Accushift",
+      "speeds": 7,
+      "shifterMount": "Thumb",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Indexing": "Accushift 7-speed rear with friction mode"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour XC Comp",
+      "Thumb"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-sl-m6000-pair",
+    "name": "Deore SL-M6000 Rapidfire Plus (Pair)",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 45,
+    "weightG": 240,
+    "year": 2015,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano MTB 10/11s",
+      "speeds": 10,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Configuration": "2/3x10"
+    },
+    "tags": [
+      "Deore",
+      "10-Speed",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-slx-sl-m7000-11-r",
+    "name": "SLX SL-M7000-11 (Right)",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 40,
+    "weightG": 120,
+    "year": 2016,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano MTB 10/11s",
+      "speeds": 11,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Includes": "Right-hand 11-speed"
+    },
+    "tags": [
+      "SLX",
+      "11-Speed",
+      "1x"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-sl-m8000-pair",
+    "name": "Deore XT SL-M8000 (Pair, 3x11)",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 70,
+    "weightG": 235,
+    "year": 2015,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano MTB 10/11s",
+      "speeds": 11,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Configuration": "2/3x11 (convertible left)"
+    },
+    "tags": [
+      "Deore XT",
+      "M8000",
+      "11-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-sl-m5100-r",
+    "name": "Deore SL-M5100 (Right)",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 35,
+    "weightG": 125,
+    "year": 2020,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano MTB 10/11s",
+      "speeds": 11,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Includes": "Right-hand 11-speed"
+    },
+    "tags": [
+      "Deore",
+      "11-Speed",
+      "1x"
+    ]
+  },
+  {
+    "id": "shimano-deore-sl-m4100-r",
+    "name": "Deore SL-M4100 (Right)",
+    "brand": "Shimano",
+    "category": "shifters",
+    "price": 30,
+    "weightG": 125,
+    "year": 2020,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Shimano MTB 10/11s",
+      "speeds": 10,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Includes": "Right-hand 10-speed"
+    },
+    "tags": [
+      "Deore",
+      "10-Speed",
+      "1x"
+    ]
+  },
+  {
+    "id": "microshift-advent-x-trigger",
+    "name": "Advent X Trigger Shifter (SL-M9605-R)",
+    "brand": "Microshift",
+    "category": "shifters",
+    "price": 40,
+    "weightG": 125,
+    "year": 2020,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Microshift Advent X",
+      "speeds": 10,
+      "shifterMount": "Trigger",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Compatibility": "Advent X derailleur only",
+      "Includes": "Right-hand 1x10"
+    },
+    "tags": [
+      "Advent X",
+      "10-Speed",
+      "Value"
+    ]
+  }
+]

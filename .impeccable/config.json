@@ -1,0 +1,14 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "createdAt": "2026-10-14T23:33:54.259Z",
+        "reason": "agent decision: worker/email.ts is the sign-in email body; email clients don't load web fonts, so Arial is the standard email-safe face, not a UI font choice"
+      }
+    ]
+  }
+}

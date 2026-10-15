@@ -1,0 +1,410 @@
+[
+  {
+    "id": "shimano-deore-xt-fd-m700",
+    "name": "Deore XT FD-M700",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 50,
+    "weightG": 200,
+    "year": 1983,
+    "attrs": {
+      "speeds": 6,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "28.6mm",
+      "For Cranks": "110/74 triples (Deore XT M700/M730)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fd-m730",
+    "name": "Deore XT FD-M730",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 40,
+    "weightG": 190,
+    "year": 1987,
+    "attrs": {
+      "speeds": 6,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "28.6mm",
+      "For Cranks": "110/74 triples (46–48T top)"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fd-m732",
+    "name": "Deore XT FD-M732",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 35,
+    "weightG": 180,
+    "year": 1990,
+    "attrs": {
+      "speeds": 7,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "28.6mm (31.8 version)",
+      "For Cranks": "110/74 triples"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fd-m735",
+    "name": "Deore XT FD-M735",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 30,
+    "weightG": 175,
+    "year": 1992,
+    "attrs": {
+      "speeds": 7,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "28.6 / 31.8mm versions",
+      "For Cranks": "110/74 triples"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fd-m737",
+    "name": "Deore XT FD-M737",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 30,
+    "weightG": 165,
+    "year": 1994,
+    "attrs": {
+      "speeds": 8,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "28.6 / 31.8 / 34.9mm versions",
+      "For Cranks": "Compact Drive 42/32/22 (94/58)",
+      "Pull": "Top- and bottom-pull versions — match your frame"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "Compact Drive"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fd-m739",
+    "name": "Deore XT FD-M739",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 30,
+    "weightG": 160,
+    "year": 1996,
+    "attrs": {
+      "speeds": 8,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "28.6 / 31.8 / 34.9mm versions",
+      "For Cranks": "Compact Drive triples"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "Triple"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-lx-fd-m570",
+    "name": "Deore LX FD-M570",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 20,
+    "weightG": 165,
+    "year": 2000,
+    "attrs": {
+      "speeds": 9,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "31.8 / 34.9mm",
+      "Pull": "Dual pull"
+    },
+    "tags": [
+      "Vintage",
+      "Deore LX",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fd-m760",
+    "name": "Deore XT FD-M760",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 30,
+    "weightG": 160,
+    "year": 2003,
+    "attrs": {
+      "speeds": 9,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "34.9mm with 31.8/28.6 shims",
+      "Pull": "Dual pull",
+      "For Cranks": "44/32/22 triples"
+    },
+    "tags": [
+      "Vintage",
+      "Deore XT",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-xtr-fd-m900",
+    "name": "XTR FD-M900",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 60,
+    "weightG": 150,
+    "year": 1992,
+    "attrs": {
+      "speeds": 8,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "28.6 / 31.8mm versions"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "M900"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-xtr-fd-m952",
+    "name": "XTR FD-M952",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 50,
+    "weightG": 145,
+    "year": 1997,
+    "attrs": {
+      "speeds": 9,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "28.6 / 31.8 / 34.9mm versions",
+      "Pull": "Dual pull"
+    },
+    "tags": [
+      "Vintage",
+      "XTR",
+      "9-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "suntour-xc-pro-fd",
+    "name": "XC Pro Front Derailleur",
+    "brand": "Suntour",
+    "category": "frontDerailleur",
+    "price": 60,
+    "weightG": 170,
+    "year": 1990,
+    "attrs": {
+      "speeds": 7,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "28.6mm",
+      "For Cranks": "110/74 triples"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour XC Pro"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fd-m8000-h",
+    "name": "Deore XT FD-M8000-H (3x11)",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 45,
+    "weightG": 128,
+    "year": 2015,
+    "attrs": {
+      "speeds": 11,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "High clamp 34.9mm (31.8/28.6 shims)",
+      "Design": "Side Swing",
+      "For Cranks": "FC-M8000-3 40/30/22"
+    },
+    "tags": [
+      "Deore XT",
+      "Triple",
+      "Side Swing"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-fd-m6000-h",
+    "name": "Deore FD-M6000-H (3x10)",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 30,
+    "weightG": 150,
+    "year": 2015,
+    "attrs": {
+      "speeds": 10,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "High clamp 34.9mm (31.8/28.6 shims)",
+      "Design": "Side Swing",
+      "For Cranks": "FC-M6000-3 40/30/22"
+    },
+    "tags": [
+      "Deore",
+      "Triple",
+      "10-Speed"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-deore-xt-fd-t8000",
+    "name": "Deore XT Trekking FD-T8000 (3x10)",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 45,
+    "weightG": 155,
+    "year": 2015,
+    "attrs": {
+      "speeds": 10,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "34.9mm (31.8/28.6 shims)",
+      "For Cranks": "48/36/26 trekking triples (FC-T8000)"
+    },
+    "tags": [
+      "Touring",
+      "Deore XT",
+      "Triple"
+    ]
+  },
+  {
+    "id": "shimano-tourney-fd-ty500",
+    "name": "Tourney FD-TY500",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 15,
+    "weightG": 180,
+    "year": 2013,
+    "attrs": {
+      "speeds": 7,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "31.8mm (28.6/34.9 versions)",
+      "For Cranks": "42/34/24 – 48/38/28 triples"
+    },
+    "tags": [
+      "Tourney",
+      "Budget",
+      "Triple"
+    ]
+  },
+  {
+    "id": "shimano-105-fd-5700-f",
+    "name": "105 FD-5700-F",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 25,
+    "weightG": 87,
+    "year": 2009,
+    "attrs": {
+      "speeds": 10,
+      "frontDerailleurMount": "Braze-on",
+      "electronic": false
+    },
+    "specs": {
+      "Mount": "Braze-on (band adapter available)",
+      "For Cranks": "Road doubles 50–53T"
+    },
+    "tags": [
+      "105",
+      "10-Speed",
+      "Road"
+    ],
+    "discontinued": true
+  },
+  {
+    "id": "shimano-ultegra-fd-6503",
+    "name": "Ultegra FD-6503 Triple",
+    "brand": "Shimano",
+    "category": "frontDerailleur",
+    "price": 25,
+    "weightG": 100,
+    "year": 2002,
+    "attrs": {
+      "speeds": 9,
+      "frontDerailleurMount": "Braze-on",
+      "electronic": false
+    },
+    "specs": {
+      "Mount": "Braze-on (band adapter available)",
+      "For Cranks": "Road triples 52/39/30 (FC-6503)"
+    },
+    "tags": [
+      "Vintage",
+      "Ultegra",
+      "Road Triple"
+    ],
+    "discontinued": true
+  }
+]

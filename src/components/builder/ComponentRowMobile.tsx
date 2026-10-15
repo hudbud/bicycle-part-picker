@@ -1,149 +1,117 @@
-import { useState } from 'react'
-import type { ComponentSlot, PartStatus } from '@/types/build'
+import { useNavigate } from 'react-router-dom'
 import type { PartCategory } from '@/types/parts'
-import { StatusBadge } from '@/components/ui/StatusBadge'
-import { Popover } from '@/components/ui/Popover'
-import { useBuildStore } from '@/store/buildStore'
-import { useToast } from '@/hooks/useToast'
-import { Frame, Button, MenuListItem } from 'react95'
+import { Frame, Button } from 'react95'
 import styled from 'styled-components'
+import { formatWeight } from '@/data/specSchema'
+import { productsPath } from '@/data/categoryConfig'
+import { RouterAnchor, TextButton, SelectionLabel, RowCompatIcon, MarketInfo } from '@/components/build/BuildCells'
+import { choosePath, isMultiQuantity, partTitle, type SlotRow } from '@/components/build/buildRows'
+import { PaidValue, ConditionSource } from '@/components/tracking/TrackingCells'
+import { StatusPicker } from './StatusPicker'
+import { QtyStepper } from './QtyStepper'
+import { useRemoveWithUndo } from './useRemoveWithUndo'
+import { chooseLabel } from './ComponentRow'
 
-const RowFrame = styled(Frame).attrs({ variant: 'button' })`
+const RowFrame = styled(Frame).attrs({ variant: 'field' })`
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding: 10px 12px;
+  gap: 5px;
+  padding: 7px 9px;
   width: 100%;
-  margin-bottom: 4px;
+  font-size: 12px;
 `
 
-const TopArea = styled.div`
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 8px;
-  cursor: pointer;
-`
-
-const ActionsRow = styled.div`
+const Line = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 6px;
+  gap: 8px;
+  min-width: 0;
 `
 
-const STATUSES: PartStatus[] = ['owned', 'purchased', 'partsbin', 'wanted']
-
 interface ComponentRowMobileProps {
-  slot: ComponentSlot
-  label: string
-  onClickRow: (category: PartCategory) => void
+  row: SlotRow
+  onCustom: (category: PartCategory) => void
+  onDetails: (category: PartCategory) => void
   onToggleExpand?: () => void
+  /** Wheelset row when split: shows "Collapse" instead of "Split". */
   expanded?: boolean
+  /** Hides this row while it's empty (it comes back from "Add a line"). */
+  onHide?: () => void
 }
 
-export function ComponentRowMobile({ slot, label, onClickRow, onToggleExpand, expanded }: ComponentRowMobileProps) {
-  const { removePart, setPart, setPartStatus, clearPartStatus } = useBuildStore()
-  const { success } = useToast()
-  const [statusOpen, setStatusOpen] = useState(false)
-
-  const handleStatusChange = (status: PartStatus) => {
-    setPartStatus(slot.category, status)
-    setStatusOpen(false)
-  }
+/** Mobile builder card: label + status, part, paid · condition · source, then quiet market info. */
+export function ComponentRowMobile({ row, onCustom, onDetails, onToggleExpand, expanded, onHide }: ComponentRowMobileProps) {
+  const navigate = useNavigate()
+  const removeWithUndo = useRemoveWithUndo()
+  const { slot, part, label } = row
+  const details = () => onDetails(row.category)
 
   return (
-    <RowFrame>
-      <TopArea onClick={() => onClickRow(slot.category)}>
-        <div style={{ flex: 1, minWidth: 0 }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-            <span style={{ fontSize: 10, textTransform: 'uppercase', letterSpacing: 1 }}>{label}</span>
-            {slot.part?.price && (
-              <span style={{ fontSize: 13, fontWeight: 700 }}>${slot.part.price.toLocaleString()}</span>
-            )}
-          </div>
-          {slot.part ? (
-            <div style={{ marginTop: 2 }}>
-              <span style={{ fontSize: 13, fontWeight: 700 }}>{slot.part.brand} {slot.part.name}</span>
-            </div>
-          ) : (
-            <span style={{ fontSize: 12, fontStyle: 'italic' }}>Tap to add a part…</span>
-          )}
-        </div>
-      </TopArea>
+    <RowFrame style={row.isWheelSub ? { marginLeft: 12, width: 'calc(100% - 12px)' } : undefined}>
+      <Line>
+        <RouterAnchor to={productsPath(row.category)} style={{ fontSize: 10, textTransform: 'uppercase', letterSpacing: 1 }}>
+          {label}
+        </RouterAnchor>
+        {part && <StatusPicker slot={slot} />}
+      </Line>
 
-      {(slot.part || onToggleExpand) && (
-        <ActionsRow>
-          {slot.part ? (
-            <Popover
-              open={statusOpen}
-              onClose={() => setStatusOpen(false)}
-              trigger={
-                <button
-                  onClick={() => setStatusOpen(!statusOpen)}
-                  style={{ background: 'none', border: 'none', cursor: 'pointer', padding: 0 }}
-                >
-                  {slot.status
-                    ? <StatusBadge status={slot.status} />
-                    : <span style={{ fontSize: 11 }}>Set status▾</span>
-                  }
-                </button>
-              }
+      {part ? (
+        <>
+          <div style={{ fontSize: 13 }}>
+            <SelectionLabel row={row} quantityControl={isMultiQuantity(slot) ? <QtyStepper slot={slot} label={label} /> : undefined} />
+          </div>
+          <Line style={{ justifyContent: 'flex-start', flexWrap: 'wrap', gap: '4px 10px' }}>
+            <span style={{ display: 'inline-flex', alignItems: 'center', gap: 4 }}>
+              <span style={{ fontSize: 11 }}>Paid</span> <PaidValue slot={slot} onEdit={details} />
+            </span>
+            <ConditionSource slot={slot} onEdit={details} />
+          </Line>
+          <Line>
+            <span style={{ display: 'flex', gap: 8, alignItems: 'center', minWidth: 0, flexWrap: 'wrap' }}>
+              <MarketInfo row={row} inline />
+              {row.weightG != null && <span style={{ fontSize: 11, color: 'var(--win-muted)' }}>{formatWeight(row.weightG)}</span>}
+            </span>
+          </Line>
+          <Line>
+            <span style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+              <TextButton onClick={details}>details</TextButton>
+              <TextButton onClick={() => navigate(choosePath(row.category))}>change</TextButton>
+              {row.isCustom && <TextButton onClick={() => onCustom(row.category)}>edit</TextButton>}
+            </span>
+            <Button
+              variant="flat"
+              square
+              size="sm"
+              onClick={() => removeWithUndo(slot)}
+              aria-label={`Remove ${partTitle(part)}`}
+              style={{ fontSize: 11, flexShrink: 0 }}
             >
-              <>
-                {STATUSES.map((s) => (
-                  <MenuListItem key={s} onClick={() => handleStatusChange(s)} size="sm">
-                    <StatusBadge status={s} />
-                  </MenuListItem>
-                ))}
-                {slot.status && (
-                  <MenuListItem
-                    onClick={() => { clearPartStatus(slot.category); setStatusOpen(false) }}
-                    size="sm"
-                    style={{ borderTop: '1px solid #888' }}
-                  >
-                    Clear status
-                  </MenuListItem>
-                )}
-              </>
-            </Popover>
-          ) : <span />}
+              ✕
+            </Button>
+          </Line>
+        </>
+      ) : !expanded && (
+        <Line>
+          <span style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+            <RowCompatIcon row={row} />
+            <Button size="sm" onClick={() => navigate(choosePath(row.category))} style={{ fontSize: 12, height: 26 }}>
+              + {chooseLabel(label)}
+            </Button>
+          </span>
+          <span style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+            <TextButton onClick={() => onCustom(row.category)} aria-label={`Add a custom ${label}`}>custom…</TextButton>
+            {onHide && <TextButton onClick={onHide} aria-label={`Hide the ${label} row`}>hide</TextButton>}
+          </span>
+        </Line>
+      )}
 
-          <div style={{ display: 'flex', gap: 4 }}>
-            {onToggleExpand && (
-              <Button
-                variant="flat"
-                square
-                onClick={onToggleExpand}
-                style={{ fontSize: 10 }}
-                title={expanded ? 'Collapse into Wheelset' : 'Split into hub, rim & spokes'}
-              >
-                {expanded ? '▲ Collapse' : '▼ Split wheel'}
-              </Button>
-            )}
-            {slot.part && (
-              <Button
-                variant="flat"
-                square
-                onClick={() => {
-                  const { part, status } = slot
-                  removePart(slot.category)
-                  success('Part removed', part ? {
-                    label: 'Undo',
-                    onClick: () => {
-                      setPart(slot.category, part)
-                      if (status) setPartStatus(slot.category, status)
-                    },
-                  } : undefined)
-                }}
-                aria-label={`Remove ${slot.part.name}`}
-                style={{ fontSize: 11, flexShrink: 0 }}
-              >
-                ✕
-              </Button>
-            )}
-          </div>
-        </ActionsRow>
+      {onToggleExpand && (
+        <div>
+          <TextButton onClick={onToggleExpand}>
+            {expanded ? '▲ Join back into one Wheelset' : '▼ Split into wheels, hubs, rims & spokes'}
+          </TextButton>
+        </div>
       )}
     </RowFrame>
   )

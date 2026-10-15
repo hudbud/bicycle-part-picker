@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pedal Parts Picker</title>
     <meta name="description" content="Plan your dream bike build component by component. Compare prices, check specs, and share your build with one link." />
+    <script>
+      // The site moved from workers.dev to parts.hudbud.co; /moved (moved/index.html) carries saved data over.
+      if (location.hostname === 'bicycle-part-picker.hudbud.workers.dev') {
+        location.replace('/moved?to=' + encodeURIComponent(location.pathname + location.search + location.hash))
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

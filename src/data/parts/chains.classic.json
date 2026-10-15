@@ -1,0 +1,246 @@
+[
+  {
+    "id": "kmc-z8-3-chain",
+    "name": "Z8.3 Chain",
+    "brand": "KMC",
+    "category": "chain",
+    "price": 12,
+    "weightG": 330,
+    "year": 2014,
+    "attrs": {
+      "speeds": 8,
+      "flattop": false
+    },
+    "specs": {
+      "Speeds": "6/7/8-speed (3/32\")",
+      "Links": "116",
+      "Quick Link": "Missing Link 7/8R included"
+    },
+    "tags": [
+      "Budget",
+      "8-Speed",
+      "Alt"
+    ]
+  },
+  {
+    "id": "kmc-x8-chain",
+    "name": "X8 Chain",
+    "brand": "KMC",
+    "category": "chain",
+    "price": 18,
+    "weightG": 315,
+    "year": 2008,
+    "attrs": {
+      "speeds": 8,
+      "flattop": false
+    },
+    "specs": {
+      "Speeds": "6/7/8-speed (3/32\")",
+      "Links": "116"
+    },
+    "tags": [
+      "8-Speed",
+      "Touring"
+    ]
+  },
+  {
+    "id": "kmc-x9-chain",
+    "name": "X9 Chain",
+    "brand": "KMC",
+    "category": "chain",
+    "price": 22,
+    "weightG": 293,
+    "year": 2008,
+    "attrs": {
+      "speeds": 9,
+      "flattop": false
+    },
+    "specs": {
+      "Width": "6.6mm",
+      "Links": "116",
+      "Quick Link": "Missing Link 9R"
+    },
+    "tags": [
+      "9-Speed",
+      "MTB",
+      "Touring"
+    ]
+  },
+  {
+    "id": "kmc-x10-chain",
+    "name": "X10 Chain",
+    "brand": "KMC",
+    "category": "chain",
+    "price": 30,
+    "weightG": 273,
+    "year": 2008,
+    "attrs": {
+      "speeds": 10,
+      "flattop": false
+    },
+    "specs": {
+      "Width": "5.88mm",
+      "Links": "116"
+    },
+    "tags": [
+      "10-Speed",
+      "MTB",
+      "Road"
+    ]
+  },
+  {
+    "id": "shimano-cn-hg40-chain",
+    "name": "CN-HG40",
+    "brand": "Shimano",
+    "category": "chain",
+    "price": 15,
+    "weightG": 330,
+    "year": 2010,
+    "attrs": {
+      "speeds": 8,
+      "flattop": false
+    },
+    "specs": {
+      "Speeds": "6/7/8-speed",
+      "Links": "116",
+      "Note": "Use a Shimano pin or quick link"
+    },
+    "tags": [
+      "Budget",
+      "8-Speed"
+    ]
+  },
+  {
+    "id": "shimano-cn-hg93-chain",
+    "name": "CN-HG93",
+    "brand": "Shimano",
+    "category": "chain",
+    "price": 30,
+    "weightG": 292,
+    "year": 2005,
+    "attrs": {
+      "speeds": 9,
+      "flattop": false
+    },
+    "specs": {
+      "Speeds": "9-speed (XT/Ultegra level)",
+      "Links": "116"
+    },
+    "tags": [
+      "9-Speed",
+      "MTB",
+      "Road"
+    ]
+  },
+  {
+    "id": "shimano-cn-hg54-chain",
+    "name": "CN-HG54",
+    "brand": "Shimano",
+    "category": "chain",
+    "price": 25,
+    "weightG": 280,
+    "year": 2012,
+    "attrs": {
+      "speeds": 10,
+      "flattop": false
+    },
+    "specs": {
+      "Speeds": "10-speed MTB / trekking (Dyna-Sys)",
+      "Links": "116"
+    },
+    "tags": [
+      "10-Speed",
+      "MTB"
+    ]
+  },
+  {
+    "id": "wippermann-connex-808-chain",
+    "name": "Connex 808",
+    "brand": "Wippermann",
+    "category": "chain",
+    "price": 35,
+    "weightG": 330,
+    "year": 2010,
+    "attrs": {
+      "speeds": 8,
+      "flattop": false
+    },
+    "specs": {
+      "Speeds": "6/7/8-speed",
+      "Quick Link": "Connex link included",
+      "Made": "Germany"
+    },
+    "tags": [
+      "8-Speed",
+      "Touring",
+      "Made in Germany"
+    ]
+  },
+  {
+    "id": "wippermann-connex-908-chain",
+    "name": "Connex 908",
+    "brand": "Wippermann",
+    "category": "chain",
+    "price": 45,
+    "weightG": 300,
+    "year": 2010,
+    "attrs": {
+      "speeds": 9,
+      "flattop": false
+    },
+    "specs": {
+      "Quick Link": "Connex link included",
+      "Made": "Germany"
+    },
+    "tags": [
+      "9-Speed",
+      "Touring",
+      "Made in Germany"
+    ]
+  },
+  {
+    "id": "wippermann-connex-10s0-chain",
+    "name": "Connex 10s0 Stainless",
+    "brand": "Wippermann",
+    "category": "chain",
+    "price": 70,
+    "weightG": 270,
+    "year": 2010,
+    "attrs": {
+      "speeds": 10,
+      "flattop": false
+    },
+    "specs": {
+      "Material": "Stainless (rust-proof)",
+      "Made": "Germany"
+    },
+    "tags": [
+      "10-Speed",
+      "Stainless",
+      "Made in Germany"
+    ]
+  },
+  {
+    "id": "sedis-sedisport-chain",
+    "name": "Sedisport",
+    "brand": "Sedis",
+    "category": "chain",
+    "price": 20,
+    "weightG": 340,
+    "year": 1985,
+    "attrs": {
+      "speeds": 8,
+      "flattop": false
+    },
+    "specs": {
+      "Speeds": "5/6/7-speed (3/32\"), bushingless",
+      "Era": "The default chain on 80s MTBs and tourers"
+    },
+    "tags": [
+      "Vintage",
+      "NOS",
+      "3/32\""
+    ],
+    "discontinued": true
+  }
+]

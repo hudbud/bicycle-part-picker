@@ -1,0 +1,812 @@
+[
+  {
+    "id": "tange-crmo-unicrown-mtb-fork-1in",
+    "name": "CrMo Unicrown MTB Fork (1\" Threaded)",
+    "brand": "Tange",
+    "category": "fork",
+    "price": 40,
+    "weightG": 1030,
+    "year": 1988,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 57,
+      "steerer": "Threaded 1\""
+    },
+    "specs": {
+      "Original MSRP": "≈$50 (OEM / aftermarket)",
+      "Crown Race": "27.0mm JIS (typical Tange)",
+      "Steerer Length": "Varies — measure your head tube + stack",
+      "Axle-to-Crown": "≈395mm (rigid, pre-suspension geometry)",
+      "Brake Bosses": "Cantilever studs",
+      "Notes": "The generic Japanese-built OEM fork on countless late-80s MTBs (Specialized, Univega, Diamondback…)."
+    },
+    "tags": [
+      "Vintage",
+      "Rigid",
+      "Steel",
+      "1\" Threaded"
+    ]
+  },
+  {
+    "id": "ritchey-logic-rigid-mtb-fork-1in-threaded",
+    "name": "Logic Rigid MTB Fork (1\" Threaded)",
+    "brand": "Ritchey",
+    "category": "fork",
+    "price": 150,
+    "weightG": 880,
+    "year": 1991,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 60,
+      "steerer": "Threaded 1\""
+    },
+    "specs": {
+      "Original MSRP": "≈$130 (1991)",
+      "Tubing": "Ritchey Logic triple-tapered blades, unicrown",
+      "Offset": "40mm",
+      "Crown Race": "26.4mm ISO",
+      "Axle-to-Crown": "≈395mm (rigid geometry)",
+      "Notes": "Stock on the Bridgestone MB-0/MB-1/MB-2 and Ritchey production bikes."
+    },
+    "tags": [
+      "Vintage",
+      "Rigid",
+      "Steel",
+      "Ritchey Logic"
+    ]
+  },
+  {
+    "id": "ritchey-logic-rigid-mtb-fork-1-1-8-threadless",
+    "name": "Logic Rigid MTB Fork (1-1/8\" Threadless)",
+    "brand": "Ritchey",
+    "category": "fork",
+    "price": 120,
+    "weightG": 810,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 60,
+      "steerer": "Straight 1-1/8\""
+    },
+    "specs": {
+      "Original MSRP": "≈$140 (1997)",
+      "Tubing": "Ritchey Logic CrMo, unicrown",
+      "Axle-to-Crown": "≈410mm (suspension-corrected)",
+      "Notes": "Measured weight with uncut steerer ≈810g."
+    },
+    "tags": [
+      "Vintage",
+      "Rigid",
+      "Steel",
+      "Threadless"
+    ]
+  },
+  {
+    "id": "kona-project-two-fork-1-1-8-threaded",
+    "name": "Project Two (P2) Fork (1-1/8\" Threaded)",
+    "brand": "Kona",
+    "category": "fork",
+    "price": 100,
+    "weightG": 840,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 60,
+      "steerer": "Threaded 1-1/8\""
+    },
+    "specs": {
+      "Original MSRP": "≈$100 (1993)",
+      "Tubing": "Tange double-butted CrMo, unicrown",
+      "Claimed Weight": "780g claimed / ≈840g measured",
+      "Axle-to-Crown": "≈410mm",
+      "Notes": "The classic Kona rigid fork — stock on the Explosif, Lava Dome and Cinder Cone; still a go-to for rigid retro builds."
+    },
+    "tags": [
+      "Vintage",
+      "Rigid",
+      "Steel",
+      "Kona P2",
+      "1-1/8\" Threaded"
+    ]
+  },
+  {
+    "id": "kona-project-two-fork-1-1-8-threadless",
+    "name": "Project Two (P2) Fork (1-1/8\" Threadless)",
+    "brand": "Kona",
+    "category": "fork",
+    "price": 90,
+    "weightG": 830,
+    "year": 1996,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 60,
+      "steerer": "Straight 1-1/8\""
+    },
+    "specs": {
+      "Original MSRP": "≈$110 (1996)",
+      "Tubing": "Butted CrMo, unicrown",
+      "Axle-to-Crown": "≈410mm (suspension-corrected)"
+    },
+    "tags": [
+      "Vintage",
+      "Rigid",
+      "Steel",
+      "Kona P2",
+      "Threadless"
+    ]
+  },
+  {
+    "id": "kona-project-two-fork-1in-threaded",
+    "name": "Project Two (P2) Fork (1\" Threaded)",
+    "brand": "Kona",
+    "category": "fork",
+    "price": 90,
+    "weightG": 860,
+    "year": 1992,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 60,
+      "steerer": "Threaded 1\""
+    },
+    "specs": {
+      "Original MSRP": "≈$100 (1992)",
+      "Tubing": "Butted CrMo, unicrown",
+      "Axle-to-Crown": "≈400mm",
+      "Notes": "1\" version for standard-head-tube frames."
+    },
+    "tags": [
+      "Vintage",
+      "Rigid",
+      "Steel",
+      "Kona P2",
+      "1\" Threaded"
+    ]
+  },
+  {
+    "id": "fat-chance-yo-eddy-fork-1-1-8",
+    "name": "Yo Eddy Rigid Fork (1-1/8\" Threaded)",
+    "brand": "Fat Chance",
+    "category": "fork",
+    "price": 300,
+    "weightG": 940,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 60,
+      "steerer": "Threaded 1-1/8\""
+    },
+    "specs": {
+      "Original MSRP": "≈$160 (1993)",
+      "Construction": "TIG-welded CrMo, segmented (lugless) crown, Somerville MA",
+      "Notes": "Matches the Yo Eddy / Bro Eddy. Collectible — paint-matched forks command a premium."
+    },
+    "tags": [
+      "Vintage",
+      "Rigid",
+      "Steel",
+      "Fat Chance",
+      "Collectible"
+    ]
+  },
+  {
+    "id": "answer-accutrax-rigid-fork-1in",
+    "name": "AccuTrax Rigid Fork (1\" Threaded)",
+    "brand": "Answer",
+    "category": "fork",
+    "price": 90,
+    "weightG": 750,
+    "year": 1994,
+    "discontinued": true,
+    "attrs": {
+      "material": "carbon",
+      "travelMm": 0,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 55,
+      "steerer": "Threaded 1\""
+    },
+    "specs": {
+      "Original MSRP": "≈$200 (1994)",
+      "Construction": "Composite blades bonded to an alloy crown/steerer (verify — construction varies by year)",
+      "Notes": "Light rigid race fork from the Answer (Hyperlite bar) family. Inspect bonds before riding."
+    },
+    "tags": [
+      "Vintage",
+      "Rigid",
+      "Carbon",
+      "Race"
+    ]
+  },
+  {
+    "id": "bridgestone-xo-1-fork-1992",
+    "name": "XO-1 Fork (1992, Sidepull)",
+    "brand": "Bridgestone",
+    "category": "fork",
+    "price": 150,
+    "weightG": 900,
+    "year": 1992,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "Rim Caliper",
+      "maxTireMm": 42,
+      "steerer": "Threaded 1\"",
+      "brakeReachMm": 49
+    },
+    "specs": {
+      "Original MSRP": "Sold with the XO-1 frame (≈$1,000 complete bike, 1992)",
+      "Construction": "Lugged CrMo, Atlantis cast crown, paint-matched",
+      "Offset": "45mm (42/48cm frames), 40mm (52cm+)",
+      "Tire Clearance": "Crown clears up to 1.6\"",
+      "Brakes": "Drilled for a standard-reach sidepull (stock: Dia-Compe BRS 300)",
+      "Brake Reach": "≈49mm (estimated from standard-reach sidepull on 26\" — verify)",
+      "Crown Race": "27.0mm JIS (verify)",
+      "Notes": "The 1992 XO-1 is the only XO-1 with sidepull brakes; the 1993 went to cantilevers."
+    },
+    "tags": [
+      "Vintage",
+      "Rigid",
+      "Steel",
+      "XO-1",
+      "Collectible"
+    ]
+  },
+  {
+    "id": "rockshox-rs-1-fork",
+    "name": "RS-1",
+    "brand": "RockShox",
+    "category": "fork",
+    "price": 250,
+    "weightG": 1450,
+    "year": 1990,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 48,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 54,
+      "steerer": "Threaded 1\"",
+      "springType": "Air"
+    },
+    "specs": {
+      "Original MSRP": "≈$450 (1990)",
+      "Damping": "Air spring, open-bath oil damping",
+      "Stanchions": "25.4mm",
+      "Notes": "The first mass-market MTB suspension fork (Paul Turner). Seals and bushings are hard to find — buy serviced."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "First-Gen",
+      "Collectible"
+    ]
+  },
+  {
+    "id": "rockshox-mag-21-fork-1in-threaded",
+    "name": "Mag 21 (1\" Threaded)",
+    "brand": "RockShox",
+    "category": "fork",
+    "price": 120,
+    "weightG": 1345,
+    "year": 1993,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 48,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 54,
+      "steerer": "Threaded 1\"",
+      "springType": "Air"
+    },
+    "specs": {
+      "Original MSRP": "≈$450 (1993)",
+      "Damping": "Air/oil (later Mag 21 SL: elastomer-assisted)",
+      "Stanchions": "25.4mm (magnesium lowers)",
+      "Brake Arch": "Bolt-on",
+      "Notes": "Weighed ≈1,345g (cut steerer). Long-travel \"LT\" version had 60mm."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Mag 21",
+      "1\" Threaded"
+    ]
+  },
+  {
+    "id": "rockshox-mag-21-sl-fork-1-1-8-threaded",
+    "name": "Mag 21 SL (1-1/8\" Threaded)",
+    "brand": "RockShox",
+    "category": "fork",
+    "price": 120,
+    "weightG": 1382,
+    "year": 1994,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 48,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 54,
+      "steerer": "Threaded 1-1/8\"",
+      "springType": "Air"
+    },
+    "specs": {
+      "Original MSRP": "≈$500 (1994)",
+      "Damping": "Air/oil with elastomer assist",
+      "Notes": "Weighed ≈1,382g with 1-1/8\" steerer (≈1,285g titanium-steerer version)."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Mag 21",
+      "1-1/8\" Threaded"
+    ]
+  },
+  {
+    "id": "rockshox-quadra-21r-fork",
+    "name": "Quadra 21R (1-1/8\" Threaded)",
+    "brand": "RockShox",
+    "category": "fork",
+    "price": 50,
+    "weightG": 1600,
+    "year": 1994,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 50,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 54,
+      "steerer": "Threaded 1-1/8\""
+    },
+    "specs": {
+      "Original MSRP": "≈$280 (1994)",
+      "Spring": "Elastomer stack",
+      "Damping": "Adjustable rebound (21R)",
+      "Notes": "OEM workhorse on mid-90s mid-range bikes. Elastomers harden with age — budget for new ones."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Elastomer",
+      "1-1/8\" Threaded"
+    ]
+  },
+  {
+    "id": "rockshox-judy-xc-fork-1-1-8-threadless",
+    "name": "Judy XC (1-1/8\" Threadless)",
+    "brand": "RockShox",
+    "category": "fork",
+    "price": 80,
+    "weightG": 1652,
+    "year": 1996,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 63,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 57,
+      "steerer": "Straight 1-1/8\""
+    },
+    "specs": {
+      "Original MSRP": "≈$450 (1996)",
+      "Spring": "MCU elastomer stack",
+      "Damping": "Sealed oil cartridge",
+      "Stanchions": "28mm",
+      "Notes": "Weighed ≈1,652g (1-1/8\"). Also sold 1\" threadless and threaded."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Judy",
+      "Threadless"
+    ]
+  },
+  {
+    "id": "rockshox-judy-sl-fork-1in-threadless",
+    "name": "Judy SL (1\" Threadless)",
+    "brand": "RockShox",
+    "category": "fork",
+    "price": 100,
+    "weightG": 1350,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 63,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 57,
+      "steerer": "Straight 1\""
+    },
+    "specs": {
+      "Original MSRP": "≈$580 (1997)",
+      "Spring": "Coil + MCU elastomer",
+      "Damping": "Sealed oil cartridge",
+      "Notes": "1\" threadless version for late-90s standard-head-tube frames. Weighed ≈1,330–1,380g."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Judy",
+      "1\" Threadless"
+    ]
+  },
+  {
+    "id": "rockshox-sid-fork-1in-threadless",
+    "name": "SID (1\" Threadless)",
+    "brand": "RockShox",
+    "category": "fork",
+    "price": 120,
+    "weightG": 1130,
+    "year": 1998,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 63,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 54,
+      "steerer": "Straight 1\"",
+      "springType": "Air"
+    },
+    "specs": {
+      "Original MSRP": "≈$650 (1998)",
+      "Spring": "Dual air (positive + negative)",
+      "Notes": "First-year SID, ≈1,129g — the XC race fork of the late 90s. 1\" threadless and 1-1/8\" threadless versions."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "SID",
+      "Race",
+      "1\" Threadless"
+    ]
+  },
+  {
+    "id": "rockshox-sid-fork-1-1-8-threadless",
+    "name": "SID (1-1/8\" Threadless)",
+    "brand": "RockShox",
+    "category": "fork",
+    "price": 120,
+    "weightG": 1160,
+    "year": 1998,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 63,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 54,
+      "steerer": "Straight 1-1/8\"",
+      "springType": "Air"
+    },
+    "specs": {
+      "Original MSRP": "≈$650 (1998)",
+      "Spring": "Dual air (positive + negative)",
+      "Notes": "First-year SID. V-brake/canti studs only (disc tabs arrived ≈2000)."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "SID",
+      "Race",
+      "Threadless"
+    ]
+  },
+  {
+    "id": "rockshox-indy-xc-fork",
+    "name": "Indy XC (1-1/8\" Threadless)",
+    "brand": "RockShox",
+    "category": "fork",
+    "price": 35,
+    "weightG": 1800,
+    "year": 1998,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 63,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 57,
+      "steerer": "Straight 1-1/8\""
+    },
+    "specs": {
+      "Original MSRP": "≈$200 (1998, mostly OEM)",
+      "Spring": "Elastomer",
+      "Damping": "Minimal (friction)",
+      "Stanchions": "28.6mm steel",
+      "Notes": "Budget OEM fork. Also made 1\" and threaded versions."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Elastomer",
+      "Budget"
+    ]
+  },
+  {
+    "id": "manitou-1-fork",
+    "name": "Manitou 1 (1\" Threaded)",
+    "brand": "Manitou",
+    "category": "fork",
+    "price": 200,
+    "weightG": 1300,
+    "year": 1991,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 45,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 54,
+      "steerer": "Threaded 1\""
+    },
+    "specs": {
+      "Original MSRP": "≈$400 (1991)",
+      "Spring": "Elastomer stack, no damping",
+      "Design": "Doug Bradbury; brake arch above the tire, upside-down crown",
+      "Notes": "Early Manitou, collectible. Elastomers usually need replacing."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Elastomer",
+      "Collectible"
+    ]
+  },
+  {
+    "id": "manitou-3-fork-1-1-8-threaded",
+    "name": "Manitou 3 (1-1/8\" Threaded)",
+    "brand": "Manitou",
+    "category": "fork",
+    "price": 100,
+    "weightG": 1418,
+    "year": 1994,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 50,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 54,
+      "steerer": "Threaded 1-1/8\""
+    },
+    "specs": {
+      "Original MSRP": "≈$450 (1994)",
+      "Spring": "Elastomer stack",
+      "Notes": "Weighed ≈1,418g (1-1/8\"). Manitou's brake-arch-forward design."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Elastomer",
+      "1-1/8\" Threaded"
+    ]
+  },
+  {
+    "id": "answer-manitou-mach-5-fork",
+    "name": "Mach 5 (1-1/8\" Threadless)",
+    "brand": "Answer Manitou",
+    "category": "fork",
+    "price": 70,
+    "weightG": 1500,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 63,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 57,
+      "steerer": "Straight 1-1/8\""
+    },
+    "specs": {
+      "Original MSRP": "≈$450 (1997)",
+      "Spring": "Elastomer (MCU-style) with oil damping",
+      "Notes": "Mid-range Answer Manitou fork; 63–80mm depending on spring stack."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Threadless"
+    ]
+  },
+  {
+    "id": "answer-manitou-sx-fork",
+    "name": "SX (1-1/8\" Threadless)",
+    "brand": "Answer Manitou",
+    "category": "fork",
+    "price": 100,
+    "weightG": 1400,
+    "year": 1998,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 63,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 57,
+      "steerer": "Straight 1-1/8\""
+    },
+    "specs": {
+      "Original MSRP": "≈$550 (1998)",
+      "Spring": "Elastomer + coil with oil damping",
+      "Notes": "SX Ti (titanium steerer) weighed ≈1,324g. 1\" threadless versions exist."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Threadless",
+      "Race"
+    ]
+  },
+  {
+    "id": "marzocchi-xc-500-fork",
+    "name": "XC 500 (1-1/8\" Threadless)",
+    "brand": "Marzocchi",
+    "category": "fork",
+    "price": 70,
+    "weightG": 1650,
+    "year": 1996,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 63,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 57,
+      "steerer": "Straight 1-1/8\"",
+      "springType": "Coil"
+    },
+    "specs": {
+      "Original MSRP": "≈$350 (1996)",
+      "Spring": "Coil, oil damping",
+      "Travel": "≈60–70mm depending on year",
+      "Notes": "Durable coil-sprung Marzocchi. Also sold threaded."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Coil",
+      "Threadless"
+    ]
+  },
+  {
+    "id": "marzocchi-bomber-z1-1997",
+    "name": "Bomber Z1 (1997)",
+    "brand": "Marzocchi",
+    "category": "fork",
+    "price": 180,
+    "weightG": 1900,
+    "year": 1997,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 80,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 64,
+      "steerer": "Straight 1-1/8\"",
+      "springType": "Coil"
+    },
+    "specs": {
+      "Original MSRP": "≈$575 (1997)",
+      "Spring": "Coil, open-bath oil",
+      "Stanchions": "30mm",
+      "Travel": "80mm (1997); the 1998+ Z1 went to 100mm",
+      "Notes": "The fork that defined late-90s freeride — bombproof, stock on the 1997 Kona Hei Hei. Tall axle-to-crown raises a rigid-era front end — check frame geometry."
+    },
+    "tags": [
+      "Vintage",
+      "Suspension",
+      "Bomber",
+      "Freeride"
+    ]
+  }
+]

@@ -6,3 +6,10 @@ dist-ssr
 .env.local
 .env.*.local
 .DS_Store
+
+# Cloudflare local state
+.wrangler
+.dev.vars
+
+# Impeccable design-hook cache
+.impeccable/hook.cache.json
