@@ -499,5 +499,61 @@
       "Freewheel"
     ],
     "discontinued": true
+  },
+  {
+    "id": "suntour-perfect-5-freewheel-14-32",
+    "name": "Perfect 5-Speed Freewheel 14-32T",
+    "brand": "Suntour",
+    "category": "cassette",
+    "price": 30,
+    "weightG": 400,
+    "year": 1984,
+    "discontinued": true,
+    "attrs": {
+      "speeds": 5,
+      "cassetteRange": "14-32T",
+      "smallestCogT": 14,
+      "largestCogT": 32,
+      "freehub": "Thread-on Freewheel"
+    },
+    "specs": {
+      "Cogs": "14-17-21-26-32",
+      "Type": "Thread-on freewheel (PT 5000 in Schwinn's spec)",
+      "Stock On": "1984 Schwinn High Sierra",
+      "Weight": "≈400g (est.)"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour",
+      "Freewheel"
+    ]
+  },
+  {
+    "id": "suntour-perfect-6-freewheel-14-32",
+    "name": "Perfect 6-Speed Freewheel 14-32T",
+    "brand": "Suntour",
+    "category": "cassette",
+    "price": 30,
+    "weightG": 450,
+    "year": 1985,
+    "discontinued": true,
+    "attrs": {
+      "speeds": 6,
+      "cassetteRange": "14-32T",
+      "smallestCogT": 14,
+      "largestCogT": 32,
+      "freehub": "Thread-on Freewheel"
+    },
+    "specs": {
+      "Cogs": "14-16-19-24-28-32",
+      "Type": "Thread-on freewheel (PT5000 in Schwinn's spec)",
+      "Stock On": "1985 Schwinn High Sierra",
+      "Weight": "≈450g (est.)"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour",
+      "Freewheel"
+    ]
   }
 ]

@@ -716,5 +716,33 @@
       "Single Speed",
       "Rear Only"
     ]
+  },
+  {
+    "id": "sanshin-large-flange-hubs",
+    "name": "Large-Flange Alloy Hub Set",
+    "brand": "Sanshin",
+    "category": "hub",
+    "price": 40,
+    "weightG": 650,
+    "year": 1984,
+    "discontinued": true,
+    "attrs": {
+      "frontAxle": "100mm Nutted",
+      "rearAxle": "QR 126mm",
+      "freehub": "Thread-on Freewheel",
+      "rotorInterface": "Rim Brake"
+    },
+    "specs": {
+      "Flange": "Large, alloy",
+      "Axle": "⅜\" chromoly, nutted (rear spacing ≈126mm)",
+      "Thread": "English 1.37\" x 24 TPI freewheel",
+      "Stock On": "1984 Schwinn High Sierra",
+      "Weight": "≈650g pair (est.)"
+    },
+    "tags": [
+      "Vintage",
+      "Freewheel",
+      "Large Flange"
+    ]
   }
 ]

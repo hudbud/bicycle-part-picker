@@ -280,7 +280,8 @@ function runRules(p: Parts, emit: Emit) {
   }
   if (has(crankset, 'speeds') && crankset.attrs.speeds > 1 && speedParts.length > 0) {
     const drive = speedParts[0][1].attrs!.speeds!
-    if (crankset.attrs.speeds !== drive) {
+    // 5–8-speed rings all take the same 3/32" chain, same as speedsCompatible's chain rule.
+    if (!speedsCompatible('chain', crankset.attrs.speeds, drive)) {
       emit('warning', 'crank-speeds', ['crankset', speedParts[0][0]], `${name(crankset)} is designed for ${crankset.attrs.speeds}-speed; the rest of the drivetrain is ${drive}-speed. Shifting and chain fit may suffer.`)
     }
   }

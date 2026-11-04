@@ -808,5 +808,39 @@
       "Bomber",
       "Freeride"
     ]
+  },
+  {
+    "id": "schwinn-high-sierra-fork-1984",
+    "name": "High Sierra CrMo Fork (1984)",
+    "brand": "Schwinn",
+    "category": "fork",
+    "price": 50,
+    "weightG": 1100,
+    "year": 1984,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "travelMm": 0,
+      "wheelSizes": [
+        559
+      ],
+      "frontAxle": "QR 100mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "maxTireMm": 54,
+      "steerer": "Threaded 1\""
+    },
+    "specs": {
+      "Original Spec": "4130 chrome-moly, semi-sloping crown (1984 catalog)",
+      "Brake Bosses": "Cantilever studs",
+      "Steerer": "1\" threaded; length depends on frame size",
+      "Weight": "≈1.1kg (est.)",
+      "Notes": "Came on the 1984 High Sierra. 1985 switched to a fork with forged double-eyelet dropouts."
+    },
+    "tags": [
+      "Vintage",
+      "Rigid",
+      "Steel",
+      "1\" Threaded"
+    ]
   }
 ]

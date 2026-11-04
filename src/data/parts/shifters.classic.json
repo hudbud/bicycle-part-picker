@@ -1026,5 +1026,34 @@
       "10-Speed",
       "Value"
     ]
+  },
+  {
+    "id": "suntour-micro-lite-thumb-shifters",
+    "name": "Micro Lite Thumb Shifters",
+    "brand": "Suntour",
+    "category": "shifters",
+    "price": 60,
+    "weightG": 160,
+    "year": 1984,
+    "discontinued": true,
+    "attrs": {
+      "electronic": false,
+      "shiftSystem": "Friction",
+      "shifterMount": "Thumb",
+      "handlebarType": "Flat"
+    },
+    "specs": {
+      "Type": "Friction thumbies (pair)",
+      "Clamp": "22.2mm bar",
+      "Stock On": "1984–86 Schwinn High Sierra",
+      "Weight": "≈160g (est.)"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour",
+      "Friction",
+      "Thumb",
+      "Collectible"
+    ]
   }
 ]
