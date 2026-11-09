@@ -406,5 +406,31 @@
       "Road Triple"
     ],
     "discontinued": true
+  },
+  {
+    "id": "suntour-mountech-fd",
+    "name": "Mountech Front Derailleur",
+    "brand": "Suntour",
+    "category": "frontDerailleur",
+    "price": 30,
+    "weightG": 200,
+    "year": 1984,
+    "discontinued": true,
+    "attrs": {
+      "speeds": 6,
+      "frontDerailleurMount": "Clamp",
+      "electronic": false
+    },
+    "specs": {
+      "Clamp": "28.6mm (verify)",
+      "For Cranks": "Wide-range MTB triples (48/38/28)",
+      "Indexing": "Pre-index, friction shifters",
+      "Weight": "≈200g (est.)"
+    },
+    "tags": [
+      "Vintage",
+      "Suntour",
+      "Friction"
+    ]
   }
 ]

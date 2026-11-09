@@ -798,5 +798,35 @@
       "11-Speed",
       "1x"
     ]
+  },
+  {
+    "id": "sugino-tgt-triple-crankset",
+    "name": "TGT Triple Crankset",
+    "brand": "Sugino",
+    "category": "crankset",
+    "price": 60,
+    "weightG": 900,
+    "year": 1984,
+    "discontinued": true,
+    "attrs": {
+      "material": "aluminum",
+      "crankLengthMm": 175,
+      "speeds": 6,
+      "chainrings": "48/38/28",
+      "chainringCount": 3,
+      "bbSpindle": "Square Taper"
+    },
+    "specs": {
+      "Rings": "48/38/28T forged alloy",
+      "Arms": "175mm",
+      "Taper": "JIS square (verify)",
+      "Stock On": "1984 Schwinn High Sierra",
+      "Weight": "≈900g (est.)"
+    },
+    "tags": [
+      "Vintage",
+      "Sugino",
+      "Triple"
+    ]
   }
 ]

@@ -1311,5 +1311,32 @@
       "Slick",
       "xbiking"
     ]
+  },
+  {
+    "id": "panaracer-skinwall-26x1-75",
+    "name": "Skinwall 26x1.75 (1984 OEM)",
+    "brand": "Panaracer",
+    "category": "tires",
+    "price": 25,
+    "weightG": 650,
+    "year": 1984,
+    "discontinued": true,
+    "attrs": {
+      "wheelSize": 559,
+      "tireWidthMm": 44,
+      "tubeless": false
+    },
+    "specs": {
+      "Size": "26 x 1.75",
+      "Sidewall": "Skinwall (gumwall)",
+      "Bead": "Wire",
+      "Stock On": "1984 Schwinn High Sierra (sold as National Panaracer)",
+      "Weight": "≈650g (est.)"
+    },
+    "tags": [
+      "Vintage",
+      "MTB",
+      "Skinwall"
+    ]
   }
 ]

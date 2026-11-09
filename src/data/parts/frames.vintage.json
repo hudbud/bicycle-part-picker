@@ -3551,5 +3551,57 @@
       "Rack Mounts",
       "xbiking"
     ]
+  },
+  {
+    "id": "schwinn-high-sierra-1984",
+    "name": "High Sierra (1984)",
+    "brand": "Schwinn",
+    "category": "frame",
+    "price": 175,
+    "weightG": 2700,
+    "year": 1984,
+    "discontinued": true,
+    "attrs": {
+      "material": "steel",
+      "wheelSizes": [
+        559
+      ],
+      "maxTireMm": 54,
+      "bbShell": "BSA 68/73mm",
+      "rearAxle": "QR 126mm",
+      "brakeMount": "V-Brake/Cantilever",
+      "headsetStd": "EC30/EC30",
+      "steerer": "Threaded 1\"",
+      "suspension": "Rigid",
+      "maxForkTravelMm": 0,
+      "derailleurHanger": true,
+      "frontDerailleurMount": "Clamp",
+      "udh": false,
+      "downtubeBosses": false,
+      "seatpostMm": 26.4
+    },
+    "specs": {
+      "Tubing": "4130 chrome-moly throughout (1984 catalog)",
+      "Sizes": "18, 21, 23\" (seat tube, BB center to top)",
+      "Colors": "Black, Smokey Pearl (pale blue-grey metallic)",
+      "Geometry": "70° head, 70° seat, 42⅞\" wheelbase (catalog)",
+      "Braze-ons": "Top-tube and BB cable guides, bottle bosses, chain rest, rack bosses",
+      "Rear": "≈126mm (owners report 125–126; verify)",
+      "BB Shell": "68mm English (verify)",
+      "Seatpost": "26.4mm (owner-measured; Sheldon Brown lists 26.2 for the 1986)",
+      "Brakes": "Cantilever bosses (Dia-Compe 980 stock)",
+      "Stock Bar": "Triangulated CrMo Bullmoose bar, 1984 only — leave the Stem slot empty",
+      "Complete Bike": "31½ lb (catalog)",
+      "Frame Weight": "≈2.7kg (est.)",
+      "Notes": "Schwinn's first chromoly ATB, Bicycling's 1984 \"Good Buy\". 1985 changed to an SR bar and stem and new colors; 1986 to roller-cam brakes."
+    },
+    "tags": [
+      "Vintage",
+      "Steel",
+      "Rigid",
+      "Bullmoose",
+      "Klunker",
+      "xbiking"
+    ]
   }
 ]
